@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 4 Свете тихий"
@@ -45,7 +46,7 @@ bassIMusicD = {
   % 33
   ees2 r2 |
   % 34
-  R1\fermataMarkup
+  R1\fermata
   % 35
   aes2\mf g4(\< f4) c2.\f\> d4\! |
   % 36
@@ -91,7 +92,7 @@ bassIIMusicD = {
   % 33
   R1
   % 34
-  R1\fermataMarkup
+  R1\fermata
   % 35
   aes2\mf g4(\< f4) c2.\f\> d4\! |
   % 36
@@ -145,7 +146,7 @@ bassIIIMusicD = {
   % 33
   R1
   % 34
-  R1\fermataMarkup
+  R1\fermata
   % 35
   aes2\mf g4(\< f4) c2.\f\> bes,4\! |
   % 36

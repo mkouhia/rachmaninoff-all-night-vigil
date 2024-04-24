@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 5 Ныне отпущаеши"
@@ -91,7 +92,7 @@ tenorIIMusicE = {
   % 1-5
   R2*9 |
   % 6
-  \once \override Score.FootnoteItem #'annotation-line = ##f
+  \once \override Score.FootnoteItem.annotation-line = ##f
   % closed mouth
   \footnote "" #'(0 . -1) \markup {\super "+" "исполнятся с эакрытым ртом."}
   bes1_\humming |

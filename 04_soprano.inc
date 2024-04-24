@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 4 Свете тихий"
@@ -20,7 +21,7 @@ sopranoIMusicD = {
   c''2.( bes'4\< c''4) d''4\! |
   % 9
   ees''2\mf d''4 
-  \once \override Score.FootnoteItem #'annotation-line = ##f
+  \once \override Score.FootnoteItem.annotation-line = ##f
   \footnote "*" #'(-0.8 . +1.6) \markup {\super "*" " Добавлено С. Рахманиновым в зкземпляре А. Кастальского"}
   d''4\> d''4 d''4\!
   % 10
@@ -97,7 +98,7 @@ sopranoIIMusicD = {
   g'4( aes'4 g'4 f'4\< g'4) bes'4\!
   % 9
   ees''2\mf d''4
-  \once \override Score.FootnoteItem #'annotation-line = ##f
+  \once \override Score.FootnoteItem.annotation-line = ##f
   \footnote "*" #'(-0.8 . +1.6) ""
   d''4\> d''4 d''4\!
   % 10

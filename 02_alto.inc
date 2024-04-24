@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 2 Благослови, душе моя"
@@ -145,9 +146,9 @@ altoIIMusicB = {
   e'2
   e'1\fermata
   R4*25
-  \once \override Score.FootnoteItem #'annotation-line = ##f
+  \once \override Score.FootnoteItem.annotation-line = ##f
   % closed mouth
-  \footnote \humming #'(0 . -1) \markup {\super "+" " исполнятся с эакрытым ртом."} c'\breve  ~
+  \footnote \markup \humming #'(0 . -1) \markup {\super "+" " исполнятся с эакрытым ртом."} c'\breve  ~
   c'\breve_\humming ~
   c'\breve_\humming ~
   c'2_\humming r2 r1

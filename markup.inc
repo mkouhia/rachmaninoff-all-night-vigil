@@ -1,3 +1,4 @@
+\version "2.22.0"
 humming = \markup {\bold +}
 nezhno = \markup { {\dynamic "pp"} "  очень нежно" }
 

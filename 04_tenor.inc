@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 4 Свете тихий"
@@ -65,7 +66,7 @@ tenorIMusicD = {
   % 33
   aes'2(\pp g'4) r4 |
   % 34
-  R1\fermataMarkup
+  R1\fermata
   % 35
   ees'2\mf d'2\< c'2.\f\> d'4\! |
   % 36

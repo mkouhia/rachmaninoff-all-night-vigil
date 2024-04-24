@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдение"
       subtitle = "Nº 7 Шестопсалмие"
@@ -28,12 +29,12 @@ for i,l in enumerate(lengths):
 
 globalMusicG = {
   \key ees \major
-  \override Staff.TimeSignature #'transparent = ##t
+  \override Staff.TimeSignature.transparent = ##t
 	% 1
-	\set Score.measureLength = #(ly:make-moment 10 4)
+	\set Score.measureLength = #(ly:make-moment 10/4)
 	\skip 4*10 %\bar "|"
 	% 2
-	\set Score.measureLength = #(ly:make-moment 8 4)
+	\set Score.measureLength = #(ly:make-moment 8/4)
 	\skip 4*8 %\break
 	% 3
 	\skip 4*8 
@@ -44,13 +45,13 @@ globalMusicG = {
 	% 6
 	\skip 4*8 
 	% 7
-	\set Score.measureLength = #(ly:make-moment 12 4)
+	\set Score.measureLength = #(ly:make-moment 12/4)
 	\skip 4*12 %\break
 	% 8
-	\set Score.measureLength = #(ly:make-moment 10 4)
+	\set Score.measureLength = #(ly:make-moment 10/4)
 	\skip 4*10
 	% 9
-	\set Score.measureLength = #(ly:make-moment 8 4)
+	\set Score.measureLength = #(ly:make-moment 8/4)
 	\skip 4*8 %\break
 	% 10
 	\skip 4*8
@@ -67,17 +68,17 @@ globalMusicG = {
 	% 16
 	\skip 4*8
 	% 17
-	\set Score.measureLength = #(ly:make-moment 4 4)
+	\set Score.measureLength = #(ly:make-moment 4/4)
 	\skip 4*4
 	% 18
-	\set Score.measureLength = #(ly:make-moment 8 4)
+	\set Score.measureLength = #(ly:make-moment 8/4)
 	\skip 4*8
 	% 19
 	\skip 4*8
 	% 20
 	\skip 4*8
 	% 21
-	\set Score.measureLength = #(ly:make-moment 4 4)
+	\set Score.measureLength = #(ly:make-moment 4/4)
 	\skip 4*4
   \bar "|."
 }

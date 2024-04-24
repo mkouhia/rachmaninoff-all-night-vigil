@@ -1,4 +1,4 @@
-\version "2.16.2"
+\version "2.22.0"
 
 % * Ноты со энаком + исполнятся с эакрытым ртом.
 % The sign + indicates notes which are to be executed by humming with closed lips.
@@ -22,7 +22,7 @@ sopStaffD = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } 
 		\clef treble
 		\globalMusicD
     \topMarksD
-		\new Voice = VAA { \override MultiMeasureRest #'expand-limit = 1 \sopranoIMusicD }
+		\new Voice = VAA { \override MultiMeasureRest.expand-limit = 1 \sopranoIMusicD }
 		\new Lyrics { \lyricsto "VAA" \sopranoILyricsD }
 		\new Lyrics { \lyricsto "VAA" \sopranoITranslitD }
 	>>
@@ -30,7 +30,7 @@ sopStaffD = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } 
 		\set Staff.midiInstrument = "choir aahs"
 		\clef treble
 		\globalMusicD
-		\new Voice = VAB { \override MultiMeasureRest #'expand-limit = 1 \sopranoIIMusicD }
+		\new Voice = VAB { \override MultiMeasureRest.expand-limit = 1 \sopranoIIMusicD }
 		\new Lyrics { \lyricsto "VAB" \sopranoIILyricsD }
 		\new Lyrics { \lyricsto "VAB" \sopranoIITranslitD }
 	>>
@@ -43,7 +43,7 @@ altStaffD = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } 
 		\set Staff.midiInstrument = "choir aahs"
 		\clef treble
 		\globalMusicD
-		\new Voice = VBA { \override MultiMeasureRest #'expand-limit = 1 \altoIMusicD }
+		\new Voice = VBA { \override MultiMeasureRest.expand-limit = 1 \altoIMusicD }
 		\new Lyrics { \lyricsto "VBA" \altoILyricsD }
 		\new Lyrics { \lyricsto "VBA" \altoITranslitD }
 	>>
@@ -51,7 +51,7 @@ altStaffD = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } 
 		\set Staff.midiInstrument = "choir aahs"
 		\clef treble
 		\globalMusicD
-		\new Voice = VBB { \override MultiMeasureRest #'expand-limit = 1 \altoIIMusicD }
+		\new Voice = VBB { \override MultiMeasureRest.expand-limit = 1 \altoIIMusicD }
 		\new Lyrics { \lyricsto "VBB" \altoIILyricsD }
 		\new Lyrics { \lyricsto "VBB" \altoIITranslitD }
 	>>
@@ -63,9 +63,9 @@ tenSoloStaffD = \context Staff = "tSoloStaffD" <<
   \set Staff.midiInstrument = "choir aahs"
   \clef "G_8"
   \globalMusicD
-  \context Voice = VC { \override MultiMeasureRest #'expand-limit = 1 \tenorSoloMusicD }
-  \lyricsto "VC" \context Lyrics = lyricsTre { \tenorSoloLyricsD }
-  \lyricsto "VC" \context Lyrics = lyricsTreX { \tenorSoloTranslitD }
+  \context Voice = VC { \override MultiMeasureRest.expand-limit = 1 \tenorSoloMusicD }
+  \context Lyrics = lyricsTre \lyricsto "VC" { \tenorSoloLyricsD }
+  \context Lyrics = lyricsTreX \lyricsto "VC" { \tenorSoloTranslitD }
 >> % Staff
 
 tenStaffD = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } <<
@@ -75,7 +75,7 @@ tenStaffD = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } 
 		\set Staff.midiInstrument = "choir aahs"
 		\clef "G_8"
 		\globalMusicD
-		\new Voice = VDA { \override MultiMeasureRest #'expand-limit = 1 \tenorIMusicD }
+		\new Voice = VDA { \override MultiMeasureRest.expand-limit = 1 \tenorIMusicD }
 		\new Lyrics { \lyricsto "VDA" \tenorILyricsD }
 		\new Lyrics { \lyricsto "VDA" \tenorITranslitD }
 	>>
@@ -83,7 +83,7 @@ tenStaffD = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } 
 		\set Staff.midiInstrument = "choir aahs"
 		\clef "G_8"
 		\globalMusicD
-		\new Voice = VDB { \override MultiMeasureRest #'expand-limit = 1 \tenorIIMusicD }
+		\new Voice = VDB { \override MultiMeasureRest.expand-limit = 1 \tenorIIMusicD }
 		\new Lyrics { \lyricsto "VDB" \tenorIILyricsD }
 		\new Lyrics { \lyricsto "VDB" \tenorIITranslitD }
 	>>
@@ -96,7 +96,7 @@ basStaffD = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } 
 		\set Staff.midiInstrument = "choir aahs"
 		\clef bass
 		\globalMusicD
-		\new Voice = VEA { \override MultiMeasureRest #'expand-limit = 1 \bassIMusicD }
+		\new Voice = VEA { \override MultiMeasureRest.expand-limit = 1 \bassIMusicD }
 		\new Lyrics { \lyricsto "VEA" \bassILyricsD }
 		\new Lyrics { \lyricsto "VEA" \bassITranslitD }
 	>>
@@ -104,7 +104,7 @@ basStaffD = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } 
 		\set Staff.midiInstrument = "choir aahs"
 		\clef bass
 		\globalMusicD
-		\new Voice = VEB { \override MultiMeasureRest #'expand-limit = 1 \bassIIMusicD }
+		\new Voice = VEB { \override MultiMeasureRest.expand-limit = 1 \bassIIMusicD }
 		\new Lyrics { \lyricsto "VEB" \bassIILyricsD }
 		\new Lyrics { \lyricsto "VEB" \bassIITranslitD }
 	>>
@@ -112,7 +112,7 @@ basStaffD = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } 
 		\set Staff.midiInstrument = "choir aahs"
 		\clef bass
 		\globalMusicD
-		\new Voice = VEC { \override MultiMeasureRest #'expand-limit = 1 \bassIIIMusicD }
+		\new Voice = VEC { \override MultiMeasureRest.expand-limit = 1 \bassIIIMusicD }
 		\new Lyrics { \lyricsto "VEC" \bassIIILyricsD }
 		\new Lyrics { \lyricsto "VEC" \bassIIITranslitD }
 	>>
@@ -151,7 +151,7 @@ choirStaffD = \new ChoirStaff = "choirA" <<
 %        #(set-accidental-style 'modern-cautionary)
 %        #(set-accidental-style 'no-reset)
 %        \set Score.ignoreBarChecks = ##t
-        \override Score.BarNumber  #'padding = #2
+        \override Score.BarNumber.padding = #2
 %        \set Score.skipBars = ##t
         \choirStaffD
       >> % Groups
@@ -159,7 +159,7 @@ choirStaffD = \new ChoirStaff = "choirA" <<
       \midi {
         \context {
           \Score
-          tempoWholesPerMinute = #(ly:make-moment 60 4)
+          tempoWholesPerMinute = #(ly:make-moment 60/4)
         }
         \context {
           \Voice
@@ -170,7 +170,7 @@ choirStaffD = \new ChoirStaff = "choirA" <<
         \context {
           \RemoveEmptyStaffContext
 % To use the setting globally, uncomment the following line:
-%          \override VerticalAxisGroup #'remove-first = ##t
+%          \override VerticalAxisGroup.remove-first = ##t
         }
       } % layout
   

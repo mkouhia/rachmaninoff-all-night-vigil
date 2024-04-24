@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 6 Богородице Дево, радуйся"
@@ -39,7 +40,7 @@ bassMusicF = \relative c {
 
 	R1 * 4 |
 	r2 r2 r4
-	\once \override DynamicText #'extra-offset = #'( -1.9 . -2.1)
+	\once \override DynamicText.extra-offset = #'( -1.9 . -2.1)
 	a8( \ff bes |
   % 20
 	c4.) c8 c8([ bes8 a8 c8] bes8[ a8)] bes4 ~ |

@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 4 Свете тихий"
@@ -9,7 +10,7 @@ tenorSoloMusicD = {
   % 1-17
   R4*106
   % 19
-  \once \override Score.FootnoteItem #'annotation-line = ##f
+  \once \override Score.FootnoteItem.annotation-line = ##f
   \footnote "*" #'(-0.8 . +1.6) \markup {\super "*" " Может быть заменен первымн тенорамн"}
   r4 dis'4\p^\molto_melodioso e'2\< ~ |
   % 20

@@ -1,4 +1,4 @@
-\version "2.16.2"
+\version "2.22.0"
 
 \include "markup.inc"
 \include "06_global.inc"
@@ -15,7 +15,7 @@ sopStaffF = \new Staff = "Soprano" <<
   \clef treble
   \globalMusicF
   \topMarksF
-  \new Voice = VA { \override MultiMeasureRest #'expand-limit = 1 \sopranoMusicF }
+  \new Voice = VA { \override MultiMeasureRest.expand-limit = 1 \sopranoMusicF }
   \new Lyrics = "Soprano_Lyrics"   {\lyricsto "VA" \sopranoLyricsF }
   \new Lyrics = "Soprano_Translit" {\lyricsto "VA" \sopranoTranslitF }
 >> % Staff
@@ -26,7 +26,7 @@ altStaffF = \new Staff = "Alto" <<
   \set Staff.midiInstrument = "choir aahs"
   \clef treble
   \globalMusicF
-  \new Voice = VB { \override MultiMeasureRest #'expand-limit = 1 \altoMusicF }
+  \new Voice = VB { \override MultiMeasureRest.expand-limit = 1 \altoMusicF }
   \new Lyrics = "Alto_Lyrics" {\lyricsto "VB" \altoLyricsF }
   \new Lyrics = "Alto_Translit" {\lyricsto "VB" \altoTranslitF }
 >> % Staff
@@ -37,7 +37,7 @@ tenStaffF = \new Staff = "Tenor" <<
   \set Staff.midiInstrument = "choir aahs"
   \clef "G_8"
   \globalMusicF
-  \new Voice = VC { \override MultiMeasureRest #'expand-limit = 1 \tenorMusicF }
+  \new Voice = VC { \override MultiMeasureRest.expand-limit = 1 \tenorMusicF }
   \new Lyrics = "Tenor_Lyrics"   {\lyricsto "VC" \tenorLyricsF }
   \new Lyrics = "Tenor_Translit" {\lyricsto "VC" \tenorTranslitF }
 >> % Staff
@@ -48,7 +48,7 @@ basStaffF = \new Staff = "Bass" <<
   \set Staff.midiInstrument = "choir aahs"
   \clef bass
   \globalMusicF
-  \new Voice = VD { \override MultiMeasureRest #'expand-limit = 1 \bassMusicF }
+  \new Voice = VD { \override MultiMeasureRest.expand-limit = 1 \bassMusicF }
   \new Lyrics = "Bass_Lyrics" {\lyricsto "VD" \bassLyricsF }
   \new Lyrics = "Bass_Translit" {\lyricsto "VD" \bassTranslitF }
 >> % Staff
@@ -85,7 +85,7 @@ choirStaffF = \new ChoirStaff = "choirF" <<
 %        #(set-accidental-style 'modern-cautionary)
 %        #(set-accidental-style 'no-reset)
 %        \set Score.ignoreBarChecks = ##t
-        \override Score.BarNumber  #'padding = #2
+        \override Score.BarNumber.padding = #2
 %        \set Score.skipBars = ##t
         \choirStaffF
       >> % Groups
@@ -93,7 +93,7 @@ choirStaffF = \new ChoirStaff = "choirF" <<
       \midi {
         \context {
           \Score
-          tempoWholesPerMinute = #(ly:make-moment 60 4)
+          tempoWholesPerMinute = #(ly:make-moment 60/4)
         }
         \context {
           \Voice
@@ -105,7 +105,7 @@ choirStaffF = \new ChoirStaff = "choirF" <<
         \context {
           \RemoveEmptyStaffContext
 % To use the setting globally, uncomment the following line:
-%          \override VerticalAxisGroup #'remove-first = ##t
+%          \override VerticalAxisGroup.remove-first = ##t
         }
       } % layout
   

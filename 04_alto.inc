@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 4 Свете тихий"
@@ -12,7 +13,7 @@ altoIMusicD = {
   r1 r4 bes'4\<
   % 9
   c''2\mf bes'4
-  \once \override Score.FootnoteItem #'annotation-line = ##f
+  \once \override Score.FootnoteItem.annotation-line = ##f
   \footnote "*" #'(-0.8 . +2.5) ""
   bes'4\> bes'4 bes'4\!
   % 10
@@ -87,7 +88,7 @@ altoIIMusicD = {
   ees'4( f'4 ees'4 d'4\< ees'4) f'4\! |
   % 9
   g'2\mf g'4
-  \once \override Score.FootnoteItem #'annotation-line = ##f
+  \once \override Score.FootnoteItem.annotation-line = ##f
   \footnote "*" #'(-0.8 . +4.0) ""
   f'4\> g'4 f'4\! |
   % 10

@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 6 Богородице Дево, радуйся"
@@ -5,7 +6,7 @@
 %}
 
 globalMusicF = {
-  \override Staff.TimeSignature #'style = #'()
+  \override Staff.TimeSignature.style = #'numbered
 	\time 4/4
 	\key f \major
 	\partial 2

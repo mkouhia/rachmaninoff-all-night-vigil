@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 5 Ныне отпущаеши"
@@ -10,7 +11,7 @@ tenorSoloMusicE = {
   % 1
   R1 |
   % 2
-  \once \override Score.FootnoteItem #'annotation-line = ##f
+  \once \override Score.FootnoteItem.annotation-line = ##f
   % closed mouth
   \footnote "" #'(0 . -1) \markup {\super "1" "Зтот голос может быть заменен двумя тремя голосами в унисон первых теноров хора."}
   des'8\p des'8 des'8\< ees'8 f'2(\> |
@@ -59,10 +60,10 @@ tenorSoloMusicE = {
   % 35
   R1. |
   % 36
-  R1.\fermataMarkup |
+  R1.\fermata |
   % 37
   bes1. |
   % 38
-  R1.\fermataMarkup |
+  R1.\fermata |
 }
 

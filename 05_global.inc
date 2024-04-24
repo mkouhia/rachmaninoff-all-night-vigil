@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 5 Ныне отпущаеши"
@@ -5,7 +6,7 @@
 %}
 
 globalMusicE = {
-  \override Staff.TimeSignature #'style = #'()
+  \override Staff.TimeSignature.style = #'numbered
   % 1
   \key bes \minor
   \time 4/4

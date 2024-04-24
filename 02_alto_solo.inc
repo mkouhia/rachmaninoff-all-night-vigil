@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 2 Благослови, душе моя"
@@ -9,7 +10,7 @@ altoSoloMusicB = {
   \autoBeamOff
   \oneVoice
   r2
-  R1\fermataMarkup
+  R1\fermata
   R1*2
   r4 c'4\f c'4 d'4 e'4 <<{e'4 f'8([ e'8)] d'4}{s4\< s16 s16\> s8 s4\!}>> c'8([ d'8)] |
   e'4.(\< f'8\! g'4 <<{f'4}{s8 s8\>}>> e'4. c'8\! d'4) d'4 |

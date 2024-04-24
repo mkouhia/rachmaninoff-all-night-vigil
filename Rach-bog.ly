@@ -1,4 +1,4 @@
-\version "2.11.61"
+\version "2.22.0"
 
 % showLastLength=R1*8
 #(set-global-staff-size 17)
@@ -9,7 +9,7 @@
  right-margin = 1\cm
  ragged-last-bottom = ##f
  foot-separation = 1\cm
- page-top-space = 0.8\cm
+ obsolete-page-top-space = 0.8\cm  top-system-spacing.basic-distance = #(/ obsolete-page-top-space staff-space)
 }
 
 \header {
@@ -181,7 +181,7 @@ bassNotes = \relative c {
 	R1 * 4 |
 	\time 6/4
 	r2 r2 r4
-	\once \override DynamicText #'extra-offset = #'( -1.9 . -2.1)
+	\once \override DynamicText.extra-offset = #'( -1.9 . -2.1)
 	a8( \ff bes |
 
 	c4.) c8 c( bes a c bes a) bes4 ~ |

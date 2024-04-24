@@ -1,4 +1,4 @@
-\version "2.16.2"
+\version "2.22.0"
 
 \include "markup.inc"
 \include "03_global.inc"
@@ -15,10 +15,10 @@ sopStaffC = \context Staff = "sStaffC" <<
   \clef treble
   \globalMusicC
   \topMarksC
-  \context Voice = VA { \override MultiMeasureRest #'expand-limit = 1 \sopranoMusicC }
-%  \context Voice = VAB { \override MultiMeasureRest #'expand-limit = 1 \voiceTwo \sopranoIIMusicC }
-  \lyricsto "VA" \context Lyrics = lyricsUno { \sopranoLyricsC }
-  \lyricsto "VA" \context Lyrics = lyricsUnoX { \sopranoTranslitC }
+  \context Voice = VA { \override MultiMeasureRest.expand-limit = 1 \sopranoMusicC }
+%  \context Voice = VAB { \override MultiMeasureRest.expand-limit = 1 \voiceTwo \sopranoIIMusicC }
+  \context Lyrics = lyricsUno \lyricsto "VA" { \sopranoLyricsC }
+  \context Lyrics = lyricsUnoX \lyricsto "VA" { \sopranoTranslitC }
 >> % Staff
 
 altStaffC = \context Staff = "aStaffC" <<
@@ -27,9 +27,9 @@ altStaffC = \context Staff = "aStaffC" <<
   \set Staff.midiInstrument = "choir aahs"
   \clef treble
   \globalMusicC
-  \context Voice = VB { \override MultiMeasureRest #'expand-limit = 1 \altoMusicC }
-  \lyricsto "VB" \context Lyrics = lyricsDue { \altoLyricsC }
-  \lyricsto "VB" \context Lyrics = lyricsDueX { \altoTranslitC }
+  \context Voice = VB { \override MultiMeasureRest.expand-limit = 1 \altoMusicC }
+  \context Lyrics = lyricsDue \lyricsto "VB" { \altoLyricsC }
+  \context Lyrics = lyricsDueX \lyricsto "VB" { \altoTranslitC }
 >> % Staff
 
 tenStaffC = \context Staff = "tStaffC" <<
@@ -38,9 +38,9 @@ tenStaffC = \context Staff = "tStaffC" <<
   \set Staff.midiInstrument = "choir aahs"
   \clef "G_8"
   \globalMusicC
-  \context Voice = VC { \override MultiMeasureRest #'expand-limit = 1 \tenorMusicC }
-  \lyricsto "VC" \context Lyrics = lyricsTre { \tenorLyricsC }
-  \lyricsto "VC" \context Lyrics = lyricsTreX { \tenorTranslitC }
+  \context Voice = VC { \override MultiMeasureRest.expand-limit = 1 \tenorMusicC }
+  \context Lyrics = lyricsTre \lyricsto "VC" { \tenorLyricsC }
+  \context Lyrics = lyricsTreX \lyricsto "VC" { \tenorTranslitC }
 >> % Staff
 
 basStaffC = \new Staff = "bStaffC" <<
@@ -49,9 +49,9 @@ basStaffC = \new Staff = "bStaffC" <<
   \set Staff.midiInstrument = "choir aahs"
   \clef bass
   \globalMusicC
-  \new Voice = VD { \override MultiMeasureRest #'expand-limit = 1 \bassMusicC }
-  \lyricsto "VD" \context Lyrics = lyricsQua { \bassLyricsC }
-  \lyricsto "VD" \context Lyrics = lyricsQuaX { \bassTranslitC }
+  \new Voice = VD { \override MultiMeasureRest.expand-limit = 1 \bassMusicC }
+  \context Lyrics = lyricsQua \lyricsto "VD" { \bassLyricsC }
+  \context Lyrics = lyricsQuaX \lyricsto "VD" { \bassTranslitC }
 >> % Staff
 
 choirStaffC = \new ChoirStaff = "choirA" <<
@@ -86,7 +86,7 @@ choirStaffC = \new ChoirStaff = "choirA" <<
 %        #(set-accidental-style 'modern-cautionary)
 %        #(set-accidental-style 'no-reset)
 %        \set Score.ignoreBarChecks = ##t
-        \override Score.BarNumber  #'padding = #2
+        \override Score.BarNumber.padding = #2
 %        \set Score.skipBars = ##t
         \choirStaffC
       >> % Groups
@@ -94,7 +94,7 @@ choirStaffC = \new ChoirStaff = "choirA" <<
       \midi {
         \context {
           \Score
-          tempoWholesPerMinute = #(ly:make-moment 60 4)
+          tempoWholesPerMinute = #(ly:make-moment 60/4)
         }
         \context {
           \Voice
@@ -106,7 +106,7 @@ choirStaffC = \new ChoirStaff = "choirA" <<
         \context {
           \RemoveEmptyStaffContext
 % To use the setting globally, uncomment the following line:
-%          \override VerticalAxisGroup #'remove-first = ##t
+%          \override VerticalAxisGroup.remove-first = ##t
         }
       } % layout
   

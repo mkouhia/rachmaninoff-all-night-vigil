@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 4 Свете тихий"
@@ -5,25 +6,25 @@
 %}
 
 globalMusicD = {
-%  \override Score.BarNumber #'break-visibility = #'#(#f #f #f)
+%  \override Score.BarNumber.break-visibility = #'#(#f #f #f)
   \key c \minor
-  \override Staff.TimeSignature #'transparent = ##t
+  \override Staff.TimeSignature.transparent = ##t
   % 1
-	\set Score.measureLength = #(ly:make-moment 10 4)
+	\set Score.measureLength = #(ly:make-moment 10/4)
   \skip 4*10 \bar "|"
   % 2
   \skip 4*10 \bar "|"
   % 3
-	\set Score.measureLength = #(ly:make-moment 8 4)
+	\set Score.measureLength = #(ly:make-moment 8/4)
   \skip 4*8 \bar "|"
   % 4
-	\set Score.measureLength = #(ly:make-moment 12 4)
+	\set Score.measureLength = #(ly:make-moment 12/4)
   \skip 4*12 \bar "|"
   % 5
-	\set Score.measureLength = #(ly:make-moment 4 4)
+	\set Score.measureLength = #(ly:make-moment 4/4)
   \skip 4*4 \bar "|"
   % 6
-	\set Score.measureLength = #(ly:make-moment 6 4)
+	\set Score.measureLength = #(ly:make-moment 6/4)
   \skip 4*6 \bar "|"% \break
   % 7
   \skip 4*6 \bar "|"
@@ -34,7 +35,7 @@ globalMusicD = {
   % 10
   \skip 4*6 \bar "|"
   % 11
-	\set Score.measureLength = #(ly:make-moment 4 4)
+	\set Score.measureLength = #(ly:make-moment 4/4)
   \skip 4*4 \bar "|"
   % 12
   \skip 4*4 \bar "|"
@@ -55,10 +56,10 @@ globalMusicD = {
   % 20
   \skip 4*4 \bar "|"
   % 21
-	\set Score.measureLength = #(ly:make-moment 6 4)
+	\set Score.measureLength = #(ly:make-moment 6/4)
   \skip 4*6 \bar "|"
   % 22
-	\set Score.measureLength = #(ly:make-moment 4 4)
+	\set Score.measureLength = #(ly:make-moment 4/4)
   \skip 4*4 \bar "|"
   % 23
   \skip 4*4 \bar "|" \mark \default
@@ -67,39 +68,39 @@ globalMusicD = {
   % 25
   \skip 4*4 \bar "|"
   % 26
-	\set Score.measureLength = #(ly:make-moment 8 4)
+	\set Score.measureLength = #(ly:make-moment 8/4)
   \skip 4*8 \bar "|"
   % 27
   \skip 4*8 \bar "|"
   % 28
-	\set Score.measureLength = #(ly:make-moment 6 4)
+	\set Score.measureLength = #(ly:make-moment 6/4)
   \skip 4*6 \bar "|"% \break
   % 29
-	\set Score.measureLength = #(ly:make-moment 5 4)
+	\set Score.measureLength = #(ly:make-moment 5/4)
   \skip 4*5 \bar "|"
   % 30
-	\set Score.measureLength = #(ly:make-moment 6 4)
+	\set Score.measureLength = #(ly:make-moment 6/4)
   \skip 4*6 \bar "|" \mark \default
   % 31
-	\set Score.measureLength = #(ly:make-moment 3 4)
+	\set Score.measureLength = #(ly:make-moment 3/4)
   \skip 4*3 \bar "|"
   % 32
-	\set Score.measureLength = #(ly:make-moment 6 4)
+	\set Score.measureLength = #(ly:make-moment 6/4)
   \skip 4*6 \bar "|"% \break
   % 33
-	\set Score.measureLength = #(ly:make-moment 4 4)
+	\set Score.measureLength = #(ly:make-moment 4/4)
   \skip 4*4 \bar "|"
   % 34
   \skip 4*4 \bar "|" \mark \default
   % 35
-	\set Score.measureLength = #(ly:make-moment 8 4)
+	\set Score.measureLength = #(ly:make-moment 8/4)
   \skip 4*8 \bar "|"
   % 36
   \skip 4*8 \bar "|"
   % 37
   \skip 4*8 \bar "|"
   % 38
-	\set Score.measureLength = #(ly:make-moment 4 4)
+	\set Score.measureLength = #(ly:make-moment 4/4)
   \skip 4*4 \bar "|."
 }
 

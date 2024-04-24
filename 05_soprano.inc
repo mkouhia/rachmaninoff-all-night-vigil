@@ -1,3 +1,4 @@
+\version "2.22.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 5 Ныне отпущаеши"
@@ -60,11 +61,11 @@ sopranoIMusicE = {
   % 35
   R1. |
   % 36
-  R1.\fermataMarkup |
+  R1.\fermata |
   % 37
   R1. |
   % 38
-  R1.\fermataMarkup |
+  R1.\fermata |
 }
 
 sopranoIIMusicE = {
@@ -123,11 +124,11 @@ sopranoIIMusicE = {
   % 35
   R1. |
   % 36
-  R1.\fermataMarkup |
+  R1.\fermata |
   % 37
   R1. |
   % 38
-  R1.\fermataMarkup |
+  R1.\fermata |
 }
 
 sopranoMusicE = {
@@ -186,11 +187,11 @@ sopranoMusicE = {
   % 35
   R1. |
   % 36
-  R1.\fermataMarkup |
+  R1.\fermata |
   % 37
   R1. |
   % 38
-  R1.\fermataMarkup |
+  R1.\fermata |
 }
 
 sopranoSplitMusicE = {
@@ -261,6 +262,6 @@ sopranoSplitMusicE = {
   % 35
   R1. |
   % 36
-  R1.\fermataMarkup |
+  R1.\fermata |
 }
 
