@@ -1,0 +1,145 @@
+%{
+      title = "Всенощное бдение"
+      subtitle = "Nº 7 Шестопсалмие"
+      composer = "Сергей Рахманинов"
+%}
+
+altoMusicG = {
+	\dynamicUp
+  % 1 0
+  ees'4(\mf f'4 g'4) g'4 g'8([ f'8)] ees'4 f'2-- f'8([ g'8] aes'4) |
+  % 2 10
+  g'4 g'4 g'8([\> f'8)] ees'4\! f'1-- |
+  % 3 18
+  g'4\mf g'4 g'4 g'4 g'2\> g'8([\! f'8)]\< ees'4\! |
+  % 4 26
+  f'2--\> f'4\p f'4 ~ f'4 r4 ees'4(\p\< f'4 |
+  % 5 34
+  g'4) g'4\p g'8([ f'8)] ees'4 f'2-- f'8([ g'8] aes'4) |
+  % 6 42
+  g'4 g'4 g'8([ f'8)] ees'4 f'1-- |
+  % 7 50
+  g'4 g'4 g'4 g'4 g'2-- g'8([ f'8)] ees'4 f'2-- f'4\> f'4 |
+  % 8 62
+  ees'4(\pp f'4 g'4) g'4 g'8([ f'8)] ees'4 f'2-- f'8([ g'8] aes'4) |
+  % 9 72
+  g'4 g'4 g'8([ f'8)] ees'4 f'1 |
+  % 10 80
+  g'4 g'4 g'4 g'4 g'2 g'8([ f'8)] ees'4 |
+  % 11 88
+  f'1-- <f' bes>1-> |
+  % 12 96
+  <f' bes>1-> <<{<f' bes>1->}{s2.\< s8\! s8}>> |
+  % 13 104
+  <<{\voiceOne \dynamicUp f'2(\< aes'2\f\> ~ aes'2)\!\fermata} \new Voice=VBB {\voiceTwo bes1-> ~ bes2}>>  \oneVoice r2\fermata |
+  % 14 112
+  ees'2--\p\> d'2\! ees'2\pp r4 ees'4\< |
+  % 15 120
+  <<{ees'1-- ~ ees'4}{s4 s2.\> s4\!}>> ees'4\pp ees'4 ees'4 |
+  % 16 128
+  ees'2.--\> ees'4\! ees'1 |
+  % 17 136
+  r2 ees'4\pp ees'4|
+  % 18 140
+  ees'2. ees'4 ees'2(\< d'2)\!|
+  % 19 148
+  ees'2.--\mf\> d'4\! ees'2\p\> <g' d'>2\! |
+  % 20 156
+  <bes' des'>1\pp ~ <bes' des'>2\> <aes'c'>2\! |
+  % 21 164
+  <g' ees'>1\ppp\fermata |
+}
+
+altoIMusicG = {
+	\dynamicUp
+  % 1 0
+  ees'4(\mf f'4 g'4) g'4 g'8([ f'8)] ees'4 f'2-- f'8([ g'8] aes'4) |
+  % 2 10
+  g'4 g'4 g'8([\> f'8)] ees'4\! f'1-- |
+  % 3 18
+  g'4\mf g'4 g'4 g'4 g'2\> g'8([\! f'8)]\< ees'4\! |
+  % 4 26
+  f'2--\> f'4\p f'4 ~ f'4 r4 ees'4(\p\< f'4 |
+  % 5 34
+  g'4) g'4\p g'8([ f'8)] ees'4 f'2-- f'8([ g'8] aes'4) |
+  % 6 42
+  g'4 g'4 g'8([ f'8)] ees'4 f'1-- |
+  % 7 50
+  g'4 g'4 g'4 g'4 g'2-- g'8([ f'8)] ees'4 f'2-- f'4\> f'4 |
+  % 8 62
+  ees'4(\pp f'4 g'4) g'4 g'8([ f'8)] ees'4 f'2-- f'8([ g'8] aes'4) |
+  % 9 72
+  g'4 g'4 g'8([ f'8)] ees'4 f'1 |
+  % 10 80
+  g'4 g'4 g'4 g'4 g'2 g'8([ f'8)] ees'4 |
+  % 11 88
+  f'1-- f'1 |
+  % 12 96
+  f'1 <<{f'1}{s2.\< s8\! s8}>> |
+  % 13 104
+  f'2(\< aes'2\f\> ~ aes'2)\!\fermata r2\fermata |
+  % 14 112
+  ees'2--\p\> d'2\! ees'2\pp r4 ees'4\< |
+  % 15 120
+  <<{ees'1-- ~ ees'4}{s4 s2.\> s4\!}>> ees'4\pp ees'4 ees'4 |
+  % 16 128
+  ees'2.--\> ees'4\! ees'1 |
+  % 17 136
+  r2 ees'4\pp ees'4|
+  % 18 140
+  ees'2. ees'4 ees'2(\< d'2)\!|
+  % 19 148
+  ees'2.--\mf\> d'4\! ees'2\p\> g'2\! |
+  % 20 156
+  bes'1\pp ~ bes'2\> aes'2\! |
+  % 21 164
+  g'1\ppp\fermata |
+}
+
+
+altoIIMusicG = {
+	\dynamicUp
+  % 1 0
+  ees'4(\mf f'4 g'4) g'4 g'8([ f'8)] ees'4 f'2-- f'8([ g'8] aes'4) |
+  % 2 10
+  g'4 g'4 g'8([\> f'8)] ees'4\! f'1-- |
+  % 3 18
+  g'4\mf g'4 g'4 g'4 g'2\> g'8([\! f'8)]\< ees'4\! |
+  % 4 26
+  f'2--\> f'4\p f'4 ~ f'4 r4 ees'4(\p\< f'4 |
+  % 5 34
+  g'4) g'4\p g'8([ f'8)] ees'4 f'2-- f'8([ g'8] aes'4) |
+  % 6 42
+  g'4 g'4 g'8([ f'8)] ees'4 f'1-- |
+  % 7 50
+  g'4 g'4 g'4 g'4 g'2-- g'8([ f'8)] ees'4 f'2-- f'4\> f'4 |
+  % 8 62
+  ees'4(\pp f'4 g'4) g'4 g'8([ f'8)] ees'4 f'2-- f'8([ g'8] aes'4) |
+  % 9 72
+  g'4 g'4 g'8([ f'8)] ees'4 f'1 |
+  % 10 80
+  g'4 g'4 g'4 g'4 g'2 g'8([ f'8)] ees'4 |
+  % 11 88
+  f'1-- bes-> |
+  % 12 96
+  bes1-> <<{bes1->}{s2.\< s8\! s8}>> |
+  % 13 104
+  <<{bes1-> ~ bes2\fermata}{s2\< s2\f\> s2\!}>> r2\fermata |
+  % 14 112
+  ees'2--\p\> d'2\! ees'2\pp r4 ees'4\< |
+  % 15 120
+  <<{ees'1-- ~ ees'4}{s4 s2.\> s4\!}>> ees'4\pp ees'4 ees'4 |
+  % 16 128
+  ees'2.--\> ees'4\! ees'1 |
+  % 17 136
+  r2 ees'4\pp ees'4|
+  % 18 140
+  ees'2. ees'4 ees'2(\< d'2)\!|
+  % 19 148
+  ees'2.--\mf\> d'4\! ees'2\p\> d'2\! |
+  % 20 156
+  des'1\pp ~ des'2\> c'2\! |
+  % 21 164
+  ees'1\ppp\fermata |
+}
+
