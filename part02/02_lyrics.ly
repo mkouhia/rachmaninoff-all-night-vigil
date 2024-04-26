@@ -1,9 +1,4 @@
 \version "2.22.0"
-%{
-      title = "Всенощное бдѣніе"
-      subtitle = "Nº 2 Благослови, душе моя"
-      composer = "Сергей Рахманинов"
-%}
 
 sopranoLyricsB = \lyricmode {
   А -- минь.

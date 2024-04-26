@@ -1,9 +1,4 @@
 \version "2.22.0"
-%{
-      title = "Всенощное бдѣніе"
-      subtitle = "Nº 3 Блажен муж"
-      composer = "Сергей Рахманинов"
-%}
 
 sopranoLyricsC = \lyricmode {
   Ал -- ли -- луй -- и -- а, ал -- ли -- луй -- и -- а, ал -- ли -- луй -- и -- а.
@@ -171,4 +166,3 @@ Sla -- va Te -- be, Bo -- zhe.
 Al -- li -- luy -- i -- a,  al -- li -- luy -- i -- a, al -- li -- luy -- i -- a.
 Sla -- va Te -- be, Bo -- zhe.
 }
-

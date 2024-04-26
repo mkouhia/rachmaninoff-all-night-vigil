@@ -1,18 +1,70 @@
 \version "2.22.0"
 
-% * Ноты со энаком + исполнятся с эакрытым ртом.
-% The sign + indicates notes which are to be executed by humming with closed lips.
-% Google Translate:
-% Знак + показывает ноты, которые должны быть выполнены по напевая с закрытыми губами
+\include "02_soprano.ly"
+\include "02_alto.ly"
+\include "02_alto_solo.ly"
+\include "02_tenor.ly"
+\include "02_bass.ly"
+\include "02_lyrics.ly"
 
-\include "markup.inc"
-\include "02_global.inc"
-\include "02_soprano.inc"
-\include "02_alto.inc"
-\include "02_alto_solo.inc"
-\include "02_tenor.inc"
-\include "02_bass.inc"
-\include "02_lyrics.inc"
+globalMusicB = {
+  \override Score.BarNumber.break-visibility = #'#(#f #f #f)
+  \key c \major
+  \override Staff.TimeSignature.transparent = ##t
+	\set Score.measureLength = #(ly:make-moment 2/4)
+  \skip 2 \bar "|"
+	\set Score.measureLength = #(ly:make-moment 4/4)
+  \skip 1 \bar "||"
+  \override Staff.TimeSignature.transparent = ##f
+  \time 4/2
+  \override Staff.TimeSignature.style = #'numbered
+  \skip 1*2
+	\set Score.measureLength = #(ly:make-moment 9/4)
+  \skip 4*9
+	\set Score.measureLength = #(ly:make-moment 8/4)
+  \skip 1*10
+  \time 3/2
+  \skip 1.
+  \time 4/2
+  \skip 1*2
+  \time 3/2
+  \skip 1.
+  \time 4/2
+  \skip 1*6
+  \time 2/2
+  \skip 1
+  \time 4/2
+  \skip 1*2
+	\set Score.measureLength = #(ly:make-moment 9/4)
+  \skip 2.  \bar ";" \skip 1 \bar ";" \skip 2
+	\set Score.measureLength = #(ly:make-moment 8/4)
+  \skip 1*8
+  \time 2/2
+  \skip 1
+  \time 4/2
+  \skip 1*12
+  \time 2/2
+  \skip 1
+  \time 4/2
+  \skip 1*6
+  \time 2/2
+  \skip 1
+  \time 4/2
+  \skip 1*4
+  \time 2/2
+  \skip 1
+  \time 4/2
+  \skip 1*6
+  \time 2/2
+  \skip 1
+  \time 4/2
+  \skip 1*4
+  \time 2/2
+  \skip 1
+  \time 4/2
+  \skip 1*8
+  \bar "|."
+}
 
 sopStaffB = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } <<
   \set ChoirStaff.instrumentName = \markup{ \center-align { "Сопрано" } }
@@ -116,57 +168,3 @@ choirStaffB = \new ChoirStaff = "choirA" <<
   \tenStaffB
   \basStaffB
 >>
-
-#(set-global-staff-size 18.0)
-#(set-default-paper-size "letter")
-
-\book {
-  \pointAndClickOff
-  \bookpart {
-    \paper {
-%      system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
-      ragged-last-bottom = ##f
-      ragged-bottom = ##f
-    }
-
-    \header {
-      title = "Nº 2 Благослови, душе моя"
-      subtitle = "(греческого распева)"
-      composer = "Сергей Рахманинов"
-      copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
-%      footer = "The Ames Hymn Collection"
-    } % header
-
-    \score { 
-      << % Groups
-%        #(set-accidental-style 'modern-cautionary)
-%        #(set-accidental-style 'no-reset)
-%        \set Score.ignoreBarChecks = ##t
-        \override Score.BarNumber.padding = #2
-%        \set Score.skipBars = ##t
-        \choirStaffB
-      >> % Groups
-
-      \midi {
-        \context {
-          \Score
-          tempoWholesPerMinute = #(ly:make-moment 60/4)
-        }
-        \context {
-          \Voice
-          \remove "Dynamic_performer"
-        }
-      } % midi
-      \layout {
-        \context {
-          \RemoveEmptyStaffContext
-% To use the setting globally, uncomment the following line:
-%          \override VerticalAxisGroup.remove-first = ##t
-        }
-      } % layout
-  
-    } % score
-  } % bookpart
-
-} % book
-

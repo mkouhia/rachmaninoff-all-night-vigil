@@ -1,12 +1,31 @@
 \version "2.22.0"
 
-\include "markup.inc"
-\include "01_global.inc"
-\include "01_soprano.inc"
-\include "01_alto.inc"
-\include "01_tenor.inc"
-\include "01_bass.inc"
-\include "01_lyrics.inc"
+\include "01_soprano.ly"
+\include "01_alto.ly"
+\include "01_tenor.ly"
+\include "01_bass.ly"
+\include "01_lyrics.ly"
+
+globalMusicA = {
+  \override Score.BarNumber.break-visibility = #'#(#f #f #f)
+  \key c \major
+  \override Staff.TimeSignature.transparent = ##t
+	\set Score.measureLength = #(ly:make-moment 4/8)
+  \skip 8*4 \bar "|"
+	\set Score.measureLength = #(ly:make-moment 8/8)
+  \skip 8*8 \bar "||"
+	\set Score.measureLength = #(ly:make-moment 28/4)
+  \skip 4*17 \bar ""
+  \skip 4*11 \bar "|"
+	\set Score.measureLength = #(ly:make-moment 40/4)
+  \skip 4*18 \bar "" \break
+  \skip 4*22 \bar "|"
+	\set Score.measureLength = #(ly:make-moment 48/4)
+  \skip 4*23 \bar "" \break
+  \skip 4*25 \bar "|"
+	\set Score.measureLength = #(ly:make-moment 35/4)
+  \skip 4*35 \bar "|."
+}
 
 sopStaffA = \context Staff = "sStaffA" <<
   \set Staff.instrumentName = \markup{ \center-align { "Сопрано" } }
@@ -58,58 +77,4 @@ choirStaffA = \new ChoirStaff = "choirA" <<
   \tenStaffA
   \basStaffA
 >>
-
-#(set-global-staff-size 18.0)
-#(set-default-paper-size "letter")
-
-\book {
-  \pointAndClickOff
-  \bookpart {
-    \paper {
-%      system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
-      ragged-last-bottom = ##f
-      ragged-bottom = ##f
-    }
-
-    \header {
-      title = "Nº 1 Приидите, поклонимся"
-%      subtitle = ""
-      composer = "Сергей Рахманинов"
-      copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
-%      footer = "The Ames Hymn Collection"
-    } % header
-
-    \score { 
-      << % Groups
-%        #(set-accidental-style 'modern-cautionary)
-%        #(set-accidental-style 'no-reset)
-%        \set Score.ignoreBarChecks = ##t
-        \override Score.BarNumber.padding = #2
-%        \set Score.skipBars = ##t
-        \choirStaffA
-      >> % Groups
-
-      \midi {
-        \context {
-          \Score
-          tempoWholesPerMinute = #(ly:make-moment 60/4)
-        }
-        \context {
-          \Voice
-          \remove "Dynamic_performer"
-        }
-      } % midi
-      \layout {
-%        #(layout-set-staff-size 15.6)
-        \context {
-          \RemoveEmptyStaffContext
-% To use the setting globally, uncomment the following line:
-%          \override VerticalAxisGroup.remove-first = ##t
-        }
-      } % layout
-  
-    } % score
-  } % bookpart
-
-} % book
 

@@ -1,18 +1,118 @@
 \version "2.22.0"
 
-% * Ноты со энаком + исполнятся с эакрытым ртом.
-% The sign + indicates notes which are to be executed by humming with closed lips.
-% Google Translate:
-% Знак + показывает ноты, которые должны быть выполнены по напевая с закрытыми губами
+\include "05_soprano.ly"
+\include "05_alto.ly"
+\include "05_tenor.ly"
+\include "05_tenor_solo.ly"
+\include "05_bass.ly"
+\include "05_lyrics.ly"
 
-\include "markup.inc"
-\include "05_global.inc"
-\include "05_soprano.inc"
-\include "05_alto.inc"
-\include "05_tenor.inc"
-\include "05_tenor_solo.inc"
-\include "05_bass.inc"
-\include "05_lyrics.inc"
+globalMusicE = {
+  \override Staff.TimeSignature.style = #'numbered
+  % 1
+  \key bes \minor
+  \time 4/4
+  \skip 1
+  % 2
+  \skip 1
+  % 3
+  \skip 1 %\break
+  % 4
+  \time 2/4
+  \skip 2
+  % 5
+  \time 4/4
+  \skip 1
+  % 6
+  \skip 1
+  % 7
+  \skip 1
+  % 8
+  \skip 1 %\break
+  % 9
+  \skip 1
+  % 10
+  \skip 1
+  % 11
+  \mark \default
+  \skip 1
+  % 12
+  \skip 1 %\break
+  % 13
+  \skip 1
+  % 14
+  \skip 1
+  % 15
+  \skip 1
+  % 16
+  \time 6/4
+  \skip 1. %\break
+  % 17
+  \skip 1.
+  % 18
+  \mark \default
+  \skip 1.
+  % 19
+  \skip 1. %\break
+  % 20
+  \time 4/4
+  \skip 1
+  % 21
+  \time 3/4
+  \skip 2.
+  % 22
+  \time 6/4
+  \skip 1. %\break
+  % 23
+  \time 4/4
+  \mark \default
+  \skip 1
+  % 24
+  \skip 1
+  % 25
+  \skip 1
+  % 26
+  \skip 1
+  % 27
+  \skip 1 %\break
+  % 28
+  \mark \default
+  \skip 1
+  % 29
+  \skip 1
+  % 30
+  \skip 1
+  % 31
+  \skip 1
+  % 32
+  \skip 1 %\break
+  % 33
+  \skip 1
+  % 34
+  \time 6/4
+  \skip 1.
+  % 35
+  \skip 1.
+  % 36
+  \skip 1.
+  \bar "|."
+  % 37
+  \skip 1.
+  % 38
+  \skip 1.
+  \bar "|."
+}
+
+topMarksE = {
+  s4*139^\lentamente
+  s4*18^\perdersi
+  s4*12^\short_edition
+}
+
+% В автографе отсутствует
+% not in the manuscript
+% Зтот голос может быть заменен двумя тремя голосами в унисон первых теноров хора
+% This part can be sung by two or three voices in unison from among the first tenors in the choir
 
 sopStaffE = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } <<
   \set ChoirStaff.instrumentName = \markup{ \center-align { "Сопрано" } }
@@ -125,57 +225,3 @@ choirStaffE = \new ChoirStaff = "choirA" <<
   \tenStaffE
   \basStaffE
 >>
-
-#(set-global-staff-size 18.0)
-#(set-default-paper-size "letter")
-
-\book {
-  \pointAndClickOff
-  \bookpart {
-    \paper {
-%      system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
-      ragged-last-bottom = ##f
-      ragged-bottom = ##f
-    }
-
-    \header {
-      title = "Nº 5 Ныне отпущаеши"
-      subtitle = "(киевского распева)"
-      composer = "Сергей Рахманинов"
-      copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
-%      footer = "The Ames Hymn Collection"
-    } % header
-
-    \score { 
-      << % Groups
-%        #(set-accidental-style 'modern-cautionary)
-%        #(set-accidental-style 'no-reset)
-%        \set Score.ignoreBarChecks = ##t
-        \override Score.BarNumber.padding = #2
-%        \set Score.skipBars = ##t
-        \choirStaffE
-      >> % Groups
-
-      \midi {
-        \context {
-          \Score
-          tempoWholesPerMinute = #(ly:make-moment 60/4)
-        }
-        \context {
-          \Voice
-          \remove "Dynamic_performer"
-        }
-      } % midi
-      \layout {
-        \context {
-          \RemoveEmptyStaffContext
-% To use the setting globally, uncomment the following line:
-%          \override VerticalAxisGroup.remove-first = ##t
-        }
-      } % layout
-  
-    } % score
-  } % bookpart
-
-} % book
-

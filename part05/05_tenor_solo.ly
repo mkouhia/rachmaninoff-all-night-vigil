@@ -1,9 +1,4 @@
 \version "2.22.0"
-%{
-      title = "Всенощное бдѣніе"
-      subtitle = "Nº 5 Ныне отпущаеши"
-      composer = "Сергей Рахманинов"
-%}
 
 tenorSoloMusicE = {
   \dynamicUp

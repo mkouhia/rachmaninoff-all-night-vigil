@@ -1,9 +1,4 @@
 \version "2.22.0"
-%{
-      title = "Всенощное бдѣніе"
-      subtitle = "Nº 1 Приидите, поклонимся"
-      composer = "Сергей Рахманинов"
-%}
 
 satbLyricsA = \lyricmode {
   А -- минь.
@@ -13,7 +8,6 @@ satbLyricsA = \lyricmode {
   При -- и -- ди -- те, по -- кло -- ним -- ся и при -- па -- дем Е -- му.
 }
 
-
 satbTranslitA = \lyricmode {
   A -- min'.
   Pri -- i -- di -- tye, po -- klo -- nim -- sya Tsa -- re -- vi na -- she -- mu Bo -- gu.
@@ -21,4 +15,3 @@ satbTranslitA = \lyricmode {
   Pri -- i -- di -- tye, po -- klo -- nim -- sya i pri -- pa -- dyom sa -- mo -- mu Khris -- tu Tsa -- re -- vi i Bo -- gu na -- she -- mu.
   Pri -- i -- di -- tye, po -- klo -- nim -- sya i pri -- pa -- dyom Ye -- mu.
 }
-
