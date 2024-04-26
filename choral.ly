@@ -64,7 +64,7 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 \include "06_lyrics.inc"
 
 \include "07_global.inc"
-\include "08_global.inc"
+\include "part08/08_global.ly"
 
 sopStaffA = \context Staff = "sStaffA" <<
   \set Staff.instrumentName = \markup{ \center-align { "Сопрано" } }

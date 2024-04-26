@@ -1,12 +1,9 @@
 \version "2.22.0"
 
-\include "markup.inc"
-\include "08_soprano.inc"
-\include "08_alto.inc"
-\include "08_tenor.inc"
-\include "08_bass.inc"
-\include "08_lyrics.inc"
-
+\include "08_soprano.ly"
+\include "08_alto.ly"
+\include "08_tenor.ly"
+\include "08_bass.ly"
 
 globalMusicH = {
   \key as \major

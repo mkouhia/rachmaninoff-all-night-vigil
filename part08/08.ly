@@ -1,6 +1,8 @@
 \version "2.22.0"
 
-\include "08_global.inc"
+\include "../markup.inc"
+\include "../layout.ly"
+\include "08_global.ly"
 
 \header {
   title = "Nº 8 Хвалите имя Господне"
@@ -11,6 +13,7 @@
 \score { 
 
   \choirStaffH
+  \score_layout
 
   \midi {
     \context {
