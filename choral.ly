@@ -63,6 +63,9 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 \include "06_bass.inc"
 \include "06_lyrics.inc"
 
+\include "07_global.inc"
+\include "08_global.inc"
+
 sopStaffA = \context Staff = "sStaffA" <<
   \set Staff.instrumentName = \markup{ \center-align { "Сопрано" } }
 %  \set Staff.shortInstrumentName = "S"
@@ -577,8 +580,16 @@ choirStaffF = \new ChoirStaff = "choirA" <<
   	 
 }
 
-%#(set-global-staff-size 15.9)
-#(set-default-paper-size "letter")
+
+% Layout for al scores
+\layout {
+  \context {
+    \RemoveEmptyStaffContext
+  }
+  two-sided = ##t
+  inner-margin = 0.6\in
+  outer-margin = 0.4\in
+}
 
 \book {
   \pointAndClickOff
@@ -586,8 +597,8 @@ choirStaffF = \new ChoirStaff = "choirA" <<
 %    title = "Всенощное бдѣніе"
 %    opus = "Op 37"
 %      composer = "Сергей Рахманинов"
-      copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
 %    enteredby = "Brian M. Ames"
+    tagline = ##f
   }
 
   \markup \huge \larger \bold \column {
@@ -607,213 +618,121 @@ choirStaffF = \new ChoirStaff = "choirA" <<
   \markuplist \table-of-contents
   \pageBreak
 
-  \tocItem \markup { Nº 1 Приидите, поклонимся }
-  \score { <<
-    \choirStaffA
-    >>
-    \layout {
-      \context {
-          \RemoveEmptyStaffContext
+  \bookpart {
+    \tocItem \markup { Nº 1 Приидите, поклонимся }
+    \header{
+        copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
+    }
+    \score {
+      \header {
+        title = "Nº 1 Приидите, поклонимся"
       }
-      two-sided = ##t
-      inner-margin = 0.6\in
-      outer-margin = 0.4\in
-    } % layout
-    
-    \midi {
-      \context {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 92/4)
-      }
-    } % midi
+      \choirStaffA
 
+    }
+  }
+
+  \bookpart {
+    \tocItem \markup { Nº 2 Благослови, душе моя }
     \header {
-      title = "Nº 1 Приидите, поклонимся"
-    } % header
-  } % score
-
-  \tocItem \markup { Nº 2 Благослови, душе моя }
-  \score { <<
-    \choirStaffB
-    >>
-    \layout {
-      \context {
-        \RemoveEmptyStaffContext
+        copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
+    }
+    \score {
+      \header {
+        title = "Nº 2 Благослови, душе моя"
+        subtitle = "(греческого распева)"
       }
-    } % layout
+      \choirStaffB
+    }
+  }
 
-    \midi {
-      \context {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 92/4)
-      }
-    } % midi
-
+  \bookpart {
+    \tocItem \markup { Nº 3 Блажен муж }
     \header {
-      title = "Nº 2 Благослови, душе моя"
-      subtitle = "(греческого распева)"
-    } % header
-  } % score
-
-  \tocItem \markup { Nº 3 Блажен муж }
-  \score { <<
-    \choirStaffC
-    >>
-    
-    \layout {
-      \context {
-        \RemoveEmptyStaffContext
+        copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
+    }
+    \score {
+      \header {
+        title = "Nº 3 Блажен муж"
       }
-    } % layout
-    
-    \midi {
-      \context {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 92/4)
-      }
-    } % midi
+      \choirStaffC
+    }
+  }
 
+  \bookpart {
+    \tocItem \markup { Nº 4 Свете тихий }
     \header {
-      title = "Nº 3 Блажен муж"
-    } % header
-  } % score
-
-  \tocItem \markup { Nº 4 Свете тихий }
-  \score { <<
-    \choirStaffD
-    >>
-    
-    \midi {
-      \context {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 92/4)
+        copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
+    }
+    \score {
+      \header {
+        title = "Nº 4 Свете тихий"
       }
-    } % midi
+      \choirStaffD
+    }
+  }
 
-    \layout {
-      \context {
-        \RemoveEmptyStaffContext
-      }
-    } % layout
-    
+  \bookpart {
+    \tocItem \markup { Nº 5 Ныне отпущаеши }
     \header {
-      title = "Nº 4 Свете тихий"
-    } % header
-  } % score
-
-  \tocItem \markup { Nº 5 Ныне отпущаеши }
-  \score { <<
-    \choirStaffE
-    >>
-    
-    \layout {
-      \context {
-        \RemoveEmptyStaffContext
+        copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
+    }
+    \score {
+      \header {
+        title = "Nº 5 Ныне отпущаеши"
       }
-    } % layout
-    
-    \midi {
-      \context {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 92/4)
-      }
-    } % midi
+      \choirStaffE
+    }
+  }
 
+  \bookpart {
+    \tocItem \markup { Nº 6 Богородице Дево, радуйся }
     \header {
-      title = "Nº 5 Ныне отпущаеши"
-    } % header
-  } % score
-
-  \tocItem \markup { Nº 6 Богородице Дево, радуйся }
-  \score { <<
-    \choirStaffF
-    >>
-    
-    \layout {
-      \context {
-        \RemoveEmptyStaffContext
+        copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
+    }
+    \score {
+      \header {
+        title = "Nº 6 Богородице Дево, радуйся"
       }
-    } % layout
-    
-    \midi {
-      \context {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 92/4)
-      }
-    } % midi
+      \choirStaffF
+    }
+  }
 
+  \bookpart {
+    \tocItem \markup { Nº 7 Шестопсалмие }
     \header {
-      title = "Nº 6 Богородице Дево, радуйся"
-    } % header
-  } % score
+        copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
+    }
+    \score {
+      \header {
+        title = "Nº 7 Шестопсалмие"
+      }
+      \choirStaffG
+
+    }
+  }
+
+  \bookpart {
+    \tocItem \markup { Nº 8 Хвалите имя Господне }
+
+    \score {
+      \header {
+        title = "Nº 8 Хвалите имя Господне"
+      }
+      \choirStaffH
+
+    }
+  }
+
 %{
-  \tocItem \markup { Nº 7 Шестопсалмие }
-  \score { <<
-    \choirStaffG
-    >>
-    
-    \layout {
-      \context {
-        \RemoveEmptyStaffContext
+  \bookpart {
+    \tocItem \markup { Nº 9 Благословен еси, Господи }
+    \score {
+      \header {
+        title = "Nº 9 Благословен еси, Господи"
       }
-    } % layout
-    
-    \midi {
-      \context {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 92/4)
-      }
-    } % midi
-
-    \header {
-      title = "Nº 7 Шестопсалмие"
-    } % header
-  } % score
-
-  \tocItem \markup { Nº 8 Хвалите имя Господне }
-  \score { <<
-    \choirStaffH
-    >>
-    
-    \midi {
-      \context {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 92/4)
-      }
-    } % midi
-
-    \layout {
-      \context {
-        \RemoveEmptyStaffContext
-      }
-    } % layout
-    
-    \header {
-      title = "Nº 8 Хвалите имя Господне"
-    } % header
-  } % score
-
-  \tocItem \markup { Nº 9 Благословен еси, Господи }
-  \score { <<
-    \choirStaffI
-    >>
-    
-    \midi {
-      \context {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 92/4)
-      }
-    } % midi
-
-    \layout {
-      \context {
-        \RemoveEmptyStaffContext
-      }
-    } % layout
-    
-    \header {
-      title = "Nº 9 Благословен еси, Господи"
-    } % header
-  } % score
+      \choirStaffI
+    }
+  }
 %}
 }
