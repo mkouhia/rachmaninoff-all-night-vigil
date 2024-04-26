@@ -54,3 +54,19 @@ lunga_pausa = \markup { \column { \center-align {\bold "длинная" \line {\
 % In the original manuscript titled Doxology small
 % = \markup { "В автографе первоначально озаглавлено Славословие малое" }
 
+% non presto
+tempo_не_скоро = \tempo "не скоро"
+% ritardando
+tempo_задерживая = \tempo "задерживая"
+
+% dolce, cantabile
+dir_мягко_певуче = \markup {\small "мягко, певуче"}
+
+% carattere come sopra
+dir_Прежний_характер = \markup {\small "Прежний характер"}
+
+% melodioso
+dir_певуче = \markup {\small "певуче"}
+
+% Bright, with a strong, solid rhthym
+dir_ярко_с_твербым_добрым_рутмом = \markup { \small "ярко, с твербым, добрым рутмом"}
