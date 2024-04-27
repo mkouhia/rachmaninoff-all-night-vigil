@@ -6,7 +6,6 @@
 %}
 
 tenorMusicC = {
-  \dynamicUp
   \autoBeamOff
   % 1
 	<<{\voiceOne a4(\p c'4) f'2 c'2.

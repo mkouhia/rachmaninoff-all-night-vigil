@@ -6,8 +6,7 @@
 %}
 
 sopranoIMusicD = {
-  \dynamicUp
-  % 1-3
+    % 1-3
   R4*28
   % 4
   r1 r1 r2 r4 d''4\pp |
@@ -81,8 +80,7 @@ sopranoIMusicD = {
 }
 
 sopranoIIMusicD = {
-  \dynamicUp
-  % 1-2
+    % 1-2
   R4*20
   % 3
   c''2(\pp bes'1) c''2 ~ |

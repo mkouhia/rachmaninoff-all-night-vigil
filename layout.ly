@@ -4,6 +4,12 @@
 
 score_layout = \layout {
   \context {
+    \Score
+    % Place all dynamic markings in the entire score above their respective staves
+    \override DynamicText.direction = #UP
+    \override DynamicLineSpanner.direction = #UP
+  }
+  \context {
     \Staff
     \override Score.BarNumber.padding = #2
   }

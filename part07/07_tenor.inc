@@ -6,8 +6,7 @@
 %}
 
 tenorIMusicG = {
-	\dynamicUp
-  % 1 0
+	  % 1 0
   ees'2(\p d'2 <<{c'2)}{s4 s4\>}>> d'2--(\! ees'2) |
   % 2 10
   d'2--( <<{c'2)}{s4 s4\>}>> d'2--(\! ees'2) |
@@ -52,8 +51,7 @@ tenorIMusicG = {
 }
 
 tenorIIMusicG = {
-	\dynamicUp
-  % 1 0
+	  % 1 0
   c'2(\p g2 <<{aes2)}{s4 s4\>}>> bes2--(\! c'2) |
   % 2 10
   g2--( <<{aes2)}{s4 s4\>}>> bes2--(\! c'2) |

@@ -6,8 +6,7 @@
 %}
 
 altoIMusicD = {
-  \dynamicUp
-  % 1-7
+    % 1-7
   R4*56
   % 8
   r1 r4 bes'4\<
@@ -71,8 +70,7 @@ altoIMusicD = {
 }
 
 altoIIMusicD = {
-  \dynamicUp
-  % 1-2
+    % 1-2
   R4*20
   % 3
   g'2(\pp f'1) g'2 ~

@@ -1,7 +1,6 @@
 \version "2.22.0"
 
 tenorSoloMusicE = {
-  \dynamicUp
   \autoBeamOff
   % 1
   R1 |

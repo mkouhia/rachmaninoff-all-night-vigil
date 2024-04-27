@@ -6,7 +6,6 @@
 %}
 
 bassMusicB = {
-  \dynamicUp
   \autoBeamOff
   \oneVoice
   c2
@@ -57,7 +56,6 @@ bassMusicB = {
 }
 
 bassIMusicB = {
-  \dynamicUp
   \autoBeamOff
   c2
   c1\fermata
@@ -102,7 +100,6 @@ bassIMusicB = {
 }
 
 bassIIMusicB = {
-  \dynamicUp
   \autoBeamOff
   c2
   c1\fermata

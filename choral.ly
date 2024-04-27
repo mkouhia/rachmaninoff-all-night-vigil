@@ -53,6 +53,12 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 % Layout for al scores
 \layout {
   \context {
+    \Score
+    % Place all dynamic markings in the entire score above their respective staves
+    \override DynamicText.direction = #UP
+    \override DynamicLineSpanner.direction = #UP
+  }
+  \context {
     \RemoveEmptyStaffContext
   }
   two-sided = ##t

@@ -6,7 +6,6 @@
 %}
 
 sopranoIMusicE = {
-  \dynamicUp
   \autoBeamOff
   % 1-10
   R4*38
@@ -69,7 +68,6 @@ sopranoIMusicE = {
 }
 
 sopranoIIMusicE = {
-  \dynamicUp
   \autoBeamOff
   % 1-10
   R4*38
@@ -132,7 +130,6 @@ sopranoIIMusicE = {
 }
 
 sopranoMusicE = {
-  \dynamicUp
   \autoBeamOff
   % 1-10
   R4*38
@@ -195,7 +192,6 @@ sopranoMusicE = {
 }
 
 sopranoSplitMusicE = {
-  \dynamicUp
   \autoBeamOff
   % 1-10
   R4*38

@@ -6,8 +6,7 @@
 %}
 
 tenorIMusicD = {
-  \dynamicUp
-  % 1
+    % 1
   ees'2.\p d'4 c'2( bes2) c'2 |
   % 2
   d'4\< ees'2\> d'4\! c'2( bes2) c'4( d'4) |
@@ -79,8 +78,7 @@ tenorIMusicD = {
 }
 
 tenorIIMusicD = {
-  \dynamicUp
-  % 1-8
+    % 1-8
   R4*62
   % 9
   ees'4(\mp d'4 ees'4 d'4) ees'4( d'4) |

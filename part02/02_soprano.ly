@@ -6,7 +6,6 @@
 %}
 
 sopranoMusicB = {
-  \dynamicUp
   \autoBeamOff
   \oneVoice
   c'' 2
@@ -44,7 +43,6 @@ sopranoMusicB = {
 }
 
 sopranoIMusicB = {
-  \dynamicUp
   \autoBeamOff
   \oneVoice
   c''2
@@ -82,7 +80,6 @@ sopranoIMusicB = {
 }
 
 sopranoIIMusicB = {
-  \dynamicUp
   \autoBeamOff
   \oneVoice
   c'' 2

@@ -6,7 +6,6 @@
 %}
 
 altoMusicB = {
-  \dynamicUp
   \autoBeamOff
   e'2
   e'1\fermata
@@ -54,7 +53,6 @@ altoMusicB = {
 }
 
 altoDroneMusicB = {
-  \dynamicUp
   \autoBeamOff
   \skip 2
   \skip 1
@@ -105,7 +103,6 @@ altoDroneMusicB = {
 }
 
 altoIMusicB = {
-  \dynamicUp
   \autoBeamOff
   e'2 |
   e'1\fermata |
@@ -141,7 +138,6 @@ altoIMusicB = {
 }
 
 altoIIMusicB = {
-  \dynamicUp
   \autoBeamOff
   e'2
   e'1\fermata

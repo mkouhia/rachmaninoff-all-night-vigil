@@ -6,7 +6,6 @@
 %}
 
 altoMusicA = {
-  \dynamicUp
   \autoBeamOff
   <g' e'>2\p
   <g' e'>1\fermata

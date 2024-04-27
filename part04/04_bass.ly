@@ -6,8 +6,7 @@
 %}
 
 bassIMusicD = {
-  \dynamicUp
-  % 1-10
+    % 1-10
   R4*74
   % 11
   aes4--( g4--) aes4--( g4--) |
@@ -58,8 +57,7 @@ bassIMusicD = {
 }
 
 bassIIMusicD = {
-  \dynamicUp
-  % 1-12
+    % 1-12
   R4*82
   % 13
   ces4--( bes,4--) ces4--( bes,4--) |
@@ -104,8 +102,7 @@ bassIIMusicD = {
 }
 
 bassIIIMusicD = {
-  \dynamicUp
-  % 1-9
+    % 1-9
   R4*68
   % 10
   ees,1\p ees,2 |

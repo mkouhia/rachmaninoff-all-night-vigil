@@ -6,7 +6,6 @@
 %}
 
 bassMusicA = {
-  \dynamicUp
   \autoBeamOff
   \oneVoice 
   c2\p

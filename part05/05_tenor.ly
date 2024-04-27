@@ -6,7 +6,6 @@
 %}
 
 tenorIMusicE = {
-  \dynamicUp
   \autoBeamOff
   % 1
   des'4--(\ppp bes4) des'4--( bes4) |
@@ -87,7 +86,6 @@ tenorIMusicE = {
 }
 
 tenorIIMusicE = {
-  \dynamicUp
   \autoBeamOff
   % 1-5
   R2*9 |

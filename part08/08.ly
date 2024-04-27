@@ -21,6 +21,10 @@
       tempoWholesPerMinute = #(ly:make-moment 92/4)
     }
     \context {
+      \Staff
+      midiInstrument = "choir aahs"
+    }
+    \context {
       \Voice
       \remove "Dynamic_performer"
     }

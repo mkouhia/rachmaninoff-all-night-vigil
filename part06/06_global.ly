@@ -10,6 +10,7 @@ globalMusicF = {
   \override Staff.TimeSignature.style = #'numbered
 	\time 4/4
 	\key f \major
+  \tempo_Покойно_легко_очень_нежно
 	\partial 2
 	\skip 2
 	\skip 1*18
@@ -20,57 +21,39 @@ globalMusicF = {
 	\bar "|."
 }
 
-topMarksF = {
-  s4*18^\con_calma_facilmente_molto_delicatamente
-}
 
-
-sopStaffF = \new Staff = "Soprano" <<
-  \set Staff.instrumentName = \markup{ \center-align { "Сопрано" } }
-%  \set Staff.shortInstrumentName = "С"
-  \set Staff.midiInstrument = "choir aahs"
+sopStaffF = \new Staff \with { instrumentName = \soprano }
+<<
   \clef treble
   \globalMusicF
-  \topMarksF
-  \new Voice = VA { \override MultiMeasureRest.expand-limit = 1 \sopranoMusicF }
-  \new Lyrics = "Soprano_Lyrics"   {\lyricsto "VA" \sopranoLyricsF }
-  \new Lyrics = "Soprano_Translit" {\lyricsto "VA" \sopranoTranslitF }
->> % Staff
-
-altStaffF = \new Staff = "Alto" <<
-  \set Staff.instrumentName = \markup{ \center-align { "Альтъ" } }
-%  \set Staff.shortInstrumentName = "А"
-  \set Staff.midiInstrument = "choir aahs"
+  \new Voice = VA { \sopranoMusicF }
+  \new Lyrics {\lyricsto "VA" \sopranoLyricsF }
+>>
+altStaffF = \new Staff \with { instrumentName = \alto }
+<<
   \clef treble
   \globalMusicF
-  \new Voice = VB { \override MultiMeasureRest.expand-limit = 1 \altoMusicF }
-  \new Lyrics = "Alto_Lyrics" {\lyricsto "VB" \altoLyricsF }
-  \new Lyrics = "Alto_Translit" {\lyricsto "VB" \altoTranslitF }
->> % Staff
+  \new Voice = VB { \altoMusicF }
+  \new Lyrics {\lyricsto "VB" \altoLyricsF }
+>>
 
-tenStaffF = \new Staff = "Tenor" <<
-  \set Staff.instrumentName = \markup{ \center-align { "Теноръ" } }
-%  \set Staff.shortInstrumentName = "Т"
-  \set Staff.midiInstrument = "choir aahs"
+tenStaffF = \new Staff \with { instrumentName = \tenor }
+<<
   \clef "G_8"
   \globalMusicF
-  \new Voice = VC { \override MultiMeasureRest.expand-limit = 1 \tenorMusicF }
-  \new Lyrics = "Tenor_Lyrics"   {\lyricsto "VC" \tenorLyricsF }
-  \new Lyrics = "Tenor_Translit" {\lyricsto "VC" \tenorTranslitF }
->> % Staff
+  \new Voice = VC { \tenorMusicF }
+  \new Lyrics {\lyricsto "VC" \tenorLyricsF }
+>>
 
-basStaffF = \new Staff = "Bass" <<
-  \set Staff.instrumentName = \markup{ \center-align { "Басъ" } }
-%  \set Staff.shortInstrumentName = "Б"
-  \set Staff.midiInstrument = "choir aahs"
+basStaffF = \new Staff \with {instrumentName = \bass }
+<<
   \clef bass
   \globalMusicF
-  \new Voice = VD { \override MultiMeasureRest.expand-limit = 1 \bassMusicF }
-  \new Lyrics = "Bass_Lyrics" {\lyricsto "VD" \bassLyricsF }
-  \new Lyrics = "Bass_Translit" {\lyricsto "VD" \bassTranslitF }
+  \new Voice = VD { \bassMusicF }
+  \new Lyrics {\lyricsto "VD" \bassLyricsF }
 >> % Staff
 
-choirStaffF = \new ChoirStaff = "choirF" <<
+choirStaffF = \new ChoirStaff <<
   \sopStaffF
   \altStaffF
   \tenStaffF

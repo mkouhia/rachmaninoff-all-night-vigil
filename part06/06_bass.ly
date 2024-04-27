@@ -6,8 +6,7 @@
 %}
 
 bassMusicF = \relative c {
-	\dynamicUp
-	% 0
+	% 0 Богородице Дево, 
 	f4 \p f |
 	% 1
 	f4.( c8) d4 a |

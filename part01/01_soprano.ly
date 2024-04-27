@@ -6,7 +6,6 @@
 %}
 
 sopranoMusicA = {
-  \dynamicUp
   \autoBeamOff
   <e'' c''>2\p
   <e'' c''>1\fermata

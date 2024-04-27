@@ -6,7 +6,6 @@
 %}
 
 bassIMusicE = {
-  \dynamicUp
   \autoBeamOff
   % 1-16
   R2*32 |
@@ -87,7 +86,6 @@ bassIMusicE = {
 }
 
 bassIIMusicE = {
-  \dynamicUp
   \autoBeamOff
   % 1-16
   R2*32 |

@@ -6,8 +6,7 @@
 %}
 
 tenorSoloMusicD = {
-  \dynamicUp
-  % 1-17
+    % 1-17
   R4*106
   % 19
   \once \override Score.FootnoteItem.annotation-line = ##f

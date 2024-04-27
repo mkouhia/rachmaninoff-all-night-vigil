@@ -22,14 +22,17 @@
   \score_layout
 
   \midi {
-		\context {
-		\Score
-			tempoWholesPerMinute = #(ly:make-moment 60/4)
-		}
-		\context {
-			\Voice
-			\remove "Dynamic_performer"
-		}
+	\context {
+	\Score
+		tempoWholesPerMinute = #(ly:make-moment 60/4)
 	}
-
+    \context {
+      \Staff
+      midiInstrument = "choir aahs"
+    }
+	\context {
+		\Voice
+		\remove "Dynamic_performer"
+	}
+  }
 }

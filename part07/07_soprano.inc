@@ -6,8 +6,7 @@
 %}
 
 sopranoIMusicG = {
-	\dynamicUp
-  % 1 0
+	  % 1 0
   R4*34 |
   % 2 10
   |
@@ -53,8 +52,7 @@ sopranoIMusicG = {
 
 
 sopranoIIMusicG = {
-	\dynamicUp
-  % 1 0
+	  % 1 0
   ees'4(\mf f'4 g'4) g'4 g'8([ f'8)] ees'4 f'2-- f'8([ g'8] aes'4) |
   % 2 10
   g'4 g'4 g'8([\> f'8)] ees'4\! f'1-- |
@@ -100,8 +98,7 @@ sopranoIIMusicG = {
 
 
 sopranoIIIMusicG = {
-	\dynamicUp
-  % 1 0
+	  % 1 0
   R4*34 |
   % 2 10
   |

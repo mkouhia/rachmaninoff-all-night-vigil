@@ -6,7 +6,6 @@
 %}
 
 altoIMusicE = {
-  \dynamicUp
   \autoBeamOff
   % 1
 	bes'4--(\ppp aes'4) bes'4--( aes'4) |
@@ -87,7 +86,6 @@ altoIMusicE = {
 }
 
 altoIIMusicE = {
-  \dynamicUp
   \autoBeamOff
   % 1
   ges'4--(\ppp f'4) ges'4--( f'4) |

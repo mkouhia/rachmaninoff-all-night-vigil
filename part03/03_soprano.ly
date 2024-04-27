@@ -6,7 +6,6 @@
 %}
 
 sopranoMusicC = {
-  \dynamicUp
   \autoBeamOff
   % 1
 	R4*24
@@ -57,8 +56,7 @@ sopranoMusicC = {
   % 7
   R4*26
   % 8
-  <<{\voiceOne \dynamicUp
-  a'4\mf\< b'4\! c''4-- c''8([ d''8)] c''4 
+  <<{\voiceOne   a'4\mf\< b'4\! c''4-- c''8([ d''8)] c''4 
   c''4 c''4 c''4--\> b'8([ a'8)]\! b'4 
   b'4\p b'4 a'2--\> g'2\! a'2\fermata
   }\context Voice=VAB {\voiceTwo 
@@ -87,8 +85,7 @@ sopranoMusicC = {
   bes'4\> a'4 g'8([\! f'8)] g'4.\p g'8 g'4\> a'4\! f'4\pp r4 r2 r1 |
   }\context Voice=VAB {\voiceOne R4*34}>>
   % 12
-  <<{\voiceOne \dynamicUp
-  d''4\f e''4 f''4-- f''8([ g''8)] f''4 f''4 f''4 f''4-- e''8([ d''8)]
+  <<{\voiceOne   d''4\f e''4 f''4-- f''8([ g''8)] f''4 f''4 f''4 f''4-- e''8([ d''8)]
   }\context Voice=VAB {\voiceTwo 
   d''4 e''4 f''4-- f''8([ g''8)] f''4 f''4 f''4 c''4-- c''4
   }>> \oneVoice
@@ -140,7 +137,6 @@ sopranoMusicC = {
 }
 
 sopranoIMusicC = {
-  \dynamicUp
   \autoBeamOff
   % 1
 	R4*24
@@ -171,7 +167,6 @@ sopranoIMusicC = {
 }
 
 sopranoIIMusicC = {
-  \dynamicUp
   \autoBeamOff
   % 1
 	R4*24

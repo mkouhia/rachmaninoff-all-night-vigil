@@ -6,7 +6,6 @@
 %}
 
 altoMusicC = {
-  \dynamicUp
   \autoBeamOff
   % 1
   <f' d'>4(\p <g' e'>4) <a' f'>2 <g' e'>2. 

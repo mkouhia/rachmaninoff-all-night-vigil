@@ -6,7 +6,6 @@
 %}
 
 tenorMusicF = {
-	\dynamicUp
 	% 0
 	c'4\p c'4 |
 	% 1

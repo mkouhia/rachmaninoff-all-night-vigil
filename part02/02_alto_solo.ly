@@ -6,7 +6,6 @@
 %}
 
 altoSoloMusicB = {
-  \dynamicUp
   \autoBeamOff
   \oneVoice
   r2

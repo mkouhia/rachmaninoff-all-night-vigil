@@ -6,7 +6,6 @@
 %}
 
 tenorXMusicB = {
-  \dynamicUp
   \autoBeamOff
   \oneVoice
   g2
@@ -29,7 +28,6 @@ tenorXMusicB = {
 }
 
 tenorIMusicB = {
-  \dynamicUp
   \autoBeamOff
   g2
   g1\fermata
@@ -76,7 +74,6 @@ tenorIMusicB = {
 }
 
 tenorIIMusicB = {
-  \dynamicUp
   \autoBeamOff
   g2
   g1\fermata
@@ -123,7 +120,6 @@ tenorIIMusicB = {
 }
 
 tenorMusicB = {
-  \dynamicUp
   \autoBeamOff
   \oneVoice
   g2
@@ -135,7 +131,6 @@ tenorMusicB = {
 }
 
 tenorAMusicB = {
-  \dynamicUp
   \autoBeamOff
   \oneVoice
   s2
@@ -183,7 +178,6 @@ tenorAMusicB = {
 }
 
 tenorBMusicB = {
-  \dynamicUp
   \autoBeamOff
   \oneVoice
   s2

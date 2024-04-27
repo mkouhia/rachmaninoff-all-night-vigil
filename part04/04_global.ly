@@ -122,105 +122,103 @@ topMarksD = {
   %  s4*8^\markup {\bold  "задерживая"}
 }
 
-sopStaffD = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } <<
-  \set ChoirStaff.instrumentName = \markup{ \center-align { "Сопрано" } }
-  \set ChoirStaff.shortInstrumentName = "С"
+sopStaffD = \new ChoirStaff \with {
+  systemStartDelimiter = #'SystemStartBrace
+  instrumentName = \soprano
+  shortInstrumentName = "С"
+} <<
   \new Staff <<
-    \set Staff.midiInstrument = "choir aahs"
     \clef treble
     \globalMusicD
     \topMarksD
-    \new Voice = VAA { \override MultiMeasureRest.expand-limit = 1 \sopranoIMusicD }
+    \new Voice = VAA { \sopranoIMusicD }
     \new Lyrics { \lyricsto "VAA" \sopranoILyricsD }
     \new Lyrics { \lyricsto "VAA" \sopranoITranslitD }
   >>
   \new Staff <<
-    \set Staff.midiInstrument = "choir aahs"
     \clef treble
     \globalMusicD
-    \new Voice = VAB { \override MultiMeasureRest.expand-limit = 1 \sopranoIIMusicD }
+    \new Voice = VAB { \sopranoIIMusicD }
     \new Lyrics { \lyricsto "VAB" \sopranoIILyricsD }
     \new Lyrics { \lyricsto "VAB" \sopranoIITranslitD }
   >>
 >> % ChoirStaff
 
-altStaffD = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } <<
-  \set ChoirStaff.instrumentName = \markup{ \center-align { "Альтъ" } }
-  \set ChoirStaff.shortInstrumentName = "А"
+altStaffD = \new ChoirStaff \with {
+  systemStartDelimiter = #'SystemStartBrace
+  instrumentName = \alto
+  shortInstrumentName = "А"
+} <<
   \new Staff <<
-    \set Staff.midiInstrument = "choir aahs"
     \clef treble
     \globalMusicD
-    \new Voice = VBA { \override MultiMeasureRest.expand-limit = 1 \altoIMusicD }
+    \new Voice = VBA { \altoIMusicD }
     \new Lyrics { \lyricsto "VBA" \altoILyricsD }
     \new Lyrics { \lyricsto "VBA" \altoITranslitD }
   >>
   \new Staff <<
-    \set Staff.midiInstrument = "choir aahs"
     \clef treble
     \globalMusicD
-    \new Voice = VBB { \override MultiMeasureRest.expand-limit = 1 \altoIIMusicD }
+    \new Voice = VBB { \altoIIMusicD }
     \new Lyrics { \lyricsto "VBB" \altoIILyricsD }
     \new Lyrics { \lyricsto "VBB" \altoIITranslitD }
   >>
 >> % ChoirStaff
 
-tenSoloStaffD = \context Staff = "tSoloStaffD" <<
-  \set Staff.instrumentName = \markup{\column {  \center-align { "Теноръ" \line{"соло"} } } }
-  %  \set Staff.shortInstrumentName = "a"
-  \set Staff.midiInstrument = "choir aahs"
+tenSoloStaffD = \new Staff \with {
+  instrumentName = \markup{\column {  \center-align { "Теноръ" \line{"соло"} } } }
+} <<
   \clef "G_8"
   \globalMusicD
-  \context Voice = VC { \override MultiMeasureRest.expand-limit = 1 \tenorSoloMusicD }
+  \context Voice = VC { \tenorSoloMusicD }
   \context Lyrics = lyricsTre \lyricsto "VC" { \tenorSoloLyricsD }
   \context Lyrics = lyricsTreX \lyricsto "VC" { \tenorSoloTranslitD }
 >> % Staff
 
-tenStaffD = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } <<
-  \set ChoirStaff.instrumentName = \markup{ \center-align { "Теноръ" } }
-  \set ChoirStaff.shortInstrumentName = "Т"
+tenStaffD = \new ChoirStaff \with {
+  systemStartDelimiter = #'SystemStartBrace
+  instrumentName = \tenor
+  shortInstrumentName = "Т"
+} <<
   \new Staff <<
-    \set Staff.midiInstrument = "choir aahs"
     \clef "G_8"
     \globalMusicD
-    \new Voice = VDA { \override MultiMeasureRest.expand-limit = 1 \tenorIMusicD }
+    \new Voice = VDA { \tenorIMusicD }
     \new Lyrics { \lyricsto "VDA" \tenorILyricsD }
     \new Lyrics { \lyricsto "VDA" \tenorITranslitD }
   >>
   \new Staff <<
-    \set Staff.midiInstrument = "choir aahs"
     \clef "G_8"
     \globalMusicD
-    \new Voice = VDB { \override MultiMeasureRest.expand-limit = 1 \tenorIIMusicD }
+    \new Voice = VDB { \tenorIIMusicD }
     \new Lyrics { \lyricsto "VDB" \tenorIILyricsD }
     \new Lyrics { \lyricsto "VDB" \tenorIITranslitD }
   >>
 >>
 
-basStaffD = \new ChoirStaff \with { systemStartDelimiter = #'SystemStartBrace } <<
-  \set ChoirStaff.instrumentName = \markup{ \center-align { "Басъ" } }
-  \set ChoirStaff.shortInstrumentName = "Б"
+basStaffD = \new ChoirStaff \with {
+  systemStartDelimiter = #'SystemStartBrace
+  instrumentName = \bass
+  shortInstrumentName = "Б"
+} <<
   \new Staff <<
-    \set Staff.midiInstrument = "choir aahs"
     \clef bass
     \globalMusicD
-    \new Voice = VEA { \override MultiMeasureRest.expand-limit = 1 \bassIMusicD }
+    \new Voice = VEA { \bassIMusicD }
     \new Lyrics { \lyricsto "VEA" \bassILyricsD }
     \new Lyrics { \lyricsto "VEA" \bassITranslitD }
   >>
   \new Staff <<
-    \set Staff.midiInstrument = "choir aahs"
     \clef bass
     \globalMusicD
-    \new Voice = VEB { \override MultiMeasureRest.expand-limit = 1 \bassIIMusicD }
+    \new Voice = VEB { \bassIIMusicD }
     \new Lyrics { \lyricsto "VEB" \bassIILyricsD }
     \new Lyrics { \lyricsto "VEB" \bassIITranslitD }
   >>
   \new Staff <<
-    \set Staff.midiInstrument = "choir aahs"
     \clef bass
     \globalMusicD
-    \new Voice = VEC { \override MultiMeasureRest.expand-limit = 1 \bassIIIMusicD }
+    \new Voice = VEC { \bassIIIMusicD }
     \new Lyrics { \lyricsto "VEC" \bassIIILyricsD }
     \new Lyrics { \lyricsto "VEC" \bassIIITranslitD }
   >>

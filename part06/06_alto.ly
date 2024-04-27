@@ -6,8 +6,7 @@
 %}
 
 altoMusicF = \relative f' {
-	\dynamicUp
-	% 0
+	% 0 Богородице Дево, 
 	f4\p f4 |
 	% 1
 	f4.--( e8) d4 f4 |

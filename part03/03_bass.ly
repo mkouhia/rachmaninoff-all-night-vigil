@@ -6,7 +6,6 @@
 %}
 
 bassMusicC = {
-  \dynamicUp
   \autoBeamOff
   % 1
 	R4*24

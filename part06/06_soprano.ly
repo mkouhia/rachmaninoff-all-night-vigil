@@ -1,12 +1,6 @@
 \version "2.22.0"
-%{
-      title = "Всенощное бдѣніе"
-      subtitle = "Nº 6 Богородице Дево, радуйся"
-      composer = "Сергей Рахманинов"
-%}
 
 sopranoMusicF = {
-	\dynamicUp
 	% 0
 	a'4\p a'4 |
 	% 1

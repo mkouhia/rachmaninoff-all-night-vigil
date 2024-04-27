@@ -109,10 +109,8 @@ topMarksC = {
   s4*8^\ritardando
 }
 
-sopStaffC = \context Staff = "sStaffC" <<
-  \set Staff.instrumentName = \markup{ \center-align { "Сопрано" } }
-%  \set Staff.shortInstrumentName = "S"
-  \set Staff.midiInstrument = "choir aahs"
+sopStaffC = \new Staff \with { instrumentName = \soprano }
+<<
   \clef treble
   \globalMusicC
   \topMarksC
@@ -122,10 +120,8 @@ sopStaffC = \context Staff = "sStaffC" <<
   \context Lyrics = lyricsUnoX \lyricsto "VA" { \sopranoTranslitC }
 >> % Staff
 
-altStaffC = \context Staff = "aStaffC" <<
-  \set Staff.instrumentName = \markup{ \center-align { "Альтъ" } }
-%  \set Staff.shortInstrumentName = "a"
-  \set Staff.midiInstrument = "choir aahs"
+altStaffC = \new Staff \with { instrumentName = \alto }
+<<
   \clef treble
   \globalMusicC
   \context Voice = VB { \override MultiMeasureRest.expand-limit = 1 \altoMusicC }
@@ -133,10 +129,8 @@ altStaffC = \context Staff = "aStaffC" <<
   \context Lyrics = lyricsDueX \lyricsto "VB" { \altoTranslitC }
 >> % Staff
 
-tenStaffC = \context Staff = "tStaffC" <<
-  \set Staff.instrumentName = \markup{ \center-align { "Теноръ" } }
-%  \set Staff.shortInstrumentName = "T"
-  \set Staff.midiInstrument = "choir aahs"
+tenStaffC = \new Staff \with { instrumentName = \tenor }
+<<
   \clef "G_8"
   \globalMusicC
   \context Voice = VC { \override MultiMeasureRest.expand-limit = 1 \tenorMusicC }
@@ -144,10 +138,8 @@ tenStaffC = \context Staff = "tStaffC" <<
   \context Lyrics = lyricsTreX \lyricsto "VC" { \tenorTranslitC }
 >> % Staff
 
-basStaffC = \new Staff = "bStaffC" <<
-  \set Staff.instrumentName = \markup{ \center-align { "Басъ" } }
-%  \set Staff.shortInstrumentName = "B"
-  \set Staff.midiInstrument = "choir aahs"
+basStaffC = \new Staff \with { instrumentName = \bass }
+<<
   \clef bass
   \globalMusicC
   \new Voice = VD { \override MultiMeasureRest.expand-limit = 1 \bassMusicC }
@@ -155,7 +147,7 @@ basStaffC = \new Staff = "bStaffC" <<
   \context Lyrics = lyricsQuaX \lyricsto "VD" { \bassTranslitC }
 >> % Staff
 
-choirStaffC = \new ChoirStaff = "choirA" <<
+choirStaffC = \new ChoirStaff <<
   \sopStaffC
   \altStaffC
   \tenStaffC

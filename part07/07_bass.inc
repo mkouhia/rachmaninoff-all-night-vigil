@@ -6,8 +6,7 @@
 %}
 
 bassIMusicG = {
-	\dynamicUp
-  % 1 0
+	  % 1 0
   R4*26 |
   % 2 10
   |
@@ -52,8 +51,7 @@ bassIMusicG = {
 }
 
 bassIIMusicG = {
-	\dynamicUp
-  % 1 0
+	  % 1 0
   R4*34 |
   % 2 10
   |

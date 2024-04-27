@@ -27,49 +27,41 @@ globalMusicA = {
   \skip 4*35 \bar "|."
 }
 
-sopStaffA = \context Staff = "sStaffA" <<
-  \set Staff.instrumentName = \markup{ \center-align { "Сопрано" } }
-%  \set Staff.shortInstrumentName = "S"
-  \set Staff.midiInstrument = "choir aahs"
+sopStaffA = \new Staff \with { instrumentName = \soprano }
+<<
   \clef treble
   \globalMusicA
-  \context Voice = VA { \override MultiMeasureRest.expand-limit = 1 \sopranoMusicA }
+  \context Voice = VA { \sopranoMusicA }
   \context Lyrics = lyricsUno \lyricsto "VA" { \satbLyricsA }
   \context Lyrics = lyricsUnoX \lyricsto "VA" { \satbTranslitA }
->> % Staff
+>>
 
-altStaffA = \context Staff = "aStaffA" <<
-  \set Staff.instrumentName = \markup{ \center-align { "Альтъ" } }
-%  \set Staff.shortInstrumentName = "a"
-  \set Staff.midiInstrument = "choir aahs"
+altStaffA = \new Staff \with { instrumentName = \alto }
+<<
   \clef treble
   \globalMusicA
-  \context Voice = VB { \override MultiMeasureRest.expand-limit = 1 \altoMusicA }
+  \context Voice = VB { \altoMusicA }
   \context Lyrics = lyricsDue \lyricsto "VB" { \satbLyricsA }
   \context Lyrics = lyricsDueX \lyricsto "VB" { \satbTranslitA }
->> % Staff
+>>
 
-tenStaffA = \context Staff = "tStaffA" <<
-  \set Staff.instrumentName = \markup{ \center-align { "Теноръ" } }
-%  \set Staff.shortInstrumentName = "T"
-  \set Staff.midiInstrument = "choir aahs"
+tenStaffA = \new Staff \with { instrumentName = \tenor }
+<<
   \clef "G_8"
   \globalMusicA
-  \context Voice = VC { \override MultiMeasureRest.expand-limit = 1 \tenorMusicA }
+  \context Voice = VC { \tenorMusicA }
   \context Lyrics = lyricsTre \lyricsto "VC" { \satbLyricsA }
   \context Lyrics = lyricsTreX \lyricsto "VC" { \satbTranslitA }
->> % Staff
+>>
 
-basStaffA = \new Staff = "bStaffA" <<
-  \set Staff.instrumentName = \markup{ \center-align { "Басъ" } }
-%  \set Staff.shortInstrumentName = "B"
-  \set Staff.midiInstrument = "choir aahs"
+basStaffA = \new Staff \with { instrumentName = \bass }
+<<
   \clef bass
   \globalMusicA
-  \new Voice = VD { \override MultiMeasureRest.expand-limit = 1 \bassMusicA }
+  \new Voice = VD { \bassMusicA }
   \context Lyrics = lyricsQua \lyricsto "VD" { \satbLyricsA }
   \context Lyrics = lyricsQuaX \lyricsto "VD" { \satbTranslitA }
->> % Staff
+>>
 
 choirStaffA = \new ChoirStaff = "choirA" <<
   \sopStaffA

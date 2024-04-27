@@ -46,8 +46,9 @@ lentamente = \markup {{\bold  "медленно"}}
 perdersi = \markup {{\bold "теряясь"}}
 short_edition = \markup {{\bold  "Облегченная редакция"}}
 
-% Con calma, facilmente, molto delicatamente
-con_calma_facilmente_molto_delicatamente = \markup { \bold "Покойно, легко, очень нежно" }
+%% Part 6
+% Andante, leggiero, molto dolce
+tempo_Покойно_легко_очень_нежно = \tempo "Покойно, легко, очень нежно"
 
 lunga_pausa = \markup { \column { \center-align {\bold "длинная" \line {\bold "пауза"} } } }
 
