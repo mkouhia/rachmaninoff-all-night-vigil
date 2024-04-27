@@ -7,10 +7,11 @@
 \header {
   title = "Nº 6 Богородице Дево, радуйся"
   composer = "Сергей Рахманинов"
-  copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
+  copyright = \markup {\small "© 2014 Брайан Майкл Эймс / 2024 М Коухиа " \with-url #"https://creativecommons.org/licenses/by-sa/4.0/" {\small "CC BY-SA 4.0"}}
+  tagline = ##f
 }
 
-\score { 
+\score {
   \choirStaffF
   \score_layout
 

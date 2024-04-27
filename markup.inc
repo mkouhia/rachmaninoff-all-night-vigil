@@ -1,6 +1,5 @@
 \version "2.22.0"
 humming = \markup {\bold +}
-nezhno = \markup { {\dynamic "pp"} "  очень нежно" }
 
 soprano = \markup{ \center-align { "Сопрано" } }
 alto = \markup{ \center-align { "Альтъ" } }
@@ -27,8 +26,6 @@ senza_sosta = \markup {\bold  "Прежний темп" }
 % Piuttosto lentamente ()
 piuttosto_lentamente_metà_del_movimento = \markup {{\bold  "Довольно медленно"} "(движение половинами)"}
 ritardando_leggermente = \markup {\bold  "немного задерживая"}
-% un po 'di evidenziazione
-evidenziando_un_po = \markup { \bold "немного выделяя" }
 molto_melodioso = \markup {\bold  "очень певуче" }
 ritardando = \markup {\bold  "задерживая"}
 
@@ -49,6 +46,11 @@ short_edition = \markup {{\bold  "Облегченная редакция"}}
 %% Part 6
 % Andante, leggiero, molto dolce
 tempo_Покойно_легко_очень_нежно = \tempo "Покойно, легко, очень нежно"
+
+% molto dolce
+dir_очень_нежно = \markup {\small \italic "очень нежно"}
+% poco marcato
+dir_немного_выделяя = \markup { \small \italic "немного выделяя" }
 
 lunga_pausa = \markup { \column { \center-align {\bold "длинная" \line {\bold "пауза"} } } }
 

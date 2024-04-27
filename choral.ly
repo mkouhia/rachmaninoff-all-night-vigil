@@ -27,6 +27,9 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 \include "part07/07_global.ly"
 \include "part08/08_global.ly"
 
+#(set-global-staff-size 18.0)
+#(set-default-paper-size "a4")
+
 \paper {
   print-all-headers = ##t
   tocTitleMarkup = \markup \huge \column {
@@ -91,6 +94,18 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 %  }
   \markup {\fill-line { \postscript "-20 0 moveto 40 0 rlineto stroke" } }
   \markuplist \table-of-contents
+  \pageBreak
+
+  \markup \small \column{
+    \combine \null \vspace #40
+    \fill-line { \null "Movements 1–7: first transcribed by" \null }
+    \fill-line { \null "© 2014 Брайан Майкл Эймс, used under Creative Commons Attribution-ShareAlike 4.0 license." \null }
+    \vspace #0.5
+    \fill-line { \null "Movement 6 edited by Mikko Kouhia" \null }
+    \vspace #1
+    \fill-line { \line{"This transcription © 2024 is lisenced under CC BY-SA 4.0."} }
+    \fill-line { \line{"To view a copy of this license, visit " \with-url #"https://creativecommons.org/licenses/by-sa/4.0/" {"https://creativecommons.org/licenses/by-sa/4.0/"}} }
+  }
   \pageBreak
 
   \bookpart {
@@ -162,9 +177,6 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 
   \bookpart {
     \tocItem \markup { Nº 6 Богородице Дево, радуйся }
-    \header {
-        copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
-    }
     \score {
       \header {
         title = "Nº 6 Богородице Дево, радуйся"

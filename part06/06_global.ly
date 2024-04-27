@@ -8,17 +8,17 @@
 
 globalMusicF = {
   \override Staff.TimeSignature.style = #'numbered
-	\time 4/4
-	\key f \major
+  \time 4/4
+  \key f \major
   \tempo_Покойно_легко_очень_нежно
-	\partial 2
-	\skip 2
-	\skip 1*18
-	\time 6/4 
-	\skip 1.*6
-	\time 4/4
-	\skip 1*3
-	\bar "|."
+  \partial 2
+  \skip 2
+  \skip 1*18
+  \time 6/4
+  \skip 1.*6
+  \time 4/4
+  \skip 1*3
+  \bar "|."
 }
 
 
