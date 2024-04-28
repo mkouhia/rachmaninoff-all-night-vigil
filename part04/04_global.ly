@@ -68,7 +68,7 @@ globalMusicD = {
   \set Score.measureLength = #(ly:make-moment 4/4)
   \skip 4*4 \bar "|"
   % 23
-  \skip 4*4 \bar "|" 
+  \skip 4*4 \bar "|"
   % 24
   \skip 4*4 \bar "|"% \break
   % 25
@@ -82,14 +82,14 @@ globalMusicD = {
   \set Score.measureLength = #(ly:make-moment 6/4)
   % TODO change to textMark in LilyPond >= 2.23
   \tweak self-alignment-X #LEFT
-    \mark \dirMoltoCantabile
+  \mark \dirMoltoCantabile
   \skip 4*6 \bar "|"% \break
   % 29
   \set Score.measureLength = #(ly:make-moment 5/4)
   \skip 4*5 \bar "|"
   % 30
   \set Score.measureLength = #(ly:make-moment 6/4)
-  \skip 4*6 \bar "|" 
+  \skip 4*6 \bar "|"
   % 31
   \set Score.measureLength = #(ly:make-moment 3/4)
   \skip 4*3 \bar "|"
@@ -152,23 +152,30 @@ tenSoloStaffD = \new Staff \with {
   % \context Lyrics = lyricsTre \lyricsto "VC" { \tenorSoloLyricsD }
 >> % Staff
 
-tenStaffD = \new Staff \with {
+tenStaffD = \new Lyrics = "tenorUpper" \with {
+  % lyrics above staff
+  \override VerticalAxisGroup.staff-affinity = #DOWN
+}
+\new Staff \with {
   instrumentName = \tenor
   shortInstrumentName = "Т"
+  \consists Merge_rests_engraver
 }
 <<
   \clef "G_8"
   \globalMusicD
-  % \new Voice = VDA { \tenorIMusicD }
-  % \new Lyrics { \lyricsto "VDA" \tenorILyricsD }
-  % \new Voice = VDB { \tenorIIMusicD }
-  % \new Lyrics { \lyricsto "VDB" \tenorIILyricsD }
+  \new NullVoice = VDC { s4*169 \tenorMusicDUpper }
+  \context Lyrics = "tenorUpper" {\lyricsto "VDC" \tenorLyricsDUpper}
+  \new Voice { \tenorMusicD }
+  \new Voice { \tenorIIMusicD }
+  \new NullVoice = VDD { \tenorLyricsDAligner}
+  \new Lyrics { \lyricsto "VDD" \tenorLyricsD }
 >>
 
 basStaffD = \new StaffGroup \with {
   \consists "Keep_alive_together_engraver"
   systemStartDelimiter = #'SystemStartSquare
-  }
+}
 <<
   \new Lyrics = "bassUpper" \with {
     % lyrics above staff

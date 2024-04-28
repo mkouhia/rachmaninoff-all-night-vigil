@@ -5,7 +5,7 @@ sopranoILyricsD = \lyricmode {
   Свя -- та -- го, бла -- жен -- на -- го,
   И -- и -- су -- се Хри -- сте!
   При -- шед -- ше на за -- пад солн -- ца, ви -- дев -- ше свет ве -- чер -- ний
-  Све -- те ти -- хий свя -- ты -- я сла -- вы 
+  Све -- те ти -- хий свя -- ты -- я сла -- вы
   До -- сто -- ин е -- си пет бы -- ти гла -- сы пре -- по -- доб -- ны -- ми,
   Сы -- не Бо -- жий, жи -- вот да -- яй;
   тем -- же мир Тя сла -- вит.
@@ -15,7 +15,7 @@ sopranoIILyricsD = \lyricmode {
   Све -- те ти -- хий Свя -- та -- го, бла -- жен -- на -- го,
   И -- и -- су -- се Хри -- сте!
   При -- шед -- ше на за -- пад солн -- ца, ви -- дев -- ше свет ве -- чер -- ний
-  Све -- те ти -- хий свя -- ты -- я сла -- вы 
+  Све -- те ти -- хий свя -- ты -- я сла -- вы
   До -- сто -- ин е -- си пет бы -- ти гла -- сы пре -- по -- доб -- ны -- ми,
   Сы -- не Бо -- жий, жи -- вот да -- яй;
   тем -- же мир Тя сла -- вит.
@@ -24,7 +24,7 @@ sopranoIILyricsD = \lyricmode {
 altoILyricsD = \lyricmode {
   При -- шед -- ше на за -- пад солн -- ца, ви -- дев -- ше свет ве -- чер -- ний
   Све -- те ти -- хий,
-  сла -- вы 
+  сла -- вы
   До -- сто -- ин е -- си во вся вре -- ме -- на пет бы -- ти гла -- сы пре -- по -- доб -- ны -- ми,
   Сы -- не Бо -- жий, жи -- вот да -- яй;
   тем -- же мир Тя сла -- вит.
@@ -35,7 +35,7 @@ altoIILyricsD = \lyricmode {
   И -- и -- су -- се Хри -- сте!
   При -- шед -- ше на за -- пад солн -- ца, ви -- дев -- ше свет ве -- чер -- ний
   Све -- те ти -- хий,
-  Све -- те ти -- хий свя -- ты -- я сла -- вы 
+  Све -- те ти -- хий свя -- ты -- я сла -- вы
   До -- сто -- ин е -- си во вся вре -- ме -- на пет бы -- ти гла -- сы пре -- по -- доб -- ны -- ми,
   Сы -- не Бо -- жий, жи -- вот да -- яй;
   тем -- же мир Тя сла -- вит.
@@ -45,7 +45,7 @@ tenorSoloLyricsD = \lyricmode {
   По -- ем От -- ца, Сы -- на и Свя -- та -- го Ду -- ха, Бо -- га.
 }
 
-tenorILyricsD = \lyricmode {
+tenorLyricsD = \lyricmode {
   Све -- те ти -- хий свя -- ты -- я сла -- вы без -- смерт -- на -- го
   От -- ца Не -- бес -- на -- го, Свя -- та -- го, бла -- жен -- на -- го,
   И -- и -- су -- се Хри -- сте!
@@ -55,17 +55,12 @@ tenorILyricsD = \lyricmode {
   До -- сто -- ин е -- си пет бы -- ти гла -- сы пре -- по -- доб -- ны -- ми,
   Сы -- не Бо -- жий, жи -- вот да -- яй;
   тем -- же мир Тя сла -- вит.
-  %  При -- шед -- ше на за -- пад солн -- ца, ви -- дев -- ше свет ве -- чер -- ний
 }
 
-tenorIILyricsD = \lyricmode {
-  Све -- те ти -- хий,
-  Све -- те ти -- хий,
-  Све -- те ти -- хий,
-  До -- сто -- ин е -- си пет бы -- ти гла -- сы пре -- по -- доб -- ны -- ми,
+tenorLyricsDUpper = \lyricmode {
   Сы -- не Бо -- жий, жи -- вот да -- яй;
-  тем -- же мир Тя сла -- вит.
 }
+
 
 % 11-12 voice 1
 bassILyricsD = \lyricmode {
@@ -85,7 +80,7 @@ bassIIILyricsD = \lyricmode {
   Све -- те ти -- хий,
 }
 
-% 26-27 voices 1&2 
+% 26-27 voices 1&2
 bassLyricsDUpper = \lyricmode {
   До -- сто -- ин е -- си во вся вре -- ме -- на
 }
@@ -104,7 +99,7 @@ sopranoITranslitD = \lyricmode {
   vi -- dev -- she svet ve -- cher -- ni,
   Sve -- te ti -- khi
   Svya -- ty -- ya sla -- vy
-  Do -- sto -- in ye -- si 
+  Do -- sto -- in ye -- si
   pet by -- ti gla -- sy pre -- po -- dob -- ny -- mi,
   Sy -- ne Bo -- zhi, zhi -- vot da -- yay:
   Tem -- zhe mir Tya sla -- vit.
@@ -136,7 +131,7 @@ sopranoIITranslitD = \lyricmode {
   vi -- dev -- she svet ve -- cher -- ni,
   Sve -- te ti -- khi
   Svya -- ty -- ya sla -- vy
-  Do -- sto -- in ye -- si 
+  Do -- sto -- in ye -- si
   pet by -- ti gla -- sy pre -- po -- dob -- ny -- mi,
   Sy -- ne Bo -- zhi, zhi -- vot da -- yay:
   Tem -- zhe mir Tya sla -- vit.
@@ -183,7 +178,7 @@ tenorITranslitD = \lyricmode {
   Sve -- te ti -- khi,
   Sve -- te ti -- khi,
   Sve -- te ti -- khi,
-  Do -- sto -- in ye -- si 
+  Do -- sto -- in ye -- si
   pet by -- ti gla -- sy pre -- po -- dob -- ny -- mi,
   Sy -- ne Bo -- zhi, zhi -- vot da -- yay:
   Tem -- zhe mir Tya sla -- vit.
@@ -193,7 +188,7 @@ tenorIITranslitD = \lyricmode {
   Sve -- te ti -- khi,
   Sve -- te ti -- khi,
   Sve -- te ti -- khi,
-  Do -- sto -- in ye -- si 
+  Do -- sto -- in ye -- si
   pet by -- ti gla -- sy pre -- po -- dob -- ny -- mi,
   Sy -- ne Bo -- zhi, zhi -- vot da -- yay:
   Tem -- zhe mir Tya sla -- vit.
@@ -202,7 +197,7 @@ tenorIITranslitD = \lyricmode {
 bassITranslitD = \lyricmode {
   Sve -- te ti -- khi,
   Sve -- te ti -- khi,
-  Do -- sto -- in ye -- si 
+  Do -- sto -- in ye -- si
   pet by -- ti gla -- sy pre -- po -- dob -- ny -- mi,
   Tem -- zhe mir Tya sla -- vit.
 }
@@ -219,7 +214,7 @@ bassIIITranslitD = \lyricmode {
   Sve -- te ti -- khi,
   Sve -- te ti -- khi,
   Sve -- te ti -- khi,
-  Do -- sto -- in ye -- si 
+  Do -- sto -- in ye -- si
   pet by -- ti gla -- sy pre -- po -- dob -- ny -- mi,
   Tem -- zhe mir Tya sla -- vit.
 }
