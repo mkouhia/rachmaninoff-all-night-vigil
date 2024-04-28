@@ -140,17 +140,16 @@ altStaffD = \new Staff \with {
 >>
 
 tenSoloStaffD = \new Staff \with {
-  instrumentName = \markup{\column {  \center-align { "Теноръ" \line{"соло"} } } }
-  shortInstrumentName = \markup{\column {  \center-align { "Т" \line{"соло"} } } }
+  shortInstrumentName = \markup{\column {  \center-align { \line{\super "*" "Т"} \line{"соло"} } } }
   \override VerticalAxisGroup.remove-empty = ##t
   \override VerticalAxisGroup.remove-first = ##t
 }
 <<
   \clef "G_8"
   \globalMusicD
-  % \context Voice = VC { \tenorSoloMusicD }
-  % \context Lyrics = lyricsTre \lyricsto "VC" { \tenorSoloLyricsD }
->> % Staff
+  \context Voice = VC { \tenorSoloMusicD }
+  \context Lyrics = lyricsTre \lyricsto "VC" { \tenorSoloLyricsD }
+>>
 
 tenStaffD = \new Lyrics = "tenorUpper" \with {
   % lyrics above staff
