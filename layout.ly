@@ -13,7 +13,4 @@ score_layout = \layout {
     \Staff
     \override Score.BarNumber.padding = #2
   }
-  \context {
-    \RemoveEmptyStaffContext
-  }
 }

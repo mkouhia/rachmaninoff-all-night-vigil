@@ -11,7 +11,7 @@ tenorSoloMusicD = {
   % 19
   \once \override Score.FootnoteItem.annotation-line = ##f
   \footnote "*" #'(-0.8 . +1.6) \markup {\super "*" " Может быть заменен первымн тенорамн"}
-  r4 dis'4\p^\molto_melodioso e'2\< ~ |
+  r4 dis'4\p^\dirMoltoCantabile e'2\< ~ |
   % 20
   e'4\> dis'4 cis'4(\< dis'4) |
   % 21

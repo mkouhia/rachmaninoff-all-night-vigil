@@ -67,11 +67,9 @@ tenorIILyricsD = \lyricmode {
   тем -- же мир Тя сла -- вит.
 }
 
+% 11-12 voice 1
 bassILyricsD = \lyricmode {
   Све -- те ти -- хий,
-  Све -- те ти -- хий,
-  До -- сто -- ин е -- си пет бы -- ти гла -- сы пре -- по -- доб -- ны -- ми,
-  тем -- же мир Тя сла -- вит.
 }
 
 bassIILyricsD = \lyricmode {
@@ -85,6 +83,14 @@ bassIIILyricsD = \lyricmode {
   Све -- те ти -- хий,
   Све -- те ти -- хий,
   Све -- те ти -- хий,
+}
+
+% 26-27 voices 1&2 
+bassLyricsDUpper = \lyricmode {
+  До -- сто -- ин е -- си во вся вре -- ме -- на
+}
+% 25-27 voice 2 + 28-> all voices
+bassLyricsDCommon= \lyricmode {
   До -- сто -- ин е -- си пет бы -- ти гла -- сы пре -- по -- доб -- ны -- ми,
   тем -- же мир Тя сла -- вит.
 }

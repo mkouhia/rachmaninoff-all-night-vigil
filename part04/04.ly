@@ -13,7 +13,7 @@
   title = "Nº 4 Свете тихий"
   subtitle = "(киевского распева)"
   composer = "Сергей Рахманинов"
-  copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
+  copyright = \markup {\small "© 2014 Брайан Майкл Эймс / 2024 М. И. Коухиа " \with-url #"https://creativecommons.org/licenses/by-sa/4.0/" {\small "CC BY-SA 4.0"}}
 }
 
 \score { 
