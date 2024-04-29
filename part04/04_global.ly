@@ -130,13 +130,18 @@ sopStaffD = \new Staff \with {
 altStaffD = \new Staff \with {
   instrumentName = \alto
   shortInstrumentName = "А"
-} <<
+  \consists Merge_rests_engraver
+  soloText = ""
+  soloIIText = ""
+  aDueText = ""
+}
+<<
   \clef treble
   \globalMusicD
-  % \new Voice = VBA { \altoIMusicD }
-  % \new Lyrics { \lyricsto "VBA" \altoILyricsD }
-  % \new Voice = VBB { \altoIIMusicD }
-  % \new Lyrics { \lyricsto "VBB" \altoIILyricsD }
+  \altoDynamicsD
+  \new Voice = VBA { \partCombine \altoIMusicD \altoIIMusicD }
+  \new NullVoice = VBB { \altoIIMusicD }
+  \new Lyrics { \lyricsto "VBB" \altoIILyricsD }
 >>
 
 tenSoloStaffD = \new Staff \with {

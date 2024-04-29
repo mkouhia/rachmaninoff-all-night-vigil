@@ -61,7 +61,11 @@ bassMusicDUpper = \relative c {
   R4*132
   % 25 Достоин еси во вся времена
   r1
-  r4\mf es4\< es2--\> d4\! d4 c4( d4 |
+  r4
+  % \once\override Hairpin #'minimum-length = #5
+  \once \override Hairpin #'bound-padding = #0.15
+  % \once \override DynamicText #'extra-offset = #'(-2.0 . 0)
+  es4\mf\< es2--\> d4\! d4 c4( d4 |
   es4)\< es4 es2\f\> d4\! d4 c4(\> d4)\!
 }
 
