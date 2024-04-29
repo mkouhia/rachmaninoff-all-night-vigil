@@ -1,6 +1,10 @@
 #(set-global-staff-size 18.0)
 #(set-default-paper-size "a4")
 
+\paper {
+  short-indent = 6\mm
+}
+
 
 score_layout = \layout {
   \context {
