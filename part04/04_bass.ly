@@ -31,6 +31,7 @@ bassIMusicD = \relative c {
   es1 |
   % 18
   es2 r2 |
+  R1*2 R1. R1*3 |
 }
 
 % 13-18 voice 2
@@ -53,6 +54,7 @@ bassIIMusicD = \relative c {
   es1 |
   % 18
   es2 r2 |
+  R1*2 R1. R1*3 |
 }
 % 26-27 upper bass voice on one staff
 bassMusicDUpper = \relative c {
@@ -62,9 +64,9 @@ bassMusicDUpper = \relative c {
   % 25 Достоин еси во вся времена
   r1
   r4
-  % \once\override Hairpin #'minimum-length = #5
+  \once \override DynamicText.extra-spacing-width = #'(+inf.0 . -inf.0)
+  \once \override DynamicText #'self-alignment-X = #1 
   \once \override Hairpin #'bound-padding = #0.15
-  % \once \override DynamicText #'extra-offset = #'(-2.0 . 0)
   es4\mf\< es2--\> d4\! d4 c4( d4 |
   es4)\< es4 es2\f\> d4\! d4 c4(\> d4)\!
 }
@@ -139,5 +141,6 @@ bassIIIMusicD = \relative c {
   bes2( ces4 des4) |
   % 18
   es2 r2 |
+  R1*2 R1. R1*3 |
 }
 

@@ -34,7 +34,7 @@ globalMusicD = {
   % 8
   \skip 4*6 \bar "|"
   % 9
-  \skip 4*6 \bar "|"% \break
+  \skip 4*6 \bar "|" \break
   % 10
   \skip 4*6 \bar "|"
   % 11
@@ -70,7 +70,7 @@ globalMusicD = {
   % 23
   \skip 4*4 \bar "|"
   % 24
-  \skip 4*4 \bar "|"% \break
+  \skip 4*4 \bar "|" \break
   % 25
   \skip 4*4 \bar "|"
   % 26
@@ -118,13 +118,16 @@ globalMusicD = {
 sopStaffD = \new Staff \with {
   instrumentName = \soprano
   shortInstrumentName = "С"
+  soloText = ""
+  soloIIText = ""
+  aDueText = ""
 } <<
   \clef treble
   \globalMusicD
-  % \new Voice = VAA { \sopranoIMusicD }
-  % \new Lyrics { \lyricsto "VAA" \sopranoILyricsD }
-  % \new Voice = VAB { \sopranoIIMusicD }
-  % \new Lyrics { \lyricsto "VAB" \sopranoIILyricsD }
+  \sopranoDynamicsD
+  \new Voice = VAA { \partCombine \sopranoIMusicD \sopranoIIMusicD }
+  \new NullVoice = VAB { \sopranoIIMusicD }
+  \new Lyrics { \lyricsto "VAB" \sopranoIILyricsD }
 >>
 
 altStaffD = \new Staff \with {

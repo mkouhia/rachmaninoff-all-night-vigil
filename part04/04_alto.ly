@@ -33,7 +33,7 @@ altoIMusicD = {
   % 20
   R4*18
   % 24
-  e'2( dis'2) |
+  e'2--( dis'2) |
   % 25
   cis'2( b2 |
   % 26
@@ -118,7 +118,7 @@ altoIIMusicD = {
   % 23
   e'2 dis'2 |
   % 24
-  cis'2( b2) |
+  cis'2--( b2) |
   % 25
   ais2( b2 |
   % 26
@@ -179,15 +179,13 @@ altoDynamicsD = {
   % 22-25
   s4 * 16 |
   % 26
-  s4)
-  % % make the hairpin longer:
-  % \once\override Hairpin #'minimum-length = #6
-  % % less space between \mp and hairpin:
+  s4
+  \once \override DynamicText.extra-spacing-width = #'(+inf.0 . -inf.0)
+  \once \override DynamicText #'self-alignment-X = #1
   \once \override Hairpin #'bound-padding = #0.25
-  % \once \override DynamicText #'extra-offset = #'(15.0 . 0.0)
   s4\mf\< s2\> s4\! s4 s4( s4 |
   % 27
-  s4)\< s4\! s2\f\> s4\! s4 s4(\> s4)\! |
+  s4)\< s4 s2\f\> s4\! s4 s4(\> s4)\! |
   % 28
   s2\p s2( s4) s4
   % 29
