@@ -1,18 +1,8 @@
 
 \version "2.22.0"
 
-sopranoILyricsD = \lyricmode {
+sopranoLyricsD = \lyricmode {
   Свя -- та -- го, бла -- жен -- на -- го,
-  И -- и -- су -- се Хри -- сте!
-  При -- шед -- ше на за -- пад солн -- ца, ви -- дев -- ше свет ве -- чер -- ний
-  Све -- те ти -- хий свя -- ты -- я сла -- вы
-  До -- сто -- ин е -- си пет бы -- ти гла -- сы пре -- по -- доб -- ны -- ми,
-  Сы -- не Бо -- жий, жи -- вот да -- яй;
-  тем -- же мир Тя сла -- вит.
-}
-
-sopranoIILyricsD = \lyricmode {
-  Све -- те ти -- хий Свя -- та -- го, бла -- жен -- на -- го,
   И -- и -- су -- се Хри -- сте!
   При -- шед -- ше на за -- пад солн -- ца, ви -- дев -- ше свет ве -- чер -- ний
   Све -- те ти -- хий свя -- ты -- я сла -- вы
@@ -100,50 +90,14 @@ bassLyricsDCommon= \lyricmode {
 }
 
 
-sopranoITranslitD = \lyricmode {
-  Svya -- ta -- go bla -- zhen -- na -- go,
-  I -- i -- su -- se Khri -- ste!
-  Pri -- shed -- she
-  na za -- pad soln -- tsa,
-  vi -- dev -- she svet ve -- cher -- ni,
-  Sve -- te ti -- khi
-  Svya -- ty -- ya sla -- vy
-  Do -- sto -- in ye -- si
-  pet by -- ti gla -- sy pre -- po -- dob -- ny -- mi,
-  Sy -- ne Bo -- zhi, zhi -- vot da -- yay:
-  Tem -- zhe mir Tya sla -- vit.
-}
-
-%{
-Sve -- te ti -- khi
-Svya -- ty -- ya sla -- vy bes -- smert -- na -- go,
-Ot -- sa ne -- bes -- na -- go,
-svya -- ta -- go bla -- zhen -- na -- go,
-I -- i -- su -- se Khri -- ste!
-Pri -- shed -- she
-na za -- pad soln -- tsa,
-vi -- dev -- she svet ve -- cher -- ni,
-
-Po -- yem ot -- sa, Sy -- na, i svya -- ta -- go Du -- kha, Bo -- ga,
-Do -- sto -- in ye -- si vo vsya vre -- me -- na
-pet by -- ti gla -- sy pre -- po -- dob -- ny -- mi,
-Sy -- ne Bo -- zhi, zhi -- vot da -- yay:
-Tem -- zhe mir Tya sla -- vit.
-
-%}
-sopranoIITranslitD = \lyricmode {
-  Sve -- te ti -- khi
-  Svya -- ta -- go bla -- zhen -- na -- go,
-  I -- i -- su -- se Khri -- ste!
-  Pri -- shed -- she
-  na za -- pad soln -- tsa,
-  vi -- dev -- she svet ve -- cher -- ni,
-  Sve -- te ti -- khi
-  Svya -- ty -- ya sla -- vy
-  Do -- sto -- in ye -- si
-  pet by -- ti gla -- sy pre -- po -- dob -- ny -- mi,
-  Sy -- ne Bo -- zhi, zhi -- vot da -- yay:
-  Tem -- zhe mir Tya sla -- vit.
+sopranoTranslitD = \lyricmode {
+  Свя -- та -- го, бла -- жен -- на -- го,
+  И -- и -- су -- се Хри -- сте!
+  При -- шед -- ше на за -- пад солн -- ца, ви -- дев -- ше свет ве -- чер -- ний
+  Све -- те ти -- хий свя -- ты -- я сла -- вы
+  До -- сто -- ин е -- си пет бы -- ти гла -- сы пре -- по -- доб -- ны -- ми,
+  Сы -- не Бо -- жий, жи -- вот да -- яй;
+  тем -- же мир Тя сла -- вит.
 }
 
 altoITranslitD = \lyricmode {

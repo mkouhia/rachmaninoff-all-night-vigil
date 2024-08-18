@@ -127,7 +127,8 @@ sopStaffD = \new Staff \with {
   \sopranoDynamicsD
   \new Voice = VAA { \partCombine \sopranoIMusicD \sopranoIIMusicD }
   \new NullVoice = VAB { \sopranoIIMusicD }
-  \new Lyrics { \lyricsto "VAB" \sopranoIILyricsD }
+  \new Lyrics { \lyricsto "VAB" \sopranoLyricsD }
+  \new Lyrics { \lyricsto "VAB" \sopranoTranslitD }
 >>
 
 altStaffD = \new Staff \with {
@@ -145,6 +146,7 @@ altStaffD = \new Staff \with {
   \new Voice = VBA { \partCombine \altoIMusicD \altoIIMusicD }
   \new NullVoice = VBB { \altoIIMusicD }
   \new Lyrics { \lyricsto "VBB" \altoIILyricsD }
+  \new Lyrics { \lyricsto "VBB" \altoIITranslitD }
 >>
 
 tenSoloStaffD = \new Staff \with {
@@ -157,6 +159,7 @@ tenSoloStaffD = \new Staff \with {
   \globalMusicD
   \context Voice = VC { \tenorSoloMusicD }
   \context Lyrics = lyricsTre \lyricsto "VC" { \tenorSoloLyricsD }
+  \context Lyrics = lyricsTreT \lyricsto "VC" { \tenorSoloTranslitD }
 >>
 
 tenStaffD = \new Lyrics = "tenorUpper" \with {
@@ -177,6 +180,7 @@ tenStaffD = \new Lyrics = "tenorUpper" \with {
   \new Voice { \tenorIIMusicD }
   \new NullVoice = VDD { \tenorLyricsDAligner}
   \new Lyrics { \lyricsto "VDD" \tenorLyricsD }
+  \new Lyrics { \lyricsto "VDD" \tenorLyricsD }
 >>
 
 basStaffD = \new StaffGroup \with {
@@ -185,6 +189,10 @@ basStaffD = \new StaffGroup \with {
 }
 <<
   \new Lyrics = "bassUpper" \with {
+    % lyrics above staff
+    \override VerticalAxisGroup.staff-affinity = #DOWN
+  }
+  \new Lyrics = "bassUpperTrans" \with {
     % lyrics above staff
     \override VerticalAxisGroup.staff-affinity = #DOWN
   }
@@ -199,7 +207,9 @@ basStaffD = \new StaffGroup \with {
     \globalMusicD
     \new Voice = VEA { \bassMusicDUpper }
     \context Lyrics = "bassUpper" {\lyricsto "VEA" \bassLyricsDUpper}
+    \context Lyrics = "bassUpper" {\lyricsto "VEA" \bassLyricsDUpper}
     \new Voice = VEB { \bassMusicDCommon }
+    \new Lyrics { \lyricsto "VEB" \bassLyricsDCommon }
     \new Lyrics { \lyricsto "VEB" \bassLyricsDCommon }
   >>
   \new Staff \with {
@@ -217,7 +227,9 @@ basStaffD = \new StaffGroup \with {
     \globalMusicD
     \new Voice = VEC { \bassIMusicD }
     \context Lyrics = "bassUpper" {\lyricsto "VEC" \bassILyricsD}
+    \context Lyrics = "bassUpperTrans" {\lyricsto "VEC" \bassILyricsD}
     \new Voice = VED { \bassIIMusicD }
+    \new Lyrics { \lyricsto "VED" \bassIILyricsD }
     \new Lyrics { \lyricsto "VED" \bassIILyricsD }
   >>
   \new Staff \with {
@@ -233,6 +245,7 @@ basStaffD = \new StaffGroup \with {
     \clef bass
     \globalMusicD
     \new Voice = VEF { \bassIIIMusicD }
+    \new Lyrics { \lyricsto "VEF" \bassIIILyricsD }
     \new Lyrics { \lyricsto "VEF" \bassIIILyricsD }
   >>
 >>
