@@ -5,153 +5,142 @@
       composer = "Сергей Рахманинов"
 %}
 
-bassIMusicD = {
-    % 1-10
-  R4*74
+joinStaves = \set Staff.keepAliveInterfaces = #'()
+splitStaves = \unset Staff.keepAliveInterfaces
+
+% 11-18 voice 1
+bassIMusicD = \relative c {
+  \voiceOne
+  \dynamicUp
+  % 1-10
+  s4*74
   % 11
-  aes4--( g4--) aes4--( g4--) |
+  as'4--\mf( g4--) as4--( g4--) |
   % 12
-  aes4--( g4--) aes4--( g4-- |
+  as4--( g4--) as4--( g4-- |
   % 13
-  aes1\p ~ |
+  as1\p ~ |
   % 14
-  aes2 ges4\> f4 |
+  as2 ges4\> f4 |
   % 15
   ges2.)\! r4 |
   % 16
-  ees2\pp ees2 |
+  % \partCombineApart
+  es2\pp es2 |
   % 17
-  ees1 |
+  es1 |
   % 18
-  ees2 r2 |
-  % 19-24
-  R4*26
-  % 25
-  r2 ees!2 |
-  % 26
-  bes2(\< aes2)\> g2(\! f2) |
-  % 27
-  bes2(\< aes2)\> g2(\! f2) |
-  % 28
-  ees1--\pp ~ ees4 ees8-. ees8-. |
-  % 29
-  ees2-- ees2 f8-. f8-. |
-  % 30
-  ees2-- f2-- g4( f4 |
-  % 31
-  ees2.) ~ |
-  % 32
-  ees1. ~ |
-  % 33
-  ees2 r2 |
-  % 34
-  R1\fermata
-  % 35
-  aes2\mf g4(\< f4) c2.\f\> d4\! |
-  % 36
-  d1--(\mf ~ d2\< f2)\> |
-  % 37
-  ees2.(\< g4\! f4\> ees4 d2\! |
-  % 38
-  c1)\pp\fermata |
+  es2 r2 |
+  R1*2 R1. R1*3 |
 }
 
-bassIIMusicD = {
-    % 1-12
-  R4*82
+% 13-18 voice 2
+bassIIMusicD = \relative c {
+  \voiceTwo
+  \dynamicDown
+  % 1-10
+  s4*74
+  % 11-12
+  R1*2
   % 13
-  ces4--( bes,4--) ces4--( bes,4--) |
+  ces4--( bes4--) ces4--( bes4--) |
   % 14
   ces2 ces2 ~ |
   % 15
   ces2. r4 |
   % 16
-  ees2\pp ees2 |
+  es2 es2 |
   % 17
-  ees1 |
+  es1 |
   % 18
-  ees2 r2 |
-  % 19-25
-  R4*30
-  % 26
-  r4 ees4\mf\< ees2--\> d4\! d4 c4( d4 |
-  % 27
-  ees4)\< ees4 ees2\f\> d4\! d4 c4(\> d4)\!
-  % 28
-  bes,1\pp ~ bes,4 bes,8-. bes,8-. |
-  % 29
-  bes,2-- bes,2 bes,8-. bes,8-. |
-  % 30
-  bes,2-- bes,2-- bes,2 ~ |
-  % 31
-  bes,2. ~ |
-  % 32
-  bes,4 r4 r2 r2 |
-  % 33
-  R1
-  % 34
-  R1\fermata
-  % 35
-  aes2\mf g4(\< f4) c2.\f\> d4\! |
-  % 36
-  d1--(\mf ~ d2\< f2)\> |
-  % 37
-  ees2.(\< g4\! f4\> ees4 d2\! |
-  % 38
-  g,1)\pp\fermata |
+  es2 r2 |
+  R1*2 R1. R1*3 |
+}
+% 26-27 upper bass voice on one staff
+bassMusicDUpper = \relative c {
+  \voiceOne
+  \dynamicUp
+  R4*132
+  % 25 Достоин еси во вся времена
+  r1
+  r4
+  \once \override DynamicText.extra-spacing-width = #'(+inf.0 . -inf.0)
+  \once \override DynamicText #'self-alignment-X = #1 
+  \once \override Hairpin #'bound-padding = #0.15
+  es4\mf\< es2--\> d4\! d4 c4( d4 |
+  es4)\< es4 es2\f\> d4\! d4 c4(\> d4)\!
 }
 
-bassIIIMusicD = {
-    % 1-9
+% 25-> all bass voices on one staff
+bassMusicDCommon = \relative c {
+  \voiceTwo
+  \dynamicDown
+  R4*132
+  % 25 Достоин еси во вся времена
+  r2 as2\p |
+  es2(\< as2)\> g2(\! f2) |
+  es2(\< as2)\> g2(\! f2) |
+  \dynamicNeutral
+  \stemUp
+  % 28 пет быти гласы преподобными
+  <es_~ bes'_~ es^~>1--\pp 4 <es bes' es>8-. \noBeam <es bes' es>8-. |
+  <es bes' es>2-- <es bes' es>2 <es bes' f'>8-. \noBeam <es bes' f'>8-. |
+  <es bes' es>2-- <es bes' f'>2--
+  \stemNeutral
+  <<
+    {
+      \voiceOne
+      g'4( f4 | es2.)~ | 1.~ | 2 r2
+      r1\fermata |
+      % 35 темже мир Тя славит
+      as2\mf g4(\< f4) c2.\f\> d4\! |
+      % 36
+      d1--(\mf ~ d2\< f2)\> |
+      % 37
+      es2.(\p\< g4\! f4\> es4 d2\! |
+      % 38
+      <g, c>1)\pp\fermata |
+    }
+    \new Voice {
+      \voiceTwo
+      <bes es,>2~ | 2. 4 r4 r2 r2 | r1
+      r1
+      % 35 темже мир Тя славит
+      as'2 g4( f4) c2. bes4\! |
+      % 36
+      f1--( g1) |
+      % 37
+      as\breve( |
+      % 38
+      c,1) |
+    }
+  >> \oneVoice
+  
+}
+
+
+
+bassIIIMusicD = \relative c {
+  % 1-9
   R4*68
   % 10
-  ees,1\p ees,2 |
+  es,1\p es2 |
   % 11
-  ees,1 ~ |
+  es1 ~ |
   % 12
-  ees,2 ees,2 ~ |
+  es2 es2 ~ |
   % 13
-  ees,1 |
+  es1 |
   % 14
-  ees,4--( d,4--) ees,4--( d,4--) |
+  es4--( d4--) es4--( d4--) |
   % 15
-  ees,4--( d,4--) ees,4--(\< f,4--)\> |
+  es4--( d4--) es4--(\< f4--)\> |
   % 16
-  ges,2\pp aes,2 |
+  ges2\pp as2 |
   % 17
-  bes,2( ces4 des4) |
+  bes2( ces4 des4) |
   % 18
-  ees2 r2 |
-  % 19-24
-  R4*26
-  % 25
-  r2 aes,2\p |
-  % 26
-  ees,2(\< aes,2)\> g,2(\! f,2) |
-  % 27
-  ees,2(\< aes,2)\> g,2(\! f,2) |
-  % 28
-  ees,1--\pp ~ ees,4 ees,8-. ees,8-. |
-  % 29
-  ees,2-- ees,2 ees,8-. ees,8-. |
-  % 30
-  ees,2-- ees,2-- ees,2 ~ |
-  % 31
-  ees,2. ~ |
-  % 32
-  ees,4 r4 r2 r2 |
-  % 33
-  R1
-  % 34
-  R1\fermata
-  % 35
-  aes2\mf g4(\< f4) c2.\f\> bes,4\! |
-  % 36
-  f,1--(\mf g,1) |
-  % 37
-  <<{aes,\breve(}{s1 s2\> s2\!}>> |
-  % 38
-  c,1)\pp\fermata |
- 
+  es2 r2 |
+  R1*2 R1. R1*3 |
 }
 

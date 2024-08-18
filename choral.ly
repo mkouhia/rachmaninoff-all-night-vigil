@@ -101,7 +101,7 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
     \fill-line { \null "Movements 1–7: first transcribed by" \null }
     \fill-line { \null "© 2014 Брайан Майкл Эймс, used under Creative Commons Attribution-ShareAlike 4.0 license." \null }
     \vspace #0.5
-    \fill-line { \null "Movement 6 edited by Mikko Kouhia" \null }
+    \fill-line { \null "Movements 4&6 edited by Mikko Kouhia" \null }
     \vspace #1
     \fill-line { \line{"This transcription © 2024 is lisenced under CC BY-SA 4.0."} }
     \fill-line { \line{"To view a copy of this license, visit " \with-url #"https://creativecommons.org/licenses/by-sa/4.0/" {"https://creativecommons.org/licenses/by-sa/4.0/"}} }
@@ -151,12 +151,12 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 
   \bookpart {
     \tocItem \markup { Nº 4 Свете тихий }
-    \header {
-        copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
-    }
     \score {
       \header {
         title = "Nº 4 Свете тихий"
+      }
+      \layout {
+        short-indent = 6\mm
       }
       \choirStaffD
     }

@@ -11,6 +11,7 @@ globalMusicD = {
   %  \override Score.BarNumber.break-visibility = #'#(#f #f #f)
   \key c \minor
   \override Staff.TimeSignature.transparent = ##t
+  \adagietto_allaBreve
   % 1
   \set Score.measureLength = #(ly:make-moment 10/4)
   \skip 4*10 \bar "|"
@@ -31,9 +32,9 @@ globalMusicD = {
   % 7
   \skip 4*6 \bar "|"
   % 8
-  \skip 4*6 \bar "|" \mark \default
+  \skip 4*6 \bar "|"
   % 9
-  \skip 4*6 \bar "|"% \break
+  \skip 4*6 \bar "|" \break
   % 10
   \skip 4*6 \bar "|"
   % 11
@@ -46,14 +47,17 @@ globalMusicD = {
   % 14
   \skip 4*4 \bar "|"
   % 15
-  \skip 4*4 \bar "|" \mark \default
+  \skip 4*4 \bar "|"
   % 16
   \skip 4*4 \bar "|"
   % 17
-  \skip 4*4 \bar "|"
+  \skip 4*2
+  \pocoRitenuto
+  \skip 4*2 \bar "|"
   % 18
   \skip 4*4 \bar "|"% \break
   % 19
+  \aTempo
   \skip 4*4 \bar "|"
   % 20
   \skip 4*4 \bar "|"
@@ -64,9 +68,9 @@ globalMusicD = {
   \set Score.measureLength = #(ly:make-moment 4/4)
   \skip 4*4 \bar "|"
   % 23
-  \skip 4*4 \bar "|" \mark \default
+  \skip 4*4 \bar "|"
   % 24
-  \skip 4*4 \bar "|"% \break
+  \skip 4*4 \bar "|" \break
   % 25
   \skip 4*4 \bar "|"
   % 26
@@ -76,13 +80,16 @@ globalMusicD = {
   \skip 4*8 \bar "|"
   % 28
   \set Score.measureLength = #(ly:make-moment 6/4)
+  % TODO change to textMark in LilyPond >= 2.23
+  \tweak self-alignment-X #LEFT
+  \mark \dirMoltoCantabile
   \skip 4*6 \bar "|"% \break
   % 29
   \set Score.measureLength = #(ly:make-moment 5/4)
   \skip 4*5 \bar "|"
   % 30
   \set Score.measureLength = #(ly:make-moment 6/4)
-  \skip 4*6 \bar "|" \mark \default
+  \skip 4*6 \bar "|"
   % 31
   \set Score.measureLength = #(ly:make-moment 3/4)
   \skip 4*3 \bar "|"
@@ -93,13 +100,14 @@ globalMusicD = {
   \set Score.measureLength = #(ly:make-moment 4/4)
   \skip 4*4 \bar "|"
   % 34
-  \skip 4*4 \bar "|" \mark \default
+  \skip 4*4 \bar "|"
   % 35
   \set Score.measureLength = #(ly:make-moment 8/4)
   \skip 4*8 \bar "|"
   % 36
   \skip 4*8 \bar "|"
   % 37
+  \ritenuto
   \skip 4*8 \bar "|"
   % 38
   \set Score.measureLength = #(ly:make-moment 4/4)
@@ -107,120 +115,138 @@ globalMusicD = {
 }
 
 
-topMarksD = {
-  s4*100^\piuttosto_lentamente_metà_del_movimento
-  s4*6^\ritardando_leggermente
-  s4*46^\senza_sosta
-  s4*50^\molto_melodioso
-  s4*12^\ritardando
-  %  s4*155^\markup {\bold  "С каждым разом звучнее, бодрее" }
-  %  s4*16^\markup {\bold  "Темп еще быстрее" }
-  %  s4*9^\markup {\bold  "очень ритмично" }
-  %  s4*15^\markup {\bold  "Прежний темп  легко мягко" }
-  %  s4*8^\markup {\bold  "задерживая"}
-  %  s4*15^\markup {\bold  "Прежний темп" }
-  %  s4*8^\markup {\bold  "задерживая"}
-}
-
-sopStaffD = \new ChoirStaff \with {
-  systemStartDelimiter = #'SystemStartBrace
+sopStaffD = \new Staff \with {
   instrumentName = \soprano
   shortInstrumentName = "С"
+  soloText = ""
+  soloIIText = ""
+  aDueText = ""
 } <<
-  \new Staff <<
-    \clef treble
-    \globalMusicD
-    \topMarksD
-    \new Voice = VAA { \sopranoIMusicD }
-    \new Lyrics { \lyricsto "VAA" \sopranoILyricsD }
-    \new Lyrics { \lyricsto "VAA" \sopranoITranslitD }
-  >>
-  \new Staff <<
-    \clef treble
-    \globalMusicD
-    \new Voice = VAB { \sopranoIIMusicD }
-    \new Lyrics { \lyricsto "VAB" \sopranoIILyricsD }
-    \new Lyrics { \lyricsto "VAB" \sopranoIITranslitD }
-  >>
->> % ChoirStaff
+  \clef treble
+  \globalMusicD
+  \sopranoDynamicsD
+  \new Voice = VAA { \partCombine \sopranoIMusicD \sopranoIIMusicD }
+  \new NullVoice = VAB { \sopranoIIMusicD }
+  \new Lyrics { \lyricsto "VAB" \sopranoLyricsD }
+  \new Lyrics { \lyricsto "VAB" \sopranoTranslitD }
+>>
 
-altStaffD = \new ChoirStaff \with {
-  systemStartDelimiter = #'SystemStartBrace
+altStaffD = \new Staff \with {
   instrumentName = \alto
   shortInstrumentName = "А"
-} <<
-  \new Staff <<
-    \clef treble
-    \globalMusicD
-    \new Voice = VBA { \altoIMusicD }
-    \new Lyrics { \lyricsto "VBA" \altoILyricsD }
-    \new Lyrics { \lyricsto "VBA" \altoITranslitD }
-  >>
-  \new Staff <<
-    \clef treble
-    \globalMusicD
-    \new Voice = VBB { \altoIIMusicD }
-    \new Lyrics { \lyricsto "VBB" \altoIILyricsD }
-    \new Lyrics { \lyricsto "VBB" \altoIITranslitD }
-  >>
->> % ChoirStaff
+  \consists Merge_rests_engraver
+  soloText = ""
+  soloIIText = ""
+  aDueText = ""
+}
+<<
+  \clef treble
+  \globalMusicD
+  \altoDynamicsD
+  \new Voice = VBA { \partCombine \altoIMusicD \altoIIMusicD }
+  \new NullVoice = VBB { \altoIIMusicD }
+  \new Lyrics { \lyricsto "VBB" \altoIILyricsD }
+  \new Lyrics { \lyricsto "VBB" \altoIITranslitD }
+>>
 
 tenSoloStaffD = \new Staff \with {
-  instrumentName = \markup{\column {  \center-align { "Теноръ" \line{"соло"} } } }
-} <<
+  shortInstrumentName = \markup{\column {  \center-align { \line{\super "*" "Т"} \line{"соло"} } } }
+  \override VerticalAxisGroup.remove-empty = ##t
+  \override VerticalAxisGroup.remove-first = ##t
+}
+<<
   \clef "G_8"
   \globalMusicD
   \context Voice = VC { \tenorSoloMusicD }
   \context Lyrics = lyricsTre \lyricsto "VC" { \tenorSoloLyricsD }
-  \context Lyrics = lyricsTreX \lyricsto "VC" { \tenorSoloTranslitD }
->> % Staff
-
-tenStaffD = \new ChoirStaff \with {
-  systemStartDelimiter = #'SystemStartBrace
-  instrumentName = \tenor
-  shortInstrumentName = "Т"
-} <<
-  \new Staff <<
-    \clef "G_8"
-    \globalMusicD
-    \new Voice = VDA { \tenorIMusicD }
-    \new Lyrics { \lyricsto "VDA" \tenorILyricsD }
-    \new Lyrics { \lyricsto "VDA" \tenorITranslitD }
-  >>
-  \new Staff <<
-    \clef "G_8"
-    \globalMusicD
-    \new Voice = VDB { \tenorIIMusicD }
-    \new Lyrics { \lyricsto "VDB" \tenorIILyricsD }
-    \new Lyrics { \lyricsto "VDB" \tenorIITranslitD }
-  >>
+  \context Lyrics = lyricsTreT \lyricsto "VC" { \tenorSoloTranslitD }
 >>
 
-basStaffD = \new ChoirStaff \with {
-  systemStartDelimiter = #'SystemStartBrace
-  instrumentName = \bass
-  shortInstrumentName = "Б"
-} <<
-  \new Staff <<
+tenStaffD = \new Lyrics = "tenorUpper" \with {
+  % lyrics above staff
+  \override VerticalAxisGroup.staff-affinity = #DOWN
+}
+\new Staff \with {
+  instrumentName = \tenor
+  shortInstrumentName = "Т"
+  \consists Merge_rests_engraver
+}
+<<
+  \clef "G_8"
+  \globalMusicD
+  \new NullVoice = VDC { s4*169 \tenorMusicDUpper }
+  \context Lyrics = "tenorUpper" {\lyricsto "VDC" \tenorLyricsDUpper}
+  \new Voice { \tenorMusicD }
+  \new Voice { \tenorIIMusicD }
+  \new NullVoice = VDD { \tenorLyricsDAligner}
+  \new Lyrics { \lyricsto "VDD" \tenorLyricsD }
+  \new Lyrics { \lyricsto "VDD" \tenorLyricsD }
+>>
+
+basStaffD = \new StaffGroup \with {
+  \consists "Keep_alive_together_engraver"
+  systemStartDelimiter = #'SystemStartSquare
+}
+<<
+  \new Lyrics = "bassUpper" \with {
+    % lyrics above staff
+    \override VerticalAxisGroup.staff-affinity = #DOWN
+  }
+  \new Lyrics = "bassUpperTrans" \with {
+    % lyrics above staff
+    \override VerticalAxisGroup.staff-affinity = #DOWN
+  }
+  \new Staff \with {
+    instrumentName = \bass
+    shortInstrumentName = "Б"
+    \override VerticalAxisGroup.remove-layer = 2
+    \consists Merge_rests_engraver
+  }
+  <<
     \clef bass
     \globalMusicD
-    \new Voice = VEA { \bassIMusicD }
-    \new Lyrics { \lyricsto "VEA" \bassILyricsD }
-    \new Lyrics { \lyricsto "VEA" \bassITranslitD }
+    \new Voice = VEA { \bassMusicDUpper }
+    \context Lyrics = "bassUpper" {\lyricsto "VEA" \bassLyricsDUpper}
+    \context Lyrics = "bassUpper" {\lyricsto "VEA" \bassLyricsDUpper}
+    \new Voice = VEB { \bassMusicDCommon }
+    \new Lyrics { \lyricsto "VEB" \bassLyricsDCommon }
+    \new Lyrics { \lyricsto "VEB" \bassLyricsDCommon }
   >>
-  \new Staff <<
+  \new Staff \with {
+    % instrumentName = \bass
+    shortInstrumentName = \markup \center-column {
+      "Б"
+      "I-II"
+    }
+    \override VerticalAxisGroup.remove-empty = ##t
+    \override VerticalAxisGroup.remove-first = ##t
+    \override VerticalAxisGroup.remove-layer = 1
+    \consists Merge_rests_engraver
+  } <<
     \clef bass
     \globalMusicD
-    \new Voice = VEB { \bassIIMusicD }
-    \new Lyrics { \lyricsto "VEB" \bassIILyricsD }
-    \new Lyrics { \lyricsto "VEB" \bassIITranslitD }
+    \new Voice = VEC { \bassIMusicD }
+    \context Lyrics = "bassUpper" {\lyricsto "VEC" \bassILyricsD}
+    \context Lyrics = "bassUpperTrans" {\lyricsto "VEC" \bassILyricsD}
+    \new Voice = VED { \bassIIMusicD }
+    \new Lyrics { \lyricsto "VED" \bassIILyricsD }
+    \new Lyrics { \lyricsto "VED" \bassIILyricsD }
   >>
-  \new Staff <<
+  \new Staff \with {
+    % instrumentName = \bass
+    shortInstrumentName = \markup \center-column {
+      "Б"
+      "III"
+    }
+    \override VerticalAxisGroup.remove-empty = ##t
+    \override VerticalAxisGroup.remove-first = ##t
+    \override VerticalAxisGroup.remove-layer = 1
+  } <<
     \clef bass
     \globalMusicD
-    \new Voice = VEC { \bassIIIMusicD }
-    \new Lyrics { \lyricsto "VEC" \bassIIILyricsD }
-    \new Lyrics { \lyricsto "VEC" \bassIIITranslitD }
+    \new Voice = VEF { \bassIIIMusicD }
+    \new Lyrics { \lyricsto "VEF" \bassIIILyricsD }
+    \new Lyrics { \lyricsto "VEF" \bassIIILyricsD }
   >>
 >>
 

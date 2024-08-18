@@ -24,9 +24,6 @@ senza_sosta_leggero_morbido = \markup {\bold  "Прежний темп  легк
 senza_sosta = \markup {\bold  "Прежний темп" }
 
 % Piuttosto lentamente ()
-piuttosto_lentamente_metà_del_movimento = \markup {{\bold  "Довольно медленно"} "(движение половинами)"}
-ritardando_leggermente = \markup {\bold  "немного задерживая"}
-molto_melodioso = \markup {\bold  "очень певуче" }
 ritardando = \markup {\bold  "задерживая"}
 
 non_presto = \markup {{\bold  "не скоро"} "(движение половинами)" }
@@ -43,7 +40,17 @@ lentamente = \markup {{\bold  "медленно"}}
 perdersi = \markup {{\bold "теряясь"}}
 short_edition = \markup {{\bold  "Облегченная редакция"}}
 
-%% Part 6
+%% All movements
+ritenuto = \tempo "задерживая"
+
+%% Movement 4
+adagietto_allaBreve = \tempo \markup {"Довольно медленно" \small \medium "(движение половинами)"}
+pocoRitenuto = \tempo "немного задерживая"
+aTempo = \tempo "прежний темп"
+dirMoltoCantabile = \markup {\small \italic  "очень певуче" }
+
+
+%% Movement 6
 % Andante, leggiero, molto dolce
 tempo_Покойно_легко_очень_нежно = \tempo "Покойно, легко, очень нежно"
 
@@ -59,8 +66,6 @@ lunga_pausa = \markup { \column { \center-align {\bold "длинная" \line {\
 
 % non presto
 tempo_не_скоро = \tempo "не скоро"
-% ritardando
-tempo_задерживая = \tempo "задерживая"
 
 % dolce, cantabile
 dir_мягко_певуче = \markup {\small "мягко, певуче"}

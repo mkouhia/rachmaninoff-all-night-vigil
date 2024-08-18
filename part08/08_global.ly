@@ -39,7 +39,7 @@ globalMusicH = {
   \skip 1*11
   <>^\dir_певуче
   \skip 1
-  \tempo_задерживая
+  \ritenuto
   \skip 1*2
   \bar "|."
 }
