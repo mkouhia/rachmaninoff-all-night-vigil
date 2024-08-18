@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.0"
 %{
       title = "Всенощное бдѣніе"
       subtitle = "Nº 4 Свете тихий"
@@ -65,8 +65,8 @@ bassMusicDUpper = \relative c {
   r1
   r4
   \once \override DynamicText.extra-spacing-width = #'(+inf.0 . -inf.0)
-  \once \override DynamicText #'self-alignment-X = #1 
-  \once \override Hairpin #'bound-padding = #0.15
+  \once \override DynamicText.self-alignment-X = #1 
+  \once \override Hairpin.bound-padding = #0.15
   es4\mf\< es2--\> d4\! d4 c4( d4 |
   es4)\< es4 es2\f\> d4\! d4 c4(\> d4)\!
 }

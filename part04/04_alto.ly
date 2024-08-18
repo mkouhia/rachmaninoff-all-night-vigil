@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.0"
 
 altoIMusicD = {
   % 1-7
@@ -163,7 +163,7 @@ altoDynamicsD = {
   % 9
   s2\mf s4
   % Does not work somehow?
-  % \once \override Score.FootnoteItem.annotation-line = ##f
+  % \once \override Score.Footnote.annotation-line = ##f
   \footnote "*" #'(-0.1 . 0) "" Staff.Hairpin % Note text in Soprano
   s4\> s4 s4\!
   % 10-18
@@ -181,8 +181,8 @@ altoDynamicsD = {
   % 26
   s4
   \once \override DynamicText.extra-spacing-width = #'(+inf.0 . -inf.0)
-  \once \override DynamicText #'self-alignment-X = #1
-  \once \override Hairpin #'bound-padding = #0.25
+  \once \override DynamicText.self-alignment-X = #1
+  \once \override Hairpin.bound-padding = #0.25
   s4\mf\< s2\> s4\! s4 s4( s4 |
   % 27
   s4)\< s4 s2\f\> s4\! s4 s4(\> s4)\! |

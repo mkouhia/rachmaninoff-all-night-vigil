@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.0"
 
 \include "04_soprano.ly"
 \include "04_alto.ly"

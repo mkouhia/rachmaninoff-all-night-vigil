@@ -1,10 +1,10 @@
-\version "2.22.0"
+\version "2.24.0"
 
 tenorSoloMusicD = {
   % 1-17
   R4*106
   % 19
-  \once \override Score.FootnoteItem.annotation-line = ##f
+  \once \override Score.Footnote.annotation-line = ##f
   \footnote " "  #'(1 . 1) \markup {\super "*" "Может быть заменен первымн тенорамн"}
   r4 dis'4\p^\dirMoltoCantabile e'2\< ~ |
   % 20

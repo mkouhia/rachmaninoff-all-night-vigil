@@ -1,11 +1,11 @@
-\version "2.22.0"
+\version "2.24.0"
 
 tenorSoloMusicE = {
   \autoBeamOff
   % 1
   R1 |
   % 2
-  \once \override Score.FootnoteItem.annotation-line = ##f
+  \once \override Score.Footnote.annotation-line = ##f
   % closed mouth
   \footnote "" #'(0 . -1) \markup {\super "1" "Зтот голос может быть заменен двумя тремя голосами в унисон первых теноров хора."}
   des'8\p des'8 des'8\< ees'8 f'2(\> |

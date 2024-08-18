@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.0"
 
 altoMusicF = \relative f' {
   % 0 Богородице Дево,

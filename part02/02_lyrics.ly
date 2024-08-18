@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.0"
 
 sopranoLyricsB = \lyricmode {
   А -- минь.

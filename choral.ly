@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.0"
 %\include "event-listener.ly"
 
 %tocItemNarrowWithDotsMarkup = \markup \hspace #10 \fill-with-pattern #1 #RIGHT .
@@ -62,7 +62,7 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
     \override DynamicLineSpanner.direction = #UP
   }
   \context {
-    \RemoveEmptyStaffContext
+    \Staff \RemoveEmptyStaves
   }
   two-sided = ##t
   inner-margin = 0.6\in

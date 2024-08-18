@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.0"
 
 lyricsStart = \lyricmode {
   Бо -- го -- ро -- ди -- це  Де -- во, ра -- дуй -- ся,

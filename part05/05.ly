@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.0"
 
 % * Ноты со энаком + исполнятся с эакрытым ртом.
 % The sign + indicates notes which are to be executed by humming with closed lips.

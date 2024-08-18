@@ -1,5 +1,5 @@
 
-\version "2.22.0"
+\version "2.24.0"
 
 sopranoLyricsD = \lyricmode {
   Свя -- та -- го, бла -- жен -- на -- го,

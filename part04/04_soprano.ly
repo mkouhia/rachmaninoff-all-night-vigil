@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.0"
 
 sopranoIMusicD = {
   \partCombineApart
@@ -169,7 +169,7 @@ sopranoDynamicsD = {
   s4 s4 s4 s4\< s4 s4\!
   % 9
   s2\mf s4
-  \once \override Score.FootnoteItem.annotation-line = ##f
+  \once \override Score.Footnote.annotation-line = ##f
   \footnote "*" #'(-0.1 . 0) \markup {\super "*" " Добавлено С. Рахманиновым в зкземпляре А. Кастальского"} Staff.Hairpin % Note text in Soprano
   s4\> s4 s4\!
   % 10

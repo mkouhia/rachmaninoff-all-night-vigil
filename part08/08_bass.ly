@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.0"
 
 bassMusicH = \relative c {
   \autoBeamOff
@@ -6,7 +6,7 @@ bassMusicH = \relative c {
     \markup { \musicglyph "scripts.upbow" }
   R1
   r2 r4 r8
-  \once \override Score.FootnoteItem.annotation-line = ##f
+  \once \override Score.Footnote.annotation-line = ##f
   \footnote "*" #'(-0.8 . 1.6) \markup {
     % The sound of the altos and basses to be of equal strength
     \super "*" "Звук альтов и басов дояжен быть павной силы."
