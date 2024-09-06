@@ -1071,7 +1071,7 @@
 #v(1fr)
 #text(style: "italic")[
   Suomenkieliset käännökset: Ortodoksinen hautauskirja (onl.fi) & Liturgiset tekstit (ortodoksi.net) & Pentekostarion (ecmr.fi) \
-  Koonnut ja translitteroinut Mikko Kouhia, v1.0 2024-09-04.
+  Koonnut ja translitteroinut Mikko Kouhia, v1.1 2024-09-06.
 ]
 
 /*
