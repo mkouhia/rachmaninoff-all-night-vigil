@@ -249,7 +249,7 @@
     темже мир Тя славит.
   ],
   [
-    ˈsvʲetʲe ˈtʲixʲij svʲaˈtɨja ˈslɑvɨ bʲɛzsˈmʲɛrtnago  \
+    ˈsvʲetʲe ˈtʲixʲij svʲaˈtɨja ˈslɑvɨ bʲɛzˈsmʲɛrtnago  \
     #h(1em) otˈtsɑ nʲeˈbʲɛsnago svʲaˈtɑgo blaˈʒɛnnago  \
     #h(1em) iiˈsusʲɛ xrʲiˈstʲɛ!  \
     prʲiˈʃɛdʃɛ nɑ ˈzɑpad ˈsontsa  \
@@ -346,7 +346,7 @@
   [
     ˈslɑva v ˈvɨʃnʲix ˈbogu  \
     i nɑ zʲɛmˈlʲi mʲir  \
-    v tʃɛloˈvʲɛtsɛx blagovoˈlʲenʲijɛ  \
+    f tʃɛloˈvʲɛtsɛx blagovoˈlʲenʲijɛ  \
     ˈgospodʲi ustˈnʲɛ moˈi otˈvʲɛrzʲɛʃɨ  \
     i usˈtɑ moˈja vozvʲɛsˈtʲat xvaˈlu tvoˈju
   ],
@@ -377,10 +377,10 @@
     ˈxvɑlʲitʲɛ raˈbʲi ˈgospoda alʲiˈluija  \
     blagosloˈvʲɛn gosˈpodʲ ot sʲiˈona  \
     ʒɨˈvɨj vo iɛrusaˈlʲimʲɛ alʲiˈluija  \
-    ispoˈvʲɛdajtʲesʲa ˈgospodʲevʲi ˈjako blax alʲiˈluija  \
+    ispoˈvʲɛdajtʲesʲa ˈgospodʲevʲi ˈjako blɑkʰ alʲiˈluija  \
     ˈjako v‿ˈvʲɛk ˈmʲilostʲ jɛˈgo alʲiˈluija  \
     \
-    ispoˈvʲɛdajtʲesʲa ˈbogu nʲɛˈbɛsnomu alʲiˈluija  \
+    ispoˈvʲɛdajtʲesʲa ˈbogu nʲeˈbʲɛsnomu alʲiˈluija  \
     ˈjako v ˈvʲɛk ˈmʲilostʲ jɛˈgo alʲiˈluija \
   ],
   [
@@ -608,7 +608,7 @@
     i svʲaˈtojɛ voskrʲeˈsʲenʲijɛ tvoˈjɛ \
     #h(1em) poˈjɛm  i ˈslɑvʲim  \
     tɨ bo jeˈsʲi ˈbox nɑʃ  \
-    ˈrɑzvʲɛ tʲeˈbʲɛː iˈnogo nʲɛ ˈznɑjɛm  \
+    ˈrɑzvʲɛ tʲeˈbʲɛ iˈnogo nʲɛ ˈznɑjɛm  \
     ˈimʲa tvoˈjɛ imʲɛˈnujɛm  \
 
     prʲiiˈdʲitʲɛ fsʲi ˈvʲɛrnʲii  \
@@ -702,12 +702,12 @@
 
     nʲizloˈʒɨ ˈsʲilʲnɨja so prʲɛˈstol  \
     i voznʲeˈsʲɛ smʲiˈrʲɛnnɨja  \
-    ˈɑltʃuʃʲːija isˈpolnʲi blɑx  \
+    ˈɑltʃuʃʲːija isˈpolnʲi blɑkʰ  \
     i bogaˈtʲaʃʲːijasʲa otpusˈtʲi tʃʲːi  \
 
     vosprʲiˈjat izˈrɑilʲa ˈotroka svojɛˈgo  \
     pomʲaˈnutʲi ˈmʲilostʲi  \
-    ˈjakoʒɛ glaˈgola ko otˈtʃem ˈnɑʃɨm  \
+    ˈjakoʒɛ glaˈgola ko otˈtsem ˈnɑʃɨm  \
     #h(1em) avraˈɑmu i ˈsʲemʲenʲi jɛˈgo \
     #h(1em) ˈdɑʒɛ do ˈvʲɛka
   ],
@@ -793,8 +793,8 @@
     Аз рех: Господи, помилуй мя,  \
     исцели душу мою,  \
     яко согреших Тебе.  \
-    Господи, К Тебе прибегох.  \
-    nautsi мя творити волю Твою,  \
+    Господи, к Тебе прибегох.  \
+    научи мя творити волю Твою,  \
     яко Ты еси Бог мой:  \
     яко у Тебе источник живота,  \
     во свете Твоем узрим свет.  \
@@ -817,13 +817,13 @@
   [
     ˈslɑva v ˈvɨʃnʲix ˈbogu  \
     i nɑ zʲɛmˈlʲi mir  \
-    v tʃɛloˈvʲɛtsɛx blagovoˈlʲenʲijɛ  \
+    f tʃɛloˈvʲɛtsɛx blagovoˈlʲenʲijɛ  \
     xvaˈlʲim tʲa blagosloˈvʲim tʲa  \
-    ˈklanʲajɛm tʲi sʲa slavoˈslovʲim tʲa  \
+    ˈklɑnʲajɛm tʲi sʲa slavoˈslovʲim tʲa  \
     blagodaˈrʲim tʲa vʲeˈlʲikʲija ˈrɑdʲi ˈslɑvɨ tvojeˈja  \
     \
 
-    ˈgospodʲi tsar'ju nʲeˈbʲɛsnɨj  \
+    ˈgospodʲi tsarˈju nʲeˈbʲɛsnɨj  \
     ˈboʒɛ otˈtʃɛ fsʲedʲɛrˈʒɨtʲelʲu  \
     ˈgospodʲi ˈsɨnʲɛ jedʲinoˈrodnɨj iiˈsusʲɛ xrʲisˈtʲɛ  \
     i svʲaˈtɨj duˈʃɛ  \
@@ -841,7 +841,7 @@
     i vosxvaˈlʲu ˈimʲa tvoˈjɛ  \
     vo ˈvʲekʲi i v vʲɛk ˈvʲɛka  \
     spoˈdobʲi ˈgospodʲi v dʲenʲ sʲej  \
-    bʲɛz grʲeˈxʲa soxraˈnʲitʲisʲa nɑm  \
+    bʲɛz grʲeˈxa soxraˈnʲitʲisʲa nɑm  \
     blagosloˈvʲɛn jeˈsʲi ˈgospodʲi ˈboʒɛ oˈtʲɛts ˈnɑʃɨx  \
     i ˈxvɑlʲno i prosˈlɑvlʲɛno ˈimʲa tvoˈjɛ  \
     vo ˈvʲekʲi aˈmʲinʲ  \
@@ -856,12 +856,12 @@
     #h(1em) nauˈtʃi mʲa opravˈdɑnʲijɛm tvoˈim  \
 
     ˈgospodʲi prʲiˈbʲɛʒɨʃʲːɛ bɨl jeˈsʲi nɑm v rod i rod  \
-    ɑz rʲɛx ˈgospodʲi pomʲiluj mʲa  \
+    ɑz rʲɛx ˈgospodʲi poˈmʲiluj mʲa  \
     istseˈlʲi ˈduʃu moˈju  \
     ˈjako sogrʲɛˈʃɨx tʲeˈbʲɛ  \
     ˈgospodʲi k tʲeˈbʲɛ prʲibʲɛˈgox  \
     nauˈtʃi mʲa tvoˈrʲitʲi ˈvolʲu tvoˈju  \
-    ˈjako tɨ jeˈsʲi bog moj  \
+    ˈjako tɨ jeˈsʲi box moj  \
     ˈjako u tʲeˈbʲɛ isˈtotʃnʲik ʒɨvoˈtɑ  \
     vo ˈsvʲetʲɛ tvoˈjɛm ˈuzrʲim svʲɛt  \
     proˈbɑvʲi ˈmʲilostʲ tvoˈju ˈvʲɛduʃʲːim tʲa  \
@@ -1154,8 +1154,11 @@ Kirkkoslaavia äännetään pitkälti siten kuin se on kirjoitettu.
 Kovien konsonanttien ж (ʒ), ш (ʃ) ja ц (ts) jälkeen tuleva и lausutaan taka-i:nä ы [ɨ], ja näiden konsonanttien jäljessä е-vokaalissa ei lausuta j-kirjainta ollenkaan (esim. же [ʒɛ]).
 
 Useilla konsonanteilla on soinnillinen ja soinniton vastinpari.
-Sanan lopussa (ja kovien konsonanttien edellä?)
+Sanan lopussa (ja soinnittomien s:ien edellä?)
 вс -> [fs]
+вш -> [fʃ]
+вч -> [ftʃ]
+вц -> [vts]
 
 
 Erotuksena nykyvenäjästä,
