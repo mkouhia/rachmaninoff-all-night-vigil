@@ -585,7 +585,7 @@
     Единому безгрешному. \
     Кресту Твоему покланяемся, Христе, \
     и святое воскресение Твое \
-    #h(1em) поем и славим: \
+    поем и славим: \
     Ты бо еси Бог наш,  \
     разве Тебе иного не знаем,  \
     Имя Твое именуем. \
@@ -594,7 +594,7 @@
     Поклонимся Святому \
     Христову воскресению:  \
     се бо приде крестом \
-    #h(1em) радость всему миру,  \
+    радость всему миру,  \
     всегда благословяще Господа. \
     поем воскресение Его:  \
     распятие бо претерпев, \
@@ -606,7 +606,7 @@
     jeˈdʲinomu bʲɛzˈgrʲɛʃnomu  \
     krʲɛˈstu tvojɛˈmu poklaˈnʲajemsʲa xrʲiˈstʲɛ  \
     i svʲaˈtojɛ voskrʲeˈsʲenʲijɛ tvoˈjɛ \
-    #h(1em) poˈjɛm  i ˈslɑvʲim  \
+    poˈjɛm  i ˈslɑvʲim  \
     tɨ bo jeˈsʲi ˈbox nɑʃ  \
     ˈrɑzvʲɛ tʲeˈbʲɛ iˈnogo nʲɛ ˈznɑjɛm  \
     ˈimʲa tvoˈjɛ imʲɛˈnujɛm  \
@@ -615,7 +615,7 @@
     pokloˈnʲimsʲa svʲaˈtomu \
     xrʲisˈtovu voskrʲeˈsʲenʲiju  \
     sʲɛ bo prʲiˈidʲɛ krʲɛˈstom \
-    #h(1em) ˈrɑdostʲ fsʲɛˈmu ˈmʲiru  \
+    ˈrɑdostʲ fsʲɛˈmu ˈmʲiru  \
     fsʲɛgˈdɑ blagosloˈvʲaʃʲːɛ ˈgospoda  \
     poˈjɛm  voskrʲeˈsʲenʲijɛ jɛˈgo  \
     raˈspʲatʲijɛ bo prʲetʲɛrˈpʲɛf  \
@@ -627,7 +627,7 @@
     ainoaa synnitöntä.  \
     Sinun ris­til­le­si me kumarramme, oi Kristus,  \
     ja sinun py­hää ylösnousemistasi \
-    #h(1em) veisuilla ylistämme.  \
+    veisuilla ylistämme.  \
     Sillä sinä olet meidän Jumalamme.  \
     Paitsi sinua emme toista tunne,  \
     Sinun nimeäsi avuk­si huudamme.  \
@@ -636,7 +636,7 @@
     kumartaen kunnioittakaamme \
     Kristuksen py­hää ylösnousemista,  \
     sillä katso, ristin kaut­ta tuli \
-    #h(1em) ilo kaikkeen maailmaan.  \
+    ilo kaikkeen maailmaan.  \
     Kiittäen ai­na Herraa  \
     me veisuilla ylistämme hänen ylösnousemistansa,  \
     sillä kärsittyänsä meidän edes­tämme ristin vaivat  \
@@ -652,96 +652,120 @@
     и возрадовася дух Мой \
     о Бозе Спасе Моем.
 
-    #h(1em) Честнейшую Херувим \
-    #h(2em) и славнейшую без сравнения Серафим,  \
-    #h(2em) без истления Бога Слова рождшую,  \
-    #h(2em) сущую Богородицу, \
-    #h(2em) Тя величаем.  \
+    #h(2em) Честнейшую Херувим \
+    #h(3em) и славнейшую без сравнения Серафим,  \
+    #h(3em) без истления Бога Слова рождшую,  \
+    #h(3em) сущую Богородицу, \
+    #h(3em) Тя величаем.  \
 
     Яко призре \
-    #h(1em) на смирение рабы Своея,  \
+    на смирение рабы Своея,  \
     Се бо от ныне \
-    #h(1em) ублажат Мя вси роди.
+    ублажат Мя вси роди.
+
+    #h(2em) #text(style: "italic")[Честнейшую Херувим ...]
 
     Яко сотвори Мне величие Сильный,  \
     и святоящи мся Его.  \
     и милость Его в роды родов  \
     боящимся Его.
 
+    #h(2em) #text(style: "italic")[Честнейшую Херувим ...]
+
     Низложи сильныя со престол  \
     и вознесе смиренныя  \
     алчущия исполни благ  \
     и богатящияся отпусти тщи.
+
+    #h(2em) #text(style: "italic")[Честнейшую Херувим ...]
 
     Восприят Израиля отрока Своего,  \
     помянути милости,  \
     Якоже глагола ко отцем нашим, \
     #h(1em) Аврааму и семени его, \
     #h(1em) даже до века.
+
+    #h(2em) #text(style: "italic")[Честнейшую Херувим ...]
   ],
   [
     vʲeˈlʲitʃit duˈʃɑ moˈja ˈgospoda  \
     i vozˈrɑdovasʲa dux moj \
     o ˈbozʲɛ ˈspɑsʲɛ moˈjɛm  \
 
-    #h(1em) tʃɛstˈnʲejʃuju xɛruˈvʲim  \
-    #h(2em) i slavˈnʲejʃuju bʲɛz sravˈnʲenʲija sʲɛraˈfʲim  \
-    #h(2em) bʲɛz istˈlʲenʲija ˈboga ˈslova ˈroʒdʃuju  \
-    #h(2em) ˈsuʃʲːuju bogoˈrodʲitsu \
-    #h(2em) tʲa vʲelʲiˈtʃɑjɛm  \
+    #h(2em) tʃɛstˈnʲejʃuju xɛruˈvʲim  \
+    #h(3em) i slavˈnʲejʃuju bʲɛz sravˈnʲenʲija sʲɛraˈfʲim  \
+    #h(3em) bʲɛz istˈlʲenʲija ˈboga ˈslova ˈroʒdʃuju  \
+    #h(3em) ˈsuʃʲːuju bogoˈrodʲitsu \
+    #h(3em) tʲa vʲelʲiˈtʃɑjɛm  \
 
     ˈjako prʲiˈzrʲɛ \
-    #h(1em) nɑ smʲiˈrʲenʲijɛ raˈbɨ svojeˈja  \
+    nɑ smʲiˈrʲenʲijɛ raˈbɨ svojeˈja  \
     sʲɛ bo otˈnɨnʲɛ \
-    #h(1em) ublaˈʒɑt mʲa fsʲi ˈrodʲi
+    ublaˈʒɑt mʲa fsʲi ˈrodʲi
+
+    #h(2em) #text(style: "italic")[ tʃɛstˈnʲejʃuju xɛruˈvʲim ...]
 
     ˈjako sotvoˈrʲi mnʲɛ vʲeˈlʲitʃijɛ ˈsʲilʲnɨj  \
     i ˈsvʲato ˈimʲa jɛˈgo  \
     i ˈmʲilostʲ jɛˈgo v ˈrodɨ roˈdof  \
     boˈjaʃʲːimsʲa jɛˈgo  \
 
+    #h(2em) #text(style: "italic")[ tʃɛstˈnʲejʃuju xɛruˈvʲim ...]
+
     nʲizloˈʒɨ ˈsʲilʲnɨja so prʲɛˈstol  \
     i voznʲeˈsʲɛ smʲiˈrʲɛnnɨja  \
     ˈɑltʃuʃʲːija isˈpolnʲi blɑkʰ  \
     i bogaˈtʲaʃʲːijasʲa otpusˈtʲi tʃʲːi  \
+
+    #h(2em) #text(style: "italic")[ tʃɛstˈnʲejʃuju xɛruˈvʲim ...]
 
     vosprʲiˈjat izˈrɑilʲa ˈotroka svojɛˈgo  \
     pomʲaˈnutʲi ˈmʲilostʲi  \
     ˈjakoʒɛ glaˈgola ko otˈtsem ˈnɑʃɨm  \
     #h(1em) avraˈɑmu i ˈsʲemʲenʲi jɛˈgo \
     #h(1em) ˈdɑʒɛ do ˈvʲɛka
+
+    #h(2em) #text(style: "italic")[ tʃɛstˈnʲejʃuju xɛruˈvʲim ...]
   ],
   [
     Minun sieluni suuresti ylistää Herraa,  \
     ja minun henkeni riemuitsee \
     Juma­lasta, Vapahtajastani.
 
-    #h(1em) Me ylistämme sinua, \
-    #h(2em) joka olet kerubeja kunnioitettavampi  \
-    #h(2em) ja serafeja ver­rattomasti jalompi,  \
-    #h(2em) sinua, puhdas Neit­syt, Sanan synnyttäjä,  \
-    #h(2em) sinua, totinen Juma­lan­synnyttäjä.  \
+    #h(2em) Me ylistämme sinua, \
+    #h(3em) joka olet kerubeja kunnioitettavampi  \
+    #h(3em) ja serafeja ver­rattomasti jalompi,  \
+    #h(3em) sinua, puhdas Neit­syt, Sanan synnyttäjä,  \
+    #h(3em) sinua, totinen Juma­lan­synnyttäjä.  \
 
     Sillä hän on katsonut \
-    #h(1em) palvelijattarensa alhaisuuteen.  \
+    palvelijattarensa alhaisuuteen.  \
     Katso, tästedes kaikki suku­polvet \
-    #h(1em) ylistävät minua autuaaksi.  \
+    ylistävät minua autuaaksi.  \
+
+    #h(2em) #text(style: "italic")[Me ylistämme sinua, ...]
 
     Sillä Voimallinen on tehnyt minulle suuria,  \
     ja hänen nimensä on pyhä,  \
     ja hänen lau­peu­tensa pysyy polvesta polveen  \
     niille, jotka häntä pelkäävät.  \
 
+    #h(2em) #text(style: "italic")[Me ylistämme sinua, ...]
+
     Hän on kukistanut valtiaat valtaistuimilta  \
     ja korottanut alhaiset.  \
     Nälkäiset hän on täyttänyt hyvyyksillä,  \
     ja rikkaat hän on lähet­tä­nyt tyhjinä pois.  \
+
+    #h(2em) #text(style: "italic")[Me ylistämme sinua, ...]
 
     Hän on ottanut huomaansa palvelijansa Is­raelin  \
     muistaaksensa laupeuttaan  \
     Abra­hamia ja hänen siementänsä kohtaan \
     #h(1em) iankaik­kisesti, \
     #h(1em) niin kuin hän on meidän isillemme puhunut.
+
+    #h(2em) #text(style: "italic")[Me ylistämme sinua, ...]
   ]
 )
 
