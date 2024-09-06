@@ -133,7 +133,7 @@
     ˈgospodʲi ˈboʒɛ moj \
     vozvʲeˈlʲitʃilsʲa jeˈsʲi zʲɛˈlo  \
     blagosloˈvʲɛn jeˈsʲi ˈgospodʲi  \
-    vo ispoˈvʲɛdanʲijɛ i v vʲelʲeˈlʲɛpotu obˈlʲɛklsʲa jeˈsʲi  \
+    vo ispoˈvʲɛdanʲijɛ i v‿vʲelʲeˈlʲɛpotu obˈlʲɛklsʲa jeˈsʲi  \
     blagosloˈvʲɛn jeˈsʲi ˈgospodʲi  \
     nɑ goˈrɑx ˈstɑnut ˈvodɨ  \
     ˈdʲivna dʲɛˈlɑ tvoˈja ˈgospodʲi  \
@@ -169,7 +169,7 @@
     и путь нечестивых погибнет.  \
     #h(2em) Аллилуйиа, Аллилуйиа, Аллилуйиа.  \
     Работайте Господеви со страхом,  \
-    и радуйтеся Ему стрепетом.  \
+    и радуйтеся Ему с трепетом.  \
     #h(2em) Аллилуйиа, Аллилуйиа, Аллилуйиа.  \
     Блажени вси надеющиися нань.  \
     #h(2em) Аллилуйиа, Аллилуйиа, Аллилуйиа.  \
@@ -192,7 +192,7 @@
     i ˈputʲ nʲetʃɛsˈtʲivɨx poˈgʲibnʲɛt  \
     #h(2em) alʲiˈluija alʲiˈluija alʲiˈluija  \
     raˈbotajtʲɛ ˈgospodʲevʲi so ˈstrɑxom  \
-    i ˈrɑdujtʲesʲa jɛˈmu s ˈtrʲepʲɛtom  \
+    i ˈrɑdujtʲesʲa jɛˈmu s‿ˈtrʲepʲɛtom  \
     #h(2em) alʲiˈluija alʲiˈluija alʲiˈluija  \
     blaˈʒenʲi fsʲi naˈdʲejuʃʲːiisʲa nanʲ  \
     #h(2em) alʲiˈluija alʲiˈluija alʲiˈluija  \
@@ -289,7 +289,7 @@
   ],
   [
     ˈnɨnʲɛ otpuˈʃʲːɑjɛʃɨ raˈbɑ tvojɛˈgo vlaˈdɨko  \
-    #h(1em) po glaˈgolu tvojɛˈmu s ˈmʲirom  \
+    #h(1em) po glaˈgolu tvojɛˈmu s‿ˈmʲirom  \
     ˈjako ˈvʲidʲɛsta ˈotʃi moˈi spaˈsʲenʲijɛ tvoˈjɛ  \
     ˈjɛʒɛ jeˈsʲi ugoˈtoval prʲɛd lʲiˈtsɛm fsʲɛx lʲuˈdʲej  \
     svʲɛt vo otkroˈvʲenʲijɛ jaˈzɨkof  \
@@ -316,8 +316,8 @@
   ],
   [
     bogoˈrodʲitse ˈdʲevo ˈrɑdujsʲa  \
-    blagoˈdɑtnaja maˈrʲijɛ gosˈpodʲ s toˈboju  \
-    blagosloˈvʲɛnna tɨ v ʒɛˈnɑx  \
+    blagoˈdɑtnaja maˈrʲijɛ gosˈpodʲ s‿toˈboju  \
+    blagosloˈvʲɛnna tɨ v‿ʒɛˈnɑx  \
     i blagosloˈvʲɛn plod ˈtʃrʲɛva tvojɛˈgo  \
     ˈjako ˈspɑsa rodʲiˈlɑ jeˈsʲi duʃ ˈnɑʃɨx
   ],
@@ -344,9 +344,9 @@
     и уста моя возвестят хвалу Твою.
   ],
   [
-    ˈslɑva v ˈvɨʃnʲix ˈbogu  \
+    ˈslɑva v‿ˈvɨʃnʲix ˈbogu  \
     i nɑ zʲɛmˈlʲi mʲir  \
-    f tʃɛloˈvʲɛtsɛx blagovoˈlʲenʲijɛ  \
+    f‿tʃɛloˈvʲɛtsɛx blagovoˈlʲenʲijɛ  \
     ˈgospodʲi ustˈnʲɛ moˈi otˈvʲɛrzʲɛʃɨ  \
     i usˈtɑ moˈja vozvʲɛsˈtʲat xvaˈlu tvoˈju
   ],
@@ -381,7 +381,7 @@
     ˈjako v‿ˈvʲɛk ˈmʲilostʲ jɛˈgo alʲiˈluija  \
     \
     ispoˈvʲɛdajtʲesʲa ˈbogu nʲeˈbʲɛsnomu alʲiˈluija  \
-    ˈjako v ˈvʲɛk ˈmʲilostʲ jɛˈgo alʲiˈluija \
+    ˈjako v‿ˈvʲɛk ˈmʲilostʲ jɛˈgo alʲiˈluija \
   ],
   [
     Kiittäkää Herran nimeä,  \
@@ -464,15 +464,15 @@
 
     ˈɑngelʲskij soˈbor udʲiˈvʲisʲa  \
     zrʲa tʲeˈbʲɛ \
-    #h(1em) v ˈmʲɛrtvɨx vmʲeˈnʲifʃasʲa  \
+    #h(1em) v‿ˈmʲɛrtvɨx vmʲeˈnʲifʃasʲa  \
     #h(1em) ˈsmʲɛrtnuju ʒɛ ˈspɑsʲɛ ˈkrʲɛpostʲ razoˈrʲifʃa  \
-    i s soˈboju aˈdɑma vozʲˈdvʲigʃa  \
+    i s‿soˈboju aˈdɑma vozʲˈdvʲigʃa  \
     i ot ˈɑda fsʲa svoˈboʒdʃa  \
 
     blagosloˈvʲɛn jeˈsʲi ˈgospodʲi  \
     nauˈtʃi mʲa opravˈdɑnʲijɛm tvoˈim  \
 
-    poˈtʃto ˈmʲira s mʲiˈlostʲivnɨmʲi slʲɛˈzɑmʲi  \
+    poˈtʃto ˈmʲira s‿mʲiˈlostʲivnɨmʲi slʲɛˈzɑmʲi  \
     o utʃeˈnʲitsɨ rastvoˈrʲaetʲɛ?  \
     blʲisˈtɑjajsʲa vo ˈgrobʲɛ ˈɑngɛl  \
     #h(1em) mʲiroˈnosʲitsam vʲɛˈʃʲːɑʃɛ  \
@@ -484,7 +484,7 @@
 
     ˈzʲɛlo ˈrɑno mʲironosʲitsɨ tʲɛˈtʃɑxu  \
     ko ˈgrobu tvojɛˈmu rɨˈdɑjuʃʲːija  \
-    no prʲɛˈdstɑ k nʲim ˈɑngɛl i ˈrʲɛtʃɛ  \
+    no prʲɛˈdstɑ k‿nʲim ˈɑngɛl i ˈrʲɛtʃɛ  \
     rɨˈdɑnʲija ˈvrʲemʲa prʲɛˈstɑ  \
     nʲɛ ˈplɑtʃitʲɛ  \
     voskrʲeˈsʲenʲijɛ ʒɛ aˈpostolom ˈrtsɨtʲɛ  \
@@ -492,24 +492,24 @@
     blagosloˈvʲɛn jeˈsʲi ˈgospodʲi  \
     nauˈtʃi mʲa opravˈdɑnʲijɛm tvoˈim  \
 
-    mʲiroˈnosʲitsɨ ˈʒɛnɨ s mʲirɨ prʲiˈʃɛdʃɨja  \
+    mʲiroˈnosʲitsɨ ˈʒɛnɨ s‿mʲirɨ prʲiˈʃɛdʃɨja  \
     #h(1em) ko ˈgrobu tvojɛˈmu ˈspɑsʲɛ rɨˈdɑxu  \
-    ˈɑngɛl ʒɛ k ˈnʲim ˈrʲɛtʃɛ ˈglɑgolʲa  \
-    tʃto s ˈmʲɛrtvɨmʲi ʒɨˈvɑgo pomɨʃˈlʲajetʲɛ?  \
+    ˈɑngɛl ʒɛ k‿nʲim ˈrʲɛtʃɛ ˈglɑgolʲa  \
+    tʃto s‿ˈmʲɛrtvɨmʲi ʒɨˈvɑgo pomɨʃˈlʲajetʲɛ?  \
     ˈjako box bo ˈvoskrʲesʲɛ ot ˈgroba  \
 
     ˈslɑva otˈtsu i ˈsɨnu i svʲaˈtomu ˈduxu  \
     pokloˈnʲimsʲa otˈtsu  \
     i jɛˈgo ˈsɨnovʲi i svʲaˈtomu ˈduxu  \
     ˈsvʲatʲej ˈtroitsɛ vo jeˈdʲinom suʃʲːɛstvʲɛ  \
-    s sʲɛraˈfʲimɨ zoˈvuʃʲːɛ  \
+    s‿sʲɛraˈfʲimɨ zoˈvuʃʲːɛ  \
     svʲat svʲat svʲat jeˈsʲi ˈgospodʲi  \
     i ˈnɨnʲɛ i ˈprʲisno i vo ˈvʲekʲi vʲɛˈkof aˈmʲinʲ  \
 
     ʒɨznoˈdɑftsa ˈroʒdʃɨ grʲɛˈxɑ ˈdʲevo  \
     #h(1em) aˈdɑma izˈbɑvʲila jeˈsʲi  \
-    ˈrɑdostʲ ʒɛ ˈjevʲɛ v pʲɛˈtʃɑlʲi ˈmʲɛsto podaˈlɑ jeˈsʲi  \
-    ˈpɑdʃɨja ʒɛ ot ˈʒɨznʲi k ˈsʲej naˈprɑvʲi  \
+    ˈrɑdostʲ ʒɛ ˈjevʲɛ v‿pʲɛˈtʃɑlʲi ˈmʲɛsto podaˈlɑ jeˈsʲi  \
+    ˈpɑdʃɨja ʒɛ ot ˈʒɨznʲi k‿sʲej naˈprɑvʲi  \
     #h(1em) iz tʲeˈbʲɛ voploˈtʲivɨjsʲa box i tʃɛloˈvʲɛk  \
     \
 
@@ -707,7 +707,7 @@
 
     ˈjako sotvoˈrʲi mnʲɛ vʲeˈlʲitʃijɛ ˈsʲilʲnɨj  \
     i ˈsvʲato ˈimʲa jɛˈgo  \
-    i ˈmʲilostʲ jɛˈgo v ˈrodɨ roˈdof  \
+    i ˈmʲilostʲ jɛˈgo v‿ˈrodɨ roˈdof  \
     boˈjaʃʲːimsʲa jɛˈgo  \
 
     #h(2em) #text(style: "italic")[ tʃɛstˈnʲejʃuju xɛruˈvʲim ...]
@@ -839,9 +839,9 @@
     #h(1em) Святый Безсмертный, помилуй нас.
   ],
   [
-    ˈslɑva v ˈvɨʃnʲix ˈbogu  \
+    ˈslɑva v‿ˈvɨʃnʲix ˈbogu  \
     i nɑ zʲɛmˈlʲi mir  \
-    f tʃɛloˈvʲɛtsɛx blagovoˈlʲenʲijɛ  \
+    f‿tʃɛloˈvʲɛtsɛx blagovoˈlʲenʲijɛ  \
     xvaˈlʲim tʲa blagosloˈvʲim tʲa  \
     ˈklɑnʲajɛm tʲi sʲa slavoˈslovʲim tʲa  \
     blagodaˈrʲim tʲa vʲeˈlʲikʲija ˈrɑdʲi ˈslɑvɨ tvojeˈja  \
@@ -863,8 +863,8 @@
 
     nɑ fsʲak dʲenʲ blagoslovˈlʲu tʲa  \
     i vosxvaˈlʲu ˈimʲa tvoˈjɛ  \
-    vo ˈvʲekʲi i v vʲɛk ˈvʲɛka  \
-    spoˈdobʲi ˈgospodʲi v dʲenʲ sʲej  \
+    vo ˈvʲekʲi i v‿vʲɛk ˈvʲɛka  \
+    spoˈdobʲi ˈgospodʲi v‿dʲenʲ sʲej  \
     bʲɛz grʲeˈxa soxraˈnʲitʲisʲa nɑm  \
     blagosloˈvʲɛn jeˈsʲi ˈgospodʲi ˈboʒɛ oˈtʲɛts ˈnɑʃɨx  \
     i ˈxvɑlʲno i prosˈlɑvlʲɛno ˈimʲa tvoˈjɛ  \
@@ -879,11 +879,11 @@
     blagosloˈvʲɛn jeˈsʲi ˈgospodʲi  \
     #h(1em) nauˈtʃi mʲa opravˈdɑnʲijɛm tvoˈim  \
 
-    ˈgospodʲi prʲiˈbʲɛʒɨʃʲːɛ bɨl jeˈsʲi nɑm v rod i rod  \
+    ˈgospodʲi prʲiˈbʲɛʒɨʃʲːɛ bɨl jeˈsʲi nɑm v‿rod i rod  \
     ɑz rʲɛx ˈgospodʲi poˈmʲiluj mʲa  \
     istseˈlʲi ˈduʃu moˈju  \
     ˈjako sogrʲɛˈʃɨx tʲeˈbʲɛ  \
-    ˈgospodʲi k tʲeˈbʲɛ prʲibʲɛˈgox  \
+    ˈgospodʲi k‿tʲeˈbʲɛ prʲibʲɛˈgox  \
     nauˈtʃi mʲa tvoˈrʲitʲi ˈvolʲu tvoˈju  \
     ˈjako tɨ jeˈsʲi box moj  \
     ˈjako u tʲeˈbʲɛ isˈtotʃnʲik ʒɨvoˈtɑ  \
