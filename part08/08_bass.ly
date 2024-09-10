@@ -14,7 +14,7 @@ bassMusicH = \relative c {
   bes'8 \f ^\dir_ярко_с_твербым_добрым_рутмом |
   % 3 (Хва)лите имя Господне.
 	c4 c c c8 bes8 |
-  c4( bes as8) as([ bes c] bes2) |
+  c4( bes as8) as([ bes c] bes2--) |
   % 5 Аллилуйиа.
   c4 des c2( |
   bes8[ c]) c([ bes]) as4. bes8 |

@@ -7,36 +7,54 @@
 
 globalMusicH = {
   \key as \major
+  \numericTimeSignature
   \time 4/4
   \tempo_не_скоро
   \skip 1*3
   %4
   \time 6/4
   \skip 4*6
+  \break
   % 5
   \time 4/4
   \skip 1*3
   % 8
   \time 6/4
   \skip 4*6
+  \break
   % 9
   \time 4/4
-  \skip 1*10
+  \skip 1*5
+  \break
+  \skip 1*3
+  \break
+  \skip 1*2
   <>^\dir_мягко_певуче
   \skip 1*2
+  \break
   \time 6/4
   % 21 - p 26 system 1
   <>^\dir_Прежний_характер
   \skip 4*6
   % 22
   \time 4/4
-  \skip 1*7
+  \skip 1*2
+  \break
+  \skip 1*4
+  \break
+  \skip 1
   % 30
   \time 6/4
   \skip 4*6
   % 31
   \time 4/4
-  \skip 1*11
+  \skip 1
+  \break
+  \skip 1*4
+  \break
+  \skip 1*4
+  \break
+  \skip 1*2
   <>^\dir_певуче
   \skip 1
   \ritenuto
@@ -76,8 +94,8 @@ altStaffH = \new Staff \with { instrumentName = \alto } <<
 tenStaffH = \new Staff \with { instrumentName = \tenor } <<
   \clef "G_8"
   \globalMusicH
-%  \context Voice = VC { \tenorMusicH }
-%  \context Lyrics = lyricsTre \lyricsto "VC" { \satbLyricsH }
+ \context Voice = VC { \tenorMusicH }
+ \context Lyrics = lyricsTre \lyricsto "VC" { \tenorLyricsH }
 %  \context Lyrics = lyricsTreX \lyricsto "VC" { \satbTranslitH }
 >> % Staff
 
