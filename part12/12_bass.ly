@@ -19,7 +19,7 @@ bassMusicXII = \relative c {
       \voiceThree
       s2*5 |
       s2*4 |
-      \once \override MultiMeasureRest.staff-position = #4
+%       \once \override MultiMeasureRest.staff-position = #4
       R1*9/2
     }
   >> \oneVoice
@@ -28,11 +28,12 @@ bassMusicXII = \relative c {
   <<
     \new Voice = "bIc" {
       \voiceOne
-      \once \override MultiMeasureRest.staff-position = #4
+      \override MultiMeasureRest.staff-position = #4
       R1*7/2 | R1*9/2 |
       \revert MultiMeasureRest.staff-position
-      \once \override Rest.staff-position = #2
-      r2 bes,4( c) des2-- c4 c c2-- c4 c bes c des!2-- c bes4( c) | des4 c des c c8([ bes]) as4 bes2 bes2 |
+      f2\rest
+      bes,4(^\dir_коротким_звуком
+      c) des2-- c4 c c2-- c4 c bes c des!2-- c bes4( c) | des4 c des c c8([ bes]) as4 bes2 bes2 |
     } \new Voice = "bIIb" {
       \voiceTwo
       f'2--( _\p g2)
@@ -47,13 +48,14 @@ bassMusicXII = \relative c {
     { \voiceOne es'1-- }
     \new Voice { \voiceTwo c2--( es,2) }
   >> \oneVoice
-  <as es'>4 \pp <bes es> <as es'> <es es'> <as es'>1-- es'4( \p \< d) c( d) (es d) c( bes) \!
-  as( bes) c1-> \ff \> c4( d es2) <d, a' d>2\fermata \p r2
+  <as es'>4 \pp <bes es> <as es'> <es es'> <as es'>1-- es'4( \p \< d) c( d) es( d) c( bes) \!
+  as( bes) c1-> \ff \> c4( d es2) <d, a' d>2\fermata \tweak DynamicText.X-offset -2 \p r2
 %   19
   R1*28/4
   <<
     \new Voice = "bIe" {
-      \voiceOne r1 r1. g'2 \pp
+      \voiceOne r1 r1. g'2
+      \tweak DynamicText.X-offset -2 \pp
 %       20
       c,2-- c c1--~ c1. c1--~
       c1 c1( \> f4) \pp r4 r2
@@ -103,18 +105,24 @@ bassMusicXII = \relative c {
     }
   >> \oneVoice
   \after 8 \> <es, es'>2--  4 \< 4 \! \after 8 \> 2-- 2~ \! 4 as4 \p as8([ \> bes]) ces4 \! es1 \breathe |
-  c!4 \mf c c \< d c \! bes!1 \ff \> c2 \! c <g d'>1 \p \fermata r2 |
+  c!4 \mf c c \< d c \! bes!1 \ff \> c2 \! c <g d'>1 \fermata \tweak DynamicText.X-offset -2 \p r1 |
 %   25
   R1*2*5
 %   30
   r1 r2 g4( \< c \!) | \after 2 \> \after 1 \! bes1.~( \f bes4 c)
 %   32
-  d4( \< c \! bes-- \> c) \! d( \< c) bes2~-> \ff \> | bes4 \! c g1~ \p 4 r4 |
+  d4( \< c \! bes-- \> c) \! d( \< c) \!
+  \once \override Hairpin.to-barline = ##f
+  bes2~-> \tweak DynamicText.X-offset -3 \ff \> | bes4 \! c g1~ \p 4 r4 |
 %   34
   <<
     \new Voice = "bIg" {
       \voiceOne
-      R1*2 | as'2-> \p g4 \pp g f g g g | f2 g4 g f2-- r2 |
+      R1*2 | as'2->
+      \tweak DynamicText.X-offset -1.5
+      \p g4
+      \tweak DynamicText.X-offset -2
+      \pp g f g g g | f2 g4 g f2-- r2 |
 %       37
       r2 \after 8 \> as2->(  g) \! g |
       \shape #'((0 . -3)(-1 . 0)(0 . 1)(0 . 0)) Slur
@@ -122,17 +130,21 @@ bassMusicXII = \relative c {
 %       40
       d2.) d8([ \< es])  f4( \> es) \! d2~ | d2. d8([ \< es]) | f2.-> \!  f8([ \< g]) \! \after 8 \> as2(-> g2) \! |
 %       43
-      f2->( \mf \> g1) \! | g1->( f4 \< g4) \! | \after 4 \> \after 4*3 \! as1->( g2) |
+      <>\tweak DynamicText.X-offset -4 \mf \after 8 \>
+      f2->( g1) \! | g1->( f4 \< g4) \! | \after 4 \> \after 4*3 \! as1->( g2) |
 %       46
       g1-- \p g2--( | 2) g1-- | f2( g) as |
 %       49
-      bes2-> \p c-> g-> | f-> g-> bes,-> | bes'->( c) g-> |
+      bes2-> \tweak DynamicText.X-offset -2 \p c-> g-> | f-> g-> bes,-> | bes'->( c) g-> |
 %       52
       f2-- g-- bes,-- | g'4 f f \< f f bes \! |
     }
     \new Voice = "bIIf" {
       \voiceTwo
-    as,2-- _\ppp c-- f,-- c'-- | bes( c g c | as--) c-- f,-- c'( _\< |
+    as,2--
+    \tweak DynamicText.parent-alignment-X #-1
+    \tweak DynamicText.self-alignment-X #1
+    _\ppp c-- f,-- c'-- | bes( c g c | as--) c-- f,-- c'( _\< |
 %     37
     bes1-> \p ) \> c2 \! 2 | g\breve~ | 1 g1~-> _\pp |
 %     40
@@ -142,16 +154,19 @@ bassMusicXII = \relative c {
 %     46
     <bes, bes'>1 2~ | 2 1 | 1 bes'2
 %     49
-    <es, bes'>2.-- _\p 2.-- | 2.-- 2.-- | 2.-- 2.-- |
+    <es, bes'>2.-- \tweak DynamicText.X-offset -2 _\p 2.-- | 2.-- 2.-- | 2.-- 2.-- |
 %     52
     <es bes'>1. | es'4 bes4 4 4 4 bes' |
     }
   >> \oneVoice
-  c4->( es, as8[ bes]) c4->( es, as) |
+  c2->( es,4 as8[ bes]) c2->( es,4 as) |
 %   55
-  bes2 \> c,2 \! bes1 \breathe R1 R1 R1 | r2 r4 f'4 |
+  bes2 \> \after 4 \! c,2 bes1 \breathe R1 R1 R1 | r2 r4 f'4 |
 %   60
-  g2-- \p <g g,>-- \> <c, g'>-- \pp | R1 R1
+  <<
+    { \voiceOne g2-- \p <g g,>-- <c, g'>--  \tweak DynamicText.X-offset -3 \pp }
+    \new Voice { \voiceTwo s2 s2 \> \after 4 \! s2 }
+  >> \oneVoice | R1 R1
   <<
     \new Voice = "bIi" {
       \voiceOne
@@ -159,7 +174,8 @@ bassMusicXII = \relative c {
 %       65
       g2-- \p g2-- \> g-- | g2-- \p g-- | g-- g-- | g-- g4-- f8([ \< g8]) |
 %       69
-      as2-> \f \> g4 \! f | g2--\p
+      <>\tweak DynamicText.X-offset -2.5 \f \after 8. \>
+      as2-> g4 \! f | g2--\p
     } \new Voice = "bIIj" {
       \voiceTwo
       R1 r2 r4 f4 |
@@ -199,7 +215,7 @@ bIcLyrics = \lyricmode {
 bdLyrics = \lyricmode {
   Ты е -- си е -- дин,
 
-  \repeat unfold 12 { \skip 1 }
+  \repeat unfold 13 { \skip 1 }
 
 %   20
   Бла -- го -- сло -- вен е -- си, Гос -- по -- ди, Бо -- же О -- тец на -- ших
@@ -230,15 +246,15 @@ bIgLyrics = \lyricmode {
   я -- ко у Те -- бе ис -- точ -- ник жи -- во -- та.
 }
 bIhLyrics = \lyricmode {
-  \repeat unfold 82 { \skip 1 }
+  \repeat unfold 83 { \skip 1 }
 %   60
-  ми -- луй нас,
+  ми -- луй нас.
 }
 bIiLyrics = \lyricmode {
  Без -- смерт -- ный, по -- ми -- луй нас.
  Свя -- тый Бо -- же, Свя -- тый Без -- смерт -- ный,
 }
 bIIjLyrics = \lyricmode {
- по -- ми -- луй нас.
+ …по -- ми -- луй нас.
  Свя -- тый Бо -- же, Свя -- тый Креп -- кий, Свя -- тый Без -- смерт -- ный,
 }

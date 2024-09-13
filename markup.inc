@@ -78,3 +78,7 @@ dir_певуче = \markup {\small "певуче"}
 
 % Bright, with a strong, solid rhthym
 dir_ярко_с_твербым_добрым_рутмом = \markup { \small "ярко, с твербым, добрым рутмом"}
+
+%% Movement 12
+
+dir_коротким_звуком = \markup { \italic "коротким звуком" }

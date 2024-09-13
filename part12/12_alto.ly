@@ -53,25 +53,32 @@ altoMusicXII = \relative c' {
     {
       \voiceOne
       as8--([ \p \< bes c bes]) as8--([ bes c bes]) as8--([ bes c bes]) as8--([ bes c bes])
-      as8--([ \! bes c bes]) g1-> \ff \> g1 a2\fermata \p r2 |
-%       19
-      r4 g4 \pp a2-- g4 f g d    g4 g2-- f4 g d
+      as8--([ \! bes c bes]) g1-> \ff \> g1 a2\fermata \tweak DynamicText.X-offset -2 \p
+    } \new Voice {
+      \voiceTwo
+      es2-- es-- es-- es--
+      es-- es1-> g1 fis2 \fermata
+    }
+  >> \oneVoice
+  r2 |
+%   19
+  <<
+    {
+      \voiceOne
+      b4\rest g4 \pp a2-- g4 f g d    g4 g2-- f4 g d
       g g g f g g8([ \< a!]) \!    bes4 \> bes \! bes a!8([ \< g]) a2--( \> g2)
-      d1~ _\p _\> d1. r2 \pp
+      d1~ _\p _\> d1. r2 \tweak DynamicText.X-offset -3  _\pp
 %       20
       R1. % bar number checks will fail here, no known reason
       R1 R1 R1
       R1 R1 r1 r2 f2 \pp
     } \new Voice {
       \voiceTwo
-      es2-- es-- es-- es--
-      es-- es1-> g1 fis2 \fermata r2 |
-%       19
-      s4*13 r1*1/4
-      s4*14
+      \once \override MultiMeasureRest.staff-position = #-9
+      R1*28/4
       s1 s1. d2
 %       20
-      c2-- f4 _\pp es f c f es f c
+      c2-- f4 \tweak DynamicText.X-offset -3  _\pp es f c f es f c
       es es8[( _\< f)] g4 \! f    g4--( _\> f8[ es] f4) \! es4
       f4 c f8([ es]) d4    es1 _\p _\>    c1~ _\pp c2 f2
 %       21
