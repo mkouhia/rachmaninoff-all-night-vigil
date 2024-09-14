@@ -200,7 +200,7 @@ bassMusicXII = \relative c {
   <c f,>2 <c, c'> <f as>4( g4) |
   as2 g4 \< g8([ as]) \! bes2-> \f c4 \> \after 8 \! as |
   <<
-    { \voiceOne g2-- <g, g'>2-- <c, c' g'>1 \tweak DynamicText.X-offset -2 \p \fermata }
+    { \voiceOne \stemNeutral g2-- <g, g'>2-- <c, c' g'>1 \tweak DynamicText.X-offset -2 \p \fermata }
     \new Voice { \voiceTwo s2 s2 \> s4. s8 \!  }
   >> \oneVoice
 }
@@ -232,15 +232,15 @@ bdLyrics = \lyricmode {
 bIeLyrics = \lyricmode { Спо -- до -- би, Гос -- по -- ди, }
 bIIfLyrics = \lyricmode {
 %   34
-  Гос -- по -- ди, при -- бе -- жи -- ще был е -- си нам.
-  Гос -- по -- ди,
+  Гос -- по -- ди, при -- бе -- жи -- ще был е -- си нам. __
+  Гос -- по -- ди, __
   Гос -- по -- ди,
   Ты е -- си Бог мой…
   я -- ко Ты е -- си Бог мой.
 }
 bIgLyrics = \lyricmode {
-  Гос -- по -- ди, при -- бе -- жи -- ще был е -- си нам в_род и род.
-  по -- ми -- луй, по -- ми -- луй мя,
+  Гос -- по -- ди, при -- бе -- жи -- ще был е -- си нам в_род и род. __
+  по -- ми -- луй, __ по -- ми -- луй мя, __
   \repeat unfold 8 { \skip 1 }
 %   49
   я -- ко у Те -- бе ис -- точ -- ник жи -- во -- та.

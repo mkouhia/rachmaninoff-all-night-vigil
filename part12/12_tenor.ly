@@ -146,9 +146,10 @@ tenorMusicXII = \relative c {
       <>\f \after 2 \> \after 1 \! <d f>1.--~( 4 <c es>4) |
 %       32
       <b d>4( \< <c es> \! <d f>-- \> <c es>) \! <b d>( \< <c es>) \!
-      \once \override Hairpin.to-barline = ##f
-      <d f>2->~(\tweak DynamicText.X-offset -3 \ff \> |
+      \override Hairpin.to-barline = ##f
+      <>\tweak DynamicText.X-offset -2 \ff \after 8 \> <d f>2->~( |
 %       33
+      \revert Hairpin.to-barline
       4 \! <c es> <b d>1~ \p 4)
     }
     \new Voice {
@@ -227,7 +228,7 @@ tenorMusicXII = \relative c {
     \new Voice = "tXIIj"{
       \voiceOne
       es'4  f f \< f f g \! |
-      as2->( \ff g4 f8[ g]) as2->( g4 f8[ es]) |
+      as2->(  \tweak DynamicText.X-offset -2.5 \ff g4 f8[ g]) as2->( g4 f8[ es]) |
 %       55
       f2 \> \after 4 \! es d1 \breathe
     }
@@ -264,7 +265,8 @@ tenorMusicXII = \relative c {
   <c es>4-- 4 <b d>-- <a c>8([ <b d>]) |
   <c es>8--([ <b d>]) <c es>4 <b d>4( \< \after 8 \! <c es>4) |
 %   69
-  <d f>2-- \f \> <c es>4 \!
+  <> \tweak DynamicText.X-offset -2.5 \f  \after 8. \>
+  <d f>2-- <c es>4 \!
   <c d> | <c es>2-- \p <b d>2-- \>
   <<
     {
@@ -326,7 +328,7 @@ tXIIaLyrics = \lyricmode {
   со -- хра -- ни -- ти -- ся нам,
   в_день сей со -- хра -- ни -- ти -- ся нам.
 %   27
-  ис -- це -- ли ду -- шу мо -- ю,
+  ис -- це -- ли __ ду -- шу мо -- ю, __
 %   43
   на -- у -- чи мя тво -- ри -- ти во -- лю Тво -- ю,
   я -- ко Ты е -- си Бог мой:
@@ -360,7 +362,7 @@ tXIIeLyrics = \lyricmode {
 }
 tXIIfLyrics = \lyricmode {
 %   30
-  к_Те -- бе при -- бе -- гох.
+  к_Те -- бе __ при -- бе -- гох. __
 }
 tXIIgLyrics = \lyricmode {
 %   39 upper
@@ -369,8 +371,8 @@ tXIIgLyrics = \lyricmode {
 }
 tXIIhLyrics = \lyricmode {
 %   34
-  Гос -- по -- ди, при -- бе -- жи -- ще е -- си нам.
-  по -- ми -- луй, ис -- це -- ли,
+  Гос -- по -- ди, при -- бе -- жи -- ще __ е -- си нам. __
+  по -- ми -- луй, __ ис -- це -- ли, __
 }
 tXIIiLyrics = \lyricmode {
 %   49
@@ -383,7 +385,7 @@ tXIIjLyrics = \lyricmode {
 tXIIkLyrics = \lyricmode {
 %   56
   \repeat unfold 112 { \skip 1 }
-  Свя -- тый Без -- смерт -- ный, по -- ""
+  Свя -- тый __ Без -- смерт -- ный, по -- ""
 }
 tXIIlLyrics = \lyricmode {
 %   73

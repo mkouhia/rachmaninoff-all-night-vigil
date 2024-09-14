@@ -207,7 +207,10 @@ sopStaffXII = \new Staff \with {
 %  \context Lyrics = lyricsUnoX \lyricsto "VA" { \satbTranslitXII }
 >> % Staff
 
-altStaffXII = \new Staff \with { instrumentName = \alto } <<
+altStaffXII = \new Lyrics = "altoUpper" \with {
+  \override VerticalAxisGroup.staff-affinity = #DOWN
+}
+\new Staff \with { instrumentName = \alto } <<
   \clef treble
   {
     \globalMusicXIIa
@@ -215,8 +218,17 @@ altStaffXII = \new Staff \with { instrumentName = \alto } <<
     \globalMusicXIIbA
     \globalMusicXIIc
   }
- \context Voice = VB { \altoMusicXII }
- \context Lyrics = lyricsDue \lyricsto "VB" { \altoLyricsXII }
+  \context Voice = altoCommonXII { \altoMusicXII }
+  \context Lyrics = lyricsDue \lyricsto "altoCommonXII" { \altoLyricsXII }
+  \context Lyrics = "altoUpper" {\lyricsto "aXIIb" \aXIIbLyrics }
+  \context Lyrics = "altoCommonXII" {\lyricsto "aXIIc" \aXIIcLyrics }
+  \context Lyrics = "altoCommonXII" {\lyricsto "aXIId" \aXIIdLyrics }
+  \context Lyrics = "altoUpper" {\lyricsto "aXIIe" \aXIIeLyrics }
+  \context Lyrics = "altoCommonXII" {\lyricsto "aXIIf" \aXIIfLyrics }
+  \new Lyrics \with {
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
+  }  {\lyricsto "aXIIg" \aXIIgLyrics }
 %  \context Lyrics = lyricsDueX \lyricsto "VB" { \satbTranslitXII }
 >> % Staff
 
