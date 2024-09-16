@@ -261,16 +261,17 @@ altStaffXII = \new Lyrics = "altoUpper" \with {
     \globalMusicXIIc
   }
   \context Voice = altoCommonXII { \altoMusicXII }
-  \context Lyrics = lyricsDue \lyricsto "altoCommonXII" { \altoLyricsXII }
-  \context Lyrics = "altoUpper" {\lyricsto "aXIIb" \aXIIbLyrics }
-  \context Lyrics = "altoCommonXII" {\lyricsto "aXIIc" \aXIIcLyrics }
-  \context Lyrics = "altoCommonXII" {\lyricsto "aXIId" \aXIIdLyrics }
-  \context Lyrics = "altoUpper" {\lyricsto "aXIIe" \aXIIeLyrics }
-  \context Lyrics = "altoCommonXII" {\lyricsto "aXIIf" \aXIIfLyrics }
+  \new NullVoice = altoXIIBelow { \aXIILyricsAligner}
+  \new Lyrics { \lyricsto "altoXIIBelow" \altoLyricsXII }
+  \context Lyrics = "altoUpper" {\lyricsto "aXIIdAbove" \aXIIdAboveLyrics }
+%   \context Lyrics = "altoCommonXII" {\lyricsto "aXIIc" \aXIIcLyrics }
+%   \context Lyrics = "altoCommonXII" {\lyricsto "aXIId" \aXIIdLyrics }
+  \context Lyrics = "altoUpper" {\lyricsto "aXIIhAbove" \aXIIhAboveLyrics }
+%   \context Lyrics = "altoCommonXII" {\lyricsto "aXIIf" \aXIIfLyrics }
   \new Lyrics \with {
     \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
     \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
-  }  {\lyricsto "aXIIg" \aXIIgLyrics }
+  }  {\lyricsto "altoXIIBelow" \atXIILyrics }
 %  \context Lyrics = lyricsDueX \lyricsto "VB" { \satbTranslitXII }
 >> % Staff
 
