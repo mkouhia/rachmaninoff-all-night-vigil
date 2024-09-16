@@ -4,6 +4,8 @@
 \include "../layout.ly"
 \include "12_global.ly"
 
+% #(set-global-staff-size 16)
+
 \header {
   title = "12. Славословие великое"
 %   composer = "Сергей Рахманинов"
@@ -28,10 +30,16 @@
       \remove "Time_signature_engraver"
       breathMarkType = #'upbow
     }
+    \context {
+      \Lyrics
+%       \override LyricSpace.minimum-distance = #2.0
+%       \override LyricExtender.minimum-length = #6.0
+    }
   }
 %    \score_layout
 
   \midi {
+    \enablePolymeter
     \context {
       \Score
       tempoWholesPerMinute = #(ly:make-moment 92/4)

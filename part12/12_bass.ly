@@ -48,7 +48,7 @@ bassMusicXII = \relative c {
     { \voiceOne es'1-- }
     \new Voice { \voiceTwo c2--( es,2) }
   >> \oneVoice
-  <as es'>4 \pp <bes es> <as es'> <es es'> <as es'>1-- es'4( \p \< d) c( d) es( d) c( bes) \!
+  <as es'>4 \pp <bes es> <as es'> <es es'> <as es'>1-- es'4( \tweak DynamicText.X-offset -1.5 \p \< d) c( d) es( d) c( bes) \!
   as( bes) c1-> \ff \> c4( d es2) <d, a' d>2\fermata \tweak DynamicText.X-offset -2 \p r2
 %   19
   R1*28/4
@@ -146,7 +146,7 @@ bassMusicXII = \relative c {
     \tweak DynamicText.self-alignment-X #1
     _\ppp c-- f,-- c'-- | bes( c g c | as--) c-- f,-- c'( _\< |
 %     37
-    bes1-> \p ) \> c2 \! 2 | g\breve~ | 1 g1~-> _\pp |
+    <>\tweak DynamicText.X-offset -1 \p \> \after 8*7 \! bes1-> )  c2 2 | g\breve~ | 1 g1~-> _\pp |
 %     40
     g1 g1~-> _\pp | 1 | g1~ 1 |
 %     43
@@ -206,7 +206,7 @@ bassMusicXII = \relative c {
 }
 
 bIaLyrics = \lyricmode { Гос -- по -- ди, Сы -- не. }
-bIIbLyrics = \lyricmode { Агн -- че Бо -- жий, взем -- ляй гре -- хи ми -- ра, }
+bIIbLyrics = \lyricmode { Агн -- че Бо -- жий, взем -- ляй гре -- хи ми -- ра. __ }
 bIcLyrics = \lyricmode {
   Се -- дяй о -- дес -- ну -- ю От -- ца,
   по -- ми -- луй нас.
@@ -232,7 +232,7 @@ bdLyrics = \lyricmode {
 bIeLyrics = \lyricmode { Спо -- до -- би, Гос -- по -- ди, }
 bIIfLyrics = \lyricmode {
 %   34
-  Гос -- по -- ди, при -- бе -- жи -- ще был е -- си нам. __
+  Гос -- по -- ди, при -- бе -- жи -- ще был __ е -- си нам. __
   Гос -- по -- ди, __
   Гос -- по -- ди,
   Ты е -- си Бог мой…

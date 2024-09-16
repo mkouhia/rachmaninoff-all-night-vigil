@@ -30,7 +30,9 @@ altoMusicXII = \relative c' {
 %   13
   as2-- \! \mf g4 g g g g \> g g g g2-- \p g8([ f]) es4 f2 |
   as2-- g4 g
-  g2-- g4 g \< <as f>2-- \> <g es>2 \! <<
+  g2-- g4 g \< <as f>2-- \> <g es>2 \!
+%   FIXME voices to null aligner, fixes alignment
+  <<
     \new Voice = "aXIIb" {
       \voiceOne
       f4( \< g) \! |
@@ -53,7 +55,7 @@ altoMusicXII = \relative c' {
   <<
     {
       \voiceOne
-      as8--([ \p \< bes c bes]) as8--([ bes c bes]) as8--([ bes c bes]) as8--([ bes c bes])
+      as8--([ \tweak DynamicText.X-offset -1.5 \p \< bes c bes]) as8--([ bes c bes]) as8--([ bes c bes]) as8--([ bes c bes])
       as8--([ \! bes c bes]) g1-> \ff \> g1 a2\fermata \tweak DynamicText.X-offset -2 \p
     } \new Voice {
       \voiceTwo
@@ -115,7 +117,7 @@ altoMusicXII = \relative c' {
   \tuplet 3/2 { g4 g g }
   \tuplet 3/2 { g4 g \< f8([ g]) \! }
   \override Hairpin.to-barline = ##f
-  \after 8 \> as2^\accent |
+  \after 8. \> as2^\accent |
   \revert Hairpin.to-barline
   \tuplet 3/2 { as4 \! g g } f1~ \p 4 r4 |
 %   28
@@ -156,7 +158,7 @@ altoMusicXII = \relative c' {
       \once \override Slur.positions = #'(0 . 0)
       \after 8 _\< c--(
 %       37
-      d1->)\> \p \> c2--
+      d1->)\>  \tweak DynamicText.X-offset -1 \p \> c2--
       \tweak DynamicText.X-offset -5 \ppp c2-- | d4 r4 r2
 
     }
@@ -258,18 +260,19 @@ altoMusicXII = \relative c' {
 }
 
 altoLyricsXII = \lyricmode {
-    Сла -- ва в_выш -- них Бо -- гу,
+    Сла -- ва в_выш -- них Бо -- гу, __
     и на зем -- ли мир,
     в_че -- ло -- ве -- цех бла -- го -- во -- ле -- ни -- е.
-    Хва -- лим Тя, бла -- го -- сло -- вим Тя,
+    Хва -- лим Тя, __ бла -- го -- сло -- вим Тя, __
     кла -- ня -- ем Ти ся, сла -- во -- сло -- вим Тя,
     бла -- го -- да -- рим Тя, ве -- ли -- ки -- я ра -- ди сла -- вы Тво -- е -- я.
 %
-    Гос -- по -- ди Ца -- рю Не -- бес -- ный,
-    Бо -- же От -- че Все -- дер -- жи -- те -- лю,
-    Гос -- по -- ди, Сы -- не Е -- ди -- но -- род -- ный, И -- и -- су -- се Хри -- сте,
+    Гос -- по -- ди __ Ца -- рю Не -- бес -- ный, __
+    Бо -- же От -- че Все -- дер -- жи -- те -- лю, __
+    Гос -- по -- ди, Сы -- не Е -- ди -- но -- род -- ный,
+    И -- и -- су -- се Хри -- сте,
     и Свя -- тый Ду -- ше.
-    Гос -- по -- ди Бо -- же, Агн -- че Бо -- жий, Сы -- не О -- течь,
+    Гос -- по -- ди Бо -- же, Агн -- че Бо -- жий, Сы -- не __ О -- течь,
     взем -- ляй грех ми -- ра, по -- ми -- луй
 %   25
   \repeat unfold 78 { \skip 1 }
@@ -283,7 +286,7 @@ altoLyricsXII = \lyricmode {
   Аз рех: Гос -- по -- ди, по -- ми -- луй мя,
   ис -- це -- ли ду -- шу мо -- ю,
   я -- ко со -- гре -- ших Те -- бе. __
-  Гос -- по -- ди, к_Те -- бе при -- бе -- гох,
+  Гос -- по -- ди, __ к_Те -- бе при -- бе -- гох, __
   на -- у -- чи мя тво -- ри -- ти во -- лю Тво -- ю,
   я -- ко Ты е -- си __ Бог __ мой:
 %   66
@@ -303,8 +306,8 @@ aXIIbLyrics = \lyricmode {
 aXIIcLyrics = \lyricmode {
   нас;
 %   15 lower
-  взем -- ляй гре -- хи ми -- ра.
-  Ты е -- си е -- дин,
+  взем -- ляй гре -- хи ми -- ра. __
+  Ты __ е -- си е -- дин,
 }
 aXIIdLyrics = \lyricmode {
   На всяк день бла -- го -- слов -- лю Тя,
@@ -317,7 +320,7 @@ aXIIeLyrics = \lyricmode {
 }
 aXIIfLyrics = \lyricmode {
 %   34 lower
-  Гос -- по -- ди, при -- бе -- жи -- ще был е -- си нам.
+  Гос -- по -- ди, при -- бе -- жи -- ще был __ е -- си нам.
 }
 aXIIgLyrics = \lyricmode {
 %   49

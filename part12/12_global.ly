@@ -1,6 +1,6 @@
 \version "2.24.1"
 
-% \include "12_soprano.ly"
+\include "12_soprano.ily"
 \include "12_alto.ly"
 \include "12_tenor.ly"
 \include "12_bass.ly"
@@ -9,7 +9,7 @@ globalMusicXIIa = {
   \key es \major
 %   \omit TimeSignature
   \time 5/2
-%   \tempo_не_скоро
+  \tempo_Довольно_скоро
   \skip 4*10
   \time 4/2
   \skip 1*2
@@ -55,18 +55,29 @@ globalMusicXIIa = {
   \time 10/2
   \skip 2*10
   \time 5/2
-  \skip 2*5
+  \skip 2*4
+  \tempo_Медленнее
+  \skip 2
   \break
 %   18
   \time 21/2
-  \skip 2*14
+  \skip 2*6
+  \ritenuto
+  \skip 2*4
+  \tempo_Прежний_темп
+  \skip 2*4
   \break
-  \skip 2*7
+  \skip 2*3
+  \ritenuto
+  \skip 2*4
 }
 
 globalMusicXIIbSA = {
 %   19
-  \time 28/4 \skip 4*8 \bar ";"
+  \time 28/4
+  \skip 4
+  \tempo_Прежний_темп
+  \skip 4*7 \bar ";"
   \skip 4*6 \bar ";"
   \break
   \skip 4*6 \bar ";"
@@ -133,33 +144,47 @@ globalMusicXIIc = {
   \skip 4*8
   \break
 %   23
+  \tempo_Медленнее_певуче
   \time 9/2 \skip 2*9
+  \tempo_Еще_шире
   \time 21/4 \skip 4*21
   \break
 %   25
+  \tempo_В_прежнем_темпе
   \time 4/2
-  \skip 2*4*3
+  \skip 2*4 \skip 2*3 \ritenuto \skip 2
+  \skip 2*3 \tempo_в_темпе \skip 2
   \break
 %   28
-  \skip 2*4*2
+  \skip 2*4
+  \skip 2*3 \ritenuto \skip 2
   \break
 %   30
-  \skip 2*4*2
+  \skip 2*3 \tempo_в_темпе \skip 2
+  \skip 2*4
   \break
 %   32
-  \skip 2*4*2
+  \skip 2*3 \ritenuto \skip 2
+  \skip 2*4
   \break
-%   34, 37
-  \repeat unfold 2 { \skip 2*4*3 \break }
+%   34
+  \tempo_В_темпе
+  \skip 2*4*3 \break
+%   37
+  \skip 2*4*2 \tempo_Темп_быстрее \skip 2*4 \break
 %   40
   \skip 2*4 \time 2/2 \skip 2*2 \time 4/2 \skip 2*4 \break
 %   43, 46, 49, 52
   \time 3/2
+  \tempo_animato_dolce
   \repeat unfold 3 { \skip 2*3*3 \break }
 %   54
   \skip 2*3*2 \time 4/2 \skip 2*4 \break
 %   55
-  \time 4/2 \skip 2*4 \time 2/2 \skip 2*2*4 \break
+  \ritenuto
+  \time 4/2 \skip 2*4
+  \tempo_в_темпе
+  \time 2/2 \skip 2*2*4 \break
 %   60
   \time 3/2 \skip 2*3 \time 2/2 \skip 2*2*4 \break
 %   65
@@ -176,8 +201,15 @@ globalMusicXIIc = {
   \skip 2*4*3 \bar "|."
 }
 
-topMarksXII = {\relative{
-%  s1*3
+topMarksXII = {
+  s2*21
+  \mark_мягко
+  s2*108 s4
+  \mark_короткими_отрывистыми_звуками
+  s2*186 \mark_коротким_звуком
+  s2*57
+  \mark_акцентируя_каждую_ноту
+%   \mark_певуче
 %  \tempo \un_po_più_lento%\non_presto
 %  s1*3
   %^\un_po_più_lento
@@ -186,10 +218,13 @@ topMarksXII = {\relative{
   % s4*2^\lunga_pausa
   % s4*44^\lentamente_molto_delicatamente_con_un_grande_senso
   % s4*12^\ritardando
-}}
+}
 
 
-sopStaffXII = \new Staff \with {
+sopStaffXII = \new Lyrics = "sopXIIAbove" \with {
+  \override VerticalAxisGroup.staff-affinity = #DOWN
+}
+\new Staff \with {
   instrumentName = \soprano
 %   Add measure numbers to soprano part (would be otherwise bisabled by \enablePolymeter)
   \consists Bar_number_engraver
@@ -202,9 +237,16 @@ sopStaffXII = \new Staff \with {
     \globalMusicXIIc
   }
   \topMarksXII
-%  \context Voice = VA { \sopranoMusicXII }
-%  \context Lyrics = lyricsUno \lyricsto "VA" { \satbLyricsXII }
-%  \context Lyrics = lyricsUnoX \lyricsto "VA" { \satbTranslitXII }
+  \context Voice = "sopXIICommon" { \sopranoMusicXII }
+  \new NullVoice = sopXIIBelow { \sXIILyricsAligner}
+  \new Lyrics { \lyricsto "sopXIIBelow" \sXIIaLyrics }
+  \context Lyrics = "sopXIIAbove" {\lyricsto "sXIIdAbove" \sXIIcLyrics }
+  \context Lyrics = "sopXIIAbove" {\lyricsto "sXIInAbove" \sXIInLyrics }
+%   TODO sa/tb sanoille min. distance stavesta, padding pieni? Nyt jos on esim crescendomerkkejä alemmalla viivastolla, padding lasketaan sen päältä.
+  \new Lyrics \with {
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
+  }  {\lyricsto "sopXIIBelow" \saXIILyrics }
 >> % Staff
 
 altStaffXII = \new Lyrics = "altoUpper" \with {
@@ -302,6 +344,17 @@ basStaffXII = \new Lyrics = "bassUpper" \with {
 
 choirStaffXII = \new ChoirStaff = "choirA" <<
   \sopStaffXII
+%   \new Staff <<
+%     \clef treble
+%     {
+%       \globalMusicXIIa
+%       \globalMusicXIIbSA
+%       \globalMusicXIIbS
+%       \globalMusicXIIc
+%     }
+%     \new Voice = sopXIIBelowx { \sXIILyricsAligner}
+%     \new Lyrics { \lyricsto "sopXIIBelowx" \sXIIaLyrics }
+%   >> % Staff
   \altStaffXII
   \tenStaffXII
   \basStaffXII

@@ -25,12 +25,13 @@ tenorMusicXII = \relative c {
       f1\rest f2-- \tweak DynamicText.X-offset -3 \pp es f-- es f1\rest |
       b,4( \mf c) d d d8([ c] b4) c2 c8([ \< d] es4) \! |
 %       11
-      d4 d d8--([ \> c] b4 c2--) \! c8([ d]) es4 |
+      d4 d d8--([ \> c] b4 c2--) \! c8([ d] es4) |
       d1 \p 2 es2 es2( d1)
       s2 s4 s4
     }
     \new Voice = "tXIIc"{
       \voiceTwo
+%       TODO fix melisma with null voice following t2
       bes1~ |
 %       9
       bes1~ 1 d2-- \tweak DynamicText.X-offset -3 _\pp c2( bes as |
@@ -70,13 +71,14 @@ tenorMusicXII = \relative c {
 %       18
       c2-- )}
   >> \oneVoice
+%   FIXME hairpin end, voice names. Fixed with nullvoice lyrics.
   \new Voice = "tXIId" {
     bes2 \! c-- bes as--( bes) c4 \pp bes c bes c1--
   }
   <<
     {
       \voiceOne
-      c8--([ \p \< d es d]) c--([ d es d]) c--([ d es d]) c--([ d es d])
+      c8--([ \tweak DynamicText.X-offset -1.5 \p \< d es d]) c--([ d es d]) c--([ d es d]) c--([ d es d])
       c--([  \! d es d]) <c es>1-> \ff \> <c es>4( <bes d>4 <a c>2) d2~ \fermata \tweak DynamicText.X-offset -2 \p d2~ |
 %       19
       d\breve*14/4~ d1( \pp g,1.) g4( \p \< a) |
@@ -115,8 +117,12 @@ tenorMusicXII = \relative c {
       <b d>4 \p \< <c es> |
 %       28
       \shape #'((0 . -1.5)(0 . 0)(0 . 0)(0 . 0)) Slur
-      <>\mf \after 2 \> \after 1 \! <d f>1.--~( 4 <c es>4) |
-      <b d>4( \< <c es>) \! <d f>--( \> <c es>) \! <b d>( \< <c es>) \! <d f>2->~( \f \> |
+      <>\tweak DynamicText.X-offset -2 \mf \after 2 \> \after 2*5/3 \! <d f>1.--~( 4 <c es>4) |
+      <b d>4( \< <c es>) \!
+      \once \override Slur.positions = #'(0 . 0)
+      <d f>--( \> <c es>) \! <b d>( \< <c es>) \!
+      <>\tweak DynamicText.X-offset -2 \f \after 8 \>
+      <d f>2->~(  |
 %       30
       4 \! <c es> <b d>2~ \p 4)
     }
@@ -124,6 +130,7 @@ tenorMusicXII = \relative c {
       \voiceTwo
       g
       \once \override NoteColumn.force-hshift = #1.2 c |
+      \shape #'((0 . 2)(0 . 0)(0 . 0)(0 . 0)) Slur
       bes1.~( 4
       \once \override NoteColumn.force-hshift = #1.2 c) |
       g(
@@ -184,7 +191,7 @@ tenorMusicXII = \relative c {
       \tweak DynamicText.self-alignment-X #1
       _\ppp g-- as-- g-- | as--( g f g | f--) g as--( g4 _\< f8[ g] |
 %       37
-      as1->) _\p \> g2--
+      as1->) \tweak DynamicText.X-offset -1 _\p \> g2--
       \tweak DynamicText.X-offset -5
       \ppp c-- | b\breve~ | b!1~ b1~ _\pp |
 %       40
@@ -311,13 +318,14 @@ tenorMusicXII = \relative c {
 }
 
 tXIIaLyrics = \lyricmode {
-  Сла -- ва в_выш -- них Бо -- гу,
+  Сла -- ва в_выш -- них Бо -- гу, __
   Хва -- лим Тя,
   кла -- ня -- ем Ти ся, сла -- во -- сло -- вим Тя,
-  бла -- го -- да -- рим Тя,
+  бла -- го -- да -- рим Тя, __
 % 13
-  Гос -- по -- ди Бо -- же, Агн -- че Бо -- жий,
-  взем -- ляй гре -- хи ми -- ра.
+  Гос -- по -- ди Бо -- же, __ Агн -- че Бо -- жий,
+  взем -- ляй гре -- хи ми -- ра. __
+%   FIXME lyrics placeholder to lower voice
   Ты %е -- си е -- дин, И -- и -- сус Хрис -- тос,
   %в_сла -- ву Бо -- га От -- ца. А -- минь.
   \repeat unfold 8 { \skip 1 }
@@ -335,20 +343,20 @@ tXIIaLyrics = \lyricmode {
   \repeat unfold 5 { \skip 1 }
 %   59
   …по -- ми -- луй нас.
-  Свя -- тый Без -- смерт -- ный, по -- ми -- луй нас.
+  Свя -- тый __ Без -- смерт -- ный, по -- ми -- луй нас.
   Свя -- тый Бо -- же, Свя -- тый Креп -- кий, Свя -- тый Без -- смерт -- ный, по -- ми -- луй нас.
   Сла -- ва От -- цу и Сы -- ну и Свя -- то -- му Ду -- ху,
 }
 tXIIbLyrics = \lyricmode {
 %   9 upper
   Бо -- же От -- че.
-  Гос -- по -- ди, Сы -- не Е -- ди -- но -- род -- ный,
+  Гос -- по -- ди, Сы -- не Е -- ди -- но -- род -- ный, __
 }
 tXIIcLyrics = \lyricmode {
 %   9 lower
   \skip 1
-  Бо -- же
-  Е -- ди -- но -- род -- ный.
+  Бо -- же __
+  Е -- ди -- но -- род -- ный. __
 }
 tXIIdLyrics = \lyricmode {
 %   19
@@ -362,7 +370,7 @@ tXIIeLyrics = \lyricmode {
 }
 tXIIfLyrics = \lyricmode {
 %   30
-  к_Те -- бе __ при -- бе -- гох. __
+  К_Те -- бе __ при -- бе -- гох. __
 }
 tXIIgLyrics = \lyricmode {
 %   39 upper

@@ -74,12 +74,40 @@ dir_мягко_певуче = \markup {\small "мягко, певуче"}
 dir_Прежний_характер = \markup {\small "Прежний характер"}
 
 % melodioso
-dir_певуче = \markup {\small "певуче"}
+dir_певуче = \markup {\italic "певуче"}
+%mark_певуче = \textMark "певуче"
 
 % Bright, with a strong, solid rhthym
 dir_ярко_с_твербым_добрым_рутмом = \markup { \small "ярко, с твербым, добрым рутмом"}
 
 %% Movement 12
 
+% Fairly fast
+tempo_Довольно_скоро = \tempo "Довольно скоро"
+% Slower, piu lento
+tempo_Медленнее = \tempo "Медленнее"
+tempo_Медленнее_певуче = \tempo \markup { Медленнее. \small Певуче }
+% Tempo come sopra
+tempo_Прежний_темп = \tempo "Прежний темп"
+tempo_В_прежнем_темпе = \tempo "В прежнем темпе"
+tempo_в_темпе = \tempo "в темпе"
+tempo_В_темпе = \tempo "В темпе"
+% Even broader
+tempo_Еще_шире = \tempo "Еще шире"
+% Faster tempo?
+tempo_Темп_быстрее = \tempo "Темп быстрее"
+% animato, dolce? must check this.
+tempo_animato_dolce = \tempo \markup { Темп бсё оживленнее \small Звучность остается легкой }
+% Softly
+mark_мягко = { \textMark "мягко" }
+% Short staccato sounds
+mark_короткими_отрывистыми_звуками = \textMark "короткими, отрывистыми звуками"
+% Every note accented
+mark_акцентируя_каждую_ноту = \textMark "акцентируя каждую ноту"
+% More relaxed
+dir_ослабляя_звук = \markup { \italic "ослабляя звук" }
 % With short notes
+mark_коротким_звуком = \textMark "коротким звуком"
 dir_коротким_звуком = \markup { \italic "коротким звуком" }
+% leggiero?
+dir_легко = \markup { \italic "легко" }
