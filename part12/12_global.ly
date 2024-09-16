@@ -274,7 +274,7 @@ altStaffXII = \new Lyrics = "altoUpper" \with {
 %  \context Lyrics = lyricsDueX \lyricsto "VB" { \satbTranslitXII }
 >> % Staff
 
-tenStaffXII = \new Lyrics = "tenorUpper" \with {
+tenStaffXII = \new Lyrics = "tenorXIIAbove" \with {
   \override VerticalAxisGroup.staff-affinity = #DOWN
 }
 \new Staff \with { instrumentName = \tenor } <<
@@ -285,34 +285,15 @@ tenStaffXII = \new Lyrics = "tenorUpper" \with {
     \globalMusicXIIc
   }
   \context Voice = tenorCommonXII { \tenorMusicXII }
-  \context Lyrics = lyricsTre \lyricsto "tenorCommonXII" { \tXIIaLyrics }
-  \context Lyrics = "tenorUpper" {\lyricsto "tXIIb" \tXIIbLyrics }
-  \context Lyrics = "tenorCommonXII" {\lyricsto "tXIIc" \tXIIcLyrics }
-  \new Lyrics \with {
-    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1.5
-    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #1.5
-  }  {\lyricsto "tXIId" \tXIIdLyrics }
-  \new Lyrics \with {
-    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1.5
-    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #1.5
-  }  {\lyricsto "tXIIe" \tXIIeLyrics }
-  \new Lyrics \with {
-    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1.5
-    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #1.5
-  }  {\lyricsto "tXIIf" \tXIIfLyrics }
-  \context Lyrics = "tenorUpper" {\lyricsto "tXIIg" \tXIIgLyrics }
-  \context Lyrics = "tenorCommonXII" {\lyricsto "tXIIh" \tXIIhLyrics }
-  \context Lyrics = "tenorCommonXII" {\lyricsto "tXIIi" \tXIIiLyrics }
+  \new NullVoice = tenorXIIBelow { \tXIILyricsAligner}
+  \new Lyrics { \lyricsto "tenorXIIBelow" \tXIIaLyrics }
+  \context Lyrics = "tenorXIIAbove" {\lyricsto "tXIIdAbove" \tXIIdAboveLyrics }
+  \context Lyrics = "tenorXIIAbove" {\lyricsto "tXIIwAbove" \tXIIwAboveLyrics }
   \new Lyrics \with {
     \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
     \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
-  }  {\lyricsto "tXIIj" \tXIIjLyrics }
-  \context Lyrics = "tenorUpper" {\lyricsto "tenorCommonXII" \tXIIkLyrics }
-  \new Lyrics \with {
-    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
-    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
-  }  {\lyricsto "tXIIl" \tXIIlLyrics }
-%  \context Lyrics = lyricsTreX \lyricsto "VC" { \satbTranslitXII }
+  }  {\lyricsto "tenorXIIBelow" \tbXIILyrics }
+
 >> % Staff
 
 

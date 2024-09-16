@@ -306,7 +306,7 @@ aXIIbLyrics = \lyricmode {
 aXIIcLyrics = \lyricmode {
   нас;
 %   15 lower
-  взем -- ляй гре -- хи ми -- ра. __
+  взем -- ляй гре -- хи __ ми -- ра. __
   Ты __ е -- си е -- дин,
 }
 aXIIdLyrics = \lyricmode {
