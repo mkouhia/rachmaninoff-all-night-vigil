@@ -210,7 +210,7 @@ tXIIwUpper = {
 %   60
 %   decrescendo in voice 2
   es2-- \p d-- c-- \tweak DynamicText.X-offset -3 \pp|
-  c2 \pp g2~ | 1~ | 2.  \once \override Hairpin.to-barline = ##t \< \after 4 \! c4 |
+  c2 \pp g2~ | 1~ | 2. \once \override Hairpin.to-barline = ##t <>\< \after 4 \! c4 |
 }
 tXIIwLower = {
 %   34
@@ -358,6 +358,7 @@ tenorMusicXII = \relative c {
 }
 
 tXIILyricsAligner = \relative c' {
+  \cadenzaOn
   \tXIIa
   \tXIIbUpper
   \tXIIc

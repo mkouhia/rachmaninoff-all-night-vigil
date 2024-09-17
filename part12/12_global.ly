@@ -220,7 +220,6 @@ topMarksXII = {
   % s4*12^\ritardando
 }
 
-
 sopStaffXII = \new Lyrics = "sopXIIAbove" \with {
   \override VerticalAxisGroup.staff-affinity = #DOWN
 }

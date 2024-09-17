@@ -2,7 +2,7 @@
 
 sXIIa = {
 %   5
-  <as' c>2-- \p <c es>2  <g bes>2^\tenuto <c es>2 <bes d>2-- c4 c4
+  <as' c>2-- \p <c es>2  <g bes>2^\tenuto <c es>2 <bes d>2-- c4 c4 |
   bes2-- \> <g c>2 \!
 }
 sXIIbUpper = {
@@ -13,7 +13,7 @@ sXIIbUpper = {
 }
 sXIIbLower = {
 %   6
-  bes1~ | % no errors here?
+  bes1~ |
   bes\breve*3/2~ | bes\breve*3/2 |
   c2--( bes) bes1~ 1 r1 |
 }
@@ -277,6 +277,7 @@ sopranoMusicXII = \relative c' {
   >> \oneVoice
   R1*5/2 |
 %   11
+  \barNumberCheck #11
   R1*2 |
   \sXIIc
   <<
@@ -326,6 +327,7 @@ sopranoMusicXII = \relative c' {
 }
 
 sXIILyricsAligner = \relative c' {
+  \cadenzaOn
   s2*21
   \sXIIa
   \sXIIbLower

@@ -311,6 +311,7 @@ altoMusicXII = \relative c' {
 }
 
 aXIILyricsAligner = \relative c' {
+  \cadenzaOn
   \aXIIa
   \aXIIbLower
   \aXIIc
