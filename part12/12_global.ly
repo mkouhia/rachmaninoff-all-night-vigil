@@ -209,18 +209,12 @@ topMarksXII = {
   s2*186 \mark_коротким_звуком
   s2*57
   \mark_акцентируя_каждую_ноту
-%   \mark_певуче
-%  \tempo \un_po_più_lento%\non_presto
-%  s1*3
-  %^\un_po_più_lento
-  % \change Staff = "Soprano_III" s4*22^\tutto_più_lento_più_debole 
-  % \change Staff = "Soprano_I" s4*22^\a_tempo
-  % s4*2^\lunga_pausa
-  % s4*44^\lentamente_molto_delicatamente_con_un_grande_senso
-  % s4*12^\ritardando
 }
 
 sopStaffXII = \new Lyrics = "sopXIIAbove" \with {
+  \override VerticalAxisGroup.staff-affinity = #DOWN
+}
+\new Lyrics = "sopXIIAboveX" \with {
   \override VerticalAxisGroup.staff-affinity = #DOWN
 }
 \new Staff \with {
@@ -238,17 +232,28 @@ sopStaffXII = \new Lyrics = "sopXIIAbove" \with {
   \topMarksXII
   \context Voice = "sopXIICommon" { \sopranoMusicXII }
   \new NullVoice = sopXIIBelow { \sXIILyricsAligner}
-  \new Lyrics { \lyricsto "sopXIIBelow" \sXIIaLyrics }
+  \new Lyrics { \lyricsto "sopXIIBelow" \sXIILyrics }
+  \new Lyrics { \lyricsto "sopXIIBelow" \sXIILyricsX }
+
   \context Lyrics = "sopXIIAbove" {\lyricsto "sXIIdAbove" \sXIIcLyrics }
+  \context Lyrics = "sopXIIAboveX" {\lyricsto "sXIIdAbove" \sXIIcLyricsX }
   \context Lyrics = "sopXIIAbove" {\lyricsto "sXIInAbove" \sXIInLyrics }
-%   TODO sa/tb sanoille min. distance stavesta, padding pieni? Nyt jos on esim crescendomerkkejä alemmalla viivastolla, padding lasketaan sen päältä.
+  \context Lyrics = "sopXIIAboveX" {\lyricsto "sXIInAbove" \sXIInLyricsX }
+
   \new Lyrics \with {
     \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
     \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
   }  {\lyricsto "sopXIIBelow" \saXIILyrics }
+  \new Lyrics \with {
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
+  }  {\lyricsto "sopXIIBelow" \saXIILyricsX }
 >> % Staff
 
-altStaffXII = \new Lyrics = "altoUpper" \with {
+altStaffXII = \new Lyrics = "altoXIIAbove" \with {
+  \override VerticalAxisGroup.staff-affinity = #DOWN
+}
+\new Lyrics = "altoXIIAboveX" \with {
   \override VerticalAxisGroup.staff-affinity = #DOWN
 }
 \new Staff \with { instrumentName = \alto } <<
@@ -261,20 +266,28 @@ altStaffXII = \new Lyrics = "altoUpper" \with {
   }
   \context Voice = altoCommonXII { \altoMusicXII }
   \new NullVoice = altoXIIBelow { \aXIILyricsAligner}
-  \new Lyrics { \lyricsto "altoXIIBelow" \altoLyricsXII }
-  \context Lyrics = "altoUpper" {\lyricsto "aXIIdAbove" \aXIIdAboveLyrics }
-%   \context Lyrics = "altoCommonXII" {\lyricsto "aXIIc" \aXIIcLyrics }
-%   \context Lyrics = "altoCommonXII" {\lyricsto "aXIId" \aXIIdLyrics }
-  \context Lyrics = "altoUpper" {\lyricsto "aXIIhAbove" \aXIIhAboveLyrics }
-%   \context Lyrics = "altoCommonXII" {\lyricsto "aXIIf" \aXIIfLyrics }
+  \new Lyrics { \lyricsto "altoXIIBelow" \aXIILyrics }
+  \new Lyrics { \lyricsto "altoXIIBelow" \aXIILyricsX }
+
+  \context Lyrics = "altoXIIAbove" {\lyricsto "aXIIdAbove" \aXIIdAboveLyrics }
+  \context Lyrics = "altoXIIAboveX" {\lyricsto "aXIIdAbove" \aXIIdAboveLyricsX }
+  \context Lyrics = "altoXIIAbove" {\lyricsto "aXIIhAbove" \aXIIhAboveLyrics }
+  \context Lyrics = "altoXIIAboveX" {\lyricsto "aXIIhAbove" \aXIIhAboveLyricsX }
+
   \new Lyrics \with {
     \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
     \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
   }  {\lyricsto "altoXIIBelow" \atXIILyrics }
-%  \context Lyrics = lyricsDueX \lyricsto "VB" { \satbTranslitXII }
->> % Staff
+  \new Lyrics \with {
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
+  }  {\lyricsto "altoXIIBelow" \atXIILyricsX }
+>>
 
 tenStaffXII = \new Lyrics = "tenorXIIAbove" \with {
+  \override VerticalAxisGroup.staff-affinity = #DOWN
+}
+\new Lyrics = "tenorXIIAboveX" \with {
   \override VerticalAxisGroup.staff-affinity = #DOWN
 }
 \new Staff \with { instrumentName = \tenor } <<
@@ -286,18 +299,30 @@ tenStaffXII = \new Lyrics = "tenorXIIAbove" \with {
   }
   \context Voice = tenorCommonXII { \tenorMusicXII }
   \new NullVoice = tenorXIIBelow { \tXIILyricsAligner}
-  \new Lyrics { \lyricsto "tenorXIIBelow" \tXIIaLyrics }
+  \new Lyrics { \lyricsto "tenorXIIBelow" \tXIILyrics }
+  \new Lyrics { \lyricsto "tenorXIIBelow" \tXIILyricsX }
+
   \context Lyrics = "tenorXIIAbove" {\lyricsto "tXIIdAbove" \tXIIdAboveLyrics }
+  \context Lyrics = "tenorXIIAboveX" {\lyricsto "tXIIdAbove" \tXIIdAboveLyricsX }
   \context Lyrics = "tenorXIIAbove" {\lyricsto "tXIIwAbove" \tXIIwAboveLyrics }
+  \context Lyrics = "tenorXIIAboveX" {\lyricsto "tXIIwAbove" \tXIIwAboveLyricsX }
+
   \new Lyrics \with {
     \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
     \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
   }  {\lyricsto "tenorXIIBelow" \tbXIILyrics }
+  \new Lyrics \with {
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
+  }  {\lyricsto "tenorXIIBelow" \tbXIILyricsX }
 
->> % Staff
+>>
 
 
-basStaffXII = \new Lyrics = "bassUpper" \with {
+basStaffXII = \new Lyrics = "bXIIAbove" \with {
+  \override VerticalAxisGroup.staff-affinity = #DOWN
+}
+\new Lyrics = "bXIIAboveX" \with {
   \override VerticalAxisGroup.staff-affinity = #DOWN
 }
 \new Staff \with { instrumentName = \bass }
@@ -308,34 +333,32 @@ basStaffXII = \new Lyrics = "bassUpper" \with {
     \globalMusicXIIbTB
     \globalMusicXIIc
   }
-%   \new NullVoice = VDC { s4*169 \tenorMusicDUpper }
-  \new Voice = "bassCommon" { \bassMusicXII }
-  \context Lyrics = "bassUpper" {\lyricsto "bIa" \bIaLyrics}
-  \new Lyrics { \lyricsto "bIIb" \bIIbLyrics }
-  \context Lyrics = "bassUpper" {\lyricsto "bIc" \bIcLyrics}
-  \new Lyrics { \lyricsto "bassCommon" \bdLyrics }
-  \context Lyrics = "bassUpper" {\lyricsto "bIe" \bIeLyrics}
-  \context Lyrics = "bassCommon" {\lyricsto "bIIf" \bIIfLyrics}
-  \context Lyrics = "bassUpper" {\lyricsto "bIg" \bIgLyrics}
-  \context Lyrics = "bassUpper" {\lyricsto "bassCommon" \bIhLyrics}
-  \context Lyrics = "bassUpper" {\lyricsto "bIi" \bIiLyrics}
-  \context Lyrics = "bassCommon" {\lyricsto "bIIj" \bIIjLyrics}
-%  \context Lyrics = lyricsQuaX \lyricsto "VD" { \satbTranslitXII }
->> % Staff
+  \context Voice = bassCommonXII { \bassMusicXII }
+  \new NullVoice = bassXIIBelow { \bXIILyricsAligner }
+  \new Lyrics { \lyricsto "bassXIIBelow" \bXIILyrics }
+  \new Lyrics { \lyricsto "bassXIIBelow" \bXIILyricsX }
+
+  \context Lyrics = "bXIIAbove" {\lyricsto "bXIIaAbove" \bXIIaLyrics }
+  \context Lyrics = "bXIIAboveX" {\lyricsto "bXIIaAbove" \bXIIaLyricsX }
+
+  \context Lyrics = "bXIIAbove" {\lyricsto "bXIIbAbove" \bXIIbLyrics }
+  \context Lyrics = "bXIIAboveX" {\lyricsto "bXIIbAbove" \bXIIbLyricsX }
+
+  \context Lyrics = "bXIIAbove" {\lyricsto "bXIIfAbove" \bXIIfLyrics }
+  \context Lyrics = "bXIIAboveX" {\lyricsto "bXIIfAbove" \bXIIfLyricsX }
+
+  \context Lyrics = "bXIIAbove" {\lyricsto "bXIIhAbove" \bXIIhLyrics }
+  \context Lyrics = "bXIIAboveX" {\lyricsto "bXIIhAbove" \bXIIhLyricsX }
+
+  \context Lyrics = "bXIIAbove" {\lyricsto "bXIIjAbove" \bXIIjLyricsAbove }
+  \context Lyrics = "bXIIAboveX" {\lyricsto "bXIIjAbove" \bXIIjLyricsAboveX }
+
+  \context Lyrics = "bXIIAbove" {\lyricsto "bXIIkAbove" \bXIIkLyricsAbove }
+  \context Lyrics = "bXIIAboveX" {\lyricsto "bXIIkAbove" \bXIIkLyricsAboveX }
+>>
 
 choirStaffXII = \new ChoirStaff = "choirA" <<
   \sopStaffXII
-%   \new Staff <<
-%     \clef treble
-%     {
-%       \globalMusicXIIa
-%       \globalMusicXIIbSA
-%       \globalMusicXIIbS
-%       \globalMusicXIIc
-%     }
-%     \new Voice = sopXIIBelowx { \sXIILyricsAligner}
-%     \new Lyrics { \lyricsto "sopXIIBelowx" \sXIIaLyrics }
-%   >> % Staff
   \altStaffXII
   \tenStaffXII
   \basStaffXII

@@ -855,7 +855,7 @@
     ˈvzʲɛmlʲaj grʲɛx ˈmʲira poˈmʲiluj nɑs  \
     ˈvzʲɛmlʲaj grʲeˈxʲi ˈmʲira  \
     prʲijˈmʲi moˈlʲitvu ˈnɑʃu  \
-    sʲedˈjaj odʲɛsˈnuju otˈtsɑ  \
+    sʲeˈdjaj odʲɛsˈnuju otˈtsɑ  \
     poˈmʲiluj nɑs  \
     ˈjako tɨ jeˈsʲi jeˈdʲin svʲat  \
     tɨ jeˈsʲi jeˈdʲin gosˈpodʲ iiˈsus xrʲisˈtos  \
@@ -867,7 +867,7 @@
     spoˈdobʲi ˈgospodʲi v‿dʲenʲ sʲej  \
     bʲɛz grʲeˈxa soxraˈnʲitʲisʲa nɑm  \
     blagosloˈvʲɛn jeˈsʲi ˈgospodʲi ˈboʒɛ oˈtʲɛts ˈnɑʃɨx  \
-    i ˈxvɑlʲno i prosˈlɑvlʲɛno ˈimʲa tvoˈjɛ  \
+    i ˈxvɑlʲno i proˈslɑvlʲɛno ˈimʲa tvoˈjɛ  \
     vo ˈvʲekʲi aˈmʲinʲ  \
 
     ˈbudʲi ˈgospodʲi ˈmʲilostʲ tvoˈja nɑ nɑs  \

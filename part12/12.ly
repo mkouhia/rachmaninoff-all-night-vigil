@@ -4,7 +4,22 @@
 \include "../layout.ly"
 \include "12_global.ly"
 
-% #(set-global-staff-size 16)
+\paper {
+  #(define fonts
+    (set-global-fonts
+     ;#:music "emmentaler"            ; default
+     ;#:brace "emmentaler"            ; default
+     ;#:roman "Gentium Plus"
+     #:roman "Charis SIL"
+     ;#:roman "Doulos SIL" ; otherwise ok, but weights do not work?
+     ;#:sans "Nimbus Sans, Nimbus Sans L"
+     ;#:typewriter "DejaVu Sans Mono"
+     ;#:factor (/ staff-height pt 18) ; to get smaller than automatic
+    ))
+}
+
+% #(set-global-staff-size 20)
+
 
 \header {
   title = "12. Славословие великое"
@@ -24,6 +39,7 @@
       \override DynamicLineSpanner.direction = #UP
       barNumberVisibility = #first-bar-number-invisible-save-broken-bars
 %       \override BarNumber.break-visibility = ##(#f #t #t)
+      \override LyricText.font-size = #-0.2
     }
     \context {
       \Staff
@@ -34,6 +50,9 @@
       \Lyrics
 %       \override LyricSpace.minimum-distance = #2.0
 %       \override LyricExtender.minimum-length = #6.0
+      \override VerticalAxisGroup
+                .nonstaff-nonstaff-spacing
+                .minimum-distance = ##f
     }
   }
 %    \score_layout
