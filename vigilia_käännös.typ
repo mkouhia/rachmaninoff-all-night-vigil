@@ -125,7 +125,8 @@
     Посреде гор пройдут воды.  \
     Дивна дела Твоя, Господи.  \
     Вся премудростию сотворил еси.  \
-    Слава ти, Господи, сотворившему вся.
+    Слава ти, Господи, \
+    сотворившему вся.
   ],
   [
     blagosloˈvʲi duˈʃɛ moˈja ˈgospoda  \
@@ -140,7 +141,8 @@
     posrʲeˈdʲɛ ˈgor ˈprojdut ˈvodɨ  \
     ˈdʲivna dʲɛˈlɑ tvoˈja ˈgospodʲi  \
     fsʲa prʲɛˈmudrostʲiju sotvoˈrʲil jeˈsʲi  \
-    ˈslɑva tʲi ˈgospodʲi sotvoˈrʲifʃɛmu fsʲa
+    ˈslɑva tʲi ˈgospodʲi \
+    sotvoˈrʲifʃɛmu fsʲa
   ],
   [
     Kiitä, sieluni, Herraa!  \
@@ -155,7 +157,8 @@
     Vuorten keskellä vedet virtaavat.  \
     Herra, ihmeelliset ovat tekosi!  \
     Sinä olet kaikki taitavasti luonut.  \
-    Kunnia olkoon sinulle, Herra, joka kaikki olet luonut!
+    Kunnia olkoon sinulle, Herra, \
+    joka kaikki olet luonut!
   ]
 )
 
@@ -891,18 +894,18 @@
     proˈbɑvʲi ˈmʲilostʲ tvoˈju ˈvʲɛduʃʲːim tʲa  \
 
     svʲaˈtɨj ˈboʒɛ svʲaˈtɨj ˈkrʲɛpkʲij  \
-    #h(1em) svʲaˈtɨj bʲɛsˈsmʲɛrtnɨj poˈmʲiluj nɑs \
+    #h(1em) svʲaˈtɨj bʲɛzˈsmʲɛrtnɨj poˈmʲiluj nɑs \
     svʲaˈtɨj ˈboʒɛ svʲaˈtɨj ˈkrʲɛpkʲij  \
-    #h(1em) svʲaˈtɨj bʲɛsˈsmʲɛrtnɨj poˈmʲiluj nɑs \
+    #h(1em) svʲaˈtɨj bʲɛzˈsmʲɛrtnɨj poˈmʲiluj nɑs \
     svʲaˈtɨj ˈboʒɛ svʲaˈtɨj ˈkrʲɛpkʲij  \
-    #h(1em) svʲaˈtɨj bʲɛsˈsmʲɛrtnɨj poˈmʲiluj nɑs
+    #h(1em) svʲaˈtɨj bʲɛzˈsmʲɛrtnɨj poˈmʲiluj nɑs
 
     ˈslɑva otˈtsu i ˈsɨnu i svʲaˈtomu ˈduxu  \
     #h(1em) i ˈnɨnʲɛ i ˈprʲisno i vo ˈvʲekʲi vʲɛˈkof aˈmʲinʲ  \
 
-    svʲaˈtɨj bʲɛsˈsmʲɛrtnɨj poˈmʲiluj nɑs  \
+    svʲaˈtɨj bʲɛzˈsmʲɛrtnɨj poˈmʲiluj nɑs  \
     svʲaˈtɨj ˈboʒɛ svʲaˈtɨj ˈkrʲɛpkʲij  \
-    #h(1em) svʲaˈtɨj bʲɛsˈsmʲɛrtnɨj poˈmʲiluj nɑs
+    #h(1em) svʲaˈtɨj bʲɛzˈsmʲɛrtnɨj poˈmʲiluj nɑs
   ],
   [
     Kunnia olkoon Jumalalle korkeuksissa  \
@@ -1071,7 +1074,7 @@
 #v(1fr)
 #text(style: "italic")[
   Suomenkieliset käännökset: Ortodoksinen hautauskirja (onl.fi) & Liturgiset tekstit (ortodoksi.net) & Pentekostarion (ecmr.fi) \
-  Koonnut ja translitteroinut Mikko Kouhia, v1.1 2024-09-06.
+  Koonnut ja translitteroinut Mikko Kouhia, v1.2 2024-09-19.
 ]
 
 /*
