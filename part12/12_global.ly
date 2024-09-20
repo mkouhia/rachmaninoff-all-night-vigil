@@ -9,7 +9,6 @@ globalMusicXIIa = {
   \key es \major
 %   \omit TimeSignature
   \time 5/2
-  \tempo_Довольно_скоро
   \skip 4*10
   \time 4/2
   \skip 1*2
@@ -56,19 +55,15 @@ globalMusicXIIa = {
   \skip 2*10
   \time 5/2
   \skip 2*4
-  \tempo_Медленнее
   \skip 2
   \break
 %   18
   \time 21/2
   \skip 2*6
-  \ritenuto
   \skip 2*4
-  \tempo_Прежний_темп
   \skip 2*4
   \break
   \skip 2*3
-  \ritenuto
   \skip 2*4
 }
 
@@ -76,7 +71,6 @@ globalMusicXIIbSA = {
 %   19
   \time 28/4
   \skip 4
-  \tempo_Прежний_темп
   \skip 4*7 \bar ";"
   \skip 4*6 \bar ";"
   \break
@@ -144,34 +138,30 @@ globalMusicXIIc = {
   \skip 4*8
   \break
 %   23
-  \tempo_Медленнее_певуче
   \time 9/2 \skip 2*9
-  \tempo_Еще_шире
   \time 21/4 \skip 4*21
   \break
 %   25
-  \tempo_В_прежнем_темпе
   \time 4/2
-  \skip 2*4 \skip 2*3 \ritenuto \skip 2
-  \skip 2*3 \tempo_в_темпе \skip 2
+  \skip 2*4 \skip 2*3 \skip 2
+  \skip 2*3 \skip 2
   \break
 %   28
   \skip 2*4
-  \skip 2*3 \ritenuto \skip 2
+  \skip 2*3 \skip 2
   \break
 %   30
-  \skip 2*3 \tempo_в_темпе \skip 2
+  \skip 2*3 \skip 2
   \skip 2*4
   \break
 %   32
-  \skip 2*3 \ritenuto \skip 2
+  \skip 2*3 \skip 2
   \skip 2*4
   \break
 %   34
-  \tempo_В_темпе
   \skip 2*4*3 \break
 %   37
-  \skip 2*4*2 \tempo_Темп_быстрее \skip 2*4 \break
+  \skip 2*4*2 \skip 2*4 \break
 %   40
   \skip 2*4 \time 2/2 \skip 2*2 \time 4/2 \skip 2*4 \break
 %   43, 46, 49, 52
@@ -183,7 +173,8 @@ globalMusicXIIc = {
 %   55
   \ritenuto
   \time 4/2 \skip 2*4
-  \tempo_в_темпе
+  \textMark " a tempo "
+%   \tempo_в_темпе
   \time 2/2 \skip 2*2*4 \break
 %   60
   \time 3/2 \skip 2*3 \time 2/2 \skip 2*2*4 \break
@@ -202,13 +193,40 @@ globalMusicXIIc = {
 }
 
 topMarksXII = {
+  \tempo_Довольно_скоро
   s2*21
   \mark_мягко
-  s2*108 s4
-  \mark_короткими_отрывистыми_звуками
-  s2*186 \mark_коротким_звуком
-  s2*57
-  \mark_акцентируя_каждую_ноту
+  s2*65
+  \mark_ослабляя_звук
+  s2*21
+  \tempo_Медленнее_певуче_V
+  s2*7
+%   (18)
+  \ritardando s2*4 \tempo_Прежний_темп
+  s2*7 \ritardando
+  s2*4 s4
+  \tempoAndMarkTransV "Прежний темп" "короткими, отрывистыми звуками" "Tempo I" "staccato"
+  s2*55 s4
+  \tempo_Медленнее_певуче
+  s2*9 \tempoTrans "Еще шире" "Allargando"
+  s4 s2*10
+  \barNumberCheck #25
+%   25
+  \tempo_В_прежнем_темпе s2*7 \ritardando \skip 2*4 \mark_в_темпе s2 |
+%   28
+  s2*7 \ritardando s2 |
+%   30
+  s2*3 \mark_в_темпе s2*5 |
+%   32
+  s2*3 \ritardando s2*5 |
+%   34
+  \barNumberCheck #34
+  \tempo_В_темпе s2*12
+%   37
+  s2*8 \tempo_Темп_быстрее \skip 2*4
+%   s2*95 \mark_коротким_звуком
+%   s2*57
+%   \mark_акцентируя_каждую_ноту
 }
 
 sopStaffXII = \new Lyrics = "sopXIIAbove" \with {
@@ -273,15 +291,6 @@ altStaffXII = \new Lyrics = "altoXIIAbove" \with {
   \context Lyrics = "altoXIIAboveX" {\lyricsto "aXIIdAbove" \aXIIdAboveLyricsX }
   \context Lyrics = "altoXIIAbove" {\lyricsto "aXIIhAbove" \aXIIhAboveLyrics }
   \context Lyrics = "altoXIIAboveX" {\lyricsto "aXIIhAbove" \aXIIhAboveLyricsX }
-
-  \new Lyrics \with {
-    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
-    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
-  }  {\lyricsto "altoXIIBelow" \atXIILyrics }
-  \new Lyrics \with {
-    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
-    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
-  }  {\lyricsto "altoXIIBelow" \atXIILyricsX }
 >>
 
 tenStaffXII = \new Lyrics = "tenorXIIAbove" \with {
@@ -363,3 +372,9 @@ choirStaffXII = \new ChoirStaff = "choirA" <<
   \tenStaffXII
   \basStaffXII
 >>
+
+% TODO tenutojen ja aksenttien paikat
+% TODO esitysohjeet ja tempot
+% 49 a/t ja t/b?
+% TODO tavujen siirtelyt, kun ellipsis tai sanayhde
+% SA linja yhdessa vai pois?

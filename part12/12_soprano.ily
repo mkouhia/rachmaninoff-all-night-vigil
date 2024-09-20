@@ -2,7 +2,7 @@
 
 sXIIa = {
 %   5
-  <as' c>2-- \p <c es>2  <g bes>2^\tenuto <c es>2 <bes d>2-- c4 c4 |
+  <as' c>2-- \tweak DynamicText.X-offset -2 \p <c es>2  <g bes>2^\tenuto <c es>2 <bes d>2-- c4 c4 |
   bes2-- \> <g c>2 \!
 }
 sXIIbUpper = {
@@ -25,7 +25,7 @@ sXIIc = {
 sXIIdUpper = {
   s2   \once \override Slur.positions = #'(4 . -1) d4( \< es \! |
   f2 \f) es es d4 c d8([ \> c] bes4 c1) \!
-  bes4 \tweak DynamicText.X-offset -2 \mf ^\dir_певуче \< c \! |
+  bes4 \tweak DynamicText.X-offset -2 \mf \dir_певуче \< c \! |
 }
 sXIIdLower = {
   c2( bes2~) |
@@ -35,9 +35,9 @@ sXIIe = {
 %   14
   d4--( \> c bes2) \<
   c2-- \> bes2~( \! 1 \> c2) \! |
-  <> \p \after 2 \< bes1  c2 \! ^\dir_ослабляя_звук c2 \> bes1. \! as1( \pp \> |
+  <> \p \after 2 \< bes1  c2 \! c2 \> bes1. \! as1( \pp \> |
 %   16
-  g1) \! s1*2 r1*2 | r1 r1 f4( \p ^\dir_певуче \< g
+  g1) \! s1*2 r1*2 | r1 r1 f4( \p \< g
 %   \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #23
 %   \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #23
 %   \override VerticalAxisGroup.nonstaff-relatedstaff-spacing =
@@ -225,7 +225,7 @@ sXIIpLower = {
   c4 \p c <bes d>-- bes | <bes es>4 4 <bes d>4-- bes | bes <bes es> bes2 |
   <c f>2-- \mf \> <c es>4 \! <c d> |
 %   60
-  <c es>2-- \p <b d>-- c--  \tweak DynamicText.X-offset -3 \pp
+  <c es>2^\tenuto \p <b d>^\tenuto c^\tenuto  \tweak DynamicText.X-offset -3 \pp
 }
 sXIIq = {
 %   61
@@ -362,61 +362,11 @@ sXIILyrics = \lyricmode {
   Гос -- по -- ди Бо -- же, __
 %   17
   Ты __  е -- си е -- дин, Гос -- под, __ И -- и -- сус Хрис -- тос,
-  в_сла -- ву __ Бо -- га __ ""
-%   SA lyrics 18
-  \repeat unfold 91 { \skip 1 }
-%   25
-%   По --
-  ми -- луй __ мя. __
-  Ис -- це -- ли __ ду -- шу мо -- ю. __
-  К_Те -- бе __ при -- бе -- гох. __
-  Гос -- по -- ди, при -- бе -- жи -- ще был __ е -- си нам.
-  Ис -- це -- ли  ду -- шу мо -- ю, __
-  я -- ко со -- гре -- ших Те -- бе, __
-  на -- у -- чи мя __ тво -- ри -- ти во -- лю Тво -- ю,
-  я -- ко Ты е -- си __ Бог __ мой:
-  я -- ко у Те -- бе ис -- точ -- ник жи -- во -- та,
-  во све -- те Тво -- ем __ %52
-}
-sXIILyricsX = \lyricmode {
-  ˈklɑ -- nʲa -- jɛm tʲi sʲa sla -- vo -- ˈslo -- vʲim tʲa __
-  ˈbo -- ʒɛ __
-  ˈgos -- po -- dʲi ˈsɨ -- nʲɛ je -- dʲi -- no -- ˈrod -- nɨj __
-  i svʲa -- ˈtɨj __ du -- ˈʃɛ __
-  ˈgos -- po -- dʲi ˈbo -- ʒɛ __
-  tɨ __ je -- ˈsʲi je -- ˈdʲin gos -- ˈpodʲ __ i -- i -- ˈsus xrʲis -- ˈtos
-  f~ˈslɑ -- vu __ ˈbo -- ga __ ""
-%   SA lyrics 18
-  \repeat unfold 91 { \skip 1 }
-%   25
-%   По --
-  ˈmʲi -- luj __ mʲa __
-  is -- tse -- ˈlʲi __ ˈdu -- ʃu mo -- ˈju __
-  k‿tʲe -- ˈbʲɛ prʲi -- bʲɛ -- ˈgox __
-  ˈgos -- po -- dʲi prʲi -- ˈbʲɛ -- ʒɨ -- ʃʲːɛ bɨl __ je -- ˈsʲi nɑm
-  is -- tse -- ˈlʲi ˈdu -- ʃu mo -- ˈju __
-  ˈja -- ko so -- grʲɛˈ -- ʃɨx tʲe -- ˈbʲɛ __
-  na -- u -- ˈtʃi mʲa __ tvo -- ˈrʲi -- tʲi ˈvo -- lʲu tvo -- ˈju
-  ˈja -- ko tɨ je -- ˈsʲi __ box __ moj
-  ˈja -- ko u tʲe -- ˈbʲɛ is -- ˈtotʃ -- nʲik ʒɨ -- vo -- ˈtɑ
-  vo ˈsvʲe -- tʲɛ tvo -- ˈjɛm __
-
-}
-
-sXIIcLyrics = \lyricmode {
-  И -- и -- су -- се Хри -- сте, __ ""
-}
-sXIIcLyricsX = \lyricmode {
-  i -- i -- ˈsu -- sʲɛ xrʲi -- sˈtʲɛ __ ""
-}
-saXIILyrics = \lyricmode {
-  \repeat unfold 48 { \skip 1 }
-  От -- ца. А -- минь.
-%   19
-  На всяк день бла -- го -- слов -- лю Тя
-  и вос -- хва -- лю и -- мя Тво -- е
-  во ве -- ки и в_век ве -- ка. __
-  На всяк день бла -- го -- слов -- лю Тя,
+  в_сла -- ву __ Бо -- га __ От -- ца. А -- минь.
+%   19 SA lyrics
+  \repeat unfold 24 { \skip 1 }
+%   20
+  всяк день бла -- го -- слов -- лю Тя,
   вос -- хва -- лю и -- мя Тво -- е __
   во ве -- ки и в_век ве -- ка. __
 
@@ -426,9 +376,18 @@ saXIILyrics = \lyricmode {
 
   Бу -- ди, Гос -- по -- ди, ми -- лость, Тво -- я __ на нас,
   я -- ко -- же у -- по -- ва -- хом на Тя.
-
-  По -- ""
-  \repeat unfold 73 { \skip 1 }
+% 25
+  По -- ми -- луй __ мя. __
+  Ис -- це -- ли __ ду -- шу мо -- ю. __
+  К_Те -- бе __ при -- бе -- гох. __
+  Гос -- по -- ди, при -- бе -- жи -- ще был __ е -- си нам.
+  Ис -- це -- ли  ду -- шу мо -- ю, __
+  я -- ко со -- гре -- ших Те -- бе, __
+  на -- у -- чи мя __ тво -- ри -- ти во -- лю Тво -- ю,
+  я -- ко Ты е -- си __ Бог __ мой:
+  я -- ко у Те -- бе ис -- точ -- ник жи -- во -- та,
+  во све -- те Тво -- ем __
+%   52
   у -- зрим свет.
   Про -- ба -- ви ми -- лость Тво -- ю __ ве -- ду -- щим Тя.
   Свя -- тый Бо -- же, Свя -- тый Креп -- кий,
@@ -443,15 +402,17 @@ saXIILyrics = \lyricmode {
   Свя -- тый Бо -- же, Свя -- тый Креп -- кий,
   Свя -- тый Без -- смерт -- ный, по -- ми -- луй нас.
 }
-saXIILyricsX = \lyricmode {
-  \repeat unfold 48 { \skip 1 }
-  ot -- ˈtsɑ a -- ˈmʲinʲ
-%   19
-
-  nɑ fsʲak dʲenʲ bla -- go -- slov -- ˈlʲu tʲa
-  i vos -- xva -- ˈlʲu ˈi -- mʲa tvo -- ˈjɛ
-  vo ˈvʲe -- kʲi i v‿vʲɛk ˈvʲɛ -- ka __
-  nɑ fsʲak dʲenʲ bla -- go -- slov -- ˈlʲu tʲa
+sXIILyricsX = \lyricmode {
+  ˈklɑ -- nʲa -- jɛm tʲi sʲa sla -- vo -- ˈslo -- vʲim tʲa __
+  ˈbo -- ʒɛ __
+  ˈgos -- po -- dʲi ˈsɨ -- nʲɛ je -- dʲi -- no -- ˈrod -- nɨj __
+  i svʲa -- ˈtɨj __ du -- ˈʃɛ __
+  ˈgos -- po -- dʲi ˈbo -- ʒɛ __
+  tɨ __ je -- ˈsʲi je -- ˈdʲin gos -- ˈpodʲ __ i -- i -- ˈsus xrʲis -- ˈtos
+  f~ˈslɑ -- vu __ ˈbo -- ga __   ot -- ˈtsɑ a -- ˈmʲinʲ
+%   19 SA lyrics
+  \repeat unfold 24 { \skip 1 }
+  fsʲak dʲenʲ bla -- go -- slov -- ˈlʲu tʲa
   vos -- xva -- ˈlʲu ˈi -- mʲa tvo -- ˈjɛ __
   vo ˈvʲe -- kʲi i v‿vʲɛk ˈvʲɛ -- ka __
 
@@ -461,23 +422,59 @@ saXIILyricsX = \lyricmode {
 
   ˈbu -- dʲi ˈgos -- po -- dʲi ˈmʲi -- lostʲ __ tvo -- ˈja __ nɑ nɑs
   ˈja -- ko -- ʒɛ u -- po -- ˈvɑ -- xom nɑ tʲa
-
-  po -- ""
-  \repeat unfold 73 { \skip 1 }
+%   25
+  po -- ˈmʲi -- luj __ mʲa __
+  is -- tse -- ˈlʲi __ ˈdu -- ʃu mo -- ˈju __
+  k‿tʲe -- ˈbʲɛ prʲi -- bʲɛ -- ˈgox __
+  ˈgos -- po -- dʲi prʲi -- ˈbʲɛ -- ʒɨ -- ʃʲːɛ bɨl __ je -- ˈsʲi nɑm
+  is -- tse -- ˈlʲi ˈdu -- ʃu mo -- ˈju __
+  ˈja -- ko so -- grʲɛ -- ˈʃɨx tʲe -- ˈbʲɛ __
+  na -- u -- ˈtʃi mʲa __ tvo -- ˈrʲi -- tʲi ˈvo -- lʲu tvo -- ˈju
+  ˈja -- ko tɨ je -- ˈsʲi __ box __ moj
+  ˈja -- ko u tʲe -- ˈbʲɛ is -- ˈtotʃ -- nʲik ʒɨ -- vo -- ˈtɑ
+  vo ˈsvʲe -- tʲɛ tvo -- ˈjɛm __
+%   52
   ˈu -- zrʲim svʲɛt
   pro -- ˈbɑ -- vʲi ˈmʲi -- lostʲ tvo -- ˈju __ ˈvʲɛ -- du -- ʃʲːim tʲa
 
-  \repeat unfold 3 {
-    svʲa -- ˈtɨj ˈbo -- ʒɛ __ svʲa -- ˈtɨj ˈkrʲɛp -- kʲij __
-    svʲaˈ -- tɨj bʲɛs -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
-  }
+  svʲa -- ˈtɨj ˈbo -- ʒɛ __ svʲa -- ˈtɨj ˈkrʲɛp -- kʲij __
+  svʲa -- ˈtɨj bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
+  svʲa -- ˈtɨj ˈbo -- ʒɛ __ svʲa -- ˈtɨj ˈkrʲɛp -- kʲij __
+  svʲa -- ˈtɨj bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
+  svʲa -- ˈtɨj ˈbo -- ʒɛ __ svʲa -- ˈtɨj ˈkrʲɛp -- kʲij __
+  svʲa -- ˈtɨj bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
 
   ˈslɑ -- va ot -- ˈtsu i ˈsɨ -- nu i svʲa -- ˈto -- mu ˈdu -- xu
   i ˈnɨ -- nʲɛ i ˈprʲis -- no i vo ˈvʲe -- kʲi vʲɛ -- ˈkof a -- ˈmʲinʲ
 
-  svʲaˈ -- tɨj bʲɛs -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
+  svʲa -- ˈtɨj bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
   svʲa -- ˈtɨj ˈbo -- ʒɛ svʲa -- ˈtɨj ˈkrʲɛp -- kʲij
-  svʲaˈ -- tɨj bʲɛs -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
+  svʲa -- ˈtɨj bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
+
+
+}
+
+sXIIcLyrics = \lyricmode {
+  И -- и -- су -- се Хри -- сте, __ ""
+}
+sXIIcLyricsX = \lyricmode {
+  i -- i -- ˈsu -- sʲɛ xrʲi -- sˈtʲɛ __ ""
+}
+saXIILyrics = \lyricmode {
+  \repeat unfold 52 { \skip 1 }
+%   19
+  На всяк день бла -- го -- слов -- лю Тя
+  и вос -- хва -- лю и -- мя Тво -- е
+  во ве -- ки и в_век ве -- ка. __
+  На
+}
+saXIILyricsX = \lyricmode {
+  \repeat unfold 52 { \skip 1 }
+%   19
+  nɑ fsʲak dʲenʲ bla -- go -- slov -- ˈlʲu tʲa
+  i vos -- xva -- ˈlʲu ˈi -- mʲa tvo -- ˈjɛ
+  vo ˈvʲe -- kʲi i v‿vʲɛk ˈvʲɛ -- ka __
+  nɑ
 }
 
 sXIInLyrics = \lyricmode {

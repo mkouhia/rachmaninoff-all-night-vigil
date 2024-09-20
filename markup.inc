@@ -40,6 +40,7 @@ lentamente = \markup {{\bold  "медленно"}}
 perdersi = \markup {{\bold "теряясь"}}
 short_edition = \markup {{\bold  "Облегченная редакция"}}
 
+
 %% All movements
 ritenuto = \tempo "задерживая"
 
@@ -73,41 +74,87 @@ dir_мягко_певуче = \markup {\small "мягко, певуче"}
 % carattere come sopra
 dir_Прежний_характер = \markup {\small "Прежний характер"}
 
-% melodioso
-dir_певуче = \markup {\italic "певуче"}
-%mark_певуче = \textMark "певуче"
-
 % Bright, with a strong, solid rhthym
 dir_ярко_с_твербым_добрым_рутмом = \markup { \small "ярко, с твербым, добрым рутмом"}
 
 %% Movement 12
 
-% Fairly fast
-tempo_Довольно_скоро = \tempo "Довольно скоро"
-% Slower, piu lento
-tempo_Медленнее = \tempo "Медленнее"
-tempo_Медленнее_певуче = \tempo \markup { Медленнее. \small Певуче }
+tempoTrans =
+#(define-music-function
+     (tempoChu tempoIt)
+     (markup? markup?)
+   #{
+     \tempo \markup { \override #'(baseline-skip . 2.5 ) \column { \line { \bold \concat { #tempoChu "." } } \line { \normal-text \concat { #tempoIt "."} }}}
+   #})
+
+textMarkTrans =
+#(define-music-function
+     (textChu textIt)
+     (markup? markup?)
+   #{
+     \textMark \markup { \column { \line { \small \bold #textChu } \line { \small #textIt  }}}
+   #})
+
+tempoAndMarkTrans =
+#(define-music-function
+     (tempoChu markChu tempoIt markIt)
+     (markup? markup? markup? markup?)
+   #{
+     \tempo \markup { \column { \line { \bold \concat { #tempoChu "." } \small #markChu } \line { \normal-text \concat { #tempoIt "."}  \small \normal-text #markIt }}}
+   #})
+
+tempoAndMarkTransV =
+#(define-music-function
+     (tempoChu markChu tempoIt markIt)
+     (markup? markup? markup? markup?)
+   #{
+     \tempo \markup { \override #'(baseline-skip . 2 ) \column {
+         \line { \bold \concat { #tempoChu "." } }
+         \line { \small #markChu }
+         \vspace #.2
+         \line { \normal-text \concat { #tempoIt "."} }
+         \line { \small \normal-text #markIt }
+    }}
+   #})
+
+dirTrans =
+#(define-music-function
+    (textChu textIt)
+    (markup? markup?)
+  #{
+    ^\markup {
+      \override #'(baseline-skip . 1.2 )
+      \small \italic \column { \line { #textChu } \line { #textIt  }}
+    }
+  #})
+
+tempo_Довольно_скоро = \tempoTrans "Довольно скоро" "Moderato"
+tempo_Медленнее = \tempoTrans "Медленнее" "Più lento"
+tempo_Медленнее_певуче = \tempoAndMarkTrans "Медленнее" "Певуче" "Più lento" "Cantabile"
+tempo_Медленнее_певуче_V = \tempoAndMarkTransV "Медленнее" "Певуче" "Più lento" "Cantabile"
 % Tempo come sopra
-tempo_Прежний_темп = \tempo "Прежний темп"
-tempo_В_прежнем_темпе = \tempo "В прежнем темпе"
-tempo_в_темпе = \tempo "в темпе"
-tempo_В_темпе = \tempo "В темпе"
-% Even broader
-tempo_Еще_шире = \tempo "Еще шире"
-% Faster tempo?
-tempo_Темп_быстрее = \tempo "Темп быстрее"
+tempo_Прежний_темп = \tempoTrans "Прежний темп" "Tempo I"
+tempo_В_прежнем_темпе = \tempoTrans "В прежнем темпе" "Tempo I"
+
+mark_в_темпе = \textMarkTrans "в темпе" "a tempo"
+tempo_В_темпе = \tempoTrans "В темпе" "A tempo"
+tempo_Темп_быстрее = \tempoTrans "Темп быстрее" "Più mosso"
 % animato, dolce? must check this.
 tempo_animato_dolce = \tempo \markup { Темп бсё оживленнее \small Звучность остается легкой }
-% Softly
-mark_мягко = { \textMark "мягко" }
-% Short staccato sounds
-mark_короткими_отрывистыми_звуками = \textMark "короткими, отрывистыми звуками"
+
+mark_мягко = \textMarkTrans "мягко" "dolce"
+mark_ослабляя_звук = \textMarkTrans "ослабляя звук" "diminuendo"
+
 % Every note accented
 mark_акцентируя_каждую_ноту = \textMark "акцентируя каждую ноту"
-% More relaxed
-dir_ослабляя_звук = \markup { \italic "ослабляя звук" }
-% With short notes
+
+dir_певуче = \dirTrans "певуче" "cantabile"
+dir_коротким_звуком = \dirTrans "коротким звуком" "secco"
+
 mark_коротким_звуком = \textMark "коротким звуком"
-dir_коротким_звуком = \markup { \italic "коротким звуком" }
-% leggiero?
-dir_легко = \markup { \italic "легко" }
+
+dir_легко = \dirTrans "легко" "leggiero"
+
+
+%% All movements
+ritardando = \textMarkTrans "задерживая" "ritardando"

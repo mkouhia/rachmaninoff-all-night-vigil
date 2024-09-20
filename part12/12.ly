@@ -20,11 +20,12 @@
 
 % #(set-global-staff-size 20)
 
+date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 \header {
   title = "12. Славословие великое"
 %   composer = "Сергей Рахманинов"
-  tagline = ##f
+  tagline = \markup { \concat { "työversio " \date } }
 } % header
 
 \score {
@@ -45,6 +46,7 @@
       \Staff
       \remove "Time_signature_engraver"
       breathMarkType = #'upbow
+%       \override InstrumentName.self-alignment-X = #RIGHT
     }
     \context {
       \Lyrics

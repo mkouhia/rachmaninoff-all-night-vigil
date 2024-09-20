@@ -15,7 +15,7 @@ bXIIbUpper = {
   R1*7/2 | R1*9/2 |
   \revert MultiMeasureRest.staff-position
   f2\rest
-  bes,4(^\dir_коротким_звуком
+  bes,4( \dir_коротким_звуком
   c) des2-- c4 c c2-- c4 c bes c des!2-- c bes4( c) | des4 c des c c8([ bes]) as4 bes2 bes2 |
 }
 bXIIbLower = {
@@ -86,7 +86,7 @@ bXIIg = {
 %   32
   d4( \< c \! bes-- \> c) \! d( \< c) \!
   \once \override Hairpin.to-barline = ##f
-  bes2~-> \tweak DynamicText.X-offset -3 \ff \> | bes4 \! c g1~ \p 4 r4 |
+  bes2~->( \tweak DynamicText.X-offset -3 \ff \> | bes4 \! c g1~ \p 4 r4) |
 }
 bXIIhUpper = {
 %   34
@@ -158,6 +158,30 @@ bXIIkLower = {
 %       69
   bes!2 c4 f4 | g2
 }
+bXIIl = {
+  <g, g'>2^\tenuto \> <c g'>2 \! | bes!2^\tenuto \mf 4 4 bes^\tenuto 4 4 4 | 4 4 4 4 \< bes2^\tenuto \> es2 |
+%   73
+  <c es>4 \! 4 4 4 <g es'>4^\accent <c es>4 4 <g es'> |
+  <c es>2-> 4 4 <bes f'> <c es> <bes f'>2-> |
+  d2( \f es4 f8[ g]) as2-> g4( as) |
+%   76
+  bes2-> as4 \mf g as g f2-- | as2 \f <f as> <c c'> <f as> |
+}
+bXIImUpper = {
+%   78
+  c'2
+  s2 s2 s4( s4) |
+  s2 s4 s8( s8) s2 s4 s4 |
+  s2 s2 \> s4. s8 \!
+}
+bXIImLower = {
+%   78
+  as4( g)
+  \stemNeutral
+  <c f,>2 <c, c'> <f as>4( g4) |
+  as2 g4 \< g8([ as]) \! bes2^\accent \f c4 \> \after 8 \! as |
+  g2^\tenuto <g, g'>2^\tenuto <c, c' g'>1 \tweak DynamicText.X-offset -2 \p ^\fermata
+}
 
 bassMusicXII = \relative c {
 %   \set breathMarkType = #'upbow
@@ -191,7 +215,6 @@ bassMusicXII = \relative c {
     \new Voice { \voiceTwo \bXIIhLower }
   >> \oneVoice
   \bXIIi
-
   <<
     \new Voice = "bXIIjAbove" { \voiceOne \bXIIjUpper }
     \new Voice { \voiceTwo \bXIIjLower }
@@ -201,25 +224,8 @@ bassMusicXII = \relative c {
     \new Voice = "bXIIkAbove" { \voiceOne \bXIIkUpper }
     \new Voice { \voiceTwo \bXIIkLower }
   >> \oneVoice
-
-  <g, g'>2-- \> <c g'>2 \! | bes!2-- \mf 4 4 bes-- 4 4 4 | 4 4 4 4 \< bes2-- \> es2 |
-%   73
-  <c es>4 \! 4 4 4 <g es'>4-> <c es>4 4 <g es'> |
-  <c es>2-> 4 4 <bes f'> <c es> <bes f'>2-> |
-  d2( \f es4 f8[ g]) as2-> g4( as) |
-%   76
-  bes2-> as4 \mf g as g f2-- | as2 \f <f as> <c c'> <f as> |
-%   78
-  <<
-    { \voiceOne c'2 }
-    \new Voice { \voiceTwo as4( g) }
-  >> \oneVoice
-  <c f,>2 <c, c'> <f as>4( g4) |
-  as2 g4 \< g8([ as]) \! bes2-> \f c4 \> \after 8 \! as |
-  <<
-    { \voiceOne \stemNeutral g2-- <g, g'>2-- <c, c' g'>1 \tweak DynamicText.X-offset -2 \p \fermata }
-    \new Voice { \voiceTwo s2 s2 \> s4. s8 \!  }
-  >> \oneVoice
+  \bXIIl
+  << \new Voice { \voiceOne \bXIImUpper } \new Voice { \voiceTwo \bXIImLower } >> \oneVoice
 }
 
 bXIILyricsAligner = \relative c {
@@ -240,6 +246,8 @@ bXIILyricsAligner = \relative c {
   \bXIIjUpper
   r1*2
   \bXIIkLower
+  \bXIIl
+  \bXIImLower
 }
 
 % 10 upper
@@ -264,55 +272,73 @@ bXIIfLyricsX = \lyricmode { spo -- ˈdo -- bʲi ˈgos -- po -- dʲi __ }
 
 bXIILyrics = \lyricmode {
   Агн -- че __ Бо -- жий, взем -- ляй гре -- хи __ ми -- ра. __
-  Ты е -- си е -- дин, __ ""
-  \repeat unfold 12 { \skip 1 }
+  Ты е -- си е -- дин, __ И -- и -- сус Хрис -- тос,
+  в_сла -- ву __ Бо -- га __ От -- ца. А -- минь.
 %   20
   Бла -- го -- сло -- вен е -- си, Гос -- по -- ди,
   Бо -- же О -- тец на -- ших
   и хваль -- но и про -- слав -- ле -- но и -- мя Тво -- е
   во ве -- ки, __ А -- минь.
-  \repeat unfold 27 { \skip 1 }
+%   23
+  Бу -- ди, Гос -- по -- ди, ми -- лость, Тво -- я __ на нас,
+  я -- ко -- же у -- по -- ва -- хом на Тя.
+%   30
+  К_Те -- бе __ при -- бе -- гох. __
 %   34
   Гос -- по -- ди, при -- бе -- жи -- ще был __ е -- си нам. __
   Гос -- по -- ди, __
   Гос -- по -- ди,
   Ты е -- си Бог мой…
   я -- ко Ты е -- си Бог мой.
-  \repeat unfold 11 { \skip 1 }
+%   53
+  Про -- ба -- ви ми -- лость Тво -- ю __ ве -- ду -- щим Тя.
 %   59
   по -- ми -- луй нас,
 %   64
    …по -- ми -- луй нас.
   Свя -- тый Бо -- же, Свя -- тый Креп -- кий,
-  Свя -- тый Без -- смерт -- ный,
-  \repeat unfold 38 { \skip 1 }
-  Свя -- тый Бо -- же, Свя -- тый Креп -- кий,
+  Свя -- тый Без -- смерт -- ный, по -- ми -- луй нас.
+  Сла -- ва От -- цу и Сы -- ну и Свя -- то -- му Ду -- ху,
+%   73
+  и ны -- не и прис -- но и во ве -- ки ве -- ков, а -- минь.
+  Свя -- тый Без -- смерт -- ный, по -- ми -- луй нас.
+  Свя -- тый Бо -- же, Свя -- тый Креп -- кий, __
+  Свя -- тый Без -- смерт -- ный, по -- ми -- луй нас.
 }
 bXIILyricsX = \lyricmode {
  ˈɑgn -- tʃɛ __ ˈbo -- ʒɨj ˈvzʲɛm -- lʲaj grʲe -- ˈxʲi __  ˈmʲi -- ra __
-  tɨ __ je -- ˈsʲi je -- ˈdʲin __ ""
-  \repeat unfold 12 { \skip 1 }
+  tɨ __ je -- ˈsʲi je -- ˈdʲin __  i -- i -- ˈsus xrʲis -- ˈtos
+  f~ˈslɑ -- vu __ ˈbo -- ga __  ot -- ˈtsɑ a -- ˈmʲinʲ
 %   20
   bla -- go -- slo -- ˈvʲɛn je -- ˈsʲi ˈgos -- po -- dʲi
   ˈbo -- ʒɛ o -- ˈtʲɛts ˈnɑ -- ʃɨx
   i ˈxvɑlʲ -- no i pro -- ˈslɑv -- lʲɛ -- no ˈi -- mʲa tvo -- ˈjɛ
   vo ˈvʲe -- kʲi __ a -- ˈmʲinʲ
-  \repeat unfold 27 { \skip 1 }
+%   23
+  ˈbu -- dʲi ˈgos -- po -- dʲi ˈmʲi -- lostʲ __ tvo -- ˈja __ nɑ nɑs
+  ˈja -- ko -- ʒɛ u -- po -- ˈvɑ -- xom nɑ tʲa
+%   30
+  k‿tʲe -- ˈbʲɛ __ prʲi -- bʲɛ -- ˈgox __
 %   34
   ˈgos -- po -- dʲi prʲi -- ˈbʲɛ -- ʒɨ -- ʃʲːɛ bɨl __ je -- ˈsʲi nɑm __
   ˈgos -- po -- dʲi __
   ˈgos -- po -- dʲi
   tɨ je -- ˈsʲi box moj
   ˈja -- ko tɨ je -- ˈsʲi box moj
-  \repeat unfold 11 { \skip 1 }
+%   53
+  pro -- ˈbɑ -- vʲi ˈmʲi -- lostʲ tvo -- ˈju __ ˈvʲɛ -- du -- ʃʲːim tʲa
 %   59
   po -- ˈmʲi -- luj nɑs
 %   64
   po -- ˈmʲi -- luj nɑs
   svʲa -- ˈtɨj ˈbo -- ʒɛ  svʲa -- ˈtɨj ˈkrʲɛp -- kʲij
-  svʲa -- ˈtɨj bʲɛs -- ˈsmʲɛrt -- nɨj
-  \repeat unfold 38 { \skip 1 }
-  svʲa -- ˈtɨj ˈbo -- ʒɛ  svʲa -- ˈtɨj ˈkrʲɛp -- kʲij
+  svʲa -- ˈtɨj bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
+  ˈslɑ -- va ot -- ˈtsu i ˈsɨ -- nu i svʲa -- ˈto -- mu ˈdu -- xu
+%   73
+  i ˈnɨ -- nʲɛ i ˈprʲis -- no i vo ˈvʲe -- kʲi vʲɛ -- ˈkof a -- ˈmʲinʲ
+  svʲa -- ˈtɨj bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
+  svʲa -- ˈtɨj ˈbo -- ʒɛ svʲa -- ˈtɨj ˈkrʲɛp -- kʲij __
+  svʲa -- ˈtɨj bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
 }
 
 bXIIhLyrics = \lyricmode {
@@ -337,9 +363,9 @@ bXIIjLyricsAboveX = \lyricmode { ˈmʲi -- luj nɑs }
 % 63
 bXIIkLyricsAbove = \lyricmode {
   Без -- смерт -- ный, по -- ми -- луй нас.
-  Свя -- тый Бо -- же, Свя -- тый Без -- смерт -- ный,
+  Свя -- тый Бо -- же, Свя -- тый Без -- ""
 }
 bXIIkLyricsAboveX = \lyricmode {
-  bʲɛs -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
-  svʲa -- ˈtɨj ˈbo -- ʒɛ svʲaˈ -- tɨj bʲɛs -- ˈsmʲɛrt -- nɨj
+  bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
+  svʲa -- ˈtɨj ˈbo -- ʒɛ svʲa -- ˈtɨj bʲɛz -- ""
 }
