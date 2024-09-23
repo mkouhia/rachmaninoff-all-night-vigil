@@ -3,12 +3,12 @@
 
 %tocItemNarrowWithDotsMarkup = \markup \hspace #10 \fill-with-pattern #1 #RIGHT .
 %  \fromproperty #'toc:text \fromproperty #'toc:page \hspace #10
-catTocItem = #(define-music-function (str1 str2) (string? string?) 
+catTocItem = #(define-music-function (str1 str2) (string? string?)
 #{
 #(string-concatenate str1 str2)
 #})
 
-padTocItem = #(define-music-function (str1) (string?) 
+padTocItem = #(define-music-function (str1) (string?)
 #{
 #(string-concatenate str1 str2)
 #})
@@ -26,47 +26,73 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 \include "part06/06_global.ly"
 \include "part07/07_global.ly"
 \include "part08/08_global.ly"
+\include "part12/12_global.ly"
 
-#(set-global-staff-size 18.0)
+#(set-global-staff-size 16)
 #(set-default-paper-size "a4")
 
 \paper {
+
+  #(define fonts
+    (set-global-fonts
+     #:music "emmentaler"            ; default
+     #:brace "emmentaler"            ; default
+     ;#:roman "Gentium Plus"
+     #:roman "Charis SIL"
+     ;#:roman "Doulos SIL" ; otherwise ok, but weights do not work?
+     ;#:sans "Nimbus Sans, Nimbus Sans L"
+     ;#:typewriter "DejaVu Sans Mono"
+     #:factor (/ staff-height pt 20) ; to get smaller than automatic
+    ))
+
   print-all-headers = ##t
   tocTitleMarkup = \markup \huge \column {
     \combine \null \vspace #5
     \fill-line { \null "Movements" \null }
 %		\override #'(span-factor . 1/3)
-%		\halign #CENTER 
+%		\halign #CENTER
 %    \draw-hline
     \hspace #1
   }
   two-sided = ##t
-  inner-margin = 0.6\in
-  outer-margin = 0.4\in
+  inner-margin = 15\mm
+  outer-margin = 10\mm
   tocItemMarkup = \tocItemWithDotsMarkup
 %  tocItemMarkup = \markup \fill-line {
 %    #catTocItem \hspace #10 \left-align \fromproperty #'toc:text \fromproperty #'toc:page
 %  }
 %  tocItemMarkup = \markup \fill-with-pattern #1 #RIGHT .
 %  	 \fromproperty #'toc:text \fromproperty #'toc:page
-  	 
+
+  top-system-spacing.stretchability = #20
 }
 
 
-% Layout for al scores
+% Layout for all scores
 \layout {
   \context {
     \Score
     % Place all dynamic markings in the entire score above their respective staves
     \override DynamicText.direction = #UP
     \override DynamicLineSpanner.direction = #UP
+    % Stretch staffs when there is much space on the page
+%     \override StaffGrouper.staff-staff-spacing.stretchability = #20
   }
   \context {
-    \Staff \RemoveEmptyStaves
+    \Staff
+    breathMarkType = #'upbow
+    \override InstrumentName.self-alignment-X = #RIGHT
+  }
+  \context {
+    \Lyrics
+    % More space between lyrics lines
+    \override VerticalAxisGroup.nonstaff-nonstaff-spacing.padding = #0.6
+    % Allow lyrics lines to be on the same horizontal line
+    \override VerticalAxisGroup.nonstaff-nonstaff-spacing.minimum-distance = ##f
   }
   two-sided = ##t
-  inner-margin = 0.6\in
-  outer-margin = 0.4\in
+  inner-margin = 15\mm
+  outer-margin = 10\mm
 }
 
 \book {
@@ -119,6 +145,13 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
       }
       \choirStaffA
 
+      \layout {
+        \context {
+          \Staff
+          \RemoveEmptyStaves
+        }
+      }
+
     }
   }
 
@@ -133,6 +166,14 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
         subtitle = "(греческого распева)"
       }
       \choirStaffB
+
+      \layout {
+        \context {
+          \Staff
+          \RemoveEmptyStaves
+        }
+      }
+
     }
   }
 
@@ -146,6 +187,14 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
         title = "Nº 3 Блажен муж"
       }
       \choirStaffC
+
+      \layout {
+        \context {
+          \Staff
+          \RemoveEmptyStaves
+        }
+      }
+
     }
   }
 
@@ -159,6 +208,14 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
         short-indent = 6\mm
       }
       \choirStaffD
+
+      \layout {
+        \context {
+          \Staff
+          \RemoveEmptyStaves
+        }
+      }
+
     }
   }
 
@@ -172,6 +229,14 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
         title = "Nº 5 Ныне отпущаеши"
       }
       \choirStaffE
+
+      \layout {
+        \context {
+          \Staff
+          \RemoveEmptyStaves
+        }
+      }
+
     }
   }
 
@@ -182,6 +247,14 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
         title = "Nº 6 Богородице Дево, радуйся"
       }
       \choirStaffF
+
+      \layout {
+        \context {
+          \Staff
+          \RemoveEmptyStaves
+        }
+      }
+
     }
   }
 
@@ -196,6 +269,13 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
         subtitle = "Славословие малое"
       }
       \choirStaffG
+
+      \layout {
+        \context {
+          \Staff
+          \RemoveEmptyStaves
+        }
+      }
 
     }
   }
@@ -223,4 +303,31 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
     }
   }
 %}
+
+  \bookpart {
+    \tocItem \markup { Nº 12. Славословие великое }
+
+    \header {
+      title = "Nº 12. Славословие великое."
+    }
+
+    \score {
+      \header { title = ##f }
+      \choirStaffXII
+
+      \layout {
+        \enablePolymeter
+        \context {
+          \Score
+          barNumberVisibility = #first-bar-number-invisible-save-broken-bars
+        }
+        \context {
+          \Staff
+          \remove "Time_signature_engraver"
+        }
+      }
+
+    }
+  }
+
 }

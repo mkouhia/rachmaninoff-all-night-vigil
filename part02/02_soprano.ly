@@ -75,7 +75,7 @@ sopranoIMusicB = {
   c''2. c''8\< c''8
   f''4.(\mf e''8 f''2) e''4 e''8([\> f''8)] d''4 c''8([ b')]
   c''4.(\! d''8 e''4 f''4 e''4. c''8) d''4 c''4
-  c''\breve^\ritardando ~
+  c''\breve~ \ritardando
   c''\breve\pp
 }
 

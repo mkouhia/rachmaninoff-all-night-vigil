@@ -4,7 +4,7 @@
 \include "../layout.ly"
 \include "12_global.ly"
 
-#(set-global-staff-size 16)
+#(set-global-staff-size 17)
 
 \paper {
   #(define fonts
@@ -18,6 +18,10 @@
      ;#:typewriter "DejaVu Sans Mono"
      #:factor (/ staff-height pt 20) ; to get smaller than automatic
     ))
+
+   % system-system-spacing.stretchability = #60
+   top-system-spacing.stretchability = #20
+   % last-bottom-spacing.stretchability = #30
 }
 
 date = #(strftime "%Y-%m-%d" (localtime (current-time)))
@@ -27,8 +31,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 %   composer = "Сергей Рахманинов"
   tagline = ##f
 } % header
-
-\markup \vspace #2
 
 \score {
 
@@ -45,7 +47,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 %       Slightly smaller lyrics font
 %       \override LyricText.font-size = #-0.05
 %       Stretch staffs when there is much space on the page
-      \override StaffGrouper.staff-staff-spacing.stretchability = #20
+%       \override StaffGrouper.staff-staff-spacing.stretchability = #15
     }
     \context {
       \Staff
@@ -56,7 +58,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \context {
       \Lyrics
 %       More space between lyrics lines
-      \override VerticalAxisGroup.nonstaff-nonstaff-spacing.padding = #0.7
+      \override VerticalAxisGroup.nonstaff-nonstaff-spacing.padding = #0.6
 %       \override LyricSpace.minimum-distance = #2.0
 %       \override LyricExtender.minimum-length = #6.0
       \override VerticalAxisGroup

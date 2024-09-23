@@ -100,13 +100,13 @@ topMarksC = {
   s4*155^\ogni_volta_più_forte_più_allegro
   s4*16^\ritmo_ancora_più_veloce
   s4*9^\molto_ritmicamente
-  s4*5^\ritardando
+  s4*5\ritardando
   s4*15^\senza_sosta_leggero_morbido
-  s4*8^\ritardando
+  s4*8\ritardando
   s4*15^\senza_sosta
-  s4*8^\ritardando
+  s4*8\ritardando
   s4*15^\senza_sosta
-  s4*8^\ritardando
+  s4*8\ritardando
 }
 
 sopStaffC = \new Staff \with { instrumentName = \soprano }

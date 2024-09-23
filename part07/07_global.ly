@@ -70,7 +70,7 @@ topMarksG = {
 	\change Staff = "Soprano_I" s4*22^\a_tempo
 	s4*2^\lunga_pausa
 	s4*44^\lentamente_molto_delicatamente_con_un_grande_senso
-	s4*12^\ritardando
+	s4*12\ritardando
 }
 
 

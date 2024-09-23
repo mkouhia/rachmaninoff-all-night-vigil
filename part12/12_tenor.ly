@@ -12,7 +12,7 @@ tXIIc = {
   <c es>2( <g d'>1 <c es>2) \tieNeutral <bes f'>1~ |
   2 <c es>2( <g d'>) <c es> <bes f'>1
 %   5
-  <as es'>2-- \tweak DynamicText.X-offset -2 \p <c es> <g d'>-- <c es> <bes f'>-- <c es>4 4 |
+  <as es'>2-- \tweak DynamicText.X-offset -1 \p <c es> <g d'>-- <c es> <bes f'>-- <c es>4 4 |
   <g d'>2-- \> <as c>2 \! <bes d>1 \pp |
 %   7
   <c es>2 <d f>1 <c es>1 <bes d>2~ |

@@ -215,7 +215,7 @@ sXIIpUpper = {
   as2->( g4 as8[ g]) |
 %   55
   \stemNeutral <d f>2  \> \after 4 \! <c es> <d f>1 \breathe
-  c4 \p c <bes d>^\tenuto \stemUp c,8([ d]) |
+  c4 \p c <bes d>^\tenuto \stemUp c8([ d]) |
   \stemNeutral <bes es>4 4 <bes d>4^\tenuto \stemUp c8([ d]) |
   es8([ d]) \stemNeutral  <bes es>4 \stemUp d4( \< es) \! |
   \stemNeutral <c f>2^\tenuto \mf \> <c es>4 \! <c d> |
