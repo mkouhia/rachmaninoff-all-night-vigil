@@ -2,7 +2,7 @@
 
 sXIIa = {
 %   5
-  <as' c>2-- \tweak DynamicText.X-offset -2 \p <c es>2  <g bes>2^\tenuto <c es>2 <bes d>2-- c4 c4 |
+  <as' c>2-- \tweak DynamicText.X-offset -1 \p <c es>2  <g bes>2^\tenuto <c es>2 <bes d>2-- c4 c4 |
   bes2-- \> <g c>2 \!
 }
 sXIIbUpper = {
@@ -24,12 +24,12 @@ sXIIc = {
 }
 sXIIdUpper = {
   s2   \once \override Slur.positions = #'(4 . -1) d4( \< es \! |
-  f2 \f) es es d4 c d8([ \> c] bes4 c1) \!
+  f2 \tweak DynamicText.X-offset -1 \f) es es d4 c d8([ \> c] bes4 c1) \!
   bes4 \tweak DynamicText.X-offset -2 \mf \dir_певуче \< c \! |
 }
 sXIIdLower = {
   c2( bes2~) |
-  bes1~ 1~ 4 r4 r1 bes4 c |
+  bes1~ \tweak DynamicText.X-offset -1 _\p 1~ 4 r4 r1 bes4 c |
 }
 sXIIe = {
 %   14
@@ -44,13 +44,13 @@ sXIIe = {
 %     #'((padding . 23))
 %   \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing =
 %     #'((padding . 23))
-  as4--) \! g \> g f \! as2-- g f--( g)
-  as4 g as g as1--
+  as4--) \! g \> g f \! as2-- g f^\tenuto( g)
+  as4 g as g as1^\tenuto
 }
 sXIIfUpper = {
 %   (18)
   es'2-- \tweak DynamicText.X-offset -1.5 \p \<
-  2-- 2-- 2-- 2-- 1-> \ff
+  2-- 2-- 2-- 2-- \! 1-> \ff
 }
 sXIIfLower = {
   \repeat unfold 5 { c8--([ bes as bes]) }
@@ -68,7 +68,7 @@ sXIIhUpper = {
   d4 \< d1-- \>
 }
 sXIIhLower = {
-  a8([ bes]) c2( bes)
+  a!8([ bes]) c2( bes)
 }
 sXIIi = {
   <a d>1( \p \> <g d'>1.) <g d'>2 \pp |
@@ -86,8 +86,8 @@ sXIIk = {
 %   22
   bes2-- \> 1.-- \! 2 \pp 2 2 4 4 1-- \breathe
 %   23
-  g!4 \p \< as \! bes2-- \> as4 \< as4 \! 2-- \> 2~ \! 4
-  as4 \p as8([ g]) f4 g1-- \breathe |
+  g!4 \p \< as \! \after 8 \>  bes2-- as4 \< as4 \! \after 8 \> 2^\tenuto 2~ \! 4
+  as4 \p as8([ g]) f4 g1^\tenuto \breathe |
   <c es>4 \mf 4 4 \< <b d>4 <c es> <d f>1 \ff \> <c es>2 \! 2 <b! d>1 \p \fermata r2
 }
 sXIIlUpper = {
@@ -107,6 +107,7 @@ sXIIlUpper = {
   <> \tweak DynamicText.X-offset -2 \mf \after 2 \> \after 2*5/3 \! <d f>1.--~( 4 <c es>4) \! |
   <b d>4( \< <c es>) \!
   \once \override Slur.positions = #'(0 . 0)
+  \once \override Hairpin.shorten-pair = #'(2 . 0)
   <d f>4--( \> <c es>) \!
   <b d>4( \< <c es>) \!
   \once \override Hairpin.to-barline = ##t \after 8 \>
@@ -118,6 +119,7 @@ sXIIlUpper = {
   <> \tweak DynamicText.X-offset -2 \f \after 2 \> \after 2*5/3 \! <d f>1.--~( 4 <c es>4) \! |
 %   32
   <b d>4( \< <c es> \!
+  \once \override Hairpin.endpoint-alignments = #'(1 . 1)
   <d f>4-- \> <c es>) \!
   <b d>4( \< <c es>) \!
   <>\tweak DynamicText.X-offset -2 \ff \override Hairpin.to-barline = ##f \after 8 \>
@@ -127,8 +129,9 @@ sXIIlUpper = {
 %   34
   R1*2*3 |
   R1*2*2 |
-  b1\rest b2\rest b4\rest d8([\tweak DynamicText.X-offset -2  \pp \< ^\dir_легко es] |
-  \once \override Slur.positions = #'(0 . 0)
+  b1\rest b2\rest b4\rest
+  \alterBroken positions #'((0 . 0) (0 . 0)) Slur
+  d8([\tweak DynamicText.X-offset -2  \pp \< ^\dir_легко es] |
   f4--) \! es4 \> d2 \!
 }
 sXIIlLower = {
@@ -200,7 +203,7 @@ sXIInLower = {
 sXIIo = {
 %   49
   f'4 \p es es d8([ c]) d4 bes8([ \< c]) |
-  d4 \> d \! es8([ d]) c4 \< d2-- |
+  d4 \> d \! es8([ d]) c4 \< \after 4 \! d2-- |
   es4 \mf 4 es8([ d]) c4 c4--( \< d8[ <c es>]) |
 %   52
   <bes f'>2-- \! <bes es> \> <bes d> \! |
@@ -211,21 +214,25 @@ sXIIpUpper = {
   as2->(  \tweak DynamicText.X-offset -2.5 \ff g4 f8[ g])
   as2->( g4 as8[ g]) |
 %   55
-  s2 s2 s1 |
-  s4 s4 s4 c,8([ d]) | s4 s4 s4 c8([ d]) | es8([ d]) s4 d4( \< es) \! |
-  s2 s4 s4 |
+  \stemNeutral <d f>2  \> \after 4 \! <c es> <d f>1 \breathe
+  c4 \p c <bes d>^\tenuto \stemUp c,8([ d]) |
+  \stemNeutral <bes es>4 4 <bes d>4^\tenuto \stemUp c8([ d]) |
+  es8([ d]) \stemNeutral  <bes es>4 \stemUp d4( \< es) \! |
+  \stemNeutral <c f>2^\tenuto \mf \> <c es>4 \! <c d> |
 %   60
-  s2 s2 \> \after 4 \! s2
+  <c es>2^\tenuto \p <b d>^\tenuto c^\tenuto  \tweak DynamicText.X-offset -3 \pp
 }
 sXIIpLower = {
 %   54
   es4(-> f-> c-> f->) es4(-> f-> c-> f8[-> es]) |
 %   55
-  <d f>2  \> \after 4 \! <c es> <d f>1 \breathe
-  c4 \p c <bes d>-- bes | <bes es>4 4 <bes d>4-- bes | bes <bes es> bes2 |
-  <c f>2-- \mf \> <c es>4 \! <c d> |
+  s2 s2 s1 |
+  s4 s4 s4 bes4 |
+  s4 s4 s4 bes4 |
+  bes4 s4 bes2 |
+  s2 s4 s4 |
 %   60
-  <c es>2^\tenuto \p <b d>^\tenuto c^\tenuto  \tweak DynamicText.X-offset -3 \pp
+  s2 s2 \> \after 4 \! s2
 }
 sXIIq = {
 %   61
@@ -239,7 +246,7 @@ sXIIq = {
   <c es>4-- 4 <b d>-- <a c>8([ <b d>]) |
   <c es>8--([ <b d>]) <c es>4 <b d>( \< <c es>) \! |
 %   69
-  <> \tweak DynamicText.X-offset -2.5 \f  \after 8. \>
+  <> \tweak DynamicText.X-offset -2 \f  \after 8. \>
   <d f>2-- <c es>4 \! <c d> |
   <c es>2-- \p <b d>-- \> c-- \! |
   <bes! d>2-- \mf 4 <bes es>4 <bes d>4-- 4 4 4 |
@@ -263,7 +270,7 @@ sXIIs = {
 }
 sXIItUpper = {
   \stemDown
-  <es g>2-- <d f>2-- \> <c es>1
+  <es g>2-- <d f>2-- <c es>1
   \tweak DynamicText.X-offset -2 \p \fermata
 }
 sXIItLower = { s2 s2 \> s4. s8 \! }
@@ -345,7 +352,7 @@ sXIILyricsAligner = \relative c' {
   \sXIIm
   \sXIInLower
   \sXIIo
-  \sXIIpLower
+  \sXIIpUpper
   \sXIIq
   \sXIIrLower
   \sXIIs
@@ -363,10 +370,12 @@ sXIILyrics = \lyricmode {
 %   17
   Ты __  е -- си е -- дин, Гос -- под, __ И -- и -- сус Хрис -- тос,
   в_сла -- ву __ Бо -- га __ От -- ца. А -- минь.
-%   19 SA lyrics
-  \repeat unfold 24 { \skip 1 }
-%   20
-  всяк день бла -- го -- слов -- лю Тя,
+%   19
+  На всяк день бла -- го -- слов -- лю Тя
+  и вос -- хва -- лю и -- мя Тво -- е
+  во ве -- ки и в_век ве -- ка. __
+%   (19)
+  На всяк день бла -- го -- слов -- лю Тя,
   вос -- хва -- лю и -- мя Тво -- е __
   во ве -- ки и в_век ве -- ка. __
 
@@ -392,7 +401,7 @@ sXIILyrics = \lyricmode {
   Про -- ба -- ви ми -- лость Тво -- ю __ ве -- ду -- щим Тя.
   Свя -- тый Бо -- же, Свя -- тый Креп -- кий,
   Свя -- тый Без -- смерт -- ный, по -- ми -- луй нас.
-  Свя -- тый Бо -- же, Свя -- тый Креп -- кий,
+  Свя -- тый Бо -- же, __ Свя -- тый Креп -- кий,
   Свя -- тый Без -- смерт -- ный, по -- ми -- луй нас.
   Свя -- тый Бо -- же, __ Свя -- тый Креп -- кий,
   Свя -- тый Без -- смерт -- ный, по -- ми -- луй нас.
@@ -410,9 +419,12 @@ sXIILyricsX = \lyricmode {
   ˈgos -- po -- dʲi ˈbo -- ʒɛ __
   tɨ __ je -- ˈsʲi je -- ˈdʲin gos -- ˈpodʲ __ i -- i -- ˈsus xrʲis -- ˈtos
   f~ˈslɑ -- vu __ ˈbo -- ga __   ot -- ˈtsɑ a -- ˈmʲinʲ
-%   19 SA lyrics
-  \repeat unfold 24 { \skip 1 }
-  fsʲak dʲenʲ bla -- go -- slov -- ˈlʲu tʲa
+%   19
+  nɑ fsʲak dʲenʲ bla -- go -- slov -- ˈlʲu tʲa
+  i vos -- xva -- ˈlʲu ˈi -- mʲa tvo -- ˈjɛ
+  vo ˈvʲe -- kʲi i v‿vʲɛk ˈvʲɛ -- ka __
+%   (19)
+  nɑ fsʲak dʲenʲ bla -- go -- slov -- ˈlʲu tʲa
   vos -- xva -- ˈlʲu ˈi -- mʲa tvo -- ˈjɛ __
   vo ˈvʲe -- kʲi i v‿vʲɛk ˈvʲɛ -- ka __
 
@@ -459,22 +471,6 @@ sXIIcLyrics = \lyricmode {
 }
 sXIIcLyricsX = \lyricmode {
   i -- i -- ˈsu -- sʲɛ xrʲi -- sˈtʲɛ __ ""
-}
-saXIILyrics = \lyricmode {
-  \repeat unfold 52 { \skip 1 }
-%   19
-  На всяк день бла -- го -- слов -- лю Тя
-  и вос -- хва -- лю и -- мя Тво -- е
-  во ве -- ки и в_век ве -- ка. __
-  На
-}
-saXIILyricsX = \lyricmode {
-  \repeat unfold 52 { \skip 1 }
-%   19
-  nɑ fsʲak dʲenʲ bla -- go -- slov -- ˈlʲu tʲa
-  i vos -- xva -- ˈlʲu ˈi -- mʲa tvo -- ˈjɛ
-  vo ˈvʲe -- kʲi i v‿vʲɛk ˈvʲɛ -- ka __
-  nɑ
 }
 
 sXIInLyrics = \lyricmode {

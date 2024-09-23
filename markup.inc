@@ -132,27 +132,20 @@ tempo_Довольно_скоро = \tempoTrans "Довольно скоро" "M
 tempo_Медленнее = \tempoTrans "Медленнее" "Più lento"
 tempo_Медленнее_певуче = \tempoAndMarkTrans "Медленнее" "Певуче" "Più lento" "Cantabile"
 tempo_Медленнее_певуче_V = \tempoAndMarkTransV "Медленнее" "Певуче" "Più lento" "Cantabile"
-% Tempo come sopra
+tempo_Еще_шире = \tempoTrans "Еще шире" "Allargando" % "Ancora piu largo"
 tempo_Прежний_темп = \tempoTrans "Прежний темп" "Tempo I"
 tempo_В_прежнем_темпе = \tempoTrans "В прежнем темпе" "Tempo I"
 
 mark_в_темпе = \textMarkTrans "в темпе" "a tempo"
 tempo_В_темпе = \tempoTrans "В темпе" "A tempo"
 tempo_Темп_быстрее = \tempoTrans "Темп быстрее" "Più mosso"
-% animato, dolce? must check this.
-tempo_animato_dolce = \tempo \markup { Темп бсё оживленнее \small Звучность остается легкой }
+tempo_бсё_оживленнее = \tempoAndMarkTrans "Темп бсё оживленнее" "Звучность остается легкой" "Più vivace" "Sempre leggiero"
 
 mark_мягко = \textMarkTrans "мягко" "dolce"
 mark_ослабляя_звук = \textMarkTrans "ослабляя звук" "diminuendo"
 
-% Every note accented
-mark_акцентируя_каждую_ноту = \textMark "акцентируя каждую ноту"
-
 dir_певуче = \dirTrans "певуче" "cantabile"
 dir_коротким_звуком = \dirTrans "коротким звуком" "secco"
-
-mark_коротким_звуком = \textMark "коротким звуком"
-
 dir_легко = \dirTrans "легко" "leggiero"
 
 

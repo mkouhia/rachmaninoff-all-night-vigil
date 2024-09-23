@@ -1,19 +1,21 @@
 \version "2.24.1"
 
 aXIIa = {
+  \override Score.Script.direction = #UP
   es4--( \p f g) g g8[( f)] es4 f2-- f8([ g] as4) |
   g g g8([ f]) es4 f1-- |
 %   3
   g4 g g g g2-- g8[( f)] es4 f2-- f4 \< g |
   as2-- \> g4 \! g--~ g g g8([ f]) es4 f2-- f4( g)
 %   5
-  as2-- \tweak DynamicText.X-offset -2 \p g4 g g g g8([ f]) es4 f2 g4 g |
+  as2-- \tweak DynamicText.X-offset -1 \p g4 g g g g8([ f]) es4 f2 g4 g |
   g2-- g8([ f]) es4 f2 f4 \< g |
 %   7
   as2-- \!  \mf g4 \> g \! g g g g g8([ f]) es4 f2--
   as2-- \mf g4 g~ g g \> g8([ f]) \! es4 f2 f4( g) |
 %   9
   as2-- \p g as-- g g4 g g8([ f])
+  \revert Score.Script.direction
 }
 aXIIbUpper = {
   es4 f1~ |
@@ -25,12 +27,14 @@ aXIIbLower = {
 }
 aXIIc = {
 %   11
+  \override Score.Script.direction = #UP
   g2-- g4 g g8([ f]) es4 f2--~ |
-  f2 f4( \< g) \! as4 g as2-- g4 \> g \! g2-- g4 \p g g8([ f] es4) f4 \< f8([ g]) |
+  f2 f4( \< g) \! as4 g as2-- g4 \> g \! g2-- g4 \p g g8--([ f] es4) f4 \< f8([ g]) |
 %   13
-  as2-- \! \mf g4 g g g g \> g g g g2-- \p g8([ f]) es4 f2 |
+  as2-- \! \tweak DynamicText.X-offset -2 \mf g4 g g g g \> g g g g2-- \p g8([ f]) es4 f2 |
   as2-- g4 g
-  g2-- g4 g \< <as f>2-- \> <g es>2 \!
+  g2-- \once \override Hairpin.shorten-pair = #'(3 . 2)  g4 \<  g \after 8 \> <as f>2-- <g es>2 \!
+  \revert Score.Script.direction
 }
 aXIIdUpper = {
   f4( \< g) \! |
@@ -39,10 +43,15 @@ aXIIdUpper = {
   es4 \ppp r4 r2 s1*2 r1*2 |
   r1 r1 es2( \pp \< |
 %   18
-  es2) \>  s2 \! s2 s2 s1
+  <>\! \after 8 \> es2)  s2 \! s2 s2 s1
   s4 s4 s4 s4 s1
+}
+aXIIdaUpper = {
   as8--([ \tweak DynamicText.X-offset -1.5 \p \< bes c bes]) as8--([ bes c bes]) as8--([ bes c bes]) as8--([ bes c bes])
-  as8--([ \! bes c bes]) g1-> \ff \> g1 a2\fermata \tweak DynamicText.X-offset -2 \p
+  as8--([ \! bes c bes])
+}
+aXIIdbUpper = {
+  g1-> \ff \> g1 a2\fermata \tweak DynamicText.X-offset -2 \p
   b2\rest |
 }
 aXIIdLower = {
@@ -54,8 +63,12 @@ aXIIdLower = {
   es2) \stemNeutral  es2 es^\tenuto es es1^\tenuto
   es4 \pp es es es es1^\tenuto
   \stemDown
+}
+aXIIdaLower = {
   es2-- es-- es-- es--
-  es-- es1-> g1 fis2 \fermata
+  es--
+}
+aXIIdbLower = { es1-> g1 fis2 \fermata
   s2 |
 }
 
@@ -72,7 +85,7 @@ aXIIeLower = {
   s1 s1.
 }
 aXIIfUpper = {
-  r2 \tweak DynamicText.X-offset -3  _\pp
+  r2 \tweak DynamicText.X-offset -3.5  _\pp
 %   20
   R4*6 % this is ok
   R1 R1 R1
@@ -83,7 +96,7 @@ aXIIfUpper = {
   ges4
   s2 s4 s4
 
-  as2-- ges2--
+  as2-- ges!2--
   s4  s4
 %   22
   s2  ges1.-- s2 s2
@@ -92,7 +105,7 @@ aXIIfUpper = {
 aXIIfLower = {
   d2
 %   20
-  c2-- f4 \tweak DynamicText.X-offset -3  _\pp es f c f es f c
+  c2-- f4 \tweak DynamicText.X-offset -3.5  _\pp es f c f es f c
   es es8[( _\< f)] g4 \! f    g4--( _\> f8[ es] f4) \! es4
   f4 c f8([ es]) d4    es1 _\p _\>    c1~ _\pp c2 f2
 %   21
@@ -100,7 +113,7 @@ aXIIfLower = {
   <f as>2^\tenuto( <es ges>4) <des ges>4
   <es ges!>4 <bes ges'> <es ges>
   \stemDown
-  des8([ c])
+  des!8([ c])
   \stemNeutral
   <des! ges!>2-- <des f>4 \< <es ges> \!
 
@@ -120,7 +133,9 @@ aXIIfLower = {
 aXIIg = {
   <c ges'>4 <d f>1^\tenuto \breathe
 %   23
-  <bes es>4 \p \< <ces es> \! <des es>2^\tenuto \> <ces es>4 \< <des es> \! es2^\tenuto \> des!2~ \! 4 es4 \p 4 \> 4 \! es1^\tenuto \breathe |
+  <bes es>4 \p \< <ces es> \! \after 8 \>  <des es>2^\tenuto
+  \once \override Hairpin.endpoint-alignments = #'(1 . 0)
+  <ces es>4 \< <des es> \! \after 8 \> es2^\tenuto des!2~ \! 4 es4 \p 4 \> 4 \! es1^\tenuto \breathe |
   <es g>4 \mf 4 4 \< <d! g> <es g> \! <f as>1 \ff \> <es g>2 \! 2 <d g>1  \tweak DynamicText.X-offset -2 \p \fermata r1 |
 %   25
   r2 \tuplet 3/2 { f4 \mf 4 \< g \! } as2~^\accent \tuplet 3/2 {4 g \> g \!} |
@@ -212,7 +227,7 @@ aXIIkLower = {
 aXIIl = {
   <es g>4 4^\tenuto( \< f8[ g]) |
 %   52
-  as2-- \! g \> \after 4 \! f |
+  as2^\tenuto \! g \> \after 4 \! f |
   <g bes>4 bes4 4 \< 4 4 4 \! |
 }
 aXIImUpper = {
@@ -238,6 +253,7 @@ aXIIoUpper = {
 }
 aXIIoLower = {
 %   60
+  \stemNeutral
   g2^\tenuto \p <f g>2^\tenuto <es g>2^\tenuto  \tweak DynamicText.X-offset -3 \pp |
   \stemNeutral <es g>4 \p 4 <d g>4^\tenuto \stemDown es8([ d]) |
   \stemNeutral <c g'>4 4 <d g>^\tenuto \stemDown es8([ d]) |
@@ -250,7 +266,7 @@ aXIIp = {
   g2^\tenuto \p g2^\tenuto | g2^\tenuto g2^\tenuto |
   g2^\tenuto g4^\tenuto f8([ \< g])
 %   69
-  <> \tweak DynamicText.X-offset -2.5 \f  \after 8. \>
+  <> \tweak DynamicText.X-offset -2 \f  \after 8. \>
   as2^\accent g4 \! as |
   g2^\tenuto \p <f g>^\tenuto \> <es g>^\tenuto \! |
   <d f>2^\tenuto \mf 4 <es g> <d f>^\tenuto 4 4 4 |
@@ -288,8 +304,8 @@ altoMusicXII = \relative c' {
   << { \voiceOne \aXIIbUpper } \new Voice { \voiceTwo \aXIIbLower } >> \oneVoice
   \aXIIc
   <<
-    \new Voice = "aXIIdAbove" { \voiceOne \aXIIdUpper }
-    \new Voice { \voiceTwo \aXIIdLower }
+    \new Voice = "aXIIdAbove" { \voiceOne \aXIIdUpper \aXIIdaUpper \aXIIdbUpper }
+    \new Voice { \voiceTwo \aXIIdLower \aXIIdaLower \aXIIdbLower }
   >> \oneVoice
   << { \voiceOne \aXIIeUpper } \new Voice { \voiceTwo \aXIIeLower } >> \oneVoice
   << { \voiceOne \aXIIfUpper } \new Voice { \voiceTwo \aXIIfLower } >> \oneVoice
@@ -315,7 +331,7 @@ aXIILyricsAligner = \relative c' {
   \aXIIa
   \aXIIbLower
   \aXIIc
-  \aXIIdLower
+  \aXIIdLower \aXIIdaUpper \aXIIdbLower
   \aXIIeUpper
   \aXIIfLower
   \aXIIg
@@ -349,9 +365,11 @@ aXIILyrics = \lyricmode {
   взем -- ляй грех ми -- ра, по -- ми -- луй нас;
   взем -- ляй гре -- хи __ ми -- ра. __
   Ты __ е -- си е -- дин,  И -- и -- сус Хрис -- тос,
-  в_сла -- ву  Бо -- га От -- ца. А -- минь.
-%   18 SA lyrics
-  \repeat unfold 23 { \skip 1 }
+  в_сла -- ву __ Бо -- га __ От -- ца. А -- минь.
+%   19
+  На всяк день бла -- го -- слов -- лю Тя
+  и вос -- хва -- лю и -- мя Тво -- е
+  во ве -- ки и в_век ве -- ка. __
 %   (19)
   На всяк день бла -- го -- слов -- лю Тя,
   вос -- хва -- лю и -- мя Тво -- е __
@@ -373,7 +391,7 @@ aXIILyrics = \lyricmode {
 %   34 lower
   Гос -- по -- ди, при -- бе -- жи -- ще был __ е -- си нам.
 %   38
-  Аз рех: Гос -- по -- ди, по -- ми -- луй мя,
+  Аз рех: Гос -- по -- ди, __ по -- ми -- луй мя,
   ис -- це -- ли ду -- шу мо -- ю,
   я -- ко со -- гре -- ших Те -- бе. __
   Гос -- по -- ди, __ к_Те -- бе при -- бе -- гох, __
@@ -384,9 +402,9 @@ aXIILyrics = \lyricmode {
   во све -- те Тво -- ем __ у -- зрим свет.
 %   53
   Про -- ба -- ви ми -- лость Тво -- ю __ ве -- ду -- щим Тя.
-  Свя -- тый Бо -- же, Свя -- тый Креп -- кий,
+  Свя -- тый Бо -- же, __ Свя -- тый Креп -- кий,
   Свя -- тый Без -- смерт -- ный, по -- ми -- луй нас.
-  Свя -- тый Бо -- же, Свя -- тый Креп -- кий,
+  Свя -- тый Бо -- же, __ Свя -- тый Креп -- кий,
   Свя -- тый Без -- смерт -- ный, по -- ми -- луй нас.
 %   66
   Свя -- тый Бо -- же, Свя -- тый Без -- смерт -- ный,  по -- ми -- луй нас.
@@ -409,7 +427,7 @@ aXIILyricsX = \lyricmode {
   bla -- go -- da -- ˈrʲim tʲa vʲe -- ˈlʲi -- kʲi -- ja ˈrɑ -- dʲi ˈslɑ -- vɨ tvo -- je -- ˈja
 
   ˈgos -- po -- dʲi __ tsar -- ˈju __ nʲe -- ˈbʲɛs -- nɨj __
-  ˈbo -- ʒɛ __ ot -- ˈtʃɛ fsʲe -- dʲɛr -- ˈʒɨ -- tʲe -- lʲu __
+  ˈbo -- ʒɛ ot -- ˈtʃɛ fsʲe -- dʲɛr -- ˈʒɨ -- tʲe -- lʲu __
   ˈgos -- po -- dʲi ˈsɨ -- nʲɛ je -- dʲi -- no -- ˈrod -- nɨj __
   i -- i -- ˈsu -- sʲɛ xrʲis -- ˈtʲɛ
   i svʲa -- ˈtɨj __ du -- ˈʃɛ
@@ -418,9 +436,12 @@ aXIILyricsX = \lyricmode {
   ˈvzʲɛm -- lʲaj grʲe -- ˈxʲi __  ˈmʲi -- ra __
 %   prʲij -- ˈmʲi mo -- ˈlʲit -- vu ˈnɑ -- ʃu
   tɨ __ je -- ˈsʲi je -- ˈdʲin  i -- i -- ˈsus xrʲis -- ˈtos
-  f~ˈslɑ -- vu ˈbo -- ga  ot -- ˈtsɑ a -- ˈmʲinʲ
-%   18 SA lyrics
-  \repeat unfold 23 { \skip 1 }
+  f~ˈslɑ -- vu __ ˈbo -- ga __ ot -- ˈtsɑ a -- ˈmʲinʲ
+%   19
+  nɑ fsʲak dʲenʲ bla -- go -- slov -- ˈlʲu tʲa
+  i vos -- xva -- ˈlʲu ˈi -- mʲa tvo -- ˈjɛ
+  vo ˈvʲe -- kʲi i v‿vʲɛk ˈvʲɛ -- ka __
+%   (19)
   nɑ fsʲak dʲenʲ bla -- go -- slov -- ˈlʲu tʲa
   vos -- xva -- ˈlʲu ˈi -- mʲa tvo -- ˈjɛ __
   vo ˈvʲe -- kʲi i v‿vʲɛk ˈvʲɛ -- ka __
@@ -441,8 +462,8 @@ aXIILyricsX = \lyricmode {
 %   34 lower
   ˈgos -- po -- dʲi prʲi -- ˈbʲɛ -- ʒɨ -- ʃʲːɛ bɨl __ je -- ˈsʲi nɑm
   %   38
-  ɑz rʲɛx ˈgos -- po -- dʲi po -- ˈmʲi -- luj mʲa
-  is -- tse -- ˈlʲi __ ˈdu -- ʃu mo -- ˈju __
+  ɑz rʲɛx ˈgos -- po -- dʲi __ po -- ˈmʲi -- luj mʲa
+  is -- tse -- ˈlʲi ˈdu -- ʃu mo -- ˈju
   ˈja -- ko so -- grʲɛ -- ˈʃɨx tʲe -- ˈbʲɛ __
   ˈgos -- po -- dʲi __  k‿tʲe -- ˈbʲɛ prʲi -- bʲɛ -- ˈgox __
   na -- u -- ˈtʃi mʲa __ tvo -- ˈrʲi -- tʲi ˈvo -- lʲu tvo -- ˈju
@@ -463,7 +484,7 @@ aXIILyricsX = \lyricmode {
 
   svʲa -- ˈtɨj bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
   svʲa -- ˈtɨj ˈbo -- ʒɛ __  svʲa -- ˈtɨj ˈkrʲɛp -- kʲij __
-  svʲa -- ˈtɨj ˈbo -- ʒɛ __ svʲa -- ˈtɨj ˈkrʲɛp -- kʲij
+  svʲa -- ˈtɨj ˈbo -- ʒɛ __ svʲa -- ˈtɨj __ ˈkrʲɛp -- kʲij
   svʲa -- ˈtɨj bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
 }
 

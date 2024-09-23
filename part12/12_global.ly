@@ -6,8 +6,9 @@
 \include "12_bass.ly"
 
 globalMusicXIIa = {
+%   \autoLineBreaksOff
+%   \autoBreaksOff
   \key es \major
-%   \omit TimeSignature
   \time 5/2
   \skip 4*10
   \time 4/2
@@ -23,6 +24,7 @@ globalMusicXIIa = {
   \time 4/2
   \skip 2*4
   \break
+%   \pageBreak
   %7
   \time 6/2
   \skip 2*6
@@ -40,6 +42,7 @@ globalMusicXIIa = {
   \time 9/2
   \skip 2*9
   \break
+%   \pageBreak
   %13
   \time 8/2
   \skip 2*8
@@ -58,6 +61,7 @@ globalMusicXIIa = {
   \skip 2
   \break
 %   18
+%   \pageBreak
   \time 21/2
   \skip 2*6
   \skip 2*4
@@ -82,6 +86,7 @@ globalMusicXIIbSA = {
 }
 globalMusicXIIbS = {
 %   20
+%   \pageBreak
   \set Staff.currentBarNumber = #20
   \time 34/4 \skip 4*6  \bar ";"
   \skip 4*4  \bar ";"
@@ -133,6 +138,7 @@ globalMusicXIIc = {
   \skip 4*6
   \break
 %   22
+%   \pageBreak
   \time 20/4 \skip 4*8 \bar ";"
   \skip 4*4 \bar ";"
   \skip 4*8
@@ -146,6 +152,7 @@ globalMusicXIIc = {
   \skip 2*4 \skip 2*3 \skip 2
   \skip 2*3 \skip 2
   \break
+%   \pageBreak
 %   28
   \skip 2*4
   \skip 2*3 \skip 2
@@ -154,34 +161,40 @@ globalMusicXIIc = {
   \skip 2*3 \skip 2
   \skip 2*4
   \break
+%   \pageBreak
 %   32
   \skip 2*3 \skip 2
   \skip 2*4
   \break
 %   34
   \skip 2*4*3 \break
+%   \pageBreak
 %   37
   \skip 2*4*2 \skip 2*4 \break
 %   40
   \skip 2*4 \time 2/2 \skip 2*2 \time 4/2 \skip 2*4 \break
-%   43, 46, 49, 52
+%   \pageBreak
+%   43
   \time 3/2
-  \tempo_animato_dolce
-  \repeat unfold 3 { \skip 2*3*3 \break }
-%   54
+  \skip 2*3*3 \break
+%   46
+  \skip 2*3*3 \break
+%   \pageBreak
+%   49
+  \skip 2*3*3 \break
+%   52
   \skip 2*3*2 \time 4/2 \skip 2*4 \break
 %   55
-  \ritenuto
   \time 4/2 \skip 2*4
-  \textMark " a tempo "
-%   \tempo_в_темпе
   \time 2/2 \skip 2*2*4 \break
+%   \pageBreak
 %   60
   \time 3/2 \skip 2*3 \time 2/2 \skip 2*2*4 \break
 %   65
   \time 3/2 \skip 2*3 \time 2/2 \skip 2*2*3 \break
 %   69
   \skip 2*2 \time 3/2 \skip 2*3 \time 4/2 \skip 2*4*2 \break
+%   \pageBreak
 %   73
   \skip 2*4*3
   \break
@@ -208,7 +221,7 @@ topMarksXII = {
   \tempoAndMarkTransV "Прежний темп" "короткими, отрывистыми звуками" "Tempo I" "staccato"
   s2*55 s4
   \tempo_Медленнее_певуче
-  s2*9 \tempoTrans "Еще шире" "Allargando"
+  s2*9 \tempo_Еще_шире
   s4 s2*10
   \barNumberCheck #25
 %   25
@@ -224,9 +237,23 @@ topMarksXII = {
   \tempo_В_темпе s2*12
 %   37
   s2*8 \tempo_Темп_быстрее \skip 2*4
-%   s2*95 \mark_коротким_звуком
-%   s2*57
-%   \mark_акцентируя_каждую_ноту
+  s2*10
+%   43
+  \tempo_бсё_оживленнее s2*9
+  s2*9
+%   49
+  s2*9
+  s2*10
+%   55
+  \ritardando s2*4 \tempoAndMarkTransV "В темпе" "коротким звуком" "A tempo" "secco" s2*8
+  s2*12
+  s2*9
+  s2*12
+%   73
+  s2*12
+%   76
+  s2*4 \textMarkTrans "акцентируя каждую ноту" "accentuare ogni nota" s2*4
+  s2*6 \ritardando
 }
 
 sopStaffXII = \new Lyrics = "sopXIIAbove" \with {
@@ -257,16 +284,7 @@ sopStaffXII = \new Lyrics = "sopXIIAbove" \with {
   \context Lyrics = "sopXIIAboveX" {\lyricsto "sXIIdAbove" \sXIIcLyricsX }
   \context Lyrics = "sopXIIAbove" {\lyricsto "sXIInAbove" \sXIInLyrics }
   \context Lyrics = "sopXIIAboveX" {\lyricsto "sXIInAbove" \sXIInLyricsX }
-
-  \new Lyrics \with {
-    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
-    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
-  }  {\lyricsto "sopXIIBelow" \saXIILyrics }
-  \new Lyrics \with {
-    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
-    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
-  }  {\lyricsto "sopXIIBelow" \saXIILyricsX }
->> % Staff
+>>
 
 altStaffXII = \new Lyrics = "altoXIIAbove" \with {
   \override VerticalAxisGroup.staff-affinity = #DOWN
@@ -315,16 +333,6 @@ tenStaffXII = \new Lyrics = "tenorXIIAbove" \with {
   \context Lyrics = "tenorXIIAboveX" {\lyricsto "tXIIdAbove" \tXIIdAboveLyricsX }
   \context Lyrics = "tenorXIIAbove" {\lyricsto "tXIIwAbove" \tXIIwAboveLyrics }
   \context Lyrics = "tenorXIIAboveX" {\lyricsto "tXIIwAbove" \tXIIwAboveLyricsX }
-
-  \new Lyrics \with {
-    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
-    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
-  }  {\lyricsto "tenorXIIBelow" \tbXIILyrics }
-  \new Lyrics \with {
-    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
-    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
-  }  {\lyricsto "tenorXIIBelow" \tbXIILyricsX }
-
 >>
 
 
@@ -375,6 +383,4 @@ choirStaffXII = \new ChoirStaff = "choirA" <<
 
 % TODO tenutojen ja aksenttien paikat
 % TODO esitysohjeet ja tempot
-% 49 a/t ja t/b?
 % TODO tavujen siirtelyt, kun ellipsis tai sanayhde
-% SA linja yhdessa vai pois?

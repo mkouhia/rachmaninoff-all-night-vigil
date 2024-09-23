@@ -43,9 +43,9 @@ tXIIdLower = {
 }
 tXIIe = {
   \stemDown
-  <d f>2( \mf <es g>) <c es> <d f> <bes d>( \> <c es>) <as c>( \! <bes d>) |
+  <d f>2( \tweak DynamicText.X-offset -2 \mf <es g>) <c es> <d f> <bes d>( \> <c es>) <as c>( \! <bes d>) |
 }
-tXIIfUpper = { d2--( \p es)   c--( d) bes--( c) }
+tXIIfUpper = { d2--( \tweak DynamicText.X-offset -2 \p es)   c--( d) bes--( c) }
 tXIIfLower = { bes1 1 1 }
 tXIIg = {
   as2 |
@@ -55,24 +55,28 @@ tXIIg = {
 tXIIhUpper = {
   as2( bes) |
 %   16
-  g4 r4 r2 s1*2 r1*2 |
+  g4 \ppp r4 r2 s1*2 r1*2 |
   r1 r1
-  \shape #'((0 . 2)(-1 . 0.5)(-0.2 . 0)(0 . -1.3)) Slur
+  \alterBroken positions #'((3 . 0) (0 . 0)) Slur
   as4( \pp \< bes4 |
 %   18
-  c2--) \>
+  <>\! \after 8 \>  c2--)
 }
 tXIIhLower = {
   as1 |
 %   16
   g\breve*10/4~ |
   \breve
-  \shape #'((0 . -1)(0 . -0.3)(-0.2 . 0)(0 . 1.3)) Slur
+  \alterBroken positions #'((-3 . 0) (0 . 0)) Slur
   as4( bes4 |
 %   18
   c2-- )
 }
-tXIIi = { bes2 \! c-- bes as--( bes) c4 \pp bes c bes c1-- }
+tXIIi = {
+  bes2 \! c-- bes
+  \once \override Slur.positions = #'(0 . 0)
+  as^\tenuto( bes) c4 \pp bes c bes c1--
+}
 tXIIjUpper = {
   c8--([ \tweak DynamicText.X-offset -1.5 \p \< d es d]) c--([ d es d]) c--([ d es d]) c--([ d es d])
   c--([  \! d es d]) <c es>1-> \ff \> <c es>4( <bes d>4 <a c>2) d2~ \fermata \tweak DynamicText.X-offset -2 \p d2~ |
@@ -86,8 +90,10 @@ tXIIjLower = {
   R1*28/4 r1 r1. g4( a) |
 }
 tXIIk = {
+  \override Score.Script.direction = #UP
   bes2-- \mf \> as! \! as2-- 4 4 g2-- g4( as) bes as bes2-- as4 4
-  as2-- as8([ g]) f4 \after 4 \> g1( f1~) \pp 2 <f c'> \pp |
+  as2-- as8([ g]) f4 \after 4 \> g1( f1~ \pp 2) <f c'> \pp |
+  \revert Score.Script.direction
 }
 tXIIlUpper = { bes2.-- }
 tXIIlLower = { f2( es4) }
@@ -98,13 +104,13 @@ tXIIm = {
 tXIInUpper = { bes'4 }
 tXIInLower = { des,!8([ c]) }
 tXIIo = {
-  <des! bes'>2-- 4 \< <es bes'> \!
+  <des! bes'>2^\tenuto 4 \< <es bes'> \!
 }
 tXIIpUpper = { bes'2-- bes2-- \> }
 tXIIpLower = { f4--( es8[ des!]) es4--( des8[ c]) }
 tXIIq = {
   <des bes'>4 \< <es bes'>4 \! |
-  <f bes>2-- \>
+  <f bes>2^\tenuto \>
 }
 tXIIrUpper = { bes1.-- \! }
 tXIIrLower = { es,1( des2) }
@@ -112,7 +118,7 @@ tXIIs = {
   <es bes'>2 \pp 2 2 4 4 <d! bes'>1^\tenuto \breathe
 
 %   23
-  es4 \p \< f \! g2-- \> as4 \< bes \! ces2-- \> bes2~ \! 4 ces4 \p ces8([ \> bes]) as4 \! bes1-- \breathe |
+  es4 \p \< f \! \after 8 \> g2^\tenuto as4 \< bes \! \after 8 \> ces2-- bes2~ \! 4 ces4 \p ces8([ \> bes]) as4 \! bes1-- \breathe |
   <g c!>4 \mf 4 4 \< <g b>4 <g c> \! <as d>1 \ff \> <g c>2 \!
 }
 tXIItUpper = { c2 }
@@ -129,6 +135,7 @@ tXIIvUpper = {
   <>\tweak DynamicText.X-offset -2 \mf \after 2 \> \after 2*5/3 \! <d f>1.--~( 4 <c es>4) |
   <b d>4( \< <c es>) \!
   \once \override Slur.positions = #'(0 . 0)
+  \once \override Hairpin.shorten-pair = #'(2 . 0)
   <d f>--( \> <c es>) \! <b d>( \< <c es>) \!
   <>\tweak DynamicText.X-offset -2 \f \after 8 \>
   <d f>2->~(  |
@@ -141,7 +148,9 @@ tXIIvUpper = {
   \shape #'((0 . -1.5)(0 . 0)(0 . 0)(0 . 0)) Slur
   <>\f \after 2 \> \after 1 \! <d f>1.--~( 4 <c es>4) |
 %   32
-  <b d>4( \< <c es> \! <d f>-- \> <c es>) \! <b d>( \< <c es>) \!
+  <b d>4( \< <c es> \!
+  \once \override Hairpin.endpoint-alignments = #'(1 . 1)
+  <d f>-- \> <c es>) \! <b d>( \< <c es>) \!
   \override Hairpin.to-barline = ##f
   <>\tweak DynamicText.X-offset -2 \ff \after 8 \> <d f>2->~( |
 %   33
@@ -206,7 +215,7 @@ tXIIwUpper = {
   f2 \> \after 4 \! es d1 \breathe
 
 %   56
-  bes2-- \pp 2~ | 1~ | 2. as8([ \< bes]) | c2 \mf \> 4 \! d |
+  bes2-- \pp 2--~ | 1~ | 2. as8([ \< bes]) | c2 \mf \> 4 \! d |
 %   60
 %   decrescendo in voice 2
   es2-- \p d-- c-- \tweak DynamicText.X-offset -3 \pp|
@@ -217,7 +226,7 @@ tXIIwLower = {
   f,2--
   \tweak DynamicText.parent-alignment-X #-1
   \tweak DynamicText.self-alignment-X #1
-  _\ppp g-- as-- g-- | as--( g f g | f--) g as--( g4 _\< f8[ g] |
+  _\ppp g-- as-- g-- | as--( g f g | f--) g-- as--( g4 _\< f8[ g] |
 %   37
   as1->) \tweak DynamicText.X-offset -1 _\p \> g2--
   \tweak DynamicText.X-offset -5
@@ -252,12 +261,12 @@ tXIIwLower = {
 tXIIx = {
   <as c>2-- \> <g c>4 \! <c d>4
 %   65
-  <c es>2-- \p <b d>2-- \> c2-- |
+  <c es>2-- \p <b d>2-- \> c2-- \! |
   <c es>4-- \pp 4 <b d>-- <a c>8([ <b d>]) |
   <c es>4-- 4 <b d>-- <a c>8([ <b d>]) |
   <c es>8--([ <b d>]) <c es>4 <b d>4( \< \after 8 \! <c es>4) |
 %   69
-  <> \tweak DynamicText.X-offset -2.5 \f  \after 8. \>
+  <> \tweak DynamicText.X-offset -2 \f  \after 8. \>
   <d f>2-- <c es>4 \!
   <c d> | <c es>2-- \p <b d>2-- \>
 }
@@ -278,45 +287,47 @@ tXIIz = {
 }
 tXIIzaUpper = {
   d2( \f c)
-  s2
+  \stemNeutral <bes d>2 \stemUp
   es4( f)
 %   76
-  s2 s4 s4 s4 s4 s2
-  s4 s4 s4
+  \stemNeutral <es g>2^\accent <bes f'>4 \mf <bes es> <bes f'> <bes es> <bes d>2^\tenuto |
+  <as c>4 \ff 4 <as d> \stemUp
   c8([ d])
-  s4 s4 s4
+  \stemNeutral <c es>4 4 <as d> \stemUp
   d8([ es]) |
 %  78
-  s4 s4 s4
+  \stemNeutral <c f>4 <c es> <c f> \stemUp
   es8([ d])
-  s4
+  \stemNeutral <c es>4 \stemUp
   d8([ c])
-  s4 s4
+  \stemNeutral <c d>4 <c es>4 \stemUp |
+%   79
   f4( es)
-  s4 s4 s2 s4 s4
-  s2
-  s2 \> s4. s8 \!
+  \stemNeutral <d f>4 \< <es g> \! <f as>2^\accent \ff <es g>4 \> <d f> \! |
+  <c es>2^\tenuto
+  <b d>2^\tenuto c1 \tweak DynamicText.X-offset -2 \p ^\fermata
 }
 tXIIzaLower = {
   bes1
-  <bes d>2
+  s2
    bes2
 %     76
-  <es g>2^\accent <bes f'>4 \mf <bes es> <bes f'> <bes es> <bes d>2^\tenuto |
-  <as c>4 \ff 4 <as d>
-  as4
-  <c es>4 4 <as d>
-  as4 |
+  s2 s4 s4 s4 s4 s2 |
+  s4 s4 s4
+   as4
+  s4 s4 s4
+   as4 |
 %   78
-  <c f>4 <c es> <c f>
+  s4 s4 s4
   c4
-  <c es>4
+  s4
   c4
-  <c d>4 <c es>4 |
+  s4 s4 |
+%   79
   c2
-  <d f>4 \< <es g> \! <f as>2^\accent \ff <es g>4 \> <d f> \! |
-  <c es>2^\tenuto
-  <b d>2^\tenuto c1 \tweak DynamicText.X-offset -2 \p ^\fermata
+  s4 s4 s2 s4 s4
+  s2
+  s2 \> s4. s8 \!
 }
 
 tenorMusicXII = \relative c {
@@ -385,7 +396,7 @@ tXIILyricsAligner = \relative c' {
   \tXIIx
   \tXIIyLower
   \tXIIz
-  \tXIIzaLower
+  \tXIIzaUpper
 }
 
 tXIILyrics = \lyricmode {
@@ -400,7 +411,7 @@ tXIILyrics = \lyricmode {
   Гос -- по -- ди Бо -- же, __ Агн -- че __ Бо -- жий,
   взем -- ляй гре -- хи __ ми -- ра. __
   Ты __ е -- си е -- дин, __ И -- и -- сус Хрис -- тос,
-  в_сла -- ву Бо -- га От -- ца. А -- минь.
+  в_сла -- ву __ Бо -- га __ От -- ца. А -- минь.
 %   20
   Спо -- до -- би, Гос -- по -- ди, в_день сей __
   без гре -- ха со -- хра -- ни -- ти -- ся нам. __
@@ -425,6 +436,7 @@ tXIILyrics = \lyricmode {
 %   53
   Про -- ба -- ви ми -- лость Тво -- ю __ ве -- ду -- щим Тя.
 %   59
+  \once \override LyricText.self-alignment-X = #1
   …по -- ми -- луй нас.
   Свя -- тый __ Без -- смерт -- ный, по -- ми -- луй нас.
   Свя -- тый Бо -- же, __ Свя -- тый Креп -- кий,
@@ -449,7 +461,7 @@ tXIILyricsX = \lyricmode {
   ˈgos -- po -- dʲi ˈbo -- ʒɛ __ ˈɑgn -- tʃɛ __ ˈbo -- ʒɨj
   ˈvzʲɛm -- lʲaj grʲe -- ˈxʲi __  ˈmʲi -- ra __
   tɨ __ je -- ˈsʲi je -- ˈdʲin __  i -- i -- ˈsus xrʲis -- ˈtos
-  f~ˈslɑ -- vu ˈbo -- ga  ot -- ˈtsɑ a -- ˈmʲinʲ
+  f~ˈslɑ -- vu __ ˈbo -- ga __  ot -- ˈtsɑ a -- ˈmʲinʲ
 %   20
   spo -- ˈdo -- bʲi ˈgos -- po -- dʲi v‿dʲenʲ sʲej __
   bʲɛz grʲe -- ˈxa  so -- xra -- ˈnʲi -- tʲi -- sʲa nɑm __
@@ -483,7 +495,7 @@ tXIILyricsX = \lyricmode {
   i ˈnɨ -- nʲɛ i ˈprʲis -- no i vo ˈvʲe -- kʲi vʲɛ -- ˈkof a -- ˈmʲinʲ
   svʲa -- ˈtɨj bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
   svʲa -- ˈtɨj ˈbo -- ʒɛ __ svʲa -- ˈtɨj ˈkrʲɛp -- kʲij __
-  svʲa -- ˈtɨj ˈbo -- ʒɛ __ svʲa -- ˈtɨj ˈkrʲɛp -- kʲij
+  svʲa -- ˈtɨj ˈbo -- ʒɛ __ svʲa -- ˈtɨj __ ˈkrʲɛp -- kʲij
   svʲa -- ˈtɨj bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
 }
 
@@ -495,7 +507,7 @@ tXIIdAboveLyrics = \lyricmode {
 }
 tXIIdAboveLyricsX = \lyricmode {
   \skip 1
-  ˈbo -- ʒɛ __ ot -- ˈtʃɛ
+  ˈbo -- ʒɛ ot -- ˈtʃɛ
   ˈgos -- po -- dʲi ˈsɨ -- nʲɛ je -- dʲi -- no -- ˈrod -- nɨj __
 
 }
@@ -524,14 +536,4 @@ tXIIwAboveLyricsX = \lyricmode {
   \repeat unfold 11 { \skip 1 }
 %   56
   svʲa -- ˈtɨj __ bʲɛz -- ˈsmʲɛrt -- nɨj po --  ""
-}
-atXIILyricsX = \lyricmode {
-  \repeat unfold 346 { \skip 1 }
-}
-
-
-tbXIILyrics = \lyricmode {
-}
-
-tbXIILyricsX = \lyricmode {
 }

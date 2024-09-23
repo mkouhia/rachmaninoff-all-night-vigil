@@ -4,29 +4,31 @@
 \include "../layout.ly"
 \include "12_global.ly"
 
+#(set-global-staff-size 16)
+
 \paper {
   #(define fonts
     (set-global-fonts
-     ;#:music "emmentaler"            ; default
-     ;#:brace "emmentaler"            ; default
+     #:music "emmentaler"            ; default
+     #:brace "emmentaler"            ; default
      ;#:roman "Gentium Plus"
      #:roman "Charis SIL"
      ;#:roman "Doulos SIL" ; otherwise ok, but weights do not work?
      ;#:sans "Nimbus Sans, Nimbus Sans L"
      ;#:typewriter "DejaVu Sans Mono"
-     ;#:factor (/ staff-height pt 18) ; to get smaller than automatic
+     #:factor (/ staff-height pt 20) ; to get smaller than automatic
     ))
 }
-
-% #(set-global-staff-size 20)
 
 date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 \header {
   title = "12. Славословие великое"
 %   composer = "Сергей Рахманинов"
-  tagline = \markup { \concat { "työversio " \date } }
+  tagline = ##f
 } % header
+
+\markup \vspace #2
 
 \score {
 
@@ -40,16 +42,21 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \override DynamicLineSpanner.direction = #UP
       barNumberVisibility = #first-bar-number-invisible-save-broken-bars
 %       \override BarNumber.break-visibility = ##(#f #t #t)
-      \override LyricText.font-size = #-0.2
+%       Slightly smaller lyrics font
+%       \override LyricText.font-size = #-0.05
+%       Stretch staffs when there is much space on the page
+      \override StaffGrouper.staff-staff-spacing.stretchability = #20
     }
     \context {
       \Staff
       \remove "Time_signature_engraver"
       breathMarkType = #'upbow
-%       \override InstrumentName.self-alignment-X = #RIGHT
+      \override InstrumentName.self-alignment-X = #RIGHT
     }
     \context {
       \Lyrics
+%       More space between lyrics lines
+      \override VerticalAxisGroup.nonstaff-nonstaff-spacing.padding = #0.7
 %       \override LyricSpace.minimum-distance = #2.0
 %       \override LyricExtender.minimum-length = #6.0
       \override VerticalAxisGroup
