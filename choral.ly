@@ -27,6 +27,7 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 \include "part07/07_global.ly"
 \include "part08/08_global.ly"
 \include "part12/12_global.ly"
+\include "part13/13_global.ly"
 
 #(set-global-staff-size 16)
 #(set-default-paper-size "a4")
@@ -329,5 +330,16 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 
     }
   }
+
+  \bookpart {
+    \tocItem \markup { Nº 13. Тропарь „Днесь Спасение“ }
+    \header { title = "Nº 13. Тропарь „Днесь Спасение“" }
+
+    \score {
+      \header { title = ##f }
+      \choirStaffXIII
+    }
+  }
+
 
 }
