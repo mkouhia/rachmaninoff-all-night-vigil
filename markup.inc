@@ -133,7 +133,7 @@ tempo_Медленнее = \tempoTrans "Медленнее" "Più lento"
 tempo_Медленнее_певуче = \tempoAndMarkTrans "Медленнее" "Певуче" "Più lento" "Cantabile"
 tempo_Медленнее_певуче_V = \tempoAndMarkTransV "Медленнее" "Певуче" "Più lento" "Cantabile"
 tempo_Еще_шире = \tempoTrans "Еще шире" "Allargando" % "Ancora piu largo"
-tempo_Прежний_темп = \tempoTrans "Прежний темп" "Tempo I"
+% Прежний темп
 tempo_В_прежнем_темпе = \tempoTrans "В прежнем темпе" "Tempo I"
 
 mark_в_темпе = \textMarkTrans "в темпе" "a tempo"
@@ -148,6 +148,14 @@ dir_певуче = \dirTrans "певуче" "cantabile"
 dir_коротким_звуком = \dirTrans "коротким звуком" "secco"
 dir_легко = \dirTrans "легко" "leggiero"
 
+%% Movement 13
+
+tempo_medlenno = \tempoTrans "Медленно" "Adagio" % Andante sostenuto? Lento? Andante?
+mark_nemnogo_skoree = \textMarkTrans "немного скорее" "poco più mosso"
 
 %% All movements
+tempo_prezhnij_temp = \tempoTrans "Прежний темп" "Tempo I"
+mark_zaderzhivaja = \textMarkTrans "задерживая" "ritardando"
+
+%% Deprecated
 ritardando = \textMarkTrans "задерживая" "ritardando"

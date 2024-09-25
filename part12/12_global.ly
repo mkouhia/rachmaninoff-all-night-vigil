@@ -215,8 +215,8 @@ topMarksXII = {
   \tempo_Медленнее_певуче_V
   s2*7
 %   (18)
-  \ritardando s2*4 \tempo_Прежний_темп
-  s2*7 \ritardando
+  \mark_zaderzhivaja s2*4 \tempo_prezhnij_temp
+  s2*7 \mark_zaderzhivaja
   s2*4 s4
   \tempoAndMarkTransV "Прежний темп" "короткими, отрывистыми звуками" "Tempo I" "staccato"
   s2*55 s4
@@ -225,13 +225,13 @@ topMarksXII = {
   s4 s2*10
   \barNumberCheck #25
 %   25
-  \tempo_В_прежнем_темпе s2*7 \ritardando \skip 2*4 \mark_в_темпе s2 |
+  \tempo_В_прежнем_темпе s2*7 \mark_zaderzhivaja \skip 2*4 \mark_в_темпе s2 |
 %   28
-  s2*7 \ritardando s2 |
+  s2*7 \mark_zaderzhivaja s2 |
 %   30
   s2*3 \mark_в_темпе s2*5 |
 %   32
-  s2*3 \ritardando s2*5 |
+  s2*3 \mark_zaderzhivaja s2*5 |
 %   34
   \barNumberCheck #34
   \tempo_В_темпе s2*12
@@ -245,7 +245,7 @@ topMarksXII = {
   s2*9
   s2*10
 %   55
-  \ritardando s2*4 \tempoAndMarkTransV "В темпе" "коротким звуком" "A tempo" "secco" s2*8
+  \mark_zaderzhivaja s2*4 \tempoAndMarkTransV "В темпе" "коротким звуком" "A tempo" "secco" s2*8
   s2*12
   s2*9
   s2*12
@@ -253,7 +253,7 @@ topMarksXII = {
   s2*12
 %   76
   s2*4 \textMarkTrans "акцентируя каждую ноту" "accentuare ogni nota" s2*4
-  s2*6 \ritardando
+  s2*6 \mark_zaderzhivaja
 }
 
 sopStaffXII = \new Lyrics = "sopXIIAbove" \with {
@@ -380,7 +380,3 @@ choirStaffXII = \new ChoirStaff = "choirA" <<
   \tenStaffXII
   \basStaffXII
 >>
-
-% TODO tenutojen ja aksenttien paikat
-% TODO esitysohjeet ja tempot
-% TODO tavujen siirtelyt, kun ellipsis tai sanayhde
