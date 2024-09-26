@@ -123,7 +123,7 @@ dirTrans =
     (markup? markup?)
   #{
     ^\markup \normalsize {
-      \override #'(baseline-skip . 1.2 )
+      \override #'(baseline-skip . 1.8 )
       \italic \column { \line { #textChu } \line { #textIt  }}
     }
   #})

@@ -25,6 +25,8 @@ score_layout = \layout {
     % Place all dynamic markings in the entire score above their respective staves
     \override DynamicText.direction = #UP
     \override DynamicLineSpanner.direction = #UP
+    % Auto-beaming off
+    autoBeaming = ##f
   }
   \context {
     \Staff
@@ -34,7 +36,11 @@ score_layout = \layout {
   }
   \context {
     \Lyrics
+    % More separation between related lyrics lines
     \override VerticalAxisGroup.nonstaff-nonstaff-spacing.padding = #0.6
+    % Allow multiple lyrics lines to be on the same vertical space
     \override VerticalAxisGroup.nonstaff-nonstaff-spacing.minimum-distance = ##f
+    % Add distance between unrelated lyrics lines (next line, above staff below)
+    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
   }
 }
