@@ -1019,7 +1019,7 @@
     razruˈʃɨl jeˈsʲi osuʒˈdʲenʲijɛ ˈsmʲɛrtʲi ˈgospodʲi \
     fsʲa ot sʲeˈtʲej vraˈgɑ izˈbɑvʲivɨj \
     jaˈvʲivɨj ʒɛ sʲeˈbʲɛ aˈpostolom tvoˈim \
-    posˈlɑl jeˈsʲi ja nɑ ˈpropovʲedʲ \
+    poˈslɑl jeˈsʲi ja nɑ ˈpropovʲedʲ \
     i ˈtʲemʲi mʲir tvoj poˈdɑl jeˈsʲi fsʲeˈlʲɛnnʲej \
     jeˈdʲinʲɛ mnogoˈmʲilostʲivʲɛ
   ],
