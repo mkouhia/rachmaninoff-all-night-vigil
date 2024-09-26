@@ -84,7 +84,7 @@ tempoTrans =
      (tempoChu tempoIt)
      (markup? markup?)
    #{
-     \tempo \markup { \override #'(baseline-skip . 2.5 ) \column { \line { \bold \concat { #tempoChu "." } } \line { \normal-text \concat { #tempoIt "."} }}}
+     \tempo \markup \large { \override #'(baseline-skip . 2.5 ) \column { \line { \bold \concat { #tempoChu "." } } \line { \normal-text \concat { #tempoIt "."} }}}
    #})
 
 textMarkTrans =
@@ -92,7 +92,7 @@ textMarkTrans =
      (textChu textIt)
      (markup? markup?)
    #{
-     \textMark \markup { \column { \line { \small \bold #textChu } \line { \small #textIt  }}}
+     \textMark \markup \normalsize { \column { \line { \bold #textChu } \line { #textIt  }}}
    #})
 
 tempoAndMarkTrans =
@@ -100,7 +100,7 @@ tempoAndMarkTrans =
      (tempoChu markChu tempoIt markIt)
      (markup? markup? markup? markup?)
    #{
-     \tempo \markup { \column { \line { \bold \concat { #tempoChu "." } \small #markChu } \line { \normal-text \concat { #tempoIt "."}  \small \normal-text #markIt }}}
+     \tempo \markup \large { \column { \line { \bold \large \concat { #tempoChu "." } \normalsize #markChu } \line { \normal-text \large \concat { #tempoIt "."}  \normalsize \normal-text #markIt }}}
    #})
 
 tempoAndMarkTransV =
@@ -108,12 +108,12 @@ tempoAndMarkTransV =
      (tempoChu markChu tempoIt markIt)
      (markup? markup? markup? markup?)
    #{
-     \tempo \markup { \override #'(baseline-skip . 2 ) \column {
-         \line { \bold \concat { #tempoChu "." } }
-         \line { \small #markChu }
+     \tempo \markup \large { \override #'(baseline-skip . 2 ) \column {
+         \line { \bold \large \concat { #tempoChu "." } }
+         \line { \normalsize #markChu }
          \vspace #.2
-         \line { \normal-text \concat { #tempoIt "."} }
-         \line { \small \normal-text #markIt }
+         \line { \normal-text \large \concat { #tempoIt "."} }
+         \line { \normalsize \normal-text #markIt }
     }}
    #})
 
@@ -122,9 +122,9 @@ dirTrans =
     (textChu textIt)
     (markup? markup?)
   #{
-    ^\markup {
+    ^\markup \normalsize {
       \override #'(baseline-skip . 1.2 )
-      \small \italic \column { \line { #textChu } \line { #textIt  }}
+      \italic \column { \line { #textChu } \line { #textIt  }}
     }
   #})
 
@@ -148,14 +148,16 @@ dir_певуче = \dirTrans "певуче" "cantabile"
 dir_коротким_звуком = \dirTrans "коротким звуком" "secco"
 dir_легко = \dirTrans "легко" "leggiero"
 
-%% Movement 13
-
-tempo_medlenno = \tempoTrans "Медленно" "Adagio" % Andante sostenuto? Lento? Andante?
-mark_nemnogo_skoree = \textMarkTrans "немного скорее" "poco più mosso"
+%% Movement 14
+mark_otchenj_mjagko = \textMarkTrans "очень мягко" "dolcissimo"
+mark_postepenno_oslablajaja_zvuk = \textMarkTrans "постепенно ослабляя звук" "diminuendo"
 
 %% All movements
+tempo_medlenno = \tempoTrans "Медленно" "Adagio" % Andante sostenuto? Lento? Andante?
 tempo_prezhnij_temp = \tempoTrans "Прежний темп" "Tempo I"
+
 mark_zaderzhivaja = \textMarkTrans "задерживая" "ritardando"
+mark_nemnogo_skoree = \textMarkTrans "немного скорее" "poco più mosso"
 
 %% Deprecated
 ritardando = \textMarkTrans "задерживая" "ritardando"
