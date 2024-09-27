@@ -1,18 +1,6 @@
 \version "2.24.0"
 %\include "event-listener.ly"
 
-%tocItemNarrowWithDotsMarkup = \markup \hspace #10 \fill-with-pattern #1 #RIGHT .
-%  \fromproperty #'toc:text \fromproperty #'toc:page \hspace #10
-catTocItem = #(define-music-function (str1 str2) (string? string?)
-#{
-#(string-concatenate str1 str2)
-#})
-
-padTocItem = #(define-music-function (str1) (string?)
-#{
-#(string-concatenate str1 str2)
-#})
-
 humming = \markup {\bold +}
 nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 
@@ -49,26 +37,33 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 
   print-all-headers = ##t
   tocTitleMarkup = \markup \huge \column {
-    \combine \null \vspace #5
-    \fill-line { \null "Movements" \null }
-%		\override #'(span-factor . 1/3)
-%		\halign #CENTER
-%    \draw-hline
+    \override #'(span-factor . 1/3)
+    \fill-line { \null \draw-hline \null }
+    \vspace #5
+%     \fill-line { \null "Movements" \null }
+%     \hspace #1
+  }
+  tocActMarkup = \markup \large \column {
+    \hspace #1
+    \fill-line { \null \italic \fromproperty #'toc:text \null }
     \hspace #1
   }
+  tocItemMarkup = \markup \fill-line {
+    \fill-with-pattern #1.5 #CENTER .
+     \line { \hspace #20 \fromproperty #'toc:text \hspace #2 }
+     \line { \fromproperty #'toc:page \hspace #20 }
+  }
+
   two-sided = ##t
   inner-margin = 15\mm
   outer-margin = 15\mm
-  tocItemMarkup = \tocItemWithDotsMarkup
-%  tocItemMarkup = \markup \fill-line {
-%    #catTocItem \hspace #10 \left-align \fromproperty #'toc:text \fromproperty #'toc:page
-%  }
-%  tocItemMarkup = \markup \fill-with-pattern #1 #RIGHT .
-%  	 \fromproperty #'toc:text \fromproperty #'toc:page
-
+%   tocItemMarkup = \tocItemWithDotsMarkup
   top-system-spacing.stretchability = #20
 }
 
+tocAct =
+  #(define-music-function (label text) (symbol? markup?)
+     (add-toc-item! 'tocActMarkup text label))
 
 % Layout for all scores
 \layout {
@@ -113,34 +108,41 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
     tagline = ##f
   }
 
-  \markup \huge \larger \bold \column {
-    \combine \null \vspace #10
-    \fill-line { \null \italic "Сергей Рахманинов" \null }
-    \combine \null \vspace #2
-    \fill-line { \null "Всенощное бдение" \null }
-    \combine \null \vspace #2
-    \fill-line { \null "Opus 37" \null }
-    \combine \null \vspace #4
+  \markup \column \smallCaps {
+    \vspace #10
+    \fill-line \abs-fontsize #24 { \null "Сергей Рахманинов" \null }
+    \vspace #2
+    \fill-line \abs-fontsize #42 { \null "Всенощное бдение" \null }
+    \vspace #2
+    \fill-line \abs-fontsize #16 { \null "Opus 37" \null }
+    \vspace #4
    }
-%  \markup \huge \column {
-%   \fill-line { \null "with piano reduction by Brian M. Ames" \null }
-%    \combine \null \vspace #5
-%  }
-  \markup {\fill-line { \postscript "-20 0 moveto 40 0 rlineto stroke" } }
+  \markup \huge \column {
+%     \vspace #10
+    \fill-line \abs-fontsize #16 { \null "Sergei Rachmaninoff" \null }
+    \vspace #1.5
+    \fill-line \abs-fontsize #36 { \null "All-Night Vigil" \null }
+    \vspace #1.5
+    \fill-line { \null "with IPA lyrics transcription by M. I. Kouhia" \null }
+    \vspace #2
+  }
+
   \markuplist \table-of-contents
   \pageBreak
 
   \markup \small \column{
-    \combine \null \vspace #40
+    \vspace #40
     \fill-line { \null "Movements 1–7: first transcribed by" \null }
     \fill-line { \null "© 2014 Брайан Майкл Эймс, used under Creative Commons Attribution-ShareAlike 4.0 license." \null }
     \vspace #0.5
-    \fill-line { \null "Movements 4&6 edited by Mikko Kouhia" \null }
+    \fill-line { \null "Edited by Mikko Kouhia" \null }
     \vspace #1
     \fill-line { \line{"This transcription © 2024 is lisenced under CC BY-SA 4.0."} }
     \fill-line { \line{"To view a copy of this license, visit " \with-url #"https://creativecommons.org/licenses/by-sa/4.0/" {"https://creativecommons.org/licenses/by-sa/4.0/"}} }
   }
   \pageBreak
+
+  \tocAct actI \markup { Вечерня — Vespers }
 
   \bookpart {
     \tocItem \markup { Nº 1 Приидите, поклонимся }
@@ -268,6 +270,8 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
     }
   }
 
+  \tocAct actII \markup { Утреня — Matins }
+
   \bookpart {
     \tocItem \markup { Nº 7 Шестопсалмие }
     \header {
@@ -316,14 +320,13 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 %}
 
   \bookpart {
-    \tocItem \markup { Nº 12. Славословие великое }
-
-    \header {
-      title = "Nº 12. Славословие великое."
-    }
+    \tocItem \markup { 12. Славословие великое }
 
     \score {
-      \header { title = ##f }
+      \header {
+        title = "12. Славословие великое."
+        subtitle = "(знаменного распева)"
+      }
       \choirStaffXII
 
       \layout {
@@ -342,23 +345,41 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
   }
 
   \bookpart {
-    \tocItem \markup { Nº 13. Тропарь „Днесь Спасение“ }
-    \header { title = "Nº 13. Тропарь „Днесь Спасение“" }
+    \tocItem \markup { 13. Тропарь „Днесь Спасение“ }
 
     \score {
-      \header { title = ##f }
+      \header {
+        title = "13. Тропарь „Днесь Спасение“"
+        subtitle = "(знаменного распева)"
+      }
       \choirStaffXIII
     }
   }
 
   \bookpart {
-    \tocItem \markup { Nº 14. Тропарь „Воскрес из гроба“ }
+    \tocItem \markup { 14. Тропарь „Воскрес из гроба“ }
 
     \score {
-      \header { title = "Nº 14. Тропарь „Воскрес из гроба“" }
+      \header {
+        title = "14. Тропарь „Воскрес из гроба“"
+        subtitle = "(знаменного распева)"
+      }
       \choirStaffXIV
     }
   }
 
+  \tocAct actIII \markup { Первый час — The First Hour }
+
+  \bookpart {
+    \tocItem \markup { 15. Взбранной воеводе }
+
+    \score {
+      \header {
+        title = "15. Взбранной воеводе"
+        subtitle = "(греческого распева)"
+      }
+      \choirStaffXIV
+    }
+  }
 
 }
