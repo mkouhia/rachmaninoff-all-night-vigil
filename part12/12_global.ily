@@ -1,9 +1,9 @@
-\version "2.24.1"
+\version "2.24.0"
 
 \include "12_soprano.ily"
-\include "12_alto.ly"
-\include "12_tenor.ly"
-\include "12_bass.ly"
+\include "12_alto.ily"
+\include "12_tenor.ily"
+\include "12_bass.ily"
 
 globalMusicXIIa = {
 %   \autoLineBreaksOff

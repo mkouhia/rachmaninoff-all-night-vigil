@@ -1,4 +1,4 @@
-\version "2.24.1"
+\version "2.24.0"
 
 bXIVaUpper = \relative d {
   <>\mf \after 8*5 \> d1 | % 2

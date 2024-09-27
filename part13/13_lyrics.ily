@@ -1,4 +1,4 @@
-\version "2.24.1"
+\version "2.24.0"
 
 sXIIILyrics = \lyricmode {
   Днесь __ спа -- се -- ни -- е ми -- ру бысть,

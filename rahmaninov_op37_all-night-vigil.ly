@@ -16,7 +16,7 @@ padTocItem = #(define-music-function (str1) (string?)
 humming = \markup {\bold +}
 nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 
-\include "markup.inc"
+\include "markup.ily"
 
 \include "part01/01_global.ly"
 \include "part02/02_global.ly"
@@ -26,8 +26,8 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 \include "part06/06_global.ly"
 \include "part07/07_global.ly"
 \include "part08/08_global.ly"
-\include "part12/12_global.ly"
-\include "part13/13_global.ly"
+\include "part12/12_global.ily"
+\include "part13/13_global.ily"
 \include "part14/14_global.ily"
 
 #(set-global-staff-size 16)

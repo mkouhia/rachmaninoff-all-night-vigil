@@ -1,4 +1,4 @@
-\version "2.24.1"
+\version "2.24.0"
 
 sopranoMusicXIV = \relative a' {
   <>\mf \after 8*5 \> a2.( b8[ c8]) | % 2

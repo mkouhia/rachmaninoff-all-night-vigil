@@ -1,4 +1,4 @@
-\version "2.24.1"
+\version "2.24.0"
 bassMusicXIII = \relative a {
   \autoBeamOff
   <> \p \after 4 \< a2( f2) \> | % 2

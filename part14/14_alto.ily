@@ -1,4 +1,4 @@
-\version "2.24.1"
+\version "2.24.0"
 
 aXIVa = \relative f' {
   <>\mf \after 8*5 \> f1 | % 2

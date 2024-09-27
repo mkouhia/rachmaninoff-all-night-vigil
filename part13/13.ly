@@ -1,8 +1,8 @@
-\version "2.24.1"
+\version "2.24.0"
 
-\include "../markup.inc"
-\include "../layout.ly"
-\include "13_global.ly"
+\include "../markup.ily"
+\include "../layout.ily"
+\include "13_global.ily"
 
 \header {
   title = "13. Тропарь „Днесь Спасение“"

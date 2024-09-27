@@ -1,6 +1,5 @@
 \version "2.24.0"
 
-\include "markup.inc"
 \include "07_soprano.inc"
 \include "07_alto.inc"
 \include "07_tenor.inc"

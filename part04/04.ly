@@ -5,8 +5,8 @@
 % Google Translate:
 % Знак + показывает ноты, которые должны быть выполнены по напевая с закрытыми губами
 
-\include "../markup.inc"
-\include "../layout.ly"
+\include "../markup.ily"
+\include "../layout.ily"
 \include "04_global.ly"
 
 \header {

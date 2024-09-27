@@ -1,7 +1,7 @@
 \version "2.24.0"
 
-\include "../markup.inc"
-\include "../layout.ly"
+\include "../markup.ily"
+\include "../layout.ily"
 \include "06_global.ly"
 
 \header {

@@ -1,4 +1,4 @@
-\version "2.24.1"
+\version "2.24.0"
 
 aXIIa = {
   \override Score.Script.direction = #UP

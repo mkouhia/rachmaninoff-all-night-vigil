@@ -1,4 +1,4 @@
-\version "2.24.1"
+\version "2.24.0"
 
 \include "14_soprano.ily"
 \include "14_alto.ily"

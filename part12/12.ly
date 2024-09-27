@@ -1,8 +1,8 @@
-\version "2.24.1"
+\version "2.24.0"
 
-\include "../markup.inc"
-\include "../layout.ly"
-\include "12_global.ly"
+\include "../markup.ily"
+\include "../layout.ily"
+\include "12_global.ily"
 
 #(set-global-staff-size 17)
 

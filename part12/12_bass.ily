@@ -1,4 +1,4 @@
-\version "2.24.1"
+\version "2.24.0"
 
 bXIIaUpper = {
   g'1--~ \tweak DynamicText.X-offset -1.5 \p 2 f2 as |
