@@ -10,8 +10,8 @@
      #:factor (/ staff-height pt 20) ; to get smaller than automatic
     ))
 
-  short-indent = 6\mm
-  margin = 12.5\mm
+  left-margin = 15\mm
+  right-margin = 15\mm
 
   % system-system-spacing.stretchability = #60
    top-system-spacing.stretchability = #20
@@ -32,6 +32,7 @@ score_layout = \layout {
     \Staff
     \override Score.BarNumber.padding = #2
     \override InstrumentName.self-alignment-X = #RIGHT
+    \override InstrumentName.padding = #1
     breathMarkType = #'upbow
   }
   \context {

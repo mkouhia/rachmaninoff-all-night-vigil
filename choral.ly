@@ -58,7 +58,7 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
   }
   two-sided = ##t
   inner-margin = 15\mm
-  outer-margin = 10\mm
+  outer-margin = 15\mm
   tocItemMarkup = \tocItemWithDotsMarkup
 %  tocItemMarkup = \markup \fill-line {
 %    #catTocItem \hspace #10 \left-align \fromproperty #'toc:text \fromproperty #'toc:page
@@ -176,6 +176,7 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
       \choirStaffB
 
       \layout {
+        short-indent = 6\mm
         \context {
           \Staff
           \RemoveEmptyStaves
@@ -239,6 +240,7 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
       \choirStaffE
 
       \layout {
+        short-indent = 6\mm
         \context {
           \Staff
           \RemoveEmptyStaves
@@ -279,6 +281,7 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
       \choirStaffG
 
       \layout {
+        short-indent = 6\mm
         \context {
           \Staff
           \RemoveEmptyStaves
