@@ -78,7 +78,3 @@ aXIVLyricsAligner = {
   \aXIVe
   \aXIVfLower
 }
-
-PartPTwoVoiceTwo =  \relative c' {
-
-}

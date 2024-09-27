@@ -77,13 +77,6 @@ tXIVg = \relative b {
   <g b d>1.) \ppp \fermata
 }
 
-PartPThreeVoiceTwo =  \relative bes {
-  s2*7 g,2 ~ | % 27
-  g1 ~ | % 28
-  g2 b4 c4 | % 29
-  \time 6/4  s2*9 \bar "|."
-}
-
 tenorMusicXIV = {
   \tXIVa
   << { \voiceOne \tXIVbUpper } \new Voice { \voiceTwo \tXIVbLower } >> \oneVoice
