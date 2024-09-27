@@ -149,14 +149,19 @@ dir_коротким_звуком = \dirTrans "коротким звуком" "s
 dir_легко = \dirTrans "легко" "leggiero"
 
 %% Movement 14
+% нежно gently - soave?; мягко softly - dolce?
+% MR oli tuossa molto soave...
 mark_otchenj_mjagko = \textMarkTrans "очень мягко" "dolcissimo"
 mark_postepenno_oslablajaja_zvuk = \textMarkTrans "постепенно ослабляя звук" "diminuendo"
+%TODO standing out a little
+dir_nemnogo_bydeljaja = \dirTrans "немного выделяя" "poco marcato"
 
 %% All movements
 tempo_medlenno = \tempoTrans "Медленно" "Adagio" % Andante sostenuto? Lento? Andante?
 tempo_prezhnij_temp = \tempoTrans "Прежний темп" "Tempo I"
 
 mark_zaderzhivaja = \textMarkTrans "задерживая" "ritardando"
+mark_zaderzh = \textMarkTrans "задерж." "rit."
 mark_nemnogo_skoree = \textMarkTrans "немного скорее" "poco più mosso"
 
 %% Deprecated

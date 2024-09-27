@@ -28,6 +28,7 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
 \include "part08/08_global.ly"
 \include "part12/12_global.ly"
 \include "part13/13_global.ly"
+\include "part14/14_global.ily"
 
 #(set-global-staff-size 16)
 #(set-default-paper-size "a4")
@@ -78,6 +79,8 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
     \override DynamicLineSpanner.direction = #UP
     % Stretch staffs when there is much space on the page
 %     \override StaffGrouper.staff-staff-spacing.stretchability = #20
+    % Auto-beaming off
+    autoBeaming = ##f
   }
   \context {
     \Staff
@@ -88,8 +91,12 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
     \Lyrics
     % More space between lyrics lines
     \override VerticalAxisGroup.nonstaff-nonstaff-spacing.padding = #0.6
+    % If two lyrics lines contain empty melismata on a line, how much height they have
+    \override VerticalAxisGroup.nonstaff-nonstaff-spacing.basic-distance = #2.8
     % Allow lyrics lines to be on the same horizontal line
     \override VerticalAxisGroup.nonstaff-nonstaff-spacing.minimum-distance = ##f
+    % Add distance between unrelated lyrics lines (next line, above staff below)
+    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2.6
   }
   two-sided = ##t
   inner-margin = 15\mm
@@ -338,6 +345,15 @@ nezhno = \markup { {\dynamic "pp"} \italic "  очень нежно" }
     \score {
       \header { title = ##f }
       \choirStaffXIII
+    }
+  }
+
+  \bookpart {
+    \tocItem \markup { Nº 14. Тропарь „Воскрес из гроба“ }
+
+    \score {
+      \header { title = "Nº 14. Тропарь „Воскрес из гроба“" }
+      \choirStaffXIV
     }
   }
 

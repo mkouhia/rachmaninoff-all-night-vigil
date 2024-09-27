@@ -38,9 +38,11 @@ score_layout = \layout {
     \Lyrics
     % More separation between related lyrics lines
     \override VerticalAxisGroup.nonstaff-nonstaff-spacing.padding = #0.6
+    % If two lyrics lines contain empty melismata on a line, how much height they have
+    \override VerticalAxisGroup.nonstaff-nonstaff-spacing.basic-distance = #2.8
     % Allow multiple lyrics lines to be on the same vertical space
     \override VerticalAxisGroup.nonstaff-nonstaff-spacing.minimum-distance = ##f
     % Add distance between unrelated lyrics lines (next line, above staff below)
-    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
+    \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2.6
   }
 }
