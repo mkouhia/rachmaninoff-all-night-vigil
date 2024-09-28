@@ -128,7 +128,6 @@ dirTrans =
     }
   #})
 
-tempo_Довольно_скоро = \tempoTrans "Довольно скоро" "Moderato"
 tempo_Медленнее = \tempoTrans "Медленнее" "Più lento"
 tempo_Медленнее_певуче = \tempoAndMarkTrans "Медленнее" "Певуче" "Più lento" "Cantabile"
 tempo_Медленнее_певуче_V = \tempoAndMarkTransV "Медленнее" "Певуче" "Più lento" "Cantabile"
@@ -158,6 +157,9 @@ dir_nemnogo_bydeljaja = \dirTrans "немного выделяя" "poco marcato"
 
 %% All movements
 tempo_medlenno = \tempoTrans "Медленно" "Adagio" % Andante sostenuto? Lento? Andante?
+tempo_Довольно_скоро = \tempoTrans "Довольно скоро" "Moderato"
+tempo_dobolno_skoro_s_jarkom_rutmom = \tempoTrans "Довольно скоро, с ярком рутмом" "Moderato, con ritmo vivace"
+
 tempo_prezhnij_temp = \tempoTrans "Прежний темп" "Tempo I"
 
 mark_zaderzhivaja = \textMarkTrans "задерживая" "ritardando"

@@ -27,6 +27,8 @@ score_layout = \layout {
     \override DynamicLineSpanner.direction = #UP
     % Auto-beaming off
     autoBeaming = ##f
+    % Accidentals always above notes
+    \override Score.Script.direction = #UP
   }
   \context {
     \Staff
