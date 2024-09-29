@@ -81,15 +81,7 @@ aXVk = \relative f' {
   e1 \p \fermata
   }
 
-PartPTwoVoiceTwo =  \relative c'' {
-  s1 | % 31
-  s1 s1 | % 33
-  s1. | % 34
-  s1*4 \bar "|."
-  }
-
 altoMusicXV = {
-    \override Score.Script.direction = #UP
   \aXVa
   << { \voiceOne \aXVbUpper } \new Voice { \voiceTwo \aXVbLower } >> \oneVoice
   \aXVc
