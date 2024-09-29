@@ -79,7 +79,7 @@ aXVk = \relative f' {
   a4.-> f8 a8[ e8 c8 e8] | % 36
   g2) \> f2 | % 37
   e1 \p \fermata
-  }
+}
 
 altoMusicXV = {
   \aXVa
