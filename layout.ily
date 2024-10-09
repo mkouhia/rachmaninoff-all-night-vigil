@@ -28,7 +28,9 @@ score_layout = \layout {
     % Auto-beaming off
     autoBeaming = ##f
     % Accidentals always above notes
-    \override Score.Script.direction = #UP
+    \override Script.direction = #UP
+    % Display bar number for broken bars at line start
+    barNumberVisibility = #first-bar-number-invisible-save-broken-bars
   }
   \context {
     \Staff
@@ -39,6 +41,9 @@ score_layout = \layout {
   }
   \context {
     \Lyrics
+    % Add distance between staff and lyrics line
+    % TODO does not seem to work - affects only bottom staff
+%     \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.basic-distance = #20.0
     % More separation between related lyrics lines
     \override VerticalAxisGroup.nonstaff-nonstaff-spacing.padding = #0.6
     % If two lyrics lines contain empty melismata on a line, how much height they have

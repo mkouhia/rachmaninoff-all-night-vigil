@@ -10,6 +10,7 @@
 % \include "part06/06_global.ly"
 % \include "part07/07_global.ly"
 % \include "part08/08_global.ly"
+\include "part11/11_global.ily"
 \include "part12/12_global.ily"
 \include "part13/13_global.ily"
 \include "part14/14_global.ily"
@@ -320,6 +321,18 @@ tocAct =
     }
   }
 %}
+
+  \bookpart {
+    \tocItem \markup { 11. Взбранной воеводе }
+
+    \score {
+      \header {
+        title = "11. Величит Душа Mоя Господа"
+        subtitle = "греческого распева"
+      }
+      \choirStaffXI
+    }
+  }
 
   \bookpart {
     \tocItem \markup { 12. Славословие великое }

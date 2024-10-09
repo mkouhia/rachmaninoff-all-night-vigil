@@ -218,7 +218,7 @@ topMarksXII = {
   \mark_zaderzhivaja s2*4 \tempo_prezhnij_temp
   s2*7 \mark_zaderzhivaja
   s2*4 s4
-  \tempoAndMarkTransV "Прежний темп" "короткими, отрывистыми звуками" "Tempo I" "staccato"
+  \tempoAndMarkTransV "Прежний темп." "короткими, отрывистыми звуками" "Tempo I." "staccato"
   s2*55 s4
   \tempo_Медленнее_певуче
   s2*9 \tempo_Еще_шире
@@ -245,7 +245,7 @@ topMarksXII = {
   s2*9
   s2*10
 %   55
-  \mark_zaderzhivaja s2*4 \tempoAndMarkTransV "В темпе" "коротким звуком" "A tempo" "secco" s2*8
+  \mark_zaderzhivaja s2*4 \tempoAndMarkTransV "В темпе." "коротким звуком" "A tempo." "secco" s2*8
   s2*12
   s2*9
   s2*12

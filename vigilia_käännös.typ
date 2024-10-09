@@ -669,14 +669,14 @@
     #h(2em) #text(style: "italic")[Честнейшую Херувим ...]
 
     Яко сотвори Мне величие Сильный,  \
-    и святоящи мся Его.  \
+    и свято имя Его,  \
     и милость Его в роды родов  \
     боящимся Его.
 
     #h(2em) #text(style: "italic")[Честнейшую Херувим ...]
 
     Низложи сильныя со престол  \
-    и вознесе смиренныя  \
+    и вознесе смиренныя;  \
     алчущия исполни благ  \
     и богатящияся отпусти тщи.
 
@@ -684,7 +684,7 @@
 
     Восприят Израиля отрока Своего,  \
     помянути милости,  \
-    Якоже глагола ко отцем нашим, \
+    якоже глагола ко отцем нашим, \
     #h(1em) Аврааму и семени его, \
     #h(1em) даже до века.
 
@@ -697,13 +697,13 @@
 
     #h(2em) tʃɛstˈnʲejʃuju xɛruˈvʲim  \
     #h(3em) i slavˈnʲejʃuju bʲɛz sravˈnʲenʲija sʲɛraˈfʲim  \
-    #h(3em) bʲɛz istˈlʲenʲija ˈboga ˈslova ˈroʒdʃuju  \
+    #h(3em) bʲɛz isˈtlʲenʲija ˈboga ˈslova ˈroʒdʃuju  \
     #h(3em) ˈsuʃʲːuju bogoˈrodʲitsu \
     #h(3em) tʲa vʲelʲiˈtʃɑjɛm  \
 
     ˈjako prʲiˈzrʲɛ \
     nɑ smʲiˈrʲenʲijɛ raˈbɨ svojeˈja  \
-    sʲɛ bo otˈnɨnʲɛ \
+    sʲɛ bo ot ˈnɨnʲɛ \
     ublaˈʒɑt mʲa fsʲi ˈrodʲi
 
     #h(2em) #text(style: "italic")[ tʃɛstˈnʲejʃuju xɛruˈvʲim ...]

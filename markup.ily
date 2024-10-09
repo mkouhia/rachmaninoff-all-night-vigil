@@ -109,10 +109,10 @@ tempoAndMarkTransV =
      (markup? markup? markup? markup?)
    #{
      \tempo \markup \large { \override #'(baseline-skip . 2 ) \column {
-         \line { \bold \large \concat { #tempoChu "." } }
+         \line { \bold \large #tempoChu }
          \line { \normalsize #markChu }
          \vspace #.2
-         \line { \normal-text \large \concat { #tempoIt "."} }
+         \line { \normal-text \large #tempoIt }
          \line { \normalsize \normal-text #markIt }
     }}
    #})
@@ -130,7 +130,7 @@ dirTrans =
 
 tempo_Медленнее = \tempoTrans "Медленнее" "Più lento"
 tempo_Медленнее_певуче = \tempoAndMarkTrans "Медленнее" "Певуче" "Più lento" "Cantabile"
-tempo_Медленнее_певуче_V = \tempoAndMarkTransV "Медленнее" "Певуче" "Più lento" "Cantabile"
+tempo_Медленнее_певуче_V = \tempoAndMarkTransV "Медленнее." "Певуче." "Più lento" "Cantabile"
 tempo_Еще_шире = \tempoTrans "Еще шире" "Allargando" % "Ancora piu largo"
 % Прежний темп
 tempo_В_прежнем_темпе = \tempoTrans "В прежнем темпе" "Tempo I"
@@ -146,6 +146,30 @@ mark_ослабляя_звук = \textMarkTrans "ослабляя звук" "dim
 dir_певуче = \dirTrans "певуче" "cantabile"
 dir_коротким_звуком = \dirTrans "коротким звуком" "secco"
 dir_легко = \dirTrans "легко" "leggiero"
+
+%% Movement 11
+tempo_medlenno_tjagutshe_etc = \tempoAndMarkTrans "Медленно. Тягуче" "Бсе время опираясь на мелодию басов" "Slowly, drawn out" "The structure of the upper voices is superimposed throughout on the melody of the bass" % Adagio. Sostenuto
+tempo_tot_zhe_temp_etc = \tempoAndMarkTransV
+  \markup { \concat {
+      "Тот же темп "
+      \override #'(font-size . -3) \rhythm {{ 4 }}
+      "="
+      \override #'(font-size . -3) \rhythm {{ 4 }}
+  }}
+  "Очень легко и нежно"
+  "In the same tempo" % L'istesso tempo
+  "Very lightly and tenderly" % Molto leggiero e dolce
+
+tempo_kak_v_natshale = \tempoTrans "Как в начале" "As at the beginning"
+tempo_kak_ranshe = \tempoTrans "Как раньше" "As before"
+temp_nemnogo_bystree_nervonatshalnogo = \tempoTrans "Темп немного быстрее нервоначального" "Tempo a little quicker than at the beginning"
+tempo_predyduschij_temp = \tempoTrans "Предыдущий темп" "The former tempo"
+tempo_pervonachalnyj_temp = \tempoTrans "Первоначальный темп" "The opening tempo"
+tempo_zamedljaja_i_oslabljaja_zvutshnost = \tempoTrans "Замедляя и ослабляя звучность" "Always slower and slower" % Hidastaen ja sointia heikentäen -> Rallentando e diminuendo??
+tempo_kak_i_prezhnih_slutshajah = \tempoTrans "Как и прежних случаях" "As before" % Kuten aikaisemmissa tapauksissa
+
+dir_nemnogo_vydvigaja_nizhnij_golos = \dirTrans "немного выдвигая нижний голос" "The lower voice a little prominent"
+mark_usilivaja_zvutshnost = \textMarkTrans "усиливая звучность" "Always louder" % Voimakkaammin
 
 %% Movement 14
 % нежно gently - soave?; мягко softly - dolce?
