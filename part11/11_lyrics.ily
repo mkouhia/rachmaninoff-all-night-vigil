@@ -24,7 +24,7 @@ stbXILyricsVerseFour = \lyricmode {
 stbXILyricsVerseFourX = \lyricmode {
   nʲiz -- lo -- ˈʒɨ __  ˈsʲilʲ -- nɨ -- ja so prʲɛ -- ˈstol
   i voz -- nʲe -- ˈsʲɛ smʲi -- ˈrʲɛn -- nɨ -- ja
-  ˈɑl -- tʃu -- ʃʲːi -- ja is -- ˈpol -- nʲi blɑkʰ % TODO pol L liudentuuko?
+  ˈɑl -- tʃu -- ʃʲːi -- ja is -- ˈpol -- nʲi blɑkʰ
   i bo -- ga -- ˈtʲa -- ʃʲːi -- ja -- sʲa ot -- pus -- ˈtʲi __ tʃʲːi
 }
 
@@ -85,7 +85,7 @@ aXILyrics = \lyricmode {
   и бо -- га -- тя -- щи -- я -- ся от -- пус -- ти __ тщи.
   \satXILyricsRefrain
 
-  Вос -- при -- ят Из -- ра -- ил -- я от -- ро -- ка Сво -- е -- го,
+  Вос -- при -- ят Из -- ра -- и -- ля от -- ро -- ка Сво -- е -- го,
   по -- мя -- ну -- ти ми -- ло -- сти, __
   я -- ко -- же гла -- го -- ла __
   Ав -- ра -- а -- му и се -- ме -- ни е -- го, __
@@ -108,12 +108,12 @@ aXILyricsX = \lyricmode {
 
   nʲiz -- lo -- ˈʒɨ nʲiz -- lo -- ˈʒɨ __ so prʲɛ -- ˈstol
   i voz -- nʲe -- ˈsʲɛ smʲi -- ˈrʲɛn -- nɨ -- ja
-  ˈɑl -- tʃu -- ʃʲːi -- ja is -- ˈpol -- nʲi blɑkʰ % TODO pol L liudentuuko?
+  ˈɑl -- tʃu -- ʃʲːi -- ja is -- ˈpol -- nʲi blɑkʰ
   i bo -- ga -- ˈtʲa -- ʃʲːi -- ja -- sʲa ot -- pus -- ˈtʲi __ tʃʲːi
 
   \satXILyricsRefrainX
 
-  vos -- prʲi -- ˈjat iz -- ˈrɑ -- ilʲ -- a ˈot -- ro -- ka svo -- jɛ -- ˈgo
+  vos -- prʲi -- ˈjat iz -- ˈrɑ -- i -- lʲa ˈot -- ro -- ka svo -- jɛ -- ˈgo
   po -- mʲa -- ˈnu -- tʲi ˈmʲi -- los -- tʲi __
   ˈja -- ko -- ʒɛ gla -- ˈgo -- la __
   av -- ra -- ˈɑ -- mu i ˈsʲe -- mʲe -- nʲi jɛ -- ˈgo __
@@ -137,7 +137,7 @@ tXILyrics = \lyricmode {
   \stbXILyricsVerseFour
   \satXILyricsRefrain
 
-  Вос -- при -- ят Из -- ра -- ил -- я от -- ро -- ка Сво -- е -- го,
+  Вос -- при -- ят Из -- ра -- и -- ля от -- ро -- ка Сво -- е -- го,
   по -- мя -- ну -- ти ми -- ло -- сти, __
   я -- ко -- же гла -- го -- ла __
   Ав -- ра -- а -- му и се -- ме -- ни е -- го, __
@@ -162,7 +162,7 @@ tXILyricsX = \lyricmode {
   \stbXILyricsVerseFourX
   \satXILyricsRefrainX
 
-  vos -- prʲi -- ˈjat iz -- ˈrɑ -- ilʲ -- a ˈot -- ro -- ka svo -- jɛ -- ˈgo
+  vos -- prʲi -- ˈjat iz -- ˈrɑ -- i -- lʲa ˈot -- ro -- ka svo -- jɛ -- ˈgo
   po -- mʲa -- ˈnu -- tʲi ˈmʲi -- los -- tʲi __
   ˈja -- ko -- ʒɛ gla -- ˈgo -- la __
   av -- ra -- ˈɑ -- mu i ˈsʲe -- mʲe -- nʲi jɛ -- ˈgo __
@@ -198,7 +198,7 @@ bXILyrics = \lyricmode {
   су -- щу -- ю Бо -- го -- ро -- ди -- цу,
   Тя ве -- ли -- ча -- ем.
 
-  Вос -- при -- ят __ Из -- ра -- ил -- я от -- ро -- ка Сво -- е -- го,
+  Вос -- при -- ят __ Из -- ра -- и -- ля от -- ро -- ка Сво -- е -- го,
   по -- мя -- ну -- ти ми -- ло -- сти, __
   я -- ко -- же гла -- го -- ла ко от -- цем на -- шим,
   Ав -- ра -- а -- му и се -- ме -- ни е -- го,
@@ -238,8 +238,7 @@ bXILyricsX = \lyricmode {
   ˈsu -- ʃʲːu -- ju bo -- go -- ˈro -- dʲi -- tsu
   tʲa vʲe -- lʲi -- ˈtʃɑ -- jɛm
 
-%   TODO israilja?
-  vos -- prʲi -- ˈjat __ iz -- ˈrɑ -- ilʲ -- a ˈot -- ro -- ka svo -- jɛ -- ˈgo
+  vos -- prʲi -- ˈjat __ iz -- ˈrɑ -- i -- lʲa ˈot -- ro -- ka svo -- jɛ -- ˈgo
   po -- mʲa -- ˈnu -- tʲi ˈmʲi -- los -- tʲi __
   ˈja -- ko -- ʒɛ gla -- ˈgo -- la ko ot -- ˈtsem ˈnɑ -- ʃɨm
   av -- ra -- ˈɑ -- mu i ˈsʲe -- mʲe -- nʲi jɛ -- ˈgo
