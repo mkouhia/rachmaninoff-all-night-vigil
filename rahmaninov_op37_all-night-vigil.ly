@@ -331,6 +331,13 @@ tocAct =
         subtitle = "греческого распева"
       }
       \choirStaffXI
+
+      \layout {
+        \context {
+          \Staff
+          \remove "Time_signature_engraver"
+        }
+      }
     }
   }
 
