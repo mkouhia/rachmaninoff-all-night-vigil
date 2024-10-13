@@ -147,6 +147,11 @@ dir_певуче = \dirTrans "певуче" "cantabile"
 dir_коротким_звуком = \dirTrans "коротким звуком" "secco"
 dir_легко = \dirTrans "легко" "leggiero"
 
+%% Movement 10
+
+dir_silno_reshitelno_etc = \dirTrans "Сильно. Решительно. Акцентируя все ноты" "Strong resolute, accentuating all notes"
+dir_kak_ranshe = \dirTrans "Как раньше" "As before"
+
 %% Movement 11
 tempo_medlenno_tjagutshe_etc = \tempoAndMarkTrans "Медленно. Тягуче" "Бсе время опираясь на мелодию басов" "Slowly, drawn out" "The structure of the upper voices is superimposed throughout on the melody of the bass" % Adagio. Sostenuto
 tempo_tot_zhe_temp_etc = \tempoAndMarkTransV
@@ -181,6 +186,7 @@ dir_nemnogo_bydeljaja = \dirTrans "немного выделяя" "poco marcato"
 
 %% All movements
 tempo_medlenno = \tempoTrans "Медленно" "Adagio" % Andante sostenuto? Lento? Andante?
+tempo_ne_skoro_alla_breve = \tempoAndMarkTrans "Не скоро" "(движение половинами)" "Not fast" "Alla breve"
 tempo_Довольно_скоро = \tempoTrans "Довольно скоро" "Moderato"
 tempo_dobolno_skoro_s_jarkom_rutmom = \tempoTrans "Довольно скоро, с ярком рутмом" "Moderato, con ritmo vivace"
 
@@ -189,6 +195,7 @@ tempo_prezhnij_temp = \tempoTrans "Прежний темп" "Tempo I"
 mark_zaderzhivaja = \textMarkTrans "задерживая" "ritardando"
 mark_zaderzh = \textMarkTrans "задерж." "rit."
 mark_nemnogo_skoree = \textMarkTrans "немного скорее" "poco più mosso"
+tempo_nemnogo_skoree_s_vozmozhnoi_etc = \tempoAndMarkTrans "Немного скорее" "С возмошной силой и твердостью" "A little quicker" "With all possible force and energy"
 
 %% Deprecated
 ritardando = \textMarkTrans "задерживая" "ritardando"

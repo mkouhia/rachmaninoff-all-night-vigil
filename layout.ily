@@ -31,6 +31,8 @@ score_layout = \layout {
     \override Script.direction = #UP
     % Display bar number for broken bars at line start
     barNumberVisibility = #first-bar-number-invisible-save-broken-bars
+    % Multi-measure rests are always whole rests, do not use breve rests.
+    \override MultiMeasureRest.usable-duration-logs = #'(0)
   }
   \context {
     \Staff

@@ -10,6 +10,7 @@
 % \include "part06/06_global.ly"
 % \include "part07/07_global.ly"
 % \include "part08/08_global.ly"
+\include "part10/10_global.ily"
 \include "part11/11_global.ily"
 \include "part12/12_global.ily"
 \include "part13/13_global.ily"
@@ -321,6 +322,24 @@ tocAct =
     }
   }
 %}
+
+\bookpart {
+    \tocItem \markup { 10. Воскресение Христово видевше }
+
+    \score {
+      \header {
+        title = "10. Воскресение Христово видевше"
+      }
+      \choirStaffX
+
+      \layout {
+        \context {
+          \Staff
+          \remove "Time_signature_engraver"
+        }
+      }
+    }
+  }
 
   \bookpart {
     \tocItem \markup { 11. Взбранной воеводе }
