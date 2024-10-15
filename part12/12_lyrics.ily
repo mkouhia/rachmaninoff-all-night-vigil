@@ -79,7 +79,7 @@ sXIILyricsX = \lyricmode {
   po -- ˈmʲi -- luj __ mʲa __
   is -- tse -- ˈlʲi __ ˈdu -- ʃu mo -- ˈju __
   k~tʲe -- ˈbʲɛ prʲi -- bʲɛ -- ˈgox __
-  ˈgos -- po -- dʲi prʲi -- ˈbʲɛ -- ʒɨ -- ʃʲːɛ bɨl __ je -- ˈsʲi nɑm
+  ˈgos -- po -- dʲi prʲi -- ˈbʲɛ -- ʒɨ -- ɕːɛ bɨl __ je -- ˈsʲi nɑm
   is -- tse -- ˈlʲi ˈdu -- ʃu mo -- ˈju __
   ˈja -- ko so -- grʲɛ -- ˈʃɨx tʲe -- ˈbʲɛ __
   na -- u -- ˈtʃi mʲa __ tvo -- ˈrʲi -- tʲi ˈvo -- lʲu tvo -- ˈju
@@ -88,7 +88,7 @@ sXIILyricsX = \lyricmode {
   vo ˈsvʲe -- tʲɛ tvo -- ˈjɛm __
 %   52
   ˈu -- zrʲim svʲɛt
-  pro -- ˈbɑ -- vʲi ˈmʲi -- lostʲ tvo -- ˈju __ ˈvʲɛ -- du -- ʃʲːim tʲa
+  pro -- ˈbɑ -- vʲi ˈmʲi -- lostʲ tvo -- ˈju __ ˈvʲɛ -- du -- ɕːim tʲa
 
   svʲa -- ˈtɨj ˈbo -- ʒɛ __ svʲa -- ˈtɨj ˈkrʲɛp -- kʲij __
   svʲa -- ˈtɨj bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
@@ -236,7 +236,7 @@ aXIILyricsX = \lyricmode {
   bla -- go -- slo -- ˈvʲɛn __ je -- ˈsʲi ˈgos -- po -- dʲi
   na -- u -- ˈtʃi mʲa o -- prav -- ˈdɑ -- nʲi -- jɛm tvo -- ˈim __
 %   34 lower
-  ˈgos -- po -- dʲi prʲi -- ˈbʲɛ -- ʒɨ -- ʃʲːɛ bɨl __ je -- ˈsʲi nɑm
+  ˈgos -- po -- dʲi prʲi -- ˈbʲɛ -- ʒɨ -- ɕːɛ bɨl __ je -- ˈsʲi nɑm
   %   38
   ɑz rʲɛx ˈgos -- po -- dʲi __ po -- ˈmʲi -- luj mʲa
   is -- tse -- ˈlʲi ˈdu -- ʃu mo -- ˈju
@@ -248,7 +248,7 @@ aXIILyricsX = \lyricmode {
   ˈja -- ko u tʲe -- ˈbʲɛ is -- ˈtotʃ -- nʲik ʒɨ -- vo -- ˈtɑ
   vo ˈsvʲe -- tʲɛ tvo -- ˈjɛm __ ˈu -- zrʲim svʲɛt
 %   53
-  pro -- ˈbɑ -- vʲi ˈmʲi -- lostʲ tvo -- ˈju __ ˈvʲɛ -- du -- ʃʲːim tʲa
+  pro -- ˈbɑ -- vʲi ˈmʲi -- lostʲ tvo -- ˈju __ ˈvʲɛ -- du -- ɕːim tʲa
   svʲa -- ˈtɨj ˈbo -- ʒɛ __ svʲa -- ˈtɨj ˈkrʲɛp -- kʲij __
   svʲa -- ˈtɨj bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
   svʲa -- ˈtɨj ˈbo -- ʒɛ __ svʲa -- ˈtɨj ˈkrʲɛp -- kʲij __
@@ -359,7 +359,7 @@ tXIILyricsX = \lyricmode {
 %   30
   k~tʲe -- ˈbʲɛ __ prʲi -- bʲɛ -- ˈgox __
 %   34
-  ˈgos -- po -- dʲi prʲi -- ˈbʲɛ -- ʒɨ -- ʃʲːɛ __ je -- ˈsʲi nɑm
+  ˈgos -- po -- dʲi prʲi -- ˈbʲɛ -- ʒɨ -- ɕːɛ __ je -- ˈsʲi nɑm
   po -- ˈmʲi -- luj __ is -- tse -- ˈlʲi __
 %   43
   na -- u -- ˈtʃi mʲa __ tvo -- ˈrʲi -- tʲi ˈvo -- lʲu tvo -- ˈju
@@ -367,7 +367,7 @@ tXIILyricsX = \lyricmode {
 %   49
   ˈja -- ko u tʲe -- ˈbʲɛ is -- ˈtotʃ -- nʲik ʒɨ -- vo -- ˈtɑ
 %   53
-  pro -- ˈbɑ -- vʲi ˈmʲi -- lostʲ tvo -- ˈju __ ˈvʲɛ -- du -- ʃʲːim tʲa
+  pro -- ˈbɑ -- vʲi ˈmʲi -- lostʲ tvo -- ˈju __ ˈvʲɛ -- du -- ɕːim tʲa
 %   59
   po -- ˈmʲi -- luj nɑs
   svʲa -- ˈtɨj __ bʲɛz -- ˈsmʲɛrt -- nɨj po -- ˈmʲi -- luj nɑs
@@ -494,13 +494,13 @@ bXIILyricsX = \lyricmode {
 %   30
   k~tʲe -- ˈbʲɛ __ prʲi -- bʲɛ -- ˈgox __
 %   34
-  ˈgos -- po -- dʲi prʲi -- ˈbʲɛ -- ʒɨ -- ʃʲːɛ bɨl __ je -- ˈsʲi nɑm __
+  ˈgos -- po -- dʲi prʲi -- ˈbʲɛ -- ʒɨ -- ɕːɛ bɨl __ je -- ˈsʲi nɑm __
   ˈgos -- po -- dʲi __
   ˈgos -- po -- dʲi
   tɨ je -- ˈsʲi box moj
   ˈja -- ko tɨ je -- ˈsʲi box moj
 %   53
-  pro -- ˈbɑ -- vʲi ˈmʲi -- lostʲ tvo -- ˈju __ ˈvʲɛ -- du -- ʃʲːim tʲa
+  pro -- ˈbɑ -- vʲi ˈmʲi -- lostʲ tvo -- ˈju __ ˈvʲɛ -- du -- ɕːim tʲa
 %   59
   po -- ˈmʲi -- luj nɑs
 %   64
@@ -523,7 +523,7 @@ bXIIhLyrics = \lyricmode {
   я -- ко у Те -- бе ис -- точ -- ник жи -- во -- та.
 }
 bXIIhLyricsX = \lyricmode {
-  ˈgos -- po -- dʲi prʲi -- ˈbʲɛ -- ʒɨ -- ʃʲːɛ bɨl je -- ˈsʲi nɑm v~rod i rod __
+  ˈgos -- po -- dʲi prʲi -- ˈbʲɛ -- ʒɨ -- ɕːɛ bɨl je -- ˈsʲi nɑm v~rod i rod __
   po -- ˈmʲi -- luj __ po -- ˈmʲi -- luj mʲa __ ""
   \repeat unfold 7 { \skip 1 }
 %   49

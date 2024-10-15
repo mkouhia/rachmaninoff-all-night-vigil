@@ -11,7 +11,7 @@ satXILyricsRefrainX = \lyricmode {
   tʃɛst -- ˈnʲej -- ʃu -- ju xɛ -- ru -- ˈvʲim
   i slav -- ˈnʲej -- ʃu -- ju bʲɛz srav -- ˈnʲe -- nʲi -- ja sʲɛ -- ra -- ˈfʲim
   bʲɛz is -- ˈtlʲe -- nʲi -- ja ˈbo -- ga ˈslo -- va ˈroʒd -- ʃu -- ju
-  ˈsu -- ʃʲːu -- ju bo -- go -- ˈro -- dʲi -- tsu
+  ˈsu -- ɕːu -- ju bo -- go -- ˈro -- dʲi -- tsu
   tʲa vʲe -- lʲi -- ˈtʃɑ -- jɛm
 }
 
@@ -24,8 +24,8 @@ stbXILyricsVerseFour = \lyricmode {
 stbXILyricsVerseFourX = \lyricmode {
   nʲiz -- lo -- ˈʒɨ __  ˈsʲilʲ -- nɨ -- ja so prʲɛ -- ˈstol
   i voz -- nʲe -- ˈsʲɛ smʲi -- ˈrʲɛn -- nɨ -- ja
-  ˈɑl -- tʃu -- ʃʲːi -- ja is -- ˈpol -- nʲi blɑg
-  i bo -- ga -- ˈtʲa -- ʃʲːi -- ja -- sʲa ot -- pus -- ˈtʲi __ tʃʲːi
+  ˈɑl -- tʃu -- ɕːi -- ja is -- ˈpol -- nʲi blɑg
+  i bo -- ga -- ˈtʲa -- ɕːi -- ja -- sʲa ot -- pus -- ˈtʲi __ tɕːi
 }
 
 sXILyrics = \lyricmode {
@@ -108,8 +108,8 @@ aXILyricsX = \lyricmode {
 
   nʲiz -- lo -- ˈʒɨ nʲiz -- lo -- ˈʒɨ __ so prʲɛ -- ˈstol
   i voz -- nʲe -- ˈsʲɛ smʲi -- ˈrʲɛn -- nɨ -- ja
-  ˈɑl -- tʃu -- ʃʲːi -- ja is -- ˈpol -- nʲi blɑg
-  i bo -- ga -- ˈtʲa -- ʃʲːi -- ja -- sʲa ot -- pus -- ˈtʲi __ tʃʲːi
+  ˈɑl -- tʃu -- ɕːi -- ja is -- ˈpol -- nʲi blɑg
+  i bo -- ga -- ˈtʲa -- ɕːi -- ja -- sʲa ot -- pus -- ˈtʲi __ tɕːi
 
   \satXILyricsRefrainX
 
@@ -213,7 +213,7 @@ bXILyricsX = \lyricmode {
   i voz -- ˈrɑ -- do -- va -- sʲa dux moj
   o ˈbo -- zʲɛ ˈspɑ -- sʲɛ mo -- ˈjɛm
 
-  ˈsu -- ʃʲːu -- ju bo -- go -- ˈro -- dʲi -- tsu
+  ˈsu -- ɕːu -- ju bo -- go -- ˈro -- dʲi -- tsu
   tʲa vʲe -- lʲi -- ˈtʃɑ -- jɛm
 
   ˈja -- ko prʲi -- ˈzrʲɛ
@@ -221,7 +221,7 @@ bXILyricsX = \lyricmode {
   sʲɛ bo ot ˈnɨ -- nʲɛ
   u -- bla -- ˈʒɑt __ mʲa __ fsʲi ˈro -- dʲi
 
-  ˈsu -- ʃʲːu -- ju bo -- go -- ˈro -- dʲi -- tsu
+  ˈsu -- ɕːu -- ju bo -- go -- ˈro -- dʲi -- tsu
   tʲa vʲe -- lʲi -- ˈtʃɑ -- jɛm
 
   ˈja -- ko so -- tvo -- ˈrʲi mnʲɛ vʲe -- ˈlʲi -- tʃi -- jɛ ˈsʲilʲ -- nɨj
@@ -229,13 +229,13 @@ bXILyricsX = \lyricmode {
   i ˈmʲi -- lostʲ jɛ -- ˈgo
   \set lyricMelismaAlignment = #0
   v‿ˈro -- dɨ ro -- ˈdov
-  bo -- ˈja -- ʃʲːim -- sʲa __  jɛ -- ˈgo
+  bo -- ˈja -- ɕːim -- sʲa __  jɛ -- ˈgo
 
-  ˈsu -- ʃʲːu -- ju __ bo -- go -- ˈro -- dʲi -- tsu
+  ˈsu -- ɕːu -- ju __ bo -- go -- ˈro -- dʲi -- tsu
   tʲa vʲe -- lʲi -- ˈtʃɑ -- jɛm
 
   \stbXILyricsVerseFourX
-  ˈsu -- ʃʲːu -- ju bo -- go -- ˈro -- dʲi -- tsu
+  ˈsu -- ɕːu -- ju bo -- go -- ˈro -- dʲi -- tsu
   tʲa vʲe -- lʲi -- ˈtʃɑ -- jɛm
 
   vos -- prʲi -- ˈjat __ iz -- ˈrɑ -- i -- lʲa ˈot -- ro -- ka svo -- jɛ -- ˈgo
@@ -244,6 +244,6 @@ bXILyricsX = \lyricmode {
   av -- ra -- ˈɑ -- mu i ˈsʲe -- mʲe -- nʲi jɛ -- ˈgo
   do ˈvʲɛ -- ka __
 
-  ˈsu -- ʃʲːu -- ju bo -- go -- ˈro -- dʲi -- tsu
+  ˈsu -- ɕːu -- ju bo -- go -- ˈro -- dʲi -- tsu
   tʲa vʲe -- lʲi -- ˈtʃɑ -- jɛm
 }

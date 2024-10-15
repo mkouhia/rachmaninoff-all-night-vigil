@@ -197,7 +197,7 @@
     raˈbotajtʲɛ ˈgospodʲevʲi so ˈstrɑxom  \
     i ˈrɑdujtʲesʲa jɛˈmu s‿ˈtrʲepʲɛtom  \
     #h(2em) alʲiˈluija alʲiˈluija alʲiˈluija  \
-    blaˈʒenʲi fsʲi naˈdʲejuʃʲːiisʲa nanʲ  \
+    blaˈʒenʲi fsʲi naˈdʲejuɕːiisʲa nanʲ  \
     #h(2em) alʲiˈluija alʲiˈluija alʲiˈluija  \
 
     vosˈkrʲɛsnʲi ˈgospodʲi spaˈsʲi mʲa ˈboʒɛ ˈmoj  \
@@ -291,7 +291,7 @@
     и славу людей Твоих Израиля.
   ],
   [
-    ˈnɨnʲɛ otpuˈʃʲːɑjɛʃɨ raˈbɑ tvojɛˈgo vlaˈdɨko  \
+    ˈnɨnʲɛ otpuˈɕːɑjɛʃɨ raˈbɑ tvojɛˈgo vlaˈdɨko  \
     #h(1em) po glaˈgolu tvojɛˈmu s‿ˈmʲirom  \
     ˈjako ˈvʲidʲɛsta ˈotʃi moˈi spaˈsʲenʲijɛ tvoˈjɛ  \
     ˈjɛʒɛ jeˈsʲi ugoˈtoval prʲɛd lʲiˈtsɛm fsʲɛx lʲuˈdʲej  \
@@ -478,7 +478,7 @@
     poˈtʃto ˈmʲira s‿mʲiˈlostʲivnɨmʲi slʲɛˈzɑmʲi  \
     o utʃeˈnʲitsɨ rastvoˈrʲaetʲɛ?  \
     blʲisˈtɑjajsʲa vo ˈgrobʲɛ ˈɑngɛl  \
-    #h(1em) mʲiroˈnosʲitsam vʲɛˈʃʲːɑʃɛ  \
+    #h(1em) mʲiroˈnosʲitsam vʲɛˈɕːɑʃɛ  \
     ˈvʲidʲitʲɛ vɨ ˈgrob i urazuˈmʲejtʲɛ  \
     ˈspɑs bo voˈskrʲesʲɛ ot ˈgroba  \
 
@@ -486,7 +486,7 @@
     nauˈtʃi mʲa opravˈdɑnʲijɛm tvoˈim  \
 
     ˈzʲɛlo ˈrɑno mʲironosʲitsɨ tʲɛˈtʃɑxu  \
-    ko ˈgrobu tvojɛˈmu rɨˈdɑjuʃʲːija  \
+    ko ˈgrobu tvojɛˈmu rɨˈdɑjuɕːija  \
     no prʲɛˈdstɑ k‿nʲim ˈɑngɛl i ˈrʲɛtʃɛ  \
     rɨˈdɑnʲija ˈvrʲemʲa prʲɛˈstɑ  \
     nʲɛ ˈplɑtʃitʲɛ  \
@@ -504,8 +504,8 @@
     ˈslɑva otˈtsu i ˈsɨnu i svʲaˈtomu ˈduxu  \
     pokloˈnʲimsʲa otˈtsu  \
     i jɛˈgo ˈsɨnovʲi i svʲaˈtomu ˈduxu  \
-    ˈsvʲatʲej ˈtroitsɛ vo jeˈdʲinom suʃʲːɛstvʲɛ  \
-    s‿sʲɛraˈfʲimɨ zoˈvuʃʲːɛ  \
+    ˈsvʲatʲej ˈtroitsɛ vo jeˈdʲinom suɕːɛstvʲɛ  \
+    s‿sʲɛraˈfʲimɨ zoˈvuɕːɛ  \
     svʲat svʲat svʲat jeˈsʲi ˈgospodʲi  \
     i ˈnɨnʲɛ i ˈprʲisno i vo ˈvʲekʲi vʲɛˈkov aˈmʲinʲ  \
 
@@ -619,7 +619,7 @@
     xrʲisˈtovu voskrʲeˈsʲenʲiju  \
     sʲɛ bo prʲiˈidʲɛ krʲɛˈstom \
     ˈrɑdostʲ fsʲɛˈmu ˈmʲiru  \
-    fsʲɛgˈdɑ blagosloˈvʲaʃʲːɛ ˈgospoda  \
+    fsʲɛgˈdɑ blagosloˈvʲaɕːɛ ˈgospoda  \
     poˈjɛm  voskrʲeˈsʲenʲijɛ jɛˈgo  \
     raˈspʲatʲijɛ bo prʲetʲɛrˈpʲɛv  \
     ˈsmʲɛrtʲiju ˈsmʲɛrtʲ razˈruʃɨ
@@ -698,7 +698,7 @@
     #h(2em) tʃɛstˈnʲejʃuju xɛruˈvʲim  \
     #h(3em) i slavˈnʲejʃuju bʲɛz sravˈnʲenʲija sʲɛraˈfʲim  \
     #h(3em) bʲɛz isˈtlʲenʲija ˈboga ˈslova ˈroʒdʃuju  \
-    #h(3em) ˈsuʃʲːuju bogoˈrodʲitsu \
+    #h(3em) ˈsuɕːuju bogoˈrodʲitsu \
     #h(3em) tʲa vʲelʲiˈtʃɑjɛm  \
 
     ˈjako prʲiˈzrʲɛ \
@@ -711,14 +711,14 @@
     ˈjako sotvoˈrʲi mnʲɛ vʲeˈlʲitʃijɛ ˈsʲilʲnɨj  \
     i ˈsvʲato ˈimʲa jɛˈgo  \
     i ˈmʲilostʲ jɛˈgo v‿ˈrodɨ roˈdov  \
-    boˈjaʃʲːimsʲa jɛˈgo  \
+    boˈjaɕːimsʲa jɛˈgo  \
 
     #h(2em) #text(style: "italic")[ tʃɛstˈnʲejʃuju xɛruˈvʲim ...]
 
     nʲizloˈʒɨ ˈsʲilʲnɨja so prʲɛˈstol  \
     i voznʲeˈsʲɛ smʲiˈrʲɛnnɨja  \
-    ˈɑltʃuʃʲːija isˈpolnʲi blɑg  \
-    i bogaˈtʲaʃʲːijasʲa otpusˈtʲi tʃʲːi  \
+    ˈɑltʃuɕːija isˈpolnʲi blɑg  \
+    i bogaˈtʲaɕːijasʲa otpusˈtʲi tɕːi  \
 
     #h(2em) #text(style: "italic")[ tʃɛstˈnʲejʃuju xɛruˈvʲim ...]
 
@@ -882,7 +882,7 @@
     blagosloˈvʲɛn jeˈsʲi ˈgospodʲi  \
     #h(1em) nauˈtʃi mʲa opravˈdɑnʲijɛm tvoˈim  \
 
-    ˈgospodʲi prʲiˈbʲɛʒɨʃʲːɛ bɨl jeˈsʲi nɑm v‿rod i rod  \
+    ˈgospodʲi prʲiˈbʲɛʒɨɕːɛ bɨl jeˈsʲi nɑm v‿rod i rod  \
     ɑz rʲɛx ˈgospodʲi poˈmʲiluj mʲa  \
     istseˈlʲi ˈduʃu moˈju  \
     ˈjako sogrʲɛˈʃɨx tʲeˈbʲɛ  \
@@ -891,7 +891,7 @@
     ˈjako tɨ jeˈsʲi box moj  \
     ˈjako u tʲeˈbʲɛ isˈtotʃnʲik ʒɨvoˈtɑ  \
     vo ˈsvʲetʲɛ tvoˈjɛm ˈuzrʲim svʲɛt  \
-    proˈbɑvʲi ˈmʲilostʲ tvoˈju ˈvʲɛduʃʲːim tʲa  \
+    proˈbɑvʲi ˈmʲilostʲ tvoˈju ˈvʲɛduɕːim tʲa  \
 
     svʲaˈtɨj ˈboʒɛ svʲaˈtɨj ˈkrʲɛpkʲij  \
     #h(1em) svʲaˈtɨj bʲɛzˈsmʲɛrtnɨj poˈmʲiluj nɑs \
@@ -1054,7 +1054,7 @@
     #h(1em) ˈjako izˈbɑvlʲʃɛsʲa ot zlɨx \
     #h(1em) blagoˈdɑrstvʲɛnnaja vospʲiˈsujɛm tʲi raˈbʲi tvoˈi \
     #h(1em) bogoˈrodʲitsɛ \
-    no ˈjako iˈmuʃʲːaja dʲɛrˈʒɑvu nʲɛpobʲeˈdʲimuju \
+    no ˈjako iˈmuɕːaja dʲɛrˈʒɑvu nʲɛpobʲeˈdʲimuju \
     #h(1em) ot ˈfsʲɑkʲix nɑs bʲɛd svoboˈdʲi \
     da zoˈvʲɛm tʲi \
     ˈrɑdujsʲa nʲeˈvʲɛsto nʲenʲeˈvʲɛstnaja
@@ -1124,7 +1124,7 @@
     [Ц], [ц], [ts] , [Цареви [tsaˈrʲevʲi], Отцу [otˈtsu]],
     [Ч], [ч], [tʃ] , [человек [tʃɛloˈvʲɛk], очи [ˈotʃi]],
     [Ш], [ш], [ʃ] , [нашему [ˈnɑʃɛmu], душе [duˈʃɛ]],
-    [Щ], [щ], [ʃʲː (tai ɕː)] , [вещаше [vʲɛˈʃʲːɑʃɛ], зовуще [zoˈvuʃʲːɛ]],
+    [Щ], [щ], [ɕː] , [вещаше [vʲɛˈɕːɑʃɛ], зовуще [zoˈvuɕːɛ]],
   )
 
   Useimmilla konsonanteista on suomen kielessä esiintyvä vastinpari kuten yllä
@@ -1138,10 +1138,10 @@
     sanoissa _chop_ tai _chocolate_
   - ш [ʃ] (suhu-s tai š) äännetään kuten sanassa _šakki (shakki)_ tai englannin
     kielen sanassa _show_, konsonantti on kova ja huulet pyöreät
-  - щ [ʃʲː] äännetään liudentuneena pitkänä suhu-s:nä, kuin laittaisi ensin
+  - щ [ɕː] (tai ʃʲː) äännetään liudentuneena pitkänä suhu-s:nä, kuin laittaisi ensin
     kielen suussa j-äänteen asentoon, mutta sanoisi suhu-s:n siitä asemasta;
     verrattuna ш-kirjaimeen, ääntämys on pehmeämpi ja suhina on huomattavasti
-    korkeataajuisempaa
+    korkeataajuisempaa, huulet eivät ole pyöreät lausuttaessa
   - ж [ʒ] äännetään soinnillisena suhu-s:nä, kuten s englannin kielen sanoissa
     _treasure_ ja _measure_.
 
@@ -1153,7 +1153,7 @@
   Lisäksi ng-äännettä ei kirkkoslaavissa ole, joten esimerkiksi sanassa ангел
   lausutaan n ja g erikseen: [ˈɑngɛl].
 
-  Konsonantit щ [ʃʲː] ja ч [tʃ] sekä "puolikonsonantti" й [j] ovat aina
+  Konsonantit щ [ɕː] ja ч [tʃ] sekä "puolikonsonantti" й [j] ovat aina
   liudentuneita, samoin kuin konsonantit ж [ʒ], ш [ʃ] ja ц [ts] ovat aina
   liudentumattomia.
 

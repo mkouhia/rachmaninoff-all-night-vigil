@@ -17,7 +17,7 @@ sXVLyricsX = \lyricmode {
   ˈja -- ko iz -- ˈbɑvlʲ -- ʃɛ -- sʲa ot zlɨx __
   bla -- go -- ˈdɑrst -- vʲɛn -- na -- ja __ vos -- pʲi -- ˈsu -- jɛm tʲi ra -- ˈbʲi tvo -- ˈi __
   bo -- go -- ˈro -- dʲi -- tsɛ __
-  no ˈja -- ko i -- ˈmu -- ʃʲːa -- ja dʲɛr -- ˈʒɑ -- vu nʲɛ -- po -- bʲe -- ˈdʲi -- mu -- ju __
+  no ˈja -- ko i -- ˈmu -- ɕːa -- ja dʲɛr -- ˈʒɑ -- vu nʲɛ -- po -- bʲe -- ˈdʲi -- mu -- ju __
   ot ˈfsʲɑ -- kʲix nɑs bʲɛd __ svo -- bo -- ˈdʲi
   da zo -- ˈvʲɛm __ tʲi __
   ˈrɑ -- duj -- sʲa nʲe -- ˈvʲɛ -- sto nʲe -- nʲe -- ˈvʲɛst -- na -- ja
@@ -40,7 +40,7 @@ aXVLyricsX = \lyricmode {
   ˈja -- ko iz -- ˈbɑvlʲ -- ʃɛ -- sʲa ot zlɨx __
   bla -- go -- ˈdɑrst -- vʲɛn -- na -- ja __ vos -- pʲi -- ˈsu -- jɛm tʲi ra -- ˈbʲi tvo -- ˈi __
   bo -- go -- ˈro -- dʲi -- tsɛ bo -- go -- ˈro -- dʲi -- tsɛ
-  no ˈja -- ko i -- ˈmu -- ʃʲːa -- ja dʲɛr -- ˈʒɑ -- vu nʲɛ -- po -- bʲe -- ˈdʲi -- mu -- ju __
+  no ˈja -- ko i -- ˈmu -- ɕːa -- ja dʲɛr -- ˈʒɑ -- vu nʲɛ -- po -- bʲe -- ˈdʲi -- mu -- ju __
   ot ˈfsʲɑ -- kʲix nɑs bʲɛd ˈfsʲɑ -- kʲix nɑs __ bʲɛd __ svo -- bo -- ˈdʲi
   da zo -- ˈvʲɛm __ tʲi __
   ˈrɑ -- duj -- sʲa nʲe -- ˈvʲɛ -- sto nʲe -- nʲe -- ˈvʲɛst -- na -- ja
@@ -63,7 +63,7 @@ tXVLyricsX = \lyricmode {
   ˈja -- ko iz -- ˈbɑvlʲ -- ʃɛ -- sʲa ot zlɨx __
   bla -- go -- ˈdɑrst -- vʲɛn -- na -- ja __ vos -- pʲi -- ˈsu -- jɛm tʲi ra -- ˈbʲi tvo -- ˈi __
   bo -- go -- ˈro -- dʲi -- tsɛ bo -- go -- ˈro -- dʲi -- tsɛ
-  no ˈja -- ko i -- ˈmu -- ʃʲːa -- ja dʲɛr -- ˈʒɑ -- vu nʲɛ -- po -- bʲe -- ˈdʲi -- mu -- ju __
+  no ˈja -- ko i -- ˈmu -- ɕːa -- ja dʲɛr -- ˈʒɑ -- vu nʲɛ -- po -- bʲe -- ˈdʲi -- mu -- ju __
   ot ˈfsʲɑ -- kʲix nɑs bʲɛd __ svo -- bo -- ˈdʲi
   da zo -- ˈvʲɛm tʲi __
   ˈrɑ -- duj -- sʲa nʲe -- ˈvʲɛ -- sto nʲe -- nʲe -- ˈvʲɛst -- na -- ja
@@ -85,7 +85,7 @@ bXVLyricsX = \lyricmode {
   ˈja -- ko iz -- ˈbɑvlʲ -- ʃɛ -- sʲa ot zlɨx __
   vos -- pʲi -- ˈsu -- jɛm tʲi ra -- ˈbʲi tvo -- ˈi __
   bo -- go -- ˈro -- dʲi -- tsɛ bo -- go -- ˈro -- dʲi -- tsɛ
-  no ˈja -- ko __ i -- ˈmu -- ʃʲːa -- ja dʲɛr -- ˈʒɑ -- vu nʲɛ -- po -- bʲe -- ˈdʲi -- mu -- ju
+  no ˈja -- ko __ i -- ˈmu -- ɕːa -- ja dʲɛr -- ˈʒɑ -- vu nʲɛ -- po -- bʲe -- ˈdʲi -- mu -- ju
   nʲɛ -- po -- bʲe -- ˈdʲi -- mu -- ju
   ot ˈfsʲɑ -- kʲix nɑs bʲɛd svo -- bo -- ˈdʲi
   da zo -- ˈvʲɛm tʲi __
