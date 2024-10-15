@@ -18,7 +18,7 @@
 
 
 
-#let part(title, titleFin: (), chu, tra, fin) = {
+#let part(title, titleFin: (), subtitle: (), chu, tra, fin) = {
   v(2.4em, weak:true)
   box[
     #align(center)[
@@ -26,7 +26,12 @@
         #block(context partnum.display() + ". " + [#title] + ".")
         #if titleFin != () {
           text(10pt, weight: "regular")[
-            #block(above: 0.8em, [#titleFin])
+            #block(above: 0.6em, [#titleFin])
+          ]
+        }
+        #if subtitle != () {
+          text(8pt, weight: "regular")[
+            #block(above: 0.8em, [#subtitle])
           ]
         }
       ]
@@ -112,6 +117,7 @@
 #part(
   "Благослови, душе моя, Господа",
 //  titleFin: "Alkupsalmi, psalmi 103",
+  subtitle: "Kreikkalainen sävelmä",
   [
     Благослови, душе моя, Господа.  \
     Благословен еси, Господи.  \
@@ -238,6 +244,7 @@
 #part(
   "Свете тихий",
   titleFin: "Ehtooveisu",
+  subtitle: "Kiovalainen sävelmä",
   [
     Свете тихий святыя славы безсмертнаго  \
     #h(1em) Отца Небеснаго, Святаго, блаженнаго,  \
@@ -282,6 +289,7 @@
 #part(
   "Ныне отпущаеши",
   titleFin: "Vanhurskaan Simeonin rukous",
+  subtitle: "Kiovalainen sävelmä",
   [
     Ныне отпущаеши раба Твоего, Владыко,  \
     #h(1em) поглаголу Твоему, с миром,  \
@@ -364,6 +372,7 @@
 
 #part(
   "Хвалите имя Господне",
+  subtitle: "Znamenni-sävelmä",
   [
     Хвалите имя Господне. Аллилуйиа.  \
     Хвалите, раби, Господа. Аллилуйиа.  \
@@ -403,6 +412,7 @@
 #part(
   "Благословен еси, Господи",
 //  titleFin: "Ylösnousemustropari",
+  subtitle: "Znamenni-sävelmä",
   [
     Благословен еси, Господи,  \
     научи мя оправданием Твоим.  \
@@ -775,6 +785,7 @@
 #part(
   "Славословие великое",
   titleFin: "Suuri ylistysveisu",
+  subtitle: "Znamenni-sävelmä",
   [
     Слава в вышних Богу,  \
     и на земли мир,  \
@@ -978,7 +989,8 @@
 
 #part(
   "Тропарь. Днесь Спасение",
-  titleFin: "Ylösnousemustropari I",
+  // titleFin: "Ylösnousemustropari I",
+  subtitle: "Znamenni-sävelmä",
   [
     Днесь спасение миру бысть,  \
     поем Воскресшему из гроба  \
@@ -1004,7 +1016,8 @@
 
 #part(
   "Тропарь. Воскрес из гроба",
-  titleFin: "Ylösnousemustropari II",
+  // titleFin: "Ylösnousemustropari II",
+  subtitle: "Znamenni-sävelmä",
   [
     Воскрес из гроба и узы растерзал еси ада, \
     разрушил еси осуждение смерти, Господи, \
@@ -1039,6 +1052,7 @@
 
 #part(
   "Взбранной воеводе",
+  subtitle: "Kreikkalainen-sävelmä",
   [
     Взбранной воеводе победительная, \
     #h(1em) яко избавльшеся от злых, \
