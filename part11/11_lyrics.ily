@@ -24,7 +24,7 @@ stbXILyricsVerseFour = \lyricmode {
 stbXILyricsVerseFourX = \lyricmode {
   nʲiz -- lo -- ˈʒɨ __  ˈsʲilʲ -- nɨ -- ja so prʲɛ -- ˈstol
   i voz -- nʲe -- ˈsʲɛ smʲi -- ˈrʲɛn -- nɨ -- ja
-  ˈɑl -- tʃu -- ʃʲːi -- ja is -- ˈpol -- nʲi blɑkʰ
+  ˈɑl -- tʃu -- ʃʲːi -- ja is -- ˈpol -- nʲi blɑg
   i bo -- ga -- ˈtʲa -- ʃʲːi -- ja -- sʲa ot -- pus -- ˈtʲi __ tʃʲːi
 }
 
@@ -108,7 +108,7 @@ aXILyricsX = \lyricmode {
 
   nʲiz -- lo -- ˈʒɨ nʲiz -- lo -- ˈʒɨ __ so prʲɛ -- ˈstol
   i voz -- nʲe -- ˈsʲɛ smʲi -- ˈrʲɛn -- nɨ -- ja
-  ˈɑl -- tʃu -- ʃʲːi -- ja is -- ˈpol -- nʲi blɑkʰ
+  ˈɑl -- tʃu -- ʃʲːi -- ja is -- ˈpol -- nʲi blɑg
   i bo -- ga -- ˈtʲa -- ʃʲːi -- ja -- sʲa ot -- pus -- ˈtʲi __ tʃʲːi
 
   \satXILyricsRefrainX
@@ -228,7 +228,7 @@ bXILyricsX = \lyricmode {
   i ˈsvʲa -- to ˈi -- mʲa jɛ -- ˈgo
   i ˈmʲi -- lostʲ jɛ -- ˈgo
   \set lyricMelismaAlignment = #0
-  v‿ˈro -- dɨ ro -- ˈdof
+  v‿ˈro -- dɨ ro -- ˈdov
   bo -- ˈja -- ʃʲːim -- sʲa __  jɛ -- ˈgo
 
   ˈsu -- ʃʲːu -- ju __ bo -- go -- ˈro -- dʲi -- tsu

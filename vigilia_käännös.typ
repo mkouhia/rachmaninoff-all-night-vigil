@@ -142,7 +142,7 @@
     ˈdʲivna dʲɛˈlɑ tvoˈja ˈgospodʲi  \
     fsʲa prʲɛˈmudrostʲiju sotvoˈrʲil jeˈsʲi  \
     ˈslɑva tʲi ˈgospodʲi \
-    sotvoˈrʲifʃɛmu fsʲa
+    sotvoˈrʲivʃɛmu fsʲa
   ],
   [
     Kiitä, sieluni, Herraa!  \
@@ -206,7 +206,7 @@
     i nɑ lʲuˈdʲɛx tvoˈix blagosloˈvʲenʲijɛ tvoˈjɛ  \
     #h(2em) alʲiˈluija alʲiˈluija alʲiˈluija  \
     ˈslɑva otˈtsu i ˈsɨnu i svʲaˈtomu ˈduxu  \
-    i ˈnɨnɛ i ˈprʲisno i vo ˈvʲekʲi vʲɛˈkof aˈmʲinʲ  \
+    i ˈnɨnɛ i ˈprʲisno i vo ˈvʲekʲi vʲɛˈkov aˈmʲinʲ  \
     #h(2em) alʲiˈluija alʲiˈluija alʲiˈluija  \
     #h(2em) ˈslɑva tʲeˈbʲɛ ˈboʒɛ
   ],
@@ -256,7 +256,7 @@
     #h(1em) otˈtsɑ nʲeˈbʲɛsnago svʲaˈtɑgo blaˈʒɛnnago  \
     #h(1em) iiˈsusʲɛ xrʲiˈstʲɛ!  \
     prʲiˈʃɛdʃɛ nɑ ˈzɑpad ˈsontsa  \
-    ˈvʲidʲɛfʃɛ ˈsvʲɛt vʲeˈtʃɛrnʲij  \
+    ˈvʲidʲɛvʃɛ ˈsvʲɛt vʲeˈtʃɛrnʲij  \
     poˈjɛm  otˈtsɑ ˈsɨna i svʲaˈtɑgo ˈduxa ˈboga  \
     \
     dosˈtoin jeˈsʲi vo fsʲa vrʲemʲɛˈnɑ  \
@@ -295,7 +295,7 @@
     #h(1em) po glaˈgolu tvojɛˈmu s‿ˈmʲirom  \
     ˈjako ˈvʲidʲɛsta ˈotʃi moˈi spaˈsʲenʲijɛ tvoˈjɛ  \
     ˈjɛʒɛ jeˈsʲi ugoˈtoval prʲɛd lʲiˈtsɛm fsʲɛx lʲuˈdʲej  \
-    svʲɛt vo otkroˈvʲenʲijɛ jaˈzɨkof  \
+    svʲɛt vo otkroˈvʲenʲijɛ jaˈzɨkov  \
     i ˈslɑvu lʲuˈdʲej tvoˈix izˈrɑilʲa
   ],
   [
@@ -349,7 +349,7 @@
   [
     ˈslɑva v‿ˈvɨʃnʲix ˈbogu  \
     i nɑ zʲɛmˈlʲi mʲir  \
-    f‿tʃɛloˈvʲɛtsɛx blagovoˈlʲenʲijɛ  \
+    v‿tʃɛloˈvʲɛtsɛx blagovoˈlʲenʲijɛ  \
     ˈgospodʲi ustˈnʲɛ moˈi otˈvʲɛrzʲɛʃɨ  \
     i usˈtɑ moˈja vozvʲɛsˈtʲat xvaˈlu tvoˈju
   ],
@@ -380,7 +380,7 @@
     ˈxvɑlʲitʲɛ raˈbʲi ˈgospoda alʲiˈluija  \
     blagosloˈvʲɛn gosˈpodʲ ot sʲiˈona  \
     ʒɨˈvɨj vo iɛrusaˈlʲimʲɛ alʲiˈluija  \
-    ispoˈvʲɛdajtʲesʲa ˈgospodʲevʲi ˈjako blɑkʰ alʲiˈluija  \
+    ispoˈvʲɛdajtʲesʲa ˈgospodʲevʲi ˈjako blɑg alʲiˈluija  \
     ˈjako v‿ˈvʲɛk ˈmʲilostʲ jɛˈgo alʲiˈluija  \
     \
     ispoˈvʲɛdajtʲesʲa ˈbogu nʲeˈbʲɛsnomu alʲiˈluija  \
@@ -409,8 +409,8 @@
 
     Ангельский собор удивися,  \
     зря Тебе \
-    #h(1em) в мертвых вменившася.  \
-    #h(1em) смертную же, Спасе, крепость разоривша.  \
+    #h(1em) в мертвых вменившася, \
+    #h(1em) смертную же, Спасе, крепость разоривша, \
     и с собою Адама воздвигша,  \
     и от ада вся свобождша.  \
 
@@ -463,13 +463,13 @@
   ],
   [
     blagosloˈvʲɛn jeˈsʲi ˈgospodʲi  \
-    nauˈtʃi mʲa opraˈvdɑnʲijɛm tvoˈim  \
+    nauˈtʃi mʲa opravˈdɑnʲijɛm tvoˈim  \
 
     ˈɑngelʲskij soˈbor udʲiˈvʲisʲa  \
     zrʲa tʲeˈbʲɛ \
-    #h(1em) v‿ˈmʲɛrtvɨx vmʲeˈnʲifʃasʲa  \
-    #h(1em) ˈsmʲɛrtnuju ʒɛ ˈspɑsʲɛ ˈkrʲɛpostʲ razoˈrʲifʃa  \
-    i s‿soˈboju aˈdɑma vozʲˈdvʲigʃa  \
+    #h(1em) v‿ˈmʲɛrtvɨx vmʲeˈnʲivʃasʲa  \
+    #h(1em) ˈsmʲɛrtnuju ʒɛ ˈspɑsʲɛ ˈkrʲɛpostʲ razoˈrʲivʃa  \
+    i s‿soˈboju aˈdɑma vozˈdvʲigʃa  \
     i ot ˈɑda fsʲa svoˈboʒdʃa  \
 
     blagosloˈvʲɛn jeˈsʲi ˈgospodʲi  \
@@ -507,9 +507,9 @@
     ˈsvʲatʲej ˈtroitsɛ vo jeˈdʲinom suʃʲːɛstvʲɛ  \
     s‿sʲɛraˈfʲimɨ zoˈvuʃʲːɛ  \
     svʲat svʲat svʲat jeˈsʲi ˈgospodʲi  \
-    i ˈnɨnʲɛ i ˈprʲisno i vo ˈvʲekʲi vʲɛˈkof aˈmʲinʲ  \
+    i ˈnɨnʲɛ i ˈprʲisno i vo ˈvʲekʲi vʲɛˈkov aˈmʲinʲ  \
 
-    ʒɨznoˈdɑftsa ˈroʒdʃɨ grʲɛˈxɑ ˈdʲevo  \
+    ʒɨznoˈdɑvtsa ˈroʒdʃɨ grʲɛˈxɑ ˈdʲevo  \
     #h(1em) aˈdɑma izˈbɑvʲila jeˈsʲi  \
     ˈrɑdostʲ ʒɛ ˈjevʲɛ v‿pʲɛˈtʃɑlʲi ˈmʲɛsto podaˈlɑ jeˈsʲi  \
     ˈpɑdʃɨja ʒɛ ot ˈʒɨznʲi k‿sʲej naˈprɑvʲi  \
@@ -604,13 +604,13 @@
     смертию смерть pазpуши.
   ],
   [
-    voskrʲeˈsʲenʲijɛ xrʲiˈstovo ˈvʲidʲɛfʃɛ  \
+    voskrʲeˈsʲenʲijɛ xrʲiˈstovo ˈvʲidʲɛvʃɛ  \
     pokloˈnʲimsʲa svʲaˈtomu ˈgospodu iiˈsusu  \
     jeˈdʲinomu bʲɛzˈgrʲɛʃnomu  \
     krʲɛˈstu tvojɛˈmu poklaˈnʲajemsʲa xrʲiˈstʲɛ  \
     i svʲaˈtojɛ voskrʲeˈsʲenʲijɛ tvoˈjɛ \
     poˈjɛm  i ˈslɑvʲim  \
-    tɨ bo jeˈsʲi ˈbox nɑʃ  \
+    tɨ bo jeˈsʲi box nɑʃ  \
     ˈrɑzvʲɛ tʲeˈbʲɛ iˈnogo nʲɛ ˈznɑjɛm  \
     ˈimʲa tvoˈjɛ imʲɛˈnujɛm  \
 
@@ -621,7 +621,7 @@
     ˈrɑdostʲ fsʲɛˈmu ˈmʲiru  \
     fsʲɛgˈdɑ blagosloˈvʲaʃʲːɛ ˈgospoda  \
     poˈjɛm  voskrʲeˈsʲenʲijɛ jɛˈgo  \
-    raˈspʲatʲijɛ bo prʲetʲɛrˈpʲɛf  \
+    raˈspʲatʲijɛ bo prʲetʲɛrˈpʲɛv  \
     ˈsmʲɛrtʲiju ˈsmʲɛrtʲ razˈruʃɨ
   ],
   [
@@ -710,14 +710,14 @@
 
     ˈjako sotvoˈrʲi mnʲɛ vʲeˈlʲitʃijɛ ˈsʲilʲnɨj  \
     i ˈsvʲato ˈimʲa jɛˈgo  \
-    i ˈmʲilostʲ jɛˈgo v‿ˈrodɨ roˈdof  \
+    i ˈmʲilostʲ jɛˈgo v‿ˈrodɨ roˈdov  \
     boˈjaʃʲːimsʲa jɛˈgo  \
 
     #h(2em) #text(style: "italic")[ tʃɛstˈnʲejʃuju xɛruˈvʲim ...]
 
     nʲizloˈʒɨ ˈsʲilʲnɨja so prʲɛˈstol  \
     i voznʲeˈsʲɛ smʲiˈrʲɛnnɨja  \
-    ˈɑltʃuʃʲːija isˈpolnʲi blɑkʰ  \
+    ˈɑltʃuʃʲːija isˈpolnʲi blɑg  \
     i bogaˈtʲaʃʲːijasʲa otpusˈtʲi tʃʲːi  \
 
     #h(2em) #text(style: "italic")[ tʃɛstˈnʲejʃuju xɛruˈvʲim ...]
@@ -844,7 +844,7 @@
   [
     ˈslɑva v‿ˈvɨʃnʲix ˈbogu  \
     i nɑ zʲɛmˈlʲi mir  \
-    f‿tʃɛloˈvʲɛtsɛx blagovoˈlʲenʲijɛ  \
+    v‿tʃɛloˈvʲɛtsɛx blagovoˈlʲenʲijɛ  \
     xvaˈlʲim tʲa blagosloˈvʲim tʲa  \
     ˈklɑnʲajɛm tʲi sʲa slavoˈslovʲim tʲa  \
     blagodaˈrʲim tʲa vʲeˈlʲikʲija ˈrɑdʲi ˈslɑvɨ tvojeˈja  \
@@ -862,7 +862,7 @@
     poˈmʲiluj nɑs  \
     ˈjako tɨ jeˈsʲi jeˈdʲin svʲat  \
     tɨ jeˈsʲi jeˈdʲin gosˈpodʲ iiˈsus xrʲisˈtos  \
-    f ˈslɑvu ˈboga otˈtsɑ aˈmʲinʲ  \
+    v ˈslɑvu ˈboga otˈtsɑ aˈmʲinʲ  \
 
     nɑ fsʲak dʲenʲ blagoslovˈlʲu tʲa  \
     i vosxvaˈlʲu ˈimʲa tvoˈjɛ  \
@@ -901,7 +901,7 @@
     #h(1em) svʲaˈtɨj bʲɛzˈsmʲɛrtnɨj poˈmʲiluj nɑs
 
     ˈslɑva otˈtsu i ˈsɨnu i svʲaˈtomu ˈduxu  \
-    #h(1em) i ˈnɨnʲɛ i ˈprʲisno i vo ˈvʲekʲi vʲɛˈkof aˈmʲinʲ  \
+    #h(1em) i ˈnɨnʲɛ i ˈprʲisno i vo ˈvʲekʲi vʲɛˈkov aˈmʲinʲ  \
 
     svʲaˈtɨj bʲɛzˈsmʲɛrtnɨj poˈmʲiluj nɑs  \
     svʲaˈtɨj ˈboʒɛ svʲaˈtɨj ˈkrʲɛpkʲij  \
@@ -1073,12 +1073,12 @@
 
 #v(1fr)
 #text(style: "italic")[
-  Suomenkieliset käännökset: Ortodoksinen hautauskirja (onl.fi) & Liturgiset tekstit (ortodoksi.net) & Pentekostarion (ecmr.fi) \
+  Suomenkieliset käännökset: Ortodoksinen hautauskirja (onl.fi) & Liturgiset
+  tekstit (ortodoksi.net) & Pentekostarion (ecmr.fi)\
   Koonnut ja translitteroinut Mikko Kouhia, v1.2 2024-09-19.
 ]
+#pagebreak()
 
-/*
-#set page(columns: 2)
 #set par(
   first-line-indent: 1em,
   justify: true,
@@ -1088,106 +1088,175 @@
 #set text(lang: "fi")
 
 = Kirkkoslaavin ääntämyksestä
+#v(1em)
 
-== Konsonantit
+#columns(2)[
+  == Konsonantit
 
-#table(
-  columns: (auto, auto, auto, 1fr),
-  stroke: none,
-  row-gutter: -4pt,
-  column-gutter: (-6pt, auto),
-  table.header(
-    [],
-    [],
-    [IPA],
-    [Esimerkki],
-  ),
-  [Б], [б], [b] , [],
-  [В], [в], [v] , [],
-  [Г], [г], [ɡ] , [],
-  [Д], [д], [d] , [],
-  [Ж], [ж], [ʒ (tai ʐ)] , [],
-  [З], [з], [z] , [],
-  [Й], [й], [j (tai ĭ)] , [],
-  [К], [к], [k] , [],
-  [Л], [л], [l (tai ɫ)] , [],
-  [М], [м], [m] , [],
-  [Н], [н], [n] , [],
-  [П], [п], [p] , [],
-  [Р], [р], [r] , [],
-  [С], [с], [s] , [],
-  [Т], [т], [t] , [],
-  [Ф], [ф], [f, fʲ] , [серафимы [sʲɛraˈfʲimɨ]],
-  [Х], [х], [x, xʲ] , [Христу [xrʲiˈstu], тихий [ˈtʲixʲij]],
-  [Ц], [ц], [ts (tai t͡s)] , [Цареви [tsaˈrʲevʲi]],
-  [Ч], [ч], [tʃ (tai t͡ɕ)] , [человек [tʃɛloˈvʲɛk]],
-  [Ш], [ш], [ʃ (tai ʂ)] , [нашему [ˈnɑʃɛmu]],
-  [Щ], [щ], [ʃʲː (tai ɕː)] , [вещаше [vʲɛˈʃʲːɑʃɛ]],
-)
+  #table(
+    columns: (auto, auto, auto, 1fr),
+    stroke: none,
+    row-gutter: -4pt,
+    column-gutter: (-6pt, auto),
+    table.header(
+      [],
+      [],
+      [IPA],
+      [Esimerkki],
+    ),
+    [Б], [б], [b, bʲ] , [Бог [box], без [bʲɛz]],
+    [В], [в], [v, vʲ] , [во [vo], веки [ˈvʲekʲi]],
+    [Г], [г], [ɡ, ɡʲ] , [Господи [ˈgospodʲi], грех [grʲɛx]],
+    [Д], [д], [d, dʲ] , [до [do], Дево [ˈdʲevo]],
+    [Ж], [ж], [ʒ] , [живот [ʒɨˈvot], Боже [ˈboʒɛ]],
+    [З], [з], [z, zʲ] , [запад [ˈzɑpad], зело [ˈzʲɛlo]],
+    [Й], [й], [j] , [Мой [moj], тихий [ˈtʲixʲij]],
+    [К], [к], [k, kʲ] , [яко [ˈjako], веки [ˈvʲekʲi]],
+    [Л], [л], [l, lʲ] , [славу [ˈslɑvu], людей [lʲuˈdʲej]],
+    [М], [м], [m, mʲ] , [мои [moˈi], мир [mʲir]],
+    [Н], [н], [n, nʲ] , [на [nɑ], ныне [ˈnɨnʲɛ]],
+    [П], [п], [p, pʲ] , [Плод [plod], печали [pʲɛˈtʃɑlʲi]],
+    [Р], [р], [r, rʲ] , [мир [mʲir], Марие [maˈrʲijɛ]],
+    [С], [с], [s, sʲ] , [слава [ˈslɑva], еси [jeˈsʲi]],
+    [Т], [т], [t, tʲ] , [Твоя [tvoˈja], Тебе [tʲeˈbʲɛ]],
+    [Ф], [ф], [f, fʲ] , [серафимы [sʲɛraˈfʲimɨ]],
+    [Х], [х], [x, xʲ] , [Христу [xrʲiˈstu], тихий [ˈtʲixʲij]],
+    [Ц], [ц], [ts] , [Цареви [tsaˈrʲevʲi], Отцу [otˈtsu]],
+    [Ч], [ч], [tʃ] , [человек [tʃɛloˈvʲɛk], очи [ˈotʃi]],
+    [Ш], [ш], [ʃ] , [нашему [ˈnɑʃɛmu], душе [duˈʃɛ]],
+    [Щ], [щ], [ʃʲː (tai ɕː)] , [вещаше [vʲɛˈʃʲːɑʃɛ], зовуще [zoˈvuʃʲːɛ]],
+  )
 
-Useimmilla konsonanteista on suomen kielessä esiintyvä vastinpari kuten yllä esitetty, josta poikkeuksena ovat erityisesti moninaiset s-kirjaimet:
-- с [s] äännetään hieman suomalaista s:ää terävämpänä s-kirjaimena
-- з [z] äännetään soinnillisena s-kirjaimena
-- ц
-- ч
-- ш
-- щ
-- ж
+  Useimmilla konsonanteista on suomen kielessä esiintyvä vastinpari kuten yllä
+  esitetty, josta poikkeuksena ovat erityisesti moninaiset s-kirjaimet:
+  - с [s] äännetään hieman suomalaista s:ää terävämpänä s-kirjaimena,
+    liudentuneena [sʲ] "pissis-s" tai "stadilainen s"
+  - з [z] äännetään soinnillisena s-kirjaimena, kuten esimerkiksi saksan sanassa
+    _Seele_, liudentuneena [zʲ] hieman enemmän j-äänteeseen päin taipuneena
+  - ц [ts] äännetään ts-yhdistelmänä, kuten sanassa _katse_
+  - ч [tʃ] (t + suhu-s, č tsekin kielessä) äännetään kuin englannin kielen
+    sanoissa _chop_ tai _chocolate_
+  - ш [ʃ] (suhu-s tai š) äännetään kuten sanassa _šakki (shakki)_ tai englannin
+    kielen sanassa _show_, konsonantti on kova ja huulet pyöreät
+  - щ [ʃʲː] äännetään liudentuneena pitkänä suhu-s:nä, kuin laittaisi ensin
+    kielen suussa j-äänteen asentoon, mutta sanoisi suhu-s:n siitä asemasta;
+    verrattuna ш-kirjaimeen, ääntämys on pehmeämpi ja suhina on huomattavasti
+    korkeataajuisempaa
+  - ж [ʒ] äännetään soinnillisena suhu-s:nä, kuten s englannin kielen sanoissa
+    _treasure_ ja _measure_.
 
-Lisäksi erityisesti mainittakoon
-- й
-- х
+  Lisäksi erityisesti mainittakoon
+  - й [j] "lyhyt i" äännetään j:n tapaisesti; kuuluu samaan tavuun edeltävän
+    vokaalin kanssa, jolloin syntyvä äänne on diftongin tapainen.
+  - х [x] takainen h, äännetään kuten sanassa _pahka_ tai nimessä _Bach_.
 
-Suurin osa konsonanteista voi ääntyä joko kovina tai liudentuneina, riippuen konsonanttia seuraavasta vokaalista: konsonantin jälkeen tulevat е [e], и [i], я [ja] ja ю [ju] liudentavat edeltävää konsonanttia, jolloin lausuttaessa kielen keskiosa kohoaa kohti kovaa kitalakea. Samoin pehmeä merkki ь liudentaa edeltävän konsonantin, mikä tapahtuu usein sanan lopussa. Translitteroidussa IPA-merkistössä liudentumista ilmaistaan konsonantin jälkeen tulevalla [ʲ]-merkillä.
-Liudentumista ei tarvitse ääntäessä liioitella, vaan liudentuneet konsonantitkin ovat varsin lähellä niiden suomalaisia vastinpareja.
+  Lisäksi ng-äännettä ei kirkkoslaavissa ole, joten esimerkiksi sanassa ангел
+  lausutaan n ja g erikseen: [ˈɑngɛl].
 
-Konsonantit щ [ʃʲː] ja ч [tʃ] sekä "puolikonsonantti" й [j] ovat aina liudentuneita, samoin kuin konsonantit ж [ʒ], ш [ʃ] ja ц [ts] ovat aina liudentumattomia.
+  Konsonantit щ [ʃʲː] ja ч [tʃ] sekä "puolikonsonantti" й [j] ovat aina
+  liudentuneita, samoin kuin konsonantit ж [ʒ], ш [ʃ] ja ц [ts] ovat aina
+  liudentumattomia.
 
-== Vokaalit
+  Loput konsonantit voivat ääntyä joko kovina tai liudentuneina, riippuen
+  konsonanttia seuraavasta vokaalista: konsonantin jälkeen tulevat е [e], и [i],
+  я [ja] ja ю [ju] liudentavat edeltävää konsonanttia, jolloin lausuttaessa
+  kielen keskiosa kohoaa kohti kovaa kitalakea. Samoin pehmeä merkki ь liudentaa
+  edeltävän konsonantin, mikä tapahtuu usein sanan lopussa. Translitteroidussa
+  IPA-merkistössä liudentumista ilmaistaan konsonantin jälkeen tulevalla
+  [ʲ]-merkillä, liudentuneen konsonantin ääntämys on myös hieman j-mäinen.
 
-#table(
-  columns: (auto, auto, auto, 1fr),
-  stroke: none,
-  row-gutter: -4pt,
-  column-gutter: (-6pt, auto),
-  table.header[][][IPA][Esimerkki],
-  [А], [а], [a (painoton)\ ɑ (painollinen)], [],
-  [Е], [е], [je, e\ jɛ, ɛ], [
-    еси [jeˈsʲi], веки [ˈvʲekʲi], \
-    Ему [jɛˈmu], зело [zʲɛˈlo], Боже [ˈboʒɛ]
-  ],
-  [И], [и], [i, ɨ], [имя [ˈimʲa], мир [mʲir], наших [ˈnɑʃɨx]],
-  [О], [о], [o], [],
-  [У], [у], [u], [],
-  [Ы], [ы], [ɨ], [Ты [tɨ]],
-  [Ю], [ю], [ju,  ◌ʲu], [Твою [tvoˈju], волю [ˈvolʲu]],
-  [Я], [я], [ja,  ◌ʲa], [яко [ˈjako], тя [tʲa]],
-)
+  Liudentumista ei tarvitse ääntäessä liioitella, vaan liudentuneet
+  konsonantitkin ovat varsin lähellä niiden suomalaisia vastinpareja.
+  Mielikuvana voi ajatella sananloppuista konsonantin liudentumista
+  savolaismurteissa, tai espanjan kielen ñ-kirjainta. Vastaavasti
+  liudentumattomat eli kovat konsonantit ovat hieman suomalaista ääntämystä
+  kovempia.
 
-Vokaalit ovat pitkälti samoin ääntyviä kuin suomessa, erityistapauksina seuraavat:
-- ы: taka-i [ɨ] ääntyy suomalaisten i:n ja y:n välimuotona: yksi tapa hahmottaa äänteen tuottaminen on asettaa suu samaan asentoon kuin i:tä ääntäessä ja lausua y siitä positiosta.
-- ю
-- я
+  #colbreak()
+  == Vokaalit
 
-Vokaaleista о (o) ja у (u) ääntyvät aina samalla tavalla, kun taas sanapaino muuttaa vokaalia а: painollinen а lausutaan takaisena suomalaisena [ɑ]:na ja painoton а kuten italian etinen [a]. Sanapainot on merkitty tässä translitteroituun tekstiin painotusta edeltävällä ˈ-merkillä.
+  #table(
+    columns: (auto, auto, auto, 1fr),
+    stroke: none,
+    row-gutter: -4pt,
+    column-gutter: (-6pt, auto),
+    table.header[][][IPA][Esimerkki],
+    [А], [а], [a\ ɑ], [
+      аминь [aˈmʲinʲ], мира [ˈmʲira]\
+      ангел [ˈɑngɛl], на [nɑ]
+    ],
+    [Е], [е], [je, ◌ʲe, e\ jɛ, ◌ʲɛ, ɛ], [
+      еси [jeˈsʲi], веки [ˈvʲekʲi], отцем [otˈtsem]\
+      Ему [jɛˈmu], зело [zʲɛˈlo], Боже [ˈboʒɛ]
+    ],
+    [И], [и], [i], [имя [ˈimʲa], мир [mʲir]],
+    [О], [о], [o], [от [ot], Богородице [bogoˈrodʲitse]],
+    [У], [у], [u], [Духу [ˈduxu], узы [ˈuzɨ]],
+    [Ы], [ы], [ɨ], [Ты [tɨ], бысть [bɨstʲ]],
+    [Ю], [ю], [ju,  ◌ʲu], [Твою [tvoˈju], волю [ˈvolʲu]],
+    [Я], [я], [ja,  ◌ʲa], [яко [ˈjako], тя [tʲa]],
+  )
 
-Vokaali е on sananalkuisena, kovien konsonanttien välissä ja pehmeän konsonantin jälkeen keskivokaali [ɛ], mutta vokaalia е seuraava pehmeä konsonantti muuttaa ääntämyksen italialaiseksi [e]:ksi.
-Vokaalit е [je, jɛ], я [ja] ja ю [ju] lausutaan useimmiten j-kirjaimen kanssa, kun taas pehmeää konsonanttia seuraavissa vokaaleissa е, я ja ю ei lausuta j-äännettä, vaan se korvautuu edeltävän konsonantin liudentumisella.
+  Vokaalit ovat pitkälti samoin ääntyviä kuin suomessa, erityistapauksina seuraavat:
+  - ы: taka-i [ɨ] ääntyy suomalaisten i:n ja y:n välimuotona: yksi tapa hahmottaa
+    äänteen tuottaminen on asettaa suu samaan asentoon kuin i:tä ääntäessä ja lausua
+    y siitä positiosta.
+  - ю, я [ju, ja] lausutaan j-kirjaimen tai edeltävän konsonantin liudentumisen kanssa; я-vokaalissa a-äänne on etinen, italialainen.
 
-== Poikkeukset kirjoitusasusta
+  Vokaaleista о (o) ja у (u) ääntyvät aina samalla tavalla, kun taas sanapaino
+  muuttaa vokaalia а: painollinen а lausutaan takaisena suomalaisena [ɑ]:na
+  ja painoton а kuten italian etinen [a]. Sanapainot on merkitty tässä
+  translitteroituun tekstiin painotusta edeltävällä ˈ-merkillä.
 
-Kirkkoslaavia äännetään pitkälti siten kuin se on kirjoitettu.
+  Vokaali е on sananalkuisena, kovien konsonanttien välissä ja pehmeän konsonantin
+  jälkeen keskivokaali [ɛ], mutta vokaalia е seuraava pehmeä konsonantti
+  muuttaa ääntämyksen italialaiseksi [e]:ksi.
 
-Kovien konsonanttien ж (ʒ), ш (ʃ) ja ц (ts) jälkeen tuleva и lausutaan taka-i:nä ы [ɨ], ja näiden konsonanttien jäljessä е-vokaalissa ei lausuta j-kirjainta ollenkaan (esim. же [ʒɛ]).
+  Vokaalit е [je, jɛ], я [ja] ja ю
+  [ju] lausutaan j-kirjaimen kanssa sanan alussa ja vokaalin jäljessä; pehmeää
+  konsonanttia seuraavissa vokaaleissa е, я ja ю ei lausuta j-äännettä, vaan
+  edeltävä konsonantti liudentuu.
 
-Useilla konsonanteilla on soinnillinen ja soinniton vastinpari.
-Sanan lopussa (ja soinnittomien s:ien edellä?)
-вс -> [fs]
-вш -> [fʃ]
-вч -> [ftʃ]
-вц -> [vts]
+  == Poikkeukset kirjoitusasusta
 
+  Kirkkoslaavia äännetään pitkälti siten kuin se on kirjoitettu. Muutamia
+  poikkeuksia kuitenkin löytyy:
 
-Erotuksena nykyvenäjästä,
-ei vokaalien
-*/
+  - Kovien konsonanttien ж [ʒ], ш [ʃ] ja ц [ts] jälkeen tuleva и lausutaan taka-i:nä
+    ы [ɨ], esim. наших [ˈnɑʃɨx]. Samoin näiden konsonanttien jäljessä е-vokaalissa
+    ei lausuta j-kirjainta ollenkaan (esim. же [ʒɛ]).
+  - Sana Бог (Jumala) lausutaan vanhakantaiseen tapaan, jolloin sananloppuinen
+    [g]-äänne muuttuu [x]-äänteeksi
+  - Sananalkuinen konsonanttiyhdistelmä вс lausutaan [fs], jolloin v-äänne on
+    muuttunut tavanomaista soinnittomammaksi, esimerkiksi sanoissa вся [fsʲa] ja
+    всегда [fsʲɛgˈdɑ].
+
+  Konsonantista щ on huomattava, että se varsin usein translitteroidaan [ʃtʃ],
+  englanninkielisissä teksteissä _shch_ tai suomeksi translitteroitaessa štš
+  (SFS 4900). Tämä heijastaa historiallista ääntämystä, jossa se äännettiin
+  konsonanttien ш ja ч yhdistelmänä. Modernissa venäjässä ja siten kirkkoslaavin
+  venäläisessä variantissa kuitenkin ääntämys on liudentunut suhu-s.
+
+  == Erotus venäjän ääntämyksestä
+
+  Kirkkoslaavin ääntämys on pitkälti samankaltaista nykyvenäjän kanssa, mutta
+  seuraavilta osin ääntäminen eroaa:
+
+  - Kirkkoslaavissa vokaalit o ja е eivät muuta äänneasuaan painottomina, е ei
+    myöskään lausuta [jo]-äänteenä missään yhteydessä
+  - Sananloppuiset soinnilliset konsonantit eivät muutu soinnittomiksi
+  - Kaikki konsonantit yhdistelmissä pyritään lausumaan
+  - Sanapäätteet -аго/-его/-ого/-яго lausutaan kuten kirjoitettu, toisin kuin
+    venäjässä, jossa [g]-äänne muuttuu [v]:ksi.
+]
+
+#v(1fr)
+#text(style: "italic")[
+  Lähteet:
+  - Natalia Challis: The Singer's Rachmaninoff (1989)
+  - Varvara Merras-Häyrynen: Venäjän fonetiikkaa laulajille (2013)
+    #link("https://urn.fi/URN:NBN:fi:amk-2013060312645")
+  - Jopi Harri: Kirkkoslaavin ortografiasta, translitteroinnista ja
+    ääntämisestä laulajille
+    #link("https://ecmr.fi/Writings_etc/Kirkkoslaavia-laulajille.pdf")
+]
