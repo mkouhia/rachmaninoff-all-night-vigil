@@ -39,6 +39,29 @@ altoLyricsC = \lyricmode {
   Ал -- ли -- луй -- и -- а, ал -- ли -- луй -- и -- а, ал -- ли -- луй -- и -- а.
   Сла -- ва Те -- бе, бо -- же.
 }
+aIIILyricsX = \lyricmode {
+  bla -- ˈʒɛn muʒ
+  ˈi -- ʒɛ nʲɛ ˈi -- dʲɛ nɑ so -- ˈvʲɛt nʲe -- tʃɛ -- sˈtʲi -- vɨx
+  al -- lʲi -- ˈluj -- i -- a al -- lʲi -- ˈluj -- i -- a al -- lʲi -- ˈluj -- i -- a
+  ˈja -- ko ˈvʲesʲtʲ gos -- ˈpodʲ putʲ ˈprɑ -- vʲɛd -- nɨx
+  i ˈputʲ nʲe -- tʃɛ -- ˈstʲi -- vɨx po -- ˈgʲib -- nʲɛt
+  al -- lʲi -- ˈluj -- i -- a al -- lʲi -- ˈluj -- i -- a al -- lʲi -- ˈluj -- i -- a
+  ra -- ˈbo -- taj -- tʲɛ ˈgos -- po -- dʲe -- vʲi so ˈstrɑ -- xom
+  i ˈrɑ -- duj -- tʲe -- sʲa jɛ -- ˈmu s~ˈtrʲe -- pʲɛ -- tom
+  al -- lʲi -- ˈluj -- i -- a al -- lʲi -- ˈluj -- i -- a al -- lʲi -- ˈluj -- i -- a
+  bla -- ˈʒe -- nʲi fsʲi na -- ˈdʲe -- ju -- ɕːi -- i -- sʲa nanʲ
+  al -- lʲi -- ˈluj -- i -- a al -- lʲi -- ˈluj -- i -- a al -- lʲi -- ˈluj -- i -- a
+
+  vos -- ˈkrʲɛs -- nʲi ˈgos -- po -- dʲi spa -- ˈsʲi mʲa ˈbo -- ʒɛ ˈmoj
+  al -- lʲi -- ˈluj -- i -- a al -- lʲi -- ˈluj -- i -- a al -- lʲi -- ˈluj -- i -- a
+  gos -- ˈpod -- nʲe jesʲtʲ spa -- ˈsʲe -- nʲi -- jɛ
+  i nɑ lʲu -- ˈdʲɛx tvo -- ˈix bla -- go -- slo -- ˈvʲe -- nʲi -- jɛ tvo -- ˈjɛ
+  al -- lʲi -- ˈluj -- i -- a al -- lʲi -- ˈluj -- i -- a al -- lʲi -- ˈluj -- i -- a
+  ˈslɑ -- va ot -- ˈtsu i ˈsɨ -- nu i svʲa -- ˈto -- mu ˈdu -- xu
+  i ˈnɨ -- nɛ i ˈprʲis -- no i vo ˈvʲe -- kʲi vʲɛ -- ˈkov a -- ˈmʲinʲ
+  al -- lʲi -- ˈluj -- i -- a al -- lʲi -- ˈluj -- i -- a al -- lʲi -- ˈluj -- i -- a
+  ˈslɑ -- va tʲe -- ˈbʲɛ ˈbo -- ʒɛ
+}
 
 tenorLyricsC = \lyricmode {
   Бла -- жен муж, и -- же не и -- де на со -- вет не -- че -- сти -- вых.

@@ -5,6 +5,13 @@ lyricsStart = \lyricmode {
   Бла -- го -- дат -- на -- я  Ма -- ри -- е,
   Гос -- подь  с_То -- бо -- ю.
 }
+lyricsStartX = \lyricmode {
+  bo -- go -- ˈro -- dʲit -- se ˈdʲe -- vo ˈrɑ -- duj -- sʲa
+  bla -- go -- ˈdɑt -- na -- ja ma -- ˈrʲi -- jɛ gos -- ˈpodʲ s‿to -- ˈbo -- ju
+  bla -- go -- slo -- ˈvʲɛn -- na tɨ v‿ʒɛ -- ˈnɑx
+  i bla -- go -- slo -- ˈvʲɛn plod ˈtʃrʲɛ -- va tvo -- jɛ -- ˈgo
+  ˈja -- ko ˈspɑ -- sa ro -- dʲi -- ˈlɑ je -- ˈsʲi duʃ ˈnɑ -- ʃɨx
+}
 
 lyricsST = \lyricmode {
   Бо -- го -- ро -- ди -- це   Де -- во,

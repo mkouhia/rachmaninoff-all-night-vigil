@@ -189,25 +189,25 @@
   ],
   [
     blaˈʒɛn muʒ \
-    ˈiʒɛ nʲɛ ˈidʲɛ nɑ soˈvʲɛt nʲetʃɛsˈtʲivɨx  \
-    #h(2em) alʲiˈluija alʲiˈluija alʲiˈluija  \
+    ˈiʒɛ nʲɛ ˈidʲɛ nɑ soˈvʲɛt nʲetʃɛˈstʲivɨx  \
+    #h(2em) allʲiˈlujia allʲiˈlujia allʲiˈlujia  \
     ˈjako ˈvʲesʲtʲ gosˈpodʲ putʲ ˈprɑvʲɛdnɨx  \
-    i ˈputʲ nʲetʃɛsˈtʲivɨx poˈgʲibnʲɛt  \
-    #h(2em) alʲiˈluija alʲiˈluija alʲiˈluija  \
+    i ˈputʲ nʲetʃɛˈstʲivɨx poˈgʲibnʲɛt  \
+    #h(2em) allʲiˈlujia allʲiˈlujia allʲiˈlujia  \
     raˈbotajtʲɛ ˈgospodʲevʲi so ˈstrɑxom  \
     i ˈrɑdujtʲesʲa jɛˈmu s‿ˈtrʲepʲɛtom  \
-    #h(2em) alʲiˈluija alʲiˈluija alʲiˈluija  \
+    #h(2em) allʲiˈlujia allʲiˈlujia allʲiˈlujia  \
     blaˈʒenʲi fsʲi naˈdʲejuɕːiisʲa nanʲ  \
-    #h(2em) alʲiˈluija alʲiˈluija alʲiˈluija  \
+    #h(2em) allʲiˈlujia allʲiˈlujia allʲiˈlujia  \
 
     vosˈkrʲɛsnʲi ˈgospodʲi spaˈsʲi mʲa ˈboʒɛ ˈmoj  \
-    #h(2em) alʲiˈluija alʲiˈluija alʲiˈluija  \
-    goˈspodnʲe jesʲtʲ spaˈsʲenʲijɛ  \
+    #h(2em) allʲiˈlujia allʲiˈlujia allʲiˈlujia  \
+    gosˈpodnʲe jesʲtʲ spaˈsʲenʲijɛ  \
     i nɑ lʲuˈdʲɛx tvoˈix blagosloˈvʲenʲijɛ tvoˈjɛ  \
-    #h(2em) alʲiˈluija alʲiˈluija alʲiˈluija  \
+    #h(2em) allʲiˈlujia allʲiˈlujia allʲiˈlujia  \
     ˈslɑva otˈtsu i ˈsɨnu i svʲaˈtomu ˈduxu  \
     i ˈnɨnɛ i ˈprʲisno i vo ˈvʲekʲi vʲɛˈkov aˈmʲinʲ  \
-    #h(2em) alʲiˈluija alʲiˈluija alʲiˈluija  \
+    #h(2em) allʲiˈlujia allʲiˈlujia allʲiˈlujia  \
     #h(2em) ˈslɑva tʲeˈbʲɛ ˈboʒɛ
   ],
   [
@@ -259,7 +259,7 @@
     ˈvʲidʲɛvʃɛ ˈsvʲɛt vʲeˈtʃɛrnʲij  \
     poˈjɛm  otˈtsɑ ˈsɨna i svʲaˈtɑgo ˈduxa ˈboga  \
     \
-    dosˈtoin jeˈsʲi vo fsʲa vrʲemʲɛˈnɑ  \
+    doˈstoin jeˈsʲi vo fsʲa vrʲemʲɛˈnɑ  \
     #h(1em) pʲɛt ˈbɨtʲi ˈglɑsɨ prʲɛpoˈdobnɨmʲi  \
     #h(1em) ˈsɨnʲɛ ˈboʒɨj ʒɨˈvot daˈjaj  \
     ˈtʲɛmʒe mʲir tʲa ˈslɑvʲit
@@ -351,7 +351,7 @@
     i nɑ zʲɛmˈlʲi mʲir  \
     v‿tʃɛloˈvʲɛtsɛx blagovoˈlʲenʲijɛ  \
     ˈgospodʲi ustˈnʲɛ moˈi otˈvʲɛrzʲɛʃɨ  \
-    i usˈtɑ moˈja vozvʲɛsˈtʲat xvaˈlu tvoˈju
+    i uˈstɑ moˈja vozvʲɛˈstʲat xvaˈlu tvoˈju
   ],
   [
     Kunnia olkoon Jumalalle korkeuksissa  \
@@ -365,26 +365,26 @@
 #part(
   "Хвалите имя Господне",
   [
-    Хвалите имя Господне. Аллилуиа.  \
-    Хвалите, раби, Господа. Аллилуиа.  \
+    Хвалите имя Господне. Аллилуйиа.  \
+    Хвалите, раби, Господа. Аллилуйиа.  \
     Благословен Господь от Сиона,  \
-    живый во Иерусалиме. Аллилуиа.  \
-    Исповедайтеся Господеви, яко Благ. Аллилуиа.  \
-    Яко в век милость Его. Аллилуиа.  \
+    живый во Иерусалиме. Аллилуйиа.  \
+    Исповедайтеся Господеви, яко Благ. Аллилуйиа.  \
+    Яко в век милость Его. Аллилуйиа.  \
     \
-    Исповедайтеся Богу Небесному. Аллилуиа.  \
-    Яко в век милость Его. Аллилуиа. \
+    Исповедайтеся Богу Небесному. Аллилуйиа.  \
+    Яко в век милость Его. Аллилуйиа. \
   ],
   [
-    ˈxvɑlʲitʲɛ ˈimʲa ˈgospodnʲɛ alʲiˈluija  \
-    ˈxvɑlʲitʲɛ raˈbʲi ˈgospoda alʲiˈluija  \
+    ˈxvɑlʲitʲɛ ˈimʲa ˈgospodnʲɛ allʲiˈlujia  \
+    ˈxvɑlʲitʲɛ raˈbʲi ˈgospoda allʲiˈlujia  \
     blagosloˈvʲɛn gosˈpodʲ ot sʲiˈona  \
-    ʒɨˈvɨj vo iɛrusaˈlʲimʲɛ alʲiˈluija  \
-    ispoˈvʲɛdajtʲesʲa ˈgospodʲevʲi ˈjako blɑg alʲiˈluija  \
-    ˈjako v‿ˈvʲɛk ˈmʲilostʲ jɛˈgo alʲiˈluija  \
+    ʒɨˈvɨj vo ijɛrusaˈlʲimʲɛ allʲiˈlujia  \
+    ispoˈvʲɛdajtʲesʲa ˈgospodʲevʲi ˈjako blɑg allʲiˈlujia  \
+    ˈjako v‿ˈvʲɛk ˈmʲilostʲ jɛˈgo allʲiˈlujia  \
     \
-    ispoˈvʲɛdajtʲesʲa ˈbogu nʲeˈbʲɛsnomu alʲiˈluija  \
-    ˈjako v‿ˈvʲɛk ˈmʲilostʲ jɛˈgo alʲiˈluija \
+    ispoˈvʲɛdajtʲesʲa ˈbogu nʲeˈbʲɛsnomu allʲiˈlujia  \
+    ˈjako v‿ˈvʲɛk ˈmʲilostʲ jɛˈgo allʲiˈlujia \
   ],
   [
     Kiittäkää Herran nimeä,  \
@@ -458,7 +458,7 @@
     #h(1em) из Тебе воплотивыйся Бог и человек.  \
     \
 
-    Аллилуиа, Аллилуиа, Аллилуиа.  \
+    Аллилуйиа, Аллилуйиа, Аллилуйиа.  \
     слава Тебе, Боже.  \
   ],
   [
@@ -477,17 +477,17 @@
 
     poˈtʃto ˈmʲira s‿mʲiˈlostʲivnɨmʲi slʲɛˈzɑmʲi  \
     o utʃeˈnʲitsɨ rastvoˈrʲaetʲɛ?  \
-    blʲisˈtɑjajsʲa vo ˈgrobʲɛ ˈɑngɛl  \
+    blʲiˈstɑjajsʲa vo ˈgrobʲɛ ˈɑngɛl  \
     #h(1em) mʲiroˈnosʲitsam vʲɛˈɕːɑʃɛ  \
     ˈvʲidʲitʲɛ vɨ ˈgrob i urazuˈmʲejtʲɛ  \
-    ˈspɑs bo voˈskrʲesʲɛ ot ˈgroba  \
+    ˈspɑs bo vosˈkrʲesʲɛ ot ˈgroba  \
 
     blagosloˈvʲɛn jeˈsʲi ˈgospodʲi  \
     nauˈtʃi mʲa opravˈdɑnʲijɛm tvoˈim  \
 
     ˈzʲɛlo ˈrɑno mʲironosʲitsɨ tʲɛˈtʃɑxu  \
     ko ˈgrobu tvojɛˈmu rɨˈdɑjuɕːija  \
-    no prʲɛˈdstɑ k‿nʲim ˈɑngɛl i ˈrʲɛtʃɛ  \
+    no prʲɛdˈstɑ k‿nʲim ˈɑngɛl i ˈrʲɛtʃɛ  \
     rɨˈdɑnʲija ˈvrʲemʲa prʲɛˈstɑ  \
     nʲɛ ˈplɑtʃitʲɛ  \
     voskrʲeˈsʲenʲijɛ ʒɛ aˈpostolom ˈrtsɨtʲɛ  \
@@ -504,7 +504,7 @@
     ˈslɑva otˈtsu i ˈsɨnu i svʲaˈtomu ˈduxu  \
     pokloˈnʲimsʲa otˈtsu  \
     i jɛˈgo ˈsɨnovʲi i svʲaˈtomu ˈduxu  \
-    ˈsvʲatʲej ˈtroitsɛ vo jeˈdʲinom suɕːɛstvʲɛ  \
+    svʲaˈtʲej ˈtroitsɛ vo jeˈdʲinom suɕːɛˈstvʲɛ  \
     s‿sʲɛraˈfʲimɨ zoˈvuɕːɛ  \
     svʲat svʲat svʲat jeˈsʲi ˈgospodʲi  \
     i ˈnɨnʲɛ i ˈprʲisno i vo ˈvʲekʲi vʲɛˈkov aˈmʲinʲ  \
@@ -516,8 +516,8 @@
     #h(1em) iz tʲeˈbʲɛ voploˈtʲivɨjsʲa box i tʃɛloˈvʲɛk  \
     \
 
-    alʲiˈluija alʲiˈluija alʲiˈluija  \
-    ˈslɑva tʲeˈbʲɛ ˈboʒɛ!
+    allʲiˈlujia allʲiˈlujia allʲiˈlujia  \
+    ˈslɑva tʲeˈbʲɛ ˈboʒɛ
   ],
   [
     Kiitetty olet sinä, Herra.  \
@@ -616,12 +616,12 @@
 
     prʲiiˈdʲitʲɛ fsʲi ˈvʲɛrnʲii  \
     pokloˈnʲimsʲa svʲaˈtomu \
-    xrʲisˈtovu voskrʲeˈsʲenʲiju  \
+    xrʲiˈstovu voskrʲeˈsʲenʲiju  \
     sʲɛ bo prʲiˈidʲɛ krʲɛˈstom \
     ˈrɑdostʲ fsʲɛˈmu ˈmʲiru  \
-    fsʲɛgˈdɑ blagosloˈvʲaɕːɛ ˈgospoda  \
+    fsʲɛˈgdɑ blagosloˈvʲaɕːɛ ˈgospoda  \
     poˈjɛm  voskrʲeˈsʲenʲijɛ jɛˈgo  \
-    raˈspʲatʲijɛ bo prʲetʲɛrˈpʲɛv  \
+    rasˈpʲatʲijɛ bo prʲetʲɛrˈpʲɛv  \
     ˈsmʲɛrtʲiju ˈsmʲɛrtʲ razˈruʃɨ
   ],
   [
@@ -858,7 +858,7 @@
     ˈvzʲɛmlʲaj grʲɛx ˈmʲira poˈmʲiluj nɑs  \
     ˈvzʲɛmlʲaj grʲeˈxʲi ˈmʲira  \
     prʲijˈmʲi moˈlʲitvu ˈnɑʃu  \
-    sʲeˈdjaj odʲɛsˈnuju otˈtsɑ  \
+    sʲeˈdʲaj odʲɛsˈnuju otˈtsɑ  \
     poˈmʲiluj nɑs  \
     ˈjako tɨ jeˈsʲi jeˈdʲin svʲat  \
     tɨ jeˈsʲi jeˈdʲin gosˈpodʲ iiˈsus xrʲisˈtos  \

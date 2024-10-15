@@ -434,7 +434,7 @@ bXIIbLyrics = \lyricmode {
   Я -- ко Ты е -- си __ е -- дин Свят,
 }
 bXIIbLyricsX = \lyricmode {
-  sʲe -- ˈdjaj o -- dʲɛs -- ˈnu -- ju ot -- ˈtsɑ
+  sʲe -- ˈdʲaj o -- dʲɛs -- ˈnu -- ju ot -- ˈtsɑ
   po -- ˈmʲi -- luj nɑs __
   ˈja -- ko tɨ je -- ˈsʲi __ je -- ˈdʲin svʲat
 }
@@ -481,7 +481,7 @@ bXIILyrics = \lyricmode {
 }
 bXIILyricsX = \lyricmode {
  ˈɑgn -- tʃɛ __ ˈbo -- ʒɨj ˈvzʲɛm -- lʲaj grʲe -- ˈxʲi __  ˈmʲi -- ra __
-  tɨ __ je -- ˈsʲi je -- ˈdʲin __  i -- i -- ˈsus xrʲis -- ˈtos
+  tɨ je -- ˈsʲi je -- ˈdʲin __  i -- i -- ˈsus xrʲis -- ˈtos
   v~ˈslɑ -- vu __ ˈbo -- ga __  ot -- ˈtsɑ a -- ˈmʲinʲ
 %   20
   bla -- go -- slo -- ˈvʲɛn je -- ˈsʲi ˈgos -- po -- dʲi

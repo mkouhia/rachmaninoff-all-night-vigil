@@ -78,6 +78,12 @@ tenorSoloLyricsE = \lyricmode {
   и сла -- ву лю -- дей Тво -- их Из -- ра -- и -- ля.
   ля.
 }
+tSoloVLyricsX = \lyricmode {
+  ˈnɨ -- nʲɛ ot -- pu -- ˈɕːɑ -- jɛ -- ʃɨ ra -- ˈbɑ tvo -- jɛ -- ˈgo vla -- ˈdɨ -- ko
+  po gla -- ˈgo -- lu tvo -- jɛ -- ˈmu s~ˈmʲi -- rom
+  ˈja -- ko ˈvʲi -- dʲɛs -- ta ˈo -- tʃi mo -- ˈi spa -- ˈsʲe -- nʲi -- jɛ tvo -- ˈjɛ
+  i ˈslɑ -- vu lʲu -- ˈdʲej tvo -- ˈix iz -- ˈrɑ -- i -- lʲa
+}
 
 bassILyricsE = \lyricmode {
   е -- же е -- си у -- го -- то -- вал, 
@@ -86,6 +92,12 @@ bassILyricsE = \lyricmode {
 %  свет во от -- кро -- ве -- ни -- е я -- зы -- ков
   и сла -- ву лю -- дей Тво -- их Из -- ра -- и -- ля. 
   ля.
+}
+bVlyricsX = \lyricmode {
+  ˈjɛ -- ʒɛ je -- ˈsʲi u - go -- ˈto -- val
+  ˈjɛ -- ʒɛ je -- ˈsʲi u - go -- ˈto -- val
+  prʲɛd lʲi -- ˈtsɛm fsʲɛx lʲu -- ˈdʲej
+%   svʲɛt vo ot -- kro -- ˈvʲe -- nʲi -- jɛ ja -- ˈzɨ -- kov
 }
 
 bassIILyricsE = \lyricmode {

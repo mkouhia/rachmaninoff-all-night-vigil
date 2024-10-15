@@ -9,9 +9,13 @@ satbLyricsA = \lyricmode {
 }
 
 satbTranslitA = \lyricmode {
-  A -- min'.
-  Pri -- i -- di -- tye, po -- klo -- nim -- sya Tsa -- re -- vi na -- she -- mu Bo -- gu.
-  Pri -- i -- di -- tye, po -- klo -- nim -- sya i pri -- pa -- dyom Khri -- stu Tsa -- re -- vi na -- she -- mu Bo -- gu.
-  Pri -- i -- di -- tye, po -- klo -- nim -- sya i pri -- pa -- dyom sa -- mo -- mu Khris -- tu Tsa -- re -- vi i Bo -- gu na -- she -- mu.
-  Pri -- i -- di -- tye, po -- klo -- nim -- sya i pri -- pa -- dyom Ye -- mu.
+  a -- ˈmʲinʲ
+  prʲi -- i -- ˈdʲi -- tʲɛ po -- klo -- ˈnʲim -- sʲa tsa -- ˈrʲe -- vʲi ˈnɑ -- ʃɛ -- mu ˈbo -- gu
+  prʲi -- i -- ˈdʲi -- tʲɛ po -- klo -- ˈnʲim -- sʲa i prʲi -- pa -- ˈdʲɛm
+  xrʲi -- ˈstu tsa -- ˈrʲe -- vʲi ˈnɑ -- ʃɛ -- mu ˈbo -- gu
+
+  prʲi -- i -- ˈdʲi -- tʲɛ po -- klo -- ˈnʲim -- sʲa i prʲi -- pa -- ˈdʲɛm
+  ˈsɑ -- mo -- mu xrʲi -- ˈstu tsa -- ˈrʲe -- vʲi i ˈbo -- gu ˈnɑ -- ʃɛ -- mu
+
+  prʲi -- i -- ˈdʲi -- tʲɛ po -- klo -- ˈnʲim -- sʲa i prʲi -- pa -- ˈdʲɛm jɛ -- ˈmu
 }
