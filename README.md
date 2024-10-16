@@ -1,12 +1,12 @@
 # Sergei Rachmaninoff: All Night Vigil
 
-Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 This repository contains Lilypond engraving files for Rachmaninoff's All Night
 Vigil.
 
 ## TODO
-**Work is in progress**
+_Work is in progress_
 
 ### Typesetting
 - Translate all dynamic texts and directions into Italian (or English)
