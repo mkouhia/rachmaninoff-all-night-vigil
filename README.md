@@ -9,7 +9,6 @@ Vigil.
 ### Typesetting
 - Decide text font (Charis SIL, Gentium Plus, some other?), compare to Lilypond default
 - Decide on chords vs voices
-- Take into account incoming layout changes from Lilypond 2.25: https://lilypond.org/doc/v2.25/Documentation/changes/major-changes-in-lilypond
 
 ## Reproducible development environment
 

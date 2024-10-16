@@ -51,10 +51,17 @@
      \line { \fromproperty #'toc:page \hspace #20 }
   }
 
+  top-margin-default = 10\mm     % scaled to paper-size
+  bottom-margin-default = 10\mm  % scaled to paper-size
+  top-system-spacing.basic-distance = 6
+  top-markup-spacing.basic-distance = 4
+
   two-sided = ##t
-  inner-margin = 15\mm
-  outer-margin = 15\mm
-  top-system-spacing.stretchability = #20
+  inner-margin-default = 15\mm   % scaled to paper-size
+  outer-margin-default = 15\mm   % scaled to paper-size
+  binding-offset-default = 5\mm  % scaled to paper-size
+
+%   top-system-spacing.stretchability = #20
   first-page-number = #-1
 }
 
