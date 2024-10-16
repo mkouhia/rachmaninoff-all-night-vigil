@@ -55,6 +55,7 @@
   inner-margin = 15\mm
   outer-margin = 15\mm
   top-system-spacing.stretchability = #20
+  first-page-number = #-1
 }
 
 tocAct =
@@ -109,7 +110,6 @@ tocAct =
 
   \bookpart {
     \paper {
-      bookpart-level-page-numbering = ##t
       print-page-number = ##f
     }
 
