@@ -55,6 +55,19 @@ tenorLyricsD = \lyricmode {
   Сы -- не Бо -- жий, жи -- вот да -- яй;
   тем -- же мир Тя сла -- вит.
 }
+tIVLyricsX = \lyricmode {
+  ˈsvʲe -- tʲe ˈtʲi -- xʲij svʲa -- ˈtɨ -- ja ˈslɑ -- vɨ bʲɛz -- ˈsmʲɛrt -- na -- go
+  ot -- ˈtsɑ nʲe -- ˈbʲɛs -- na -- go svʲa -- ˈtɑ -- go bla -- ˈʒɛn -- na -- go
+  i -- i -- ˈsu -- sʲɛ xrʲi -- ˈstʲɛ
+  prʲi -- ˈʃɛd -- ʃɛ nɑ ˈzɑ -- pad ˈson -- tsa
+  ˈvʲi -- dʲɛv -- ʃɛ ˈsvʲɛt vʲe -- ˈtʃɛr -- nʲij
+
+  po -- ˈjɛm  ot -- ˈtsɑ ˈsɨ -- na i svʲa -- ˈtɑ -- go ˈdu -- xa ˈbo -- ga
+  do -- ˈsto -- in je -- ˈsʲi vo fsʲa vrʲe -- mʲɛ -- ˈnɑ
+  pʲɛt ˈbɨ -- tʲi ˈglɑ -- sɨ prʲɛ -- po -- ˈdob -- nɨ -- mʲi
+  ˈsɨ -- nʲɛ ˈbo -- ʒɨj ʒɨ -- ˈvot da -- ˈjaj
+  ˈtʲɛm -- ʒe mʲir tʲa ˈslɑ -- vʲit __
+}
 
 tenorLyricsDUpper = \lyricmode {
   Сы -- не Бо -- жий, жи -- вот да -- яй;

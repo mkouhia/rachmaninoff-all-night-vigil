@@ -4,6 +4,7 @@
 \include "12_alto.ily"
 \include "12_tenor.ily"
 \include "12_bass.ily"
+\include "12_lyrics.ily"
 
 globalMusicXIIa = {
 %   \autoLineBreaksOff

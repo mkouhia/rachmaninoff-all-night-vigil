@@ -14,6 +14,11 @@ satbLyricsG = \lyricmode {
 }
 
 satbLyricsG = \lyricmode {
+	ˈslɑ -- va v~ˈvɨʃ -- nʲix ˈbo -- gu
+	i nɑ zʲɛm -- ˈlʲi mʲir
+	v~tʃɛ -- lo -- ˈvʲɛ -- tsɛx bla -- go -- vo -- ˈlʲe -- nʲi -- jɛ
+	ˈgos -- po -- dʲi ust -- ˈnʲɛ mo -- ˈi ot -- ˈvʲɛr -- zʲɛ -- ʃɨ
+	i u -- ˈstɑ mo -- ˈja voz -- vʲɛ -- ˈstʲat xva -- ˈlu tvo -- ˈju
 }
 
 sopranoILyricsG = \lyricmode {

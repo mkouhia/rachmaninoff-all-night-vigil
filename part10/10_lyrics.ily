@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 sXLyrics = \lyricmode {
-  по -- кло -- ним -- ся Свя -- то -- му Гос -- по -- ду И -- и -- су -- су,
+  по -- кло -- ним -- ся Свя -- то -- му __ Гос -- по -- ду И -- и -- су -- су,
   Е -- ди -- но -- му __ без -- греш -- но -- му. __
 
   и свя -- то -- е вос -- кре -- се -- ни -- е Тво -- е __
@@ -21,6 +21,24 @@ sXLyrics = \lyricmode {
   смер -- ти -- ю смерть pаз -- pу -- ши.
 }
 sXLyricsX = \lyricmode {
+  po -- klo -- ˈnʲim -- sʲa svʲa -- ˈto -- mu __ ˈgos -- po -- du i -- i -- ˈsu -- su
+  je -- ˈdʲi -- no -- mu __ bʲɛz -- ˈgrʲɛʃ -- no -- mu __
+
+  i svʲa -- ˈto -- jɛ vos -- krʲe -- ˈsʲe -- nʲi -- jɛ tvo -- ˈjɛ __
+  po -- ˈjɛm __ i __ ˈslɑ -- vʲim
+
+  tɨ bo je -- ˈsʲi box __ nɑʃ
+  ˈrɑz -- vʲɛ tʲe -- ˈbʲɛ i -- ˈno -- go nʲɛ __ ˈznɑ -- jɛm
+  ˈi -- mʲa tvo -- ˈjɛ i -- mʲɛ -- ˈnu -- jɛm __
+
+  po -- klo -- ˈnʲim -- sʲa svʲa -- ˈto -- mu
+  xrʲi -- ˈsto -- vu vos -- krʲe -- ˈsʲe -- nʲi -- ju
+
+  sʲɛ bo prʲi -- ˈi -- dʲɛ krʲɛ -- ˈstom
+  ˈrɑ -- dostʲ fsʲɛ -- ˈmu ˈmʲi -- ru __
+  ˈrɑ -- dostʲ po -- ˈjɛm __ vos -- krʲe -- ˈsʲe -- nʲi -- jɛ jɛ -- ˈgo
+  ras -- ˈpʲa -- tʲi -- jɛ bo prʲe -- tʲɛr -- ˈpʲɛv __
+  ˈsmʲɛr -- tʲi -- ju ˈsmʲɛrtʲ raz -- ˈru -- ʃɨ
 }
 
 aXLyrics = \lyricmode {
@@ -36,7 +54,7 @@ aXLyrics = \lyricmode {
   И -- мя Тво -- е и -- ме -- ну -- ем. __
 
   По -- кло -- ним -- ся Свя -- то -- му
-  Хри -- сто -- ву вос -- кре -- се -- ни -- ю:
+  Хри -- сто -- ву __ вос -- кре -- се -- ни -- ю:
 
   се бо при -- и -- де кре -- стом
   ра -- дость все -- му ми -- ру, __
@@ -47,10 +65,26 @@ aXLyrics = \lyricmode {
   смер -- ти -- ю смерть pаз -- pу -- ши.
 }
 aXLyricsX = \lyricmode {
+  po -- klo -- ˈnʲim -- sʲa svʲa -- ˈto -- mu ˈgos -- po -- du i -- i -- ˈsu -- su
+  je -- ˈdʲi -- no -- mu __ bʲɛz -- ˈgrʲɛʃ -- no -- mu __
+
+  i svʲa -- ˈto -- jɛ vos -- krʲe -- ˈsʲe -- nʲi -- jɛ tvo -- ˈjɛ __
+  po -- ˈjɛm __ i __ ˈslɑ -- vʲim
+
+  tɨ bo je -- ˈsʲi box __ nɑʃ
+  ˈrɑz -- vʲɛ tʲe -- ˈbʲɛ i -- ˈno -- go nʲɛ __ ˈznɑ -- jɛm
+  ˈi -- mʲa tvo -- ˈjɛ i -- mʲɛ -- ˈnu -- jɛm __
+
+  po -- klo -- ˈnʲim -- sʲa svʲa -- ˈto -- mu
+  xrʲi -- ˈsto -- vu __ vos -- krʲe -- ˈsʲe -- nʲi -- ju
+
+  sʲɛ bo prʲi -- ˈi -- dʲɛ krʲɛ -- ˈstom
+  ˈrɑ -- dostʲ fsʲɛ -- ˈmu ˈmʲi -- ru __
+  fsʲɛ -- ˈgdɑ bla -- go -- slo -- ˈvʲa -- ɕːɛ ˈgos -- po -- da
+  ras -- ˈpʲa -- tʲi -- jɛ bo prʲe -- tʲɛr -- ˈpʲɛv __
+  ˈsmʲɛr -- tʲi -- ju ˈsmʲɛrtʲ raz -- ˈru -- ʃɨ
 }
 
-tbXLyrics = \lyricmode {
-}
 tXLyrics = \lyricmode {
   Вос -- кре -- се -- ни -- е Хри -- сто -- во ви -- дев -- ше, __
 
@@ -67,10 +101,27 @@ tXLyrics = \lyricmode {
   се бо при -- и -- де кре -- стом
   ра -- дость все -- му ми -- ру,
   ра -- дость; по -- ем __ вос -- кре -- се -- ни -- е Е -- го:
-  рас -- пя -- ти -- е бо пре -- тер -- пев,
+  рас -- пя -- ти -- е бо пре -- тер -- пев, __
   смер -- ти -- ю смерть pаз -- pу -- ши. __
 }
 tXLyricsX = \lyricmode {
+  vos -- krʲe -- ˈsʲe -- nʲi -- jɛ xrʲi -- ˈsto -- vo ˈvʲi -- dʲɛv -- ʃɛ __
+
+  krʲɛ -- ˈstu tvo -- jɛ -- ˈmu __ po -- kla -- ˈnʲa -- jem -- sʲa xrʲi -- ˈstʲɛ __
+
+  tɨ bo je -- ˈsʲi box __ nɑʃ
+  ˈrɑz -- vʲɛ tʲe -- ˈbʲɛ i -- ˈno -- go nʲɛ __ ˈznɑ -- jɛm
+  ˈi -- mʲa tvo -- ˈjɛ i -- mʲɛ -- ˈnu -- jɛm __
+
+  prʲi -- i -- ˈdʲi -- tʲɛ fsʲi __ ˈvʲɛr -- nʲi -- i __
+  po -- klo -- ˈnʲim -- sʲa svʲa -- ˈto -- mu
+  xrʲi -- ˈsto -- vu vos -- krʲe -- ˈsʲe -- nʲi -- ju __
+
+  sʲɛ bo prʲi -- ˈi -- dʲɛ krʲɛ -- ˈstom
+  ˈrɑ -- dostʲ fsʲɛ -- ˈmu ˈmʲi -- ru
+  ˈrɑ -- dostʲ po -- ˈjɛm __ vos -- krʲe -- ˈsʲe -- nʲi -- jɛ jɛ -- ˈgo
+  ras -- ˈpʲa -- tʲi -- jɛ bo prʲe -- tʲɛr -- ˈpʲɛv __
+  ˈsmʲɛr -- tʲi -- ju ˈsmʲɛrtʲ raz -- ˈru -- ʃɨ __
 }
 
 bXLyrics = \lyricmode {
@@ -95,4 +146,21 @@ bXLyrics = \lyricmode {
   смер -- ти -- ю смерть pаз -- pу -- ши. __
 }
 bXLyricsX = \lyricmode {
+  vos -- krʲe -- ˈsʲe -- nʲi -- jɛ xrʲi -- ˈsto -- vo ˈvʲi -- dʲɛv -- ʃɛ __
+
+  krʲɛ -- ˈstu tvo -- jɛ -- ˈmu __ po -- kla -- ˈnʲa -- jem -- sʲa xrʲi -- ˈstʲɛ __
+
+  tɨ bo je -- ˈsʲi box __ nɑʃ
+  ˈrɑz -- vʲɛ tʲe -- ˈbʲɛ i -- ˈno -- go nʲɛ __ ˈznɑ -- jɛm
+  ˈi -- mʲa tvo -- ˈjɛ i -- mʲɛ -- ˈnu -- jɛm __
+
+  prʲi -- i -- ˈdʲi -- tʲɛ fsʲi __ ˈvʲɛr -- nʲi -- i __
+  po -- klo -- ˈnʲim -- sʲa svʲa -- ˈto -- mu
+  xrʲi -- ˈsto -- vu vos -- krʲe -- ˈsʲe -- nʲi -- ju __
+
+  sʲɛ bo prʲi -- ˈi -- dʲɛ krʲɛ -- ˈstom
+  ˈrɑ -- dostʲ fsʲɛ -- ˈmu ˈmʲi -- ru __
+  fsʲɛ -- ˈgdɑ bla -- go -- slo -- ˈvʲa -- ɕːɛ ˈgos -- po -- da
+  ras -- ˈpʲa -- tʲi -- jɛ bo prʲe -- tʲɛr -- ˈpʲɛv __
+  ˈsmʲɛr -- tʲi -- ju ˈsmʲɛrtʲ raz -- ˈru -- ʃɨ __
 }

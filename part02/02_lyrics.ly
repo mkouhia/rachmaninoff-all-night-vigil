@@ -84,18 +84,18 @@ altoSoloLyricsB = \lyricmode {
 }
 
 altoSoloTranslitB = \lyricmode {
-%  Бла -- го -- сло -- ви, ду -- ше мо -- я, Гос -- по -- да.
-  Bla -- go -- slo -- vi, du -- she mo -- ya, Gos -- po -- da.
-%  Гос -- по -- ди Бо -- же мой, воз -- ве -- ли -- чил -- ся е -- си зе -- ло.
-  Gos -- po -- di Bo -- zhe moy, voz -- ve -- li -- chil -- sya ye -- si ze -- lo. 
-%  Во ис -- по -- ве -- да -- ни -- е и_в ве -- ле -- ле -- по -- ту об -- лекл -- ся е -- си.
-  Vo is -- po -- ve -- da -- ni -- ye i_v ve -- le -- le -- po -- tu ob -- lekl -- sya ye -- si.
-%  На го -- рах ста -- нут во -- ды.
-  Na go -- rakh sta -- nut vo -- dy.
-%  По -- сре -- де гор прой -- дут во -- ды.
-  Po -- sre -- de gor proy -- dut vo -- di.
-%  Вся пре -- му -- дро -- сти -- ю со -- тво -- рил е -- си, со -- тво -- рил е -- си.
-  Vsya pre -- mu -- dro -- sti -- yu so -- tvo -- ril ye -- si, so -- tvo -- ril ye -- si.
+  bla -- go -- slo -- ˈvʲi du -- ˈʃɛ mo -- ˈja ˈgos -- po -- da
+%   bla -- go -- slo -- ˈvʲɛn je -- ˈsʲi ˈgos -- po -- dʲi
+  ˈgos -- po -- dʲi ˈbo -- ʒɛ moj
+  voz -- vʲe -- ˈlʲi -- tʃil -- sʲa __ je -- ˈsʲi __  zʲɛ -- ˈlo
+  vo is -- po -- ˈvʲɛ -- da -- nʲi -- jɛ i v~vʲe -- lʲe -- ˈlʲɛ -- po -- tu ob -- ˈlʲɛkl -- sʲa je -- ˈsʲi
+  nɑ go -- ˈrɑx __ ˈstɑ -- nut ˈvo -- dɨ
+%   ˈdʲiv -- na dʲɛ -- ˈlɑ tvo -- ˈja ˈgos -- po -- dʲi
+  po -- srʲe -- ˈdʲɛ __ ˈgor ˈproj -- dut ˈvo -- dɨ
+  fsʲa prʲɛ -- ˈmu -- dro -- stʲi -- ju so -- tvo -- ˈrʲil __ je -- ˈsʲi __
+  so -- tvo -- ˈrʲil __ je -- ˈsʲi
+  ˈslɑ -- va tʲi ˈgos -- po -- dʲi
+%   `so -- tvo -- ˈrʲiv -- ʃɛ -- mu fsʲa
 }
 
 tenorILyricsB = \lyricmode {

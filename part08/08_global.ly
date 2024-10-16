@@ -4,6 +4,7 @@
 \include "08_alto.ly"
 \include "08_tenor.ly"
 \include "08_bass.ly"
+\include "08_lyrics.ily"
 
 globalMusicH = {
   \key as \major
@@ -91,26 +92,25 @@ altStaffH = \new Staff \with { instrumentName = \alto } <<
 %  \context Lyrics = lyricsDueX \lyricsto "VB" { \satbTranslitH }
 >> % Staff
 
-tenStaffH = \new Staff \with { instrumentName = \tenor } <<
+tenStaffXVIII = \new Staff \with { instrumentName = \tenor } <<
   \clef "G_8"
-  \globalMusicH
- \context Voice = VC { \tenorMusicH }
- \context Lyrics = lyricsTre \lyricsto "VC" { \tenorLyricsH }
-%  \context Lyrics = lyricsTreX \lyricsto "VC" { \satbTranslitH }
->> % Staff
+  \key as \major
+  \context Voice = "tenorXVIII" { \tenorMusicXVIII }
+  \new Lyrics \lyricsto "tenorXVIII" { \tXVIIILyrics }
+  \new Lyrics \lyricsto "tenorXVIII" { \tXVIIILyricsX }
+>>
 
-basStaffH = \new Staff \with { instrumentName = \bass } <<
+basStaffXVIII = \new Staff \with { instrumentName = \bass } <<
   \clef bass
-  \globalMusicH
-  \topMarksH
-  \new Voice = VD { \bassMusicH }
-  \context Lyrics = lyricsQua \lyricsto "VD" { \bassLyricsH }
-%  \context Lyrics = lyricsQuaX \lyricsto "VD" { \satbTranslitH }
->> % Staff
+  \key as \major
+  \context Voice = "bassXVIII" { \bassMusicXVIII }
+  \new Lyrics \lyricsto "bassXVIII" { \bXVIIILyrics }
+  \new Lyrics \lyricsto "bassXVIII" { \bXVIIILyricsX }
+>>
 
-choirStaffH = \new ChoirStaff = "choirA" <<
+choirStaffH = \new ChoirStaff <<
   \sopStaffH
   \altStaffH
-  \tenStaffH
-  \basStaffH
+  \tenStaffXVIII
+  \basStaffXVIII
 >>
