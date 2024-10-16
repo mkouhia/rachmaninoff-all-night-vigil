@@ -9,8 +9,12 @@ Vigil.
 **Work is in progress**
 
 ### Typesetting
+- Translate all dynamic texts and directions into Italian (or English)
+    - Ritardandos, diminuendos etc. with appropriate Lilypond constructs
 - Decide text font (Charis SIL, Gentium Plus, some other?), compare to Lilypond default
 - Decide on chords vs voices
+- A4 paper or Peters edition sizes?
+    - 18 pt staves or 16 pt? Text and lyrics sizes?
 
 ## Reproducible development environment
 
