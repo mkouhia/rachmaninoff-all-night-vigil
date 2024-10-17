@@ -261,7 +261,7 @@
   [
     ˈsvʲetʲe ˈtʲixʲij svʲaˈtɨja ˈslɑvɨ bʲɛzˈsmʲɛrtnago  \
     #h(1em) otˈtsɑ nʲeˈbʲɛsnago svʲaˈtɑgo blaˈʒɛnnago  \
-    #h(1em) iiˈsusʲɛ xrʲiˈstʲɛ!  \
+    #h(1em) iiˈsusʲɛ xrʲiˈstʲɛ  \
     prʲiˈʃɛdʃɛ nɑ ˈzɑpad ˈsontsa  \
     ˈvʲidʲɛvʃɛ ˈsvʲɛt vʲeˈtʃɛrnʲij  \
     poˈjɛm  otˈtsɑ ˈsɨna i svʲaˈtɑgo ˈduxa ˈboga  \
@@ -451,7 +451,7 @@
     #h(1em) ко гробу Твоему, Спасе, рыдаху.  \
     Ангел же к ним рече, глаголя:  \
     „…Что с мертвыми живаго помышляете?  \
-    Яко Бог бо вокресе от гроба.“  \
+    Яко Бог бо воскресе от гроба.“  \
 
     Слава Отцу и Сыну и святому Духу.  \
     Поклонимся Отцу  \
@@ -486,7 +486,7 @@
     nauˈtʃi mʲa opravˈdɑnʲijɛm tvoˈim  \
 
     poˈtʃto ˈmʲira s‿mʲiˈlostʲivnɨmʲi slʲɛˈzɑmʲi  \
-    o utʃeˈnʲitsɨ rastvoˈrʲaetʲɛ?  \
+    o utʃeˈnʲitsɨ rastvoˈrʲaetʲɛ  \
     blʲiˈstɑjajsʲa vo ˈgrobʲɛ ˈɑngɛl  \
     #h(1em) mʲiroˈnosʲitsam vʲɛˈɕːɑʃɛ  \
     ˈvʲidʲitʲɛ vɨ ˈgrob i urazuˈmʲejtʲɛ  \
