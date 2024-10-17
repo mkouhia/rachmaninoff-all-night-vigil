@@ -2,6 +2,16 @@
   margin: (x: 15mm, top: 10mm, bottom: 16mm),
 )
 
+#set page(footer: context [
+  #if counter(page).get().first() == counter(page).final().first() [
+    #set text(size: 7.5pt, style: "italic")
+    #set align(right)
+    Koonti ja translitterointi Mikko Kouhia, v1.3 2024-10-17
+
+    Lisenssi: #link("https://creativecommons.org/licenses/by-sa/4.0/")[CC BY-SA 4.0]
+  ]
+])
+
 #let partnum = counter("partnum")
 #partnum.step()
 
@@ -1089,7 +1099,6 @@
 #text(style: "italic")[
   Suomenkieliset käännökset: Ortodoksinen hautauskirja (onl.fi) & Liturgiset
   tekstit (ortodoksi.net) & Pentekostarion (ecmr.fi)\
-  Koonnut ja translitteroinut Mikko Kouhia, v1.2 2024-09-19.
 ]
 #pagebreak()
 
@@ -1101,7 +1110,7 @@
 #show table.cell.where(y: 0): set text(style: "normal", weight: "bold")
 #set text(lang: "fi")
 
-= Kirkkoslaavin ääntämyksestä
+= Lyhyesti kirkkoslaavin ääntämyksestä
 #v(1em)
 
 #columns(2)[
