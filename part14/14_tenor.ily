@@ -55,7 +55,7 @@ tXIVdLower = \relative d' {
 tXIVe = \relative e' {
   e4 d4 c2 | % 24
 
-  c8([ \mf \dir_nemnogo_bydeljaja d8]) e4 e4 e8 \< f8 | % 25
+  c8([ \mf \dir_nemnogo_vydeljaja d8]) e4 e4 e8 \< f8 | % 25
   g2 \> f4 \! e4 | % 26
   d8 e8 f4 \>
 }

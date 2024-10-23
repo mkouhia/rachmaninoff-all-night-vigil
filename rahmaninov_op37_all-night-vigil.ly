@@ -2,6 +2,13 @@
 
 \include "markup.ily"
 
+
+voiceTwoVisual = {
+  \override DynamicText.stencil = ##f
+  \override Hairpin.stencil = ##f
+  \override Script.stencil = ##f
+}
+
 % \include "part01/01_global.ly"
 % \include "part02/02_global.ly"
 % \include "part03/03_global.ly"
@@ -10,6 +17,7 @@
 % \include "part06/06_global.ly"
 % \include "part07/07_global.ly"
 % \include "part08/08_global.ly"
+\include "part09/09_global.ily"
 \include "part10/10_global.ily"
 \include "part11/11_global.ily"
 \include "part12/12_global.ily"
@@ -51,15 +59,15 @@
      \line { \fromproperty #'toc:page \hspace #20 }
   }
 
-  top-margin-default = 10\mm     % scaled to paper-size
-  bottom-margin-default = 10\mm  % scaled to paper-size
+  top-margin = 10\mm     % scaled to paper-size
+  bottom-margin = 10\mm  % scaled to paper-size
   top-system-spacing.basic-distance = 6
   top-markup-spacing.basic-distance = 4
 
   two-sided = ##t
-  inner-margin-default = 15\mm   % scaled to paper-size
-  outer-margin-default = 15\mm   % scaled to paper-size
-  binding-offset-default = 5\mm  % scaled to paper-size
+  inner-margin = 15\mm   % scaled to paper-size
+  outer-margin = 15\mm   % scaled to paper-size
+  binding-offset = 5\mm  % scaled to paper-size
 
 %   top-system-spacing.stretchability = #20
   first-page-number = #-1
@@ -80,6 +88,9 @@ tocAct =
 %     \override StaffGrouper.staff-staff-spacing.stretchability = #20
     % Auto-beaming off
     autoBeaming = ##f
+    % Multi-measure rests are always whole rests, do not use breve rests.
+    \override MultiMeasureRest.usable-duration-logs = #'(0)
+    \override Footnote.annotation-line = ##f
   }
   \context {
     \Staff
@@ -101,8 +112,6 @@ tocAct =
   inner-margin = 15\mm
   outer-margin = 10\mm
 }
-
-
 
 \book {
   \pointAndClickOff
@@ -318,17 +327,22 @@ tocAct =
     }
   }
 
-%{
-  \bookpart {
-    \tocItem \markup { 9. Благословен еси, Господи }
-    \score {
-      \header {
-        title = "9. Благословен еси, Господи"
+\bookpart {
+  \tocItem \markup { 9. Благословен еси, Господи }
+  \score {
+    \header {
+      title = "9. Благословен еси, Господи"
+    }
+    \choirStaffIX
+
+    \layout {
+      \context {
+        \Staff
+        \remove "Time_signature_engraver"
       }
-      \choirStaffI
     }
   }
-%}
+}
 
 \bookpart {
     \tocItem \markup { 10. Воскресение Христово видевше }

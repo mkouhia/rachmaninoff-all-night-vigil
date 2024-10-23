@@ -10,13 +10,13 @@
      #:factor (/ staff-height pt 20) ; to get smaller than automatic
     ))
 
-  top-margin-default = 10\mm     % scaled to paper-size
-  bottom-margin-default = 10\mm  % scaled to paper-size
+  top-margin = 10\mm     % scaled to paper-size
+  bottom-margin = 10\mm  % scaled to paper-size
   top-system-spacing.basic-distance = 6
   top-markup-spacing.basic-distance = 4
 
-  left-margin-default = 15\mm   % scaled to paper-size
-  right-margin-default = 15\mm  % scaled to paper-size
+  left-margin = 15\mm   % scaled to paper-size
+  right-margin = 15\mm  % scaled to paper-size
 
   % system-system-spacing.stretchability = #60
 %    top-system-spacing.stretchability = #20
@@ -38,6 +38,7 @@ score_layout = \layout {
     barNumberVisibility = #first-bar-number-invisible-save-broken-bars
     % Multi-measure rests are always whole rests, do not use breve rests.
     \override MultiMeasureRest.usable-duration-logs = #'(0)
+    \override Footnote.annotation-line = ##f
   }
   \context {
     \Staff
@@ -60,4 +61,10 @@ score_layout = \layout {
     % Add distance between unrelated lyrics lines (next line, above staff below)
     \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2.6
   }
+}
+
+voiceTwoVisual = {
+  \override DynamicText.stencil = ##f
+  \override Hairpin.stencil = ##f
+  \override Script.stencil = ##f
 }
