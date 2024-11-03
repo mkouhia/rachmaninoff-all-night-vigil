@@ -2,32 +2,26 @@
 
 \include "../markup.ily"
 \include "../layout.ily"
-\include "08_global.ly"
+\include "08_global.ily"
 
 \header {
-  title = "Nº 8 Хвалите имя Господне"
+  title = "8. Хвалите имя Господне"
   composer = "Сергей Рахманинов"
+  opus = "Op. 37"
   tagline = ##f
 } % header
 
 \score { 
 
-  \choirStaffH
-  \score_layout
-
-  \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 92/4)
-    }
+  \choirStaffXVIII
+  \layout {
+    \score_layout
     \context {
       \Staff
-      midiInstrument = "choir aahs"
+      \consists Merge_rests_engraver
     }
-    \context {
-      \Voice
-      \remove "Dynamic_performer"
-    }
-  } % midi
+  }
+
+%   \midi {}
   
-} % score
+}

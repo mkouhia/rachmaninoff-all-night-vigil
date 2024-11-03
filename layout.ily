@@ -46,6 +46,8 @@ score_layout = \layout {
     \override InstrumentName.self-alignment-X = #RIGHT
     \override InstrumentName.padding = #1
     breathMarkType = #'upbow
+    \override DynamicText.self-alignment-X = #RIGHT
+    \override DynamicText.parent-alignment-X = #CENTER % the default
   }
   \context {
     \Lyrics
@@ -60,6 +62,10 @@ score_layout = \layout {
     \override VerticalAxisGroup.nonstaff-nonstaff-spacing.minimum-distance = ##f
     % Add distance between unrelated lyrics lines (next line, above staff below)
     \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2.6
+
+    % Lyrics melisma extender line has no minimum length, and has some padding
+    \override LyricExtender.minimum-length = ##f
+%     \override LyricExtender.right-padding = #1.5
   }
 }
 
@@ -67,4 +73,5 @@ voiceTwoVisual = {
   \override DynamicText.stencil = ##f
   \override Hairpin.stencil = ##f
   \override Script.stencil = ##f
+  \override BreathingSign.stencil = ##f
 }

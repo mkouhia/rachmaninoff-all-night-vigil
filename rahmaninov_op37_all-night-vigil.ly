@@ -16,7 +16,7 @@ voiceTwoVisual = {
 % \include "part05/05_global.ly"
 % \include "part06/06_global.ly"
 % \include "part07/07_global.ly"
-% \include "part08/08_global.ly"
+\include "part08/08_global.ily"
 \include "part09/09_global.ily"
 \include "part10/10_global.ily"
 \include "part11/11_global.ily"
@@ -107,6 +107,9 @@ tocAct =
     \override VerticalAxisGroup.nonstaff-nonstaff-spacing.minimum-distance = ##f
     % Add distance between unrelated lyrics lines (next line, above staff below)
     \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2.6
+
+    % Lyrics melisma extender line has no minimum length
+    \override LyricExtender.minimum-length = ##f
   }
   two-sided = ##t
   inner-margin = 15\mm
@@ -321,9 +324,14 @@ tocAct =
       \header {
         title = "8. Хвалите имя Господне"
       }
-      { c4 }
-%       \choirStaffH
+      \choirStaffXVIII
 
+      \layout{
+        \context {
+          \Staff
+          \consists Merge_rests_engraver
+        }
+      }
     }
   }
 

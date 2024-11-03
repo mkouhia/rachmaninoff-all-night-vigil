@@ -66,17 +66,6 @@ lunga_pausa = \markup { \column { \center-align {\bold "длинная" \line {\
 % In the original manuscript titled Doxology small
 % = \markup { "В автографе первоначально озаглавлено Славословие малое" }
 
-% non presto
-tempo_не_скоро = \tempo "не скоро"
-
-% dolce, cantabile
-dir_мягко_певуче = \markup {\small "мягко, певуче"}
-
-% carattere come sopra
-dir_Прежний_характер = \markup {\small "Прежний характер"}
-
-% Bright, with a strong, solid rhthym
-dir_ярко_с_твербым_добрым_рутмом = \markup { \small "ярко, с твербым, добрым рутмом"}
 
 %% Movement 12
 
@@ -150,6 +139,13 @@ dir_певуче = \dirTrans "певуче" "cantabile"
 dir_коротким_звуком = \dirTrans "коротким звуком" "secco"
 dir_легко = \dirTrans "легко" "leggiero"
 
+%% Movement 8
+
+% Bright, with a strong, solid rhthym
+dir_jarko_s_tverbym_dobrym_rytmom = \dirTrans "ярко, с твербым, добрым рутмом" "Brightly, with strong bold rhythm"
+mark_mjagko_pevutshe = \textMarkTrans "мягко, певуче" "Softly, melodiously"
+mark_prezhdnij_harakter = \textMarkTrans "Прежний характер" "In the opening mood"
+
 %% Movement 9
 tempo_medlennee_tjazhelee = \tempoTrans "Медленнее, тяжелее" "Slower, heavier"
 dir_zytshno = \dirTrans "зычно" "resonantly"
@@ -160,6 +156,8 @@ tempo_medlenno_i_pevutshe = \tempoTrans "Медленно и певуче" "Slow
 tempo_opjat_medlennee = \tempoTrans "Опять медленнее" "Again slower"
 tempo_shtshiroko = \tempoTrans "Щироко" "Broadly"
 tempo_pervonachalnyj_temp_quasi_mormorando = \tempoAndMarkTransV "Первоначальный темп" "Почти шепотом. Выделяются только указанные нажимы" "The opening tempo" "Almost whispering. Only the notes expressly marked should stand out"
+
+mark_pevutshe = \textMarkTrans "певуче" "melodiously"
 
 %% Movement 10
 
@@ -200,6 +198,7 @@ dir_nemnogo_vydeljaja = \dirTrans "немного выделяя" "poco marcato"
 
 %% All movements
 tempo_medlenno = \tempoTrans "Медленно" "Adagio" % Andante sostenuto? Lento? Andante?
+tempo_ne_skoro = \tempoTrans "Не скоро" "Not quick"
 tempo_ne_skoro_alla_breve = \tempoAndMarkTrans "Не скоро" "(движение половинами)" "Not quick" "(beat halves)"
 tempo_Довольно_скоро = \tempoTrans "Довольно скоро" "Moderato"
 tempo_dobolno_skoro = \tempoTrans "Довольно скоро" "Fairly quick"
