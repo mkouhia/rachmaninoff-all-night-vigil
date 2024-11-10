@@ -235,7 +235,7 @@ topMarksXII = {
   s2*3 \mark_zaderzhivaja s2*5 |
 %   34
   \barNumberCheck #34
-  \tempo_В_темпе s2*12
+  \tempo_V_tempe s2*12
 %   37
   s2*8 \tempo_Темп_быстрее \skip 2*4
   s2*10

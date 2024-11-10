@@ -1,39 +1,42 @@
 \version "2.24.0"
 
-% * Ноты со энаком + исполнятся с эакрытым ртом.
-% The sign + indicates notes which are to be executed by humming with closed lips.
-% Google Translate:
-% Знак + показывает ноты, которые должны быть выполнены по напевая с закрытыми губами
-
 \include "../markup.ily"
 \include "../layout.ily"
-\include "07_global.ly"
+\include "07_global.ily"
 
 \header {
-  title = "Nº 7 Шестопсалмие"
+  title = "7. Шестопсалмие"
   subtitle = "Славословие малое"
   composer = "Сергей Рахманинов"
-  copyright = "Copyright © 2014 Брайан Майкл Эймс Creative Commons Attribution-ShareAlike 4.0 license"
+  opus = "Op. 37"
+  tagline = ##f
 }
 
 \score { 
-  \choirStaffG
+  \choirStaffVII
 
-  \score_layout
-
-  \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 60/4)
-    }
+  \layout {
+    \score_layout
     \context {
       \Staff
-      midiInstrument = "choir aahs"
-    }
-    \context {
-      \Voice
-      \remove "Dynamic_performer"
+      \remove "Time_signature_engraver"
+      \consists Merge_rests_engraver
     }
   }
+
+%   \midi {
+%     \context {
+%       \Score
+%       tempoWholesPerMinute = #(ly:make-moment 60/4)
+%     }
+%     \context {
+%       \Staff
+%       midiInstrument = "choir aahs"
+%     }
+%     \context {
+%       \Voice
+%       \remove "Dynamic_performer"
+%     }
+%   }
 
 }

@@ -25,7 +25,7 @@ sXIIc = {
 sXIIdUpper = {
   s2   \once \override Slur.positions = #'(4 . -1) d4( \< es \! |
   f2 \tweak DynamicText.X-offset -1 \f) es es d4 c d8([ \> c] bes4 c1) \!
-  bes4 \tweak DynamicText.X-offset -2 \mf \dir_певуче \< c \! |
+  bes4 \tweak DynamicText.X-offset -2 \mf \dir_pevutshe \< c \! |
 }
 sXIIdLower = {
   c2( bes2~) |

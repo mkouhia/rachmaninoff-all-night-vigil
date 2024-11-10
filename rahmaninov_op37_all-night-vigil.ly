@@ -15,7 +15,7 @@ voiceTwoVisual = {
 % \include "part04/04_global.ly"
 % \include "part05/05_global.ly"
 % \include "part06/06_global.ly"
-% \include "part07/07_global.ly"
+\include "part07/07_global.ily"
 \include "part08/08_global.ily"
 \include "part09/09_global.ily"
 \include "part10/10_global.ily"
@@ -303,14 +303,13 @@ tocAct =
         title = "7. Шестопсалмие"
 %         subtitle = "Славословие малое"
       }
-      { c4 }
-%       \choirStaffG
+      \choirStaffVII
 
       \layout {
-        short-indent = 6\mm
         \context {
           \Staff
-          \RemoveEmptyStaves
+          \remove "Time_signature_engraver"
+          \consists Merge_rests_engraver
         }
       }
 

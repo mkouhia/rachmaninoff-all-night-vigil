@@ -27,15 +27,6 @@ senza_sosta = \markup {\bold  "Прежний темп" }
 % Piuttosto lentamente ()
 ritardando = \markup {\bold  "задерживая"}
 
-non_presto = \markup {{\bold  "не скоро"} "(движение половинами)" }
-% un po' più lento
-un_po_più_lento = \markup { \bold "немного медленнее" }
-% tutto è più lento , tutto più debole
-tutto_più_lento_più_debole = \markup {\bold  "всё медленнее, всё слабее" }
-a_tempo = \markup {\bold  "в темпе" }
-% lentamente , molto delicatamente . con un grande senso
-lentamente_molto_delicatamente_con_un_grande_senso = \markup {\bold  "медленно, очень мягко. с большим чувством"}
-
 
 lentamente = \markup {{\bold  "медленно"}}
 perdersi = \markup {{\bold "теряясь"}}
@@ -61,7 +52,11 @@ dir_очень_нежно = \markup {\small \italic "очень нежно"}
 % poco marcato
 dir_немного_выделяя = \markup { \small \italic "немного выделяя" }
 
-lunga_pausa = \markup { \column { \center-align {\bold "длинная" \line {\bold "пауза"} } } }
+lunga_pausa = \markup { \column \center-align {
+    \line {\bold "длинная пауза" }
+    \line { "long pause" }
+  }
+}
 
 % In the original manuscript titled Doxology small
 % = \markup { "В автографе первоначально озаглавлено Славословие малое" }
@@ -74,7 +69,7 @@ tempoTrans =
      (tempoChu tempoIt)
      (markup? markup?)
    #{
-     \tempo \markup \large { \override #'(baseline-skip . 2.5 ) \column { \line { \bold \concat { #tempoChu "." } } \line { \normal-text \concat { #tempoIt "."} }}}
+     \tempo \markup \large { \override #'(baseline-skip . 2.5 ) \column { \line { \bold #tempoChu } \line { \normal-text #tempoIt }}}
    #})
 
 textMarkTrans =
@@ -90,7 +85,7 @@ tempoAndMarkTrans =
      (tempoChu markChu tempoIt markIt)
      (markup? markup? markup? markup?)
    #{
-     \tempo \markup \large { \column { \line { \bold \large \concat { #tempoChu "." } \normalsize #markChu } \line { \normal-text \large \concat { #tempoIt "."}  \normalsize \normal-text #markIt }}}
+     \tempo \markup \large { \column { \line { \bold \large #tempoChu \normalsize #markChu } \line { \normal-text \large #tempoIt \normalsize \normal-text #markIt }}}
    #})
 
 tempoAndMarkTransV =
@@ -128,16 +123,24 @@ tempo_В_прежнем_темпе = \tempoTrans "В прежнем темпе" 
 
 mark_v_tempe = \textMarkTrans "в темпе" "a tempo"
 mark_в_темпе = \textMarkTrans "в темпе" "a tempo"
-tempo_В_темпе = \tempoTrans "В темпе" "A tempo"
+tempo_V_tempe = \tempoTrans "В темпе" "A tempo"
 tempo_Темп_быстрее = \tempoTrans "Темп быстрее" "Più mosso"
 tempo_бсё_оживленнее = \tempoAndMarkTrans "Темп бсё оживленнее" "Звучность остается легкой" "Più vivace" "Sempre leggiero"
 
 mark_мягко = \textMarkTrans "мягко" "dolce"
 mark_ослабляя_звук = \textMarkTrans "ослабляя звук" "diminuendo"
+mark_pevutshe = \textMarkTrans "певуче" "melodiously"
 
-dir_певуче = \dirTrans "певуче" "cantabile"
+dir_pevutshe = \dirTrans "певуче" "cantabile"
 dir_коротким_звуком = \dirTrans "коротким звуком" "secco"
 dir_легко = \dirTrans "легко" "leggiero"
+
+%% Movement 7
+tempo_nemnogo_medlennee = \tempoTrans "немного медленнее" "A little slower" % Un poco più lento
+tempo_fsjo_medlennee_fsjo_slabjeje = \tempoTrans "всё медленнее, всё слабее" "Always slower, always softer"
+% lentamente , molto delicatamente . con un grande senso
+tempo_medlenno_otshen_mjagko_s_bolzhim_svustom = \tempoTrans "Медленно, очень мягко. С большим чувством" "Slowly, very softly, and with deep feeling"
+
 
 %% Movement 8
 
@@ -156,8 +159,6 @@ tempo_medlenno_i_pevutshe = \tempoTrans "Медленно и певуче" "Slow
 tempo_opjat_medlennee = \tempoTrans "Опять медленнее" "Again slower"
 tempo_shtshiroko = \tempoTrans "Щироко" "Broadly"
 tempo_pervonachalnyj_temp_quasi_mormorando = \tempoAndMarkTransV "Первоначальный темп" "Почти шепотом. Выделяются только указанные нажимы" "The opening tempo" "Almost whispering. Only the notes expressly marked should stand out"
-
-mark_pevutshe = \textMarkTrans "певуче" "melodiously"
 
 %% Movement 10
 
